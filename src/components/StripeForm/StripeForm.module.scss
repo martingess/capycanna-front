@@ -1,0 +1,135 @@
+.form {
+  &__logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: auto;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333333;
+  }
+  &__plan {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 15px;
+  }
+  &__or {
+    text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    span {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      background-color: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #d9d9d9;
+      z-index: 1;
+    }
+  }
+  &__button {
+    margin-top: 25px;
+    height: 50px;
+    border-radius: 16px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  &__elem {
+    margin-bottom: 20px;
+  }
+  &__value {
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px;
+    font-family:
+      Ideal Sans,
+      system-ui,
+      sans-serif;
+    font-size: 18px;
+    ::placeholder {
+      color: #8c8c8c;
+    }
+    &.error {
+      border-color: #ff4d4f;
+      color: #ff4d4f;
+    }
+  }
+}
+
+.load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+
+  &__image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__elem {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 9px 12px 9px 12px;
+    width: 100%;
+    position: relative;
+    &.error {
+      border-color: #ff4d4f;
+    }
+  }
+  &__elem-icons {
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    img {
+      width: auto;
+      height: 25px;
+    }
+  }
+  &__elem-bottom {
+    display: flex;
+    .card__elem {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      &:first-child {
+        border-bottom-left-radius: 4px;
+      }
+      &:last-child {
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+}

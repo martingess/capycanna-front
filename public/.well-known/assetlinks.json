@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lasta.risemee",
+      "sha256_cert_fingerprints": [
+        "3C:08:2F:3B:C2:3B:CB:35:43:83:46:34:81:F7:3B:55:E2:11:3A:25:51:E1:2A:3D:A9:B4:D4:2D:8C:B0:D8:45"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lasta.risemee.all",
+      "sha256_cert_fingerprints": [
+        "F0:3B:31:EA:40:87:22:21:9E:1B:6C:3F:89:80:32:A2:EC:A2:10:28:F9:3C:F3:F0:88:5B:CD:32:13:09:6A:EF"
+      ]
+    }
+  }
+]

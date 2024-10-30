@@ -1,0 +1,21 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &__spinner {
+    position: relative;
+    width: 40px;
+    height: auto;
+    animation: processing 1s linear infinite;
+  }
+}
+
+@keyframes processing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

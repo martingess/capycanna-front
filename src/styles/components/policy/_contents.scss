@@ -1,0 +1,73 @@
+.contents {
+  $_this: &;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid rgba(#afb6d7, .5);
+  border-bottom: 1px solid rgba(#afb6d7, .5);
+
+  @include for-desktop-up {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__headline {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    cursor: pointer;
+
+    @include for-desktop-up {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__icon {
+    color: #00c2ff;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    transition: transform .225s ease;
+  }
+
+  &__list {
+    display: none;
+    margin-top: 12px;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+
+  &__item {
+    a {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &.is-open {
+
+    #{$_this}__icon {
+      transform: rotate(0);
+    }
+  }
+}

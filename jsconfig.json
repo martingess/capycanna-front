@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@configs": ["./config.json"],
+      "@utils": ["./src/utils/index.js"],
+      "@errors": ["./src/errors/index.js"],
+      "@UI": ["./src/components/UI/index.js"],
+      "@store/*": ["./src/store/slices/*"],
+      "@scenes/*": ["./src/scenes/*"],
+      "@hooks": ["./src/hooks/index.js"],
+      "@partialsStyles/*": ["./src/styles/partials/*"],
+      "@styles/*": ["./src/styles/*"]
+    }
+  }
+}

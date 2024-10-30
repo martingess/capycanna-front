@@ -1,0 +1,101 @@
+.table {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-top: 20px;
+
+	table {
+		width: 100%;
+	}
+
+	thead {
+		background-color: #f4f7ff;
+	}
+
+	th {
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		text-align: left;
+		color: #6B7295;
+
+		@include for-desktop-up {
+			line-height: 20px;
+		}
+	}
+
+	td,
+	th {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	td {
+		font-size: 13px;
+		line-height: 18px;
+		color: #6B7295;
+		vertical-align: top;
+
+		@include for-desktop-up {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&--principles {
+
+		table {
+			min-width: 800px;
+
+			td,
+			th {
+
+				&:nth-child(1) {
+					width: 5%;
+				}
+
+				&:nth-child(2) {
+					width: 30%;
+				}
+
+				&:nth-child(3) {
+					width: 20%;
+				}
+
+				&:nth-child(4) {
+					width: 25%;
+				}
+
+				&:nth-child(5) {
+					width: 20%;
+				}
+			}
+		}
+	}
+
+	&--rights {
+
+		table {
+			min-width: 800px;
+			table-layout: fixed;
+
+			td,
+			th {
+				padding-left: 5px;
+				padding-right: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				vertical-align: top;
+
+				@include for-desktop-up {
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}

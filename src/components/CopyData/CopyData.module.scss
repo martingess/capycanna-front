@@ -1,0 +1,46 @@
+.copy {
+  color: #315097;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &__data {
+    border-radius: 16px;
+    background: #ebf3ff;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__data-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    word-break: break-all;
+  }
+  &__data-copy {
+    margin-left: 16px;
+    color: #315097;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    transition:
+      color 0.3s ease-out,
+      transform 0.3s ease-out;
+    transform: scale(1);
+    &:hover {
+      color: #32353b;
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+      color: #3aa36a;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import '@partialsStyles/mixins';
+
+.button {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  min-width: 160px;
+  border-radius: 8px;
+  background-color: #5483fc;
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out;
+
+  &:disabled {
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  &.load {
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 50px;
+    min-width: 175px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &:hover {
+    background-color: #3f6dfc;
+  }
+}
+
+.buttonCO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: #5483fc;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  height: 60px;
+  user-select: none;
+
+  span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      background: #315097;
+    }
+  }
+
+  &_isLoad {
+    width: 26px;
+    height: 26px;
+  }
+  &_checkout {
+    color: #ffffff;
+  }
+  &_icon {
+    margin-right: 12px;
+  }
+
+  &.isDisabled {
+    background: #c2dbff;
+    pointer-events: none;
+    span {
+      color: #99c2ff;
+    }
+  }
+}

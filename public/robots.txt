@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /
+Disallow: /*?*
+Disallow: /get
+Disallow: /getm
+
+
+User-agent: ia_archiver
+Disallow: /
+
+Host: risemee.com
+Sitemap: https://risemee.com/sitemap.xml

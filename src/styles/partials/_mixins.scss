@@ -1,0 +1,75 @@
+@mixin for-mobile-up-large {
+  @media (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 992px) and (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-down {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up-large {
+  @media (min-width: 1202px) {
+    @content;
+  }
+}
+
+@mixin hover-supported {
+  @media (min-width: 992px) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 0 none;
+    box-shadow:
+      0 0 0 2px #000000,
+      0 0 0 3px #ffffff;
+    border-radius: 2px;
+  }
+}
+
+@mixin no-focus-visible {
+  &:focus-visible {
+    outline: 0 none;
+    box-shadow: none;
+  }
+}
+
+@mixin gradient-text {
+  background-image: linear-gradient(90deg, #724fff 0%, #00c2ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+}
+
+/*** Styles added to fix the issue with zoom in on iphone ***/
+/* device-aspect-ratio: 2/3 - iPhone < 5 */
+/* device-aspect-ratio: 40/71 - iPhone 5, 5C, 5S, iPod Touch 5g */
+/* device-aspect-ratio: 375/667 - iPhone 6, iPhone 6s, iPhone 7 portrait/landscape */
+/* device-aspect-ratio: 9/16 - iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus portrait/landscape */
+@mixin disable-input-zoom {
+  @media screen and (device-aspect-ratio: 2/3),
+    screen and (device-aspect-ratio: 40/71),
+    screen and (device-aspect-ratio: 375/667),
+    screen and (device-aspect-ratio: 9/16) {
+    @content;
+  }
+}

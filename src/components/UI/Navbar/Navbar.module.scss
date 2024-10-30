@@ -1,0 +1,19 @@
+.navbar {
+  padding-top: 8px;
+  padding-bottom: 20px;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: calc(343px + 32px);
+  display: flex;
+  flex-direction: column;
+}

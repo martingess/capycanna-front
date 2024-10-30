@@ -1,0 +1,16 @@
+{
+  "DOMAIN": "risemee.com",
+  "DOMAIN_FRONT": "https://risemee.com",
+  "SENTRY_DSN": "https://6f08cd0425c1478baa2f49de74a4df87@sentry-education.bbrp.co/3",
+  "SENTRY_ENV": "dev",
+  "GTM_ID": "GTM-NTZXPHKN",
+  "GTAG_ID": "G-98ZHF92N6H",
+  "PIXEL_ID": 1148718652891691,
+  "SENTRY_AUTH_TOKEN": "244239e4605c4fa792dd688dfd2e6f426fddd46ed19646b1b31a3f2cba9ff160",
+  "SENTRY_DOMAIN": "https://sentry-education.bbrp.co",
+  "BACKEND_API": "https://st-risemee-back.dmr308.co",
+  "LOCAL_DEV": true,
+  "STRIPE_KEY": "pk_test_51PoSsbIAQpnzFIqI3IZoKZ26mE8IvkoztjFZCWr3SHllkfb9alUA3HxviCE6sVO6SokiuDMrAaEIkHFBSnEf3zoq00uOtfUm5J",
+  "APPLE_STORE": "https://apps.apple.com/us/app/risemee-learning-insights/id6618152029",
+  "GOOGLE_STORE": "https://play.google.com/store/apps/details?id=com.lasta.risemee.all"
+}

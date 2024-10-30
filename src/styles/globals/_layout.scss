@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #333537;
+  min-height: 100%;
+
+  &.modal {
+    overflow: hidden;
+  }
+}
+
+#__next {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.wrapper {
+  max-width: 1142px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import '../components/policy/index';
