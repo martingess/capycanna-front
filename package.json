@@ -12,21 +12,10 @@
     "devHttps": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier --check",
-    "lint": "eslint"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npm run lint",
-      "npm run prettier"
-    ]
-  },
-  "simple-git-hooks": {
-    "pre-commit": "cd source && npx lint-staged"
+    "prettier": "prettier --check"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
-    "@sentry/nextjs": "^7.119.2",
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.9.0",
     "axios": "^1.7.7",
@@ -50,7 +39,6 @@
     "eslint-config-prettier": "^9.1.0",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "sass": "^1.77.6",
-    "simple-git-hooks": "^2.11.1"
+    "sass": "^1.77.6"
   }
 }
