@@ -15,6 +15,11 @@
     "prettier": "prettier --check"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@iconify/react": "^5.0.2",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
     "@reduxjs/toolkit": "^2.2.5",
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.9.0",
@@ -31,6 +36,7 @@
     "react-redux": "^9.1.2",
     "react-spring": "^9.7.4",
     "sharp": "^0.33.5",
+    "sonner": "^1.5.0",
     "stylelint-scss": "^6.3.2",
     "validator": "^13.12.0"
   },

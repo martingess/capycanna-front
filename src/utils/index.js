@@ -6,3 +6,4 @@ export * from './getGeoData.js';
 export * from './email.js';
 export * from './eventDispatch.js';
 export * from './cryptography.js';
+export * from './withStyledToast.js';
