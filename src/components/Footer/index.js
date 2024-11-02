@@ -140,11 +140,14 @@ const Footer = () => {
               </div>
             </div>
             <div className={styles['subscription']}>
-              <div className={styles['subscription__title']} dangerouslySetInnerHTML={{ __html: t.raw('subscription.title') }} />
+              <div
+                className={styles['subscription__title']}
+                dangerouslySetInnerHTML={{ __html: t.raw('subscription.title') }}
+              />
               <TextField
                 variant="outlined"
                 placeholder="email@gmail.com"
-                sx={{
+                sx={(theme) => ({
                   '& .MuiOutlinedInput-root': {
                     borderRadius: '8px !important',
                     backgroundColor: '#fff',
@@ -153,6 +156,10 @@ const Footer = () => {
                     height: '40px',
                     paddingLeft: '5px',
                     overflow: 'hidden',
+                    [theme.breakpoints.up('md')]: {
+                      height: '50px',
+                      paddingLeft: '10px',
+                    },
                   },
                   '& .MuiOutlinedInput-notchedOutline': {
                     borderColor: 'transparent',
@@ -164,22 +171,31 @@ const Footer = () => {
                     color: '#221B15',
                     opacity: 0.5,
                     fontSize: '12px',
+                    [theme.breakpoints.up('md')]: {
+                      fontSize: '14px',
+                    },
                   },
-                }}
+                })}
                 InputProps={{
                   style: {
                     borderRadius: '8px !important',
                     paddingRight: '0',
                   },
                   endAdornment: (
-                    <InputAdornment position="end">
-                      <IconButton
-                        style={{
+                    <InputAdornment
+                      position="end"
+                      sx={(theme) => ({
+                        '& .MuiIconButton-root': {
                           backgroundColor: '#b8432b',
                           borderRadius: '0 8px 8px 0',
                           padding: '11px 11px',
-                        }}
-                      >
+                          [theme.breakpoints.up('md')]: {
+                            padding: '14px 11px',
+                          },
+                        },
+                      })}
+                    >
+                      <IconButton>
                         <ArrowForwardIosIcon style={{ color: '#fff', width: '16px' }} />
                       </IconButton>
                     </InputAdornment>
