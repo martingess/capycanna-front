@@ -54,3 +54,22 @@ export const IconTelegram = (props) => {
     </svg>
   );
 };
+
+export const IconArrowSmall = (props) => {
+  return (
+    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" {...props}>
+      <g clipPath="url(#clip0_2034_1322)">
+        <path
+          d="M12.5503 5.47164L7 11.0219L1.44975 5.47164"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2034_1322">
+          <rect width="14" height="14" fill="white" transform="translate(0 0.521973)" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};

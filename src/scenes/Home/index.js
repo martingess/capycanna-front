@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
-import TopSection from '@components/TopSection';
+import FaqSection from '@components/FaqSection';
 
 const HomePage = () => {
   const t = useTranslations('home');
@@ -11,7 +11,7 @@ const HomePage = () => {
         <title>{t('metaTitle')}</title>
         <meta name="description" content={t('metaDescription')} />
       </Head>
-      <TopSection trans="home" />
+      <FaqSection translation={'home'} />
     </>
   );
 };

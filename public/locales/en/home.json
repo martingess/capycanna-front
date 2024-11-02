@@ -4,5 +4,30 @@
     "topSection": {
         "title": "Transform Your Life And Achieve Your Goals",
         "description": "Please take a quick 3-minute quiz. It will help us understand your patterns and triggers to shape your personal development plan."
+    },
+    "faq": {
+        "list": [
+            {
+                "question": "Are there potential health risks if I use a vape pen?",
+                "answer": "<p>There are no health risks<\/p>"
+            },
+            {
+                "question": "Are there potential health risks if I use a vape pen?",
+                "answer": "<p>There are no health risks<\/p>"
+            },
+            {
+                "question": "Are there potential health risks if I use a vape pen?",
+                "answer": "<p>There are no health risks<\/p>"
+            },
+            {
+                "question": "Are there potential health risks if I use a vape pen?",
+                "answer": "<p>There are no health risks<\/p>"
+            },
+            {
+                "question": "Are there potential health risks if I use a vape pen?",
+                "answer": "<p>There are no health risks<\/p>"
+            }
+        ],
+        "title": "FAQ"
     }
 }
