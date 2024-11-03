@@ -46,6 +46,9 @@ const testimonials = [
 
 export default function Reviews({ translation }) {
   const t = useTranslations(translation || 'home');
+
+  const reviewsList = Array.isArray(t.raw('reviews.list')) ? t.raw('reviews.list') : [];
+
   return (
     <section className={styles.reviews}>
       <div className={styles['reviews__wrapper']}>
@@ -73,22 +76,25 @@ export default function Reviews({ translation }) {
             //   },
             // }}
           >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.name} className={styles['swiper__slide']}>
+            {reviewsList.map((review) => (
+              <SwiperSlide key={review.name} className={styles['swiper__slide']}>
                 <div className={styles['reviews__slide']}>
                   <div className={styles['reviews__slide_header']}>
                     <img
-                      src={testimonial.avatar}
-                      alt={`${testimonial.name}'s avatar`}
+                      src={review.image}
+                      alt={`${review.name}'s avatar`}
                       className={styles['reviews__slide_avatar']}
                     />
                     <div className={styles['reviews__slide_info']}>
-                      <h3>{testimonial.name}</h3>
-                      <p>5/5 ⭐⭐⭐⭐⭐</p>
+                      <h3>{review.name}</h3>
+                      <p>{review.stars} ⭐⭐⭐⭐⭐</p>
                     </div>
                   </div>
-                  <p className={styles['reviews__content']}>{testimonial.content}</p>
-                  <p className={styles['reviews__date']}>{testimonial.date}</p>
+                  <div
+                    className={styles['reviews__content']}
+                    dangerouslySetInnerHTML={{ __html: review.review }}
+                  />
+                  <p className={styles['reviews__date']}>{review.date}</p>
                 </div>
               </SwiperSlide>
             ))}
