@@ -62,7 +62,7 @@ export const IconArrowSmall = (props) => {
         <path
           d="M12.5503 5.47164L7 11.0219L1.44975 5.47164"
           stroke="currentColor"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </g>
       <defs>

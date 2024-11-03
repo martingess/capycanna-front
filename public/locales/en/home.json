@@ -5,6 +5,47 @@
         "title": "Transform Your Life And Achieve Your Goals",
         "description": "Please take a quick 3-minute quiz. It will help us understand your patterns and triggers to shape your personal development plan."
     },
+    "reviews": {
+        "title": "Reviews",
+        "description": "Our customers love our products and are willing to share feedback about them. Thank you for every review!",
+        "list": [
+            {
+                "name": "Marfa Muratova",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "image": "https://via.placeholder.com/150",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Theresa Webb",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "image": "https://via.placeholder.com/150",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Brooklyn Simmons",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat </p>",
+                "image": "https://via.placeholder.com/150",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Courtney Henry",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra.</p>",
+                "image": "https://via.placeholder.com/150",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Theresa Webb",
+                "review": "<p>Est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "image": "https://via.placeholder.com/150",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            }
+        ]
+    },
     "faq": {
         "list": [
             {
