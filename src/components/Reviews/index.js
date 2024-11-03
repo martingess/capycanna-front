@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslations } from 'next-intl';
 import styles from './Reviews.module.scss';
+import Image from 'next/image';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import { Pagination } from 'swiper/modules';
@@ -80,7 +81,9 @@ export default function Reviews({ translation }) {
               <SwiperSlide key={review.name} className={styles['swiper__slide']}>
                 <div className={styles['reviews__slide']}>
                   <div className={styles['reviews__slide_header']}>
-                    <img
+                    <Image
+                      width={60}
+                      height={60}
                       src={review.image}
                       alt={`${review.name}'s avatar`}
                       className={styles['reviews__slide_avatar']}
