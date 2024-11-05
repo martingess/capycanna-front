@@ -3,13 +3,19 @@ import styles from './Buttons.module.scss';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-export const Button = ({ children, load, className, outside, ...props }) => {
+export const Button = ({ children, load, className, outside, small, ...props }) => {
   return outside ? (
-    <a className={clsx(styles.button, className, { [styles.load]: load })} {...props}>
+    <a
+      className={clsx(styles.button, className, { [styles.load]: load, [styles.small]: small })}
+      {...props}
+    >
       <span>{children}</span>
     </a>
   ) : (
-    <Link className={clsx(styles.button, className, { [styles.load]: load })} {...props}>
+    <Link
+      className={clsx(styles.button, className, { [styles.load]: load, [styles.small]: small })}
+      {...props}
+    >
       <span>{children}</span>
     </Link>
   );

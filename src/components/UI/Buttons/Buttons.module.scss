@@ -1,19 +1,20 @@
 @import '@partialsStyles/mixins';
 
 .button {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-family: 'Geologica', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
-  height: 40px;
+  height: 50px;
   min-width: 160px;
   border-radius: 8px;
-  background-color: #5483fc;
+  background-color: #c54f1d;
   transition:
     background-color 0.3s ease-out,
     color 0.3s ease-out;
@@ -36,7 +37,17 @@
   }
 
   &:hover {
-    background-color: #3f6dfc;
+    background-color: #7b2804;
+  }
+  &.small {
+    height: 40px;
+    min-width: 107px;
+    font-size: 12px;
+    @media (min-width: 1150px) {
+      height: 50px;
+      min-width: 141px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -48,7 +59,7 @@
   padding: 12px 32px;
   cursor: pointer;
   border-radius: 16px;
-  background: #5483fc;
+  background: #c54f1d;
   transition:
     background 0.3s ease-in-out,
     color 0.3s ease-in-out;
@@ -64,7 +75,7 @@
 
   @media (min-width: 768px) {
     &:hover {
-      background: #315097;
+      background: #7b2804;
     }
   }
 

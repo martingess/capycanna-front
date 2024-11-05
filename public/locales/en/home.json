@@ -5,6 +5,27 @@
         "title": "Transform Your Life And Achieve Your Goals",
         "description": "Please take a quick 3-minute quiz. It will help us understand your patterns and triggers to shape your personal development plan."
     },
+    "chips": {
+        "title": "Our chips",
+        "list": [
+            {
+                "title": "Bonus program",
+                "text": "<p>Our rewards program is a class act for our customers. For every purchase, you get a capybara and you get bonuses, for which you can buy something else!</p>",
+                "image": "/images/home/chips1.jpg",
+                "imageMobile": "/images/home/chips1-mob.jpg",
+                "link": "/bonus-program",
+                "linkText": "Read More"
+            },
+            {
+                "title": "Awesome sticker pack as a gift",
+                "text": "<p>We give an awesome branded capybaras sticker pack when you place your first order so that you have fond memories of us!</p>",
+                "image": "/images/home/chips2.jpg",
+                "imageMobile": "/images/home/chips2-mob.jpg",
+                "link": "/bonus-program",
+                "linkText": "Read More"
+            }
+        ]
+    },
     "reviews": {
         "title": "Reviews",
         "description": "Our customers love our products and are willing to share feedback about them. Thank you for every review!",
