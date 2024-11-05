@@ -5,6 +5,30 @@
         "title": "Transform Your Life And Achieve Your Goals",
         "description": "Please take a quick 3-minute quiz. It will help us understand your patterns and triggers to shape your personal development plan."
     },
+    "features": {
+        "list": [
+            {
+                "title": "Sticker pack for the first order",
+                "image": "/images/home/features/sticker.png",
+                "imageBg": "/images/home/features/sticker-bg.png"
+            },
+            {
+                "title": "Bonus program",
+                "image": "/images/home/features/bonus.png",
+                "imageBg": "/images/home/features/bonus-bg.png"
+            },
+            {
+                "title": "Free delivery from 200 euros",
+                "image": "/images/home/features/delivery.png",
+                "imageBg": "/images/home/features/delivery-bg.png"
+            },
+            {
+                "title": "Same day shipment if ordered by 12:00 am",
+                "image": "/images/home/features/ordered.png",
+                "imageBg": "/images/home/features/ordered-bg.png"
+            }
+        ]
+    },
     "chips": {
         "title": "Our chips",
         "list": [
@@ -25,6 +49,11 @@
                 "linkText": "Read More"
             }
         ]
+    },
+    "step": {
+        "title": "Step into the future",
+        "text": "<p>Our company cares about your health and well-being by offering only the highest quality products to support your physical and emotional well-being. We specialize in natural supplements to help you achieve harmony with yourself and the world around you. Whether you need a relaxing tea or a revitalizing oil, we have everything you need to support your health.</p><p>Our experience in the health and wellbeing industry exceeds 2 years, and in that time we have improved and refined our range, making it even more effective and safer for our customers. We only work with trusted suppliers to ensure that every product that reaches you meets the highest quality standards. Our goal is to help you feel better and live a full life without unnecessary health concerns.</p>",
+        "image": "/images/home/step.png"
     },
     "reviews": {
         "title": "Reviews",
