@@ -12,35 +12,42 @@
             {
                 "name": "Marfa Muratova",
                 "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
-                "image": "/images/Ellipse457.jpg",
+                "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
                 "name": "Theresa Webb",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
-                "image": "/images/Ellipse457.jpg",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
                 "name": "Brooklyn Simmons",
                 "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat </p>",
-                "image": "/images/Ellipse457.jpg",
+                "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
                 "name": "Courtney Henry",
                 "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra.</p>",
-                "image": "/images/Ellipse457.jpg",
+                "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
                 "name": "Theresa Webb",
                 "review": "<p>Est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
-                "image": "/images/Ellipse457.jpg",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Theresa Webb",
+                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             }
