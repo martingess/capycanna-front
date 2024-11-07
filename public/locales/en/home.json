@@ -29,6 +29,61 @@
             }
         ]
     },
+    "categories": {
+        "title": "Categories",
+        "description": "We can offer only the finest products for you",
+        "list": [
+            {
+                "title": "Everage",
+                "imageBg": "/images/categories/everage.png",
+                "image": "/images/categories/everage-preview.png",
+                "link": "/products",
+                "type": "everage"
+            },
+            {
+                "title": "Light",
+                "imageBg": "/images/categories/light.png",
+                "image": "/images/categories/light-preview.png",
+                "link": "/products",
+                "type": "light"
+            },
+            {
+                "title": "Strong",
+                "imageBg": "/images/categories/strong.png",
+                "image": "/images/categories/strong-preview.png",
+                "link": "/products",
+                "type": "strong"
+            },
+            {
+                "title": "Starter pack",
+                "imageBg": "/images/categories/starter.png",
+                "image": "/images/categories/starter-preview.png",
+                "link": "/products",
+                "type": "starter"
+            },
+            {
+                "title": "For health",
+                "imageBg": "/images/categories/health.png",
+                "image": "/images/categories/health-preview.png",
+                "link": "/products",
+                "type": "health"
+            },
+            {
+                "title": "For sleeping",
+                "imageBg": "/images/categories/sleeping.png",
+                "image": "/images/categories/sleeping-preview.png",
+                "link": "/products",
+                "type": "sleeping"
+            },
+            {
+                "title": "Pain",
+                "imageBg": "/images/categories/pain.png",
+                "image": "/images/categories/pain-preview.png",
+                "link": "/products",
+                "type": "pain"
+            }
+        ]
+    },
     "chips": {
         "title": "Our chips",
         "list": [

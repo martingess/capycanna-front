@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import FaqSection from '@components/FaqSection';
+import Categories from '@components/Categories';
 import Reviews from '@components/Reviews';
 import Chips from '@components/Chips';
 import Features from '@components/Features';
@@ -16,6 +17,7 @@ const HomePage = () => {
         <meta name="description" content={t('metaDescription')} />
       </Head>
       <Features translation={'home'} />
+      <Categories translation={'home'} />
       <Chips translation={'home'} />
       <Step translation={'home'} />
       <Reviews translation={'home'} />

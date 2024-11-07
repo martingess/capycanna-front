@@ -1,0 +1,217 @@
+.categories {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    color: #221b15;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 14px;
+    @media (min-width: 960px) {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    color: #221b15;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 24px;
+    @media (min-width: 960px) {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+  @media (min-width: 960px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  &__wrapper {
+    max-width: 1620px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  &__items {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: 960px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 3.435px;
+    background-color: #fff9ef;
+    position: relative;
+    overflow: hidden;
+    min-height: 111px;
+    @media (min-width: 960px) {
+      min-height: 256px;
+      padding: 24px;
+    }
+    &-title {
+      position: relative;
+      z-index: 4;
+      color: #221b15;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      @media (min-width: 960px) {
+        font-size: 26px;
+      }
+    }
+    &-bg {
+      position: absolute;
+      z-index: 1;
+    }
+    &-preview {
+      position: absolute;
+      z-index: 2;
+      width: 85px;
+      height: auto;
+      top: 6px;
+      right: 6px;
+      @media (min-width: 960px) {
+        top: 14px;
+        right: 14px;
+        width: 199px;
+      }
+    }
+
+    &.everage {
+      background-color: #fff9ef;
+      .categories__item-bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+      .categories__item-preview {
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 133px;
+        height: auto;
+        @media (min-width: 960px) {
+          width: 308px;
+          top: 18px;
+        }
+      }
+    }
+    &.light {
+      background-color: #fff9ef;
+      .categories__item-bg {
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+      }
+    }
+    &.strong {
+      background-color: #f1ffef;
+      .categories__item-bg {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.health {
+      background-color: #fff9ef;
+      @media (min-width: 960px) {
+        &.health {
+          grid-column: 4;
+          grid-row: 1;
+        }
+      }
+
+      .categories__item-bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.starter {
+      background-color: #f1ffef;
+      @media (min-width: 960px) {
+        &.starter {
+          grid-column: 3;
+          grid-row: 1;
+        }
+      }
+      .categories__item-bg {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.sleeping {
+      background-color: #fff9ef;
+      .categories__item-bg {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.pain {
+      background-color: #f1ffef;
+      .categories__item-bg {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:nth-child(1) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    &:nth-child(2) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:nth-child(3) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:nth-child(4) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:nth-child(5) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:nth-child(6) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:nth-child(7) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+}
