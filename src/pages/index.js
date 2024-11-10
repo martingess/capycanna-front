@@ -1,5 +1,4 @@
 import HomePage from '@scenes/Home';
-
 export const getServerSideProps = async ({ locale }) => {
   return {
     props: {

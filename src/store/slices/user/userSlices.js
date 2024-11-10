@@ -3,10 +3,13 @@ import { trimEmail } from '@utils';
 
 const initialState = {
   currency: {
-    code: 'USD',
-    symbol: '$',
+    code: 'EUR',
+    symbol: '€',
   },
-  country: null,
+  country: {
+    code: 'CZ',
+    name: 'Česko',
+  },
   email: null,
   device: null,
 };

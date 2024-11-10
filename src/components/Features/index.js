@@ -19,8 +19,8 @@ const Features = ({ translation }) => {
                 className={styles['features__item-img']}
               />
               <Image
-                width={100}
-                height={100}
+                width={382}
+                height={308}
                 alt={`bg-${title}`}
                 src={imageBg}
                 className={styles['features__item-bg']}

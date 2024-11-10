@@ -10,6 +10,7 @@
       "@store/*": ["./src/store/slices/*"],
       "@scenes/*": ["./src/scenes/*"],
       "@hooks": ["./src/hooks/index.js"],
+      "@data": ["./src/data/index.js"],
       "@partialsStyles/*": ["./src/styles/partials/*"],
       "@styles/*": ["./src/styles/*"]
     }

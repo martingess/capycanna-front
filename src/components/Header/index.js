@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Button } from '@UI';
+import Currency from '@components/Currency';
+import Country from '@components/Country';
 import { useTranslations } from 'next-intl';
 import cn from 'classnames';
 import styles from './Header.module.scss';
@@ -51,6 +53,10 @@ const Header = () => {
             <Link href="/contact" className={styles['header__top-link']}>
               {t('contactUs')}
             </Link>
+          </div>
+          <div className={styles['header__data']}>
+            <Currency />
+            <Country />
           </div>
         </div>
       </div>

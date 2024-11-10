@@ -7,7 +7,7 @@
     background-color: #fff;
     padding-top: 12px;
     padding-bottom: 12px;
-    position: relative;
+    width: 100%;
     &::before {
       content: '';
       position: absolute;
@@ -28,6 +28,10 @@
       max-width: 1620px;
       margin: auto;
       padding: 0 10px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     &-links {
       display: flex;
@@ -42,8 +46,13 @@
       line-height: normal;
       transition: color 0.3s ease-out;
       &:hover {
-        color: #C54F1D;
+        color: #c54f1d;
       }
     }
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: 36px;
   }
 }
