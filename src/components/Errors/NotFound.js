@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@UI';
 import cn from 'classnames';
 import styles from './Errors.module.scss';
+import Image from 'next/image';
 
 export const NotFound = () => {
   const t = useTranslations('notFound');
@@ -15,11 +16,9 @@ export const NotFound = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <section className={styles['error-404']}>
-        <div className={cn('wrapper', styles['error-404__wrapper'])}>
-          <h2 className={cn('headline', 'headline--lvl2', styles['error-404__main'])}>404</h2>
-          <h2 className={cn('headline', 'headline--lvl2', styles['error-404__headline'])}>
-            {t('pageNotFound')}
-          </h2>
+        <div className={styles['error-404__wrapper']}>
+          <h2 className={styles['error-404__main']}>404</h2>
+          <h2 className={styles['error-404__headline']}>{t('pageNotFound')}</h2>
           <p className={styles['error-404__text']}>{t('errorHasOccurred')}</p>
           <Button
             theme="orange-border-shadow"
@@ -30,6 +29,20 @@ export const NotFound = () => {
             {t('toHomePage')}
           </Button>
         </div>
+        <Image
+          className={styles['error-404__bg-left']}
+          src={'/images/404-left.png'}
+          alt="404-left"
+          width={580}
+          height={618}
+        />
+        <Image
+          className={styles['error-404__bg-right']}
+          src={'/images/404-right.png'}
+          alt="404-right"
+          width={580}
+          height={618}
+        />
       </section>
     </>
   );
