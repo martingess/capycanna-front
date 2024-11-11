@@ -1,15 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { Button } from '@UI';
+import { IconPercent } from '@UI';
 import Currency from '@components/Currency';
 import Country from '@components/Country';
 import { useTranslations } from 'next-intl';
+import LoginButton from '@components/LoginButton';
+import FavoritesButton from '@components/FavoritesButton';
+import CartButton from '@components/CartButton';
 import cn from 'classnames';
 import styles from './Header.module.scss';
 
 const Header = () => {
   const t = useTranslations('header');
+  const tCommon = useTranslations('common');
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -61,7 +65,29 @@ const Header = () => {
         </div>
       </div>
       <div className={styles['header__bottom']}>
-        <div className={styles['header__bottom-wrapper']}></div>
+        <div className={styles['header__bottom-wrapper']}>
+          <div className={styles['header__bottom-left']}>
+            <Link href="/" className={styles['header__logo']}>
+              <Image
+                src="/images/logo.svg"
+                alt="Logo"
+                width={54}
+                height={45}
+                className={styles['header__logo-img']}
+              />
+              <p className={styles['header__logo-text']}>СapyCannа</p>
+            </Link>
+            <Link href="/sale" className={styles['header__sale']}>
+              <IconPercent className={styles['header__sale-icon']} />
+              {tCommon('sale')}
+            </Link>
+          </div>
+          <div className={styles['header__bottom-right']}>
+            <LoginButton />
+            <FavoritesButton />
+            <CartButton />
+          </div>
+        </div>
       </div>
     </header>
   );

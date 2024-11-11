@@ -48,15 +48,17 @@
     background: #fff;
     top: 100%;
     left: 50%;
+    width: 80px;
     transform: translateX(-50%);
     padding: 14px 10px 14px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     transition: all 0.3s ease-out;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    gap: 10px;
     &::before {
       content: '';
       position: absolute;
@@ -69,6 +71,7 @@
     margin-bottom: 9px;
     cursor: pointer;
     transition: color 0.3s ease-out;
+
     &.active {
       color: #c54f1d;
     }
