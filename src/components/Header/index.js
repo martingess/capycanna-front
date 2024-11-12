@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { IconPercent } from '@UI';
+import { IconPercent, IconPipette, IconArrowDown, IconDrop, IconFlask } from '@UI';
 import Currency from '@components/Currency';
 import Country from '@components/Country';
 import { useTranslations } from 'next-intl';
@@ -15,6 +15,7 @@ const Header = () => {
   const t = useTranslations('header');
   const tCommon = useTranslations('common');
   const [isScrolled, setIsScrolled] = useState(false);
+  const productsItems = Array.isArray(t.raw('productsItems')) ? t.raw('productsItems') : [];
 
   const handleScroll = () => {
     if (window.scrollY > 30) {
@@ -82,10 +83,51 @@ const Header = () => {
               {tCommon('sale')}
             </Link>
           </div>
+          <menu className={styles['menu']}>
+            <div className={styles['menu__item']}>
+              <IconPipette className={styles['menu__item-icon']} />
+              <p className={styles['menu__item-text']}>{t('products')}</p>
+              <IconArrowDown className={styles['menu__item-arrow']} />
+            </div>
+            <div className={styles['menu__item']}>
+              <IconDrop className={styles['menu__item-icon']} />
+              <p className={styles['menu__item-text']}>{t('cannabinoids')}</p>
+              <IconArrowDown className={styles['menu__item-arrow']} />
+            </div>
+            <div className={styles['menu__item']}>
+              <IconFlask className={styles['menu__item-icon']} />
+              <p className={styles['menu__item-text']}>{t('findSomething')}</p>
+              <IconArrowDown className={styles['menu__item-arrow']} />
+            </div>
+          </menu>
           <div className={styles['header__bottom-right']}>
             <LoginButton />
             <FavoritesButton />
             <CartButton />
+          </div>
+        </div>
+      </div>
+      <div className={styles['trailer']}>
+        <div className={styles['trailer__categories']}>
+          <div className={styles['trailer__wrapper']}>
+            <div className={styles['trailer__items']}>
+              {productsItems.map(({ name, description, link, image }) => (
+                <div className={styles['trailer__item']} key={name}>
+                  <Link href={link} className={styles['trailer__item-link']} />
+                  <Image
+                    src={image}
+                    alt={name}
+                    width={100}
+                    height={100}
+                    className={styles['trailer__item-img']}
+                  />
+                  <div className={styles['trailer__item-content']}>
+                    <p className={styles['trailer__item-title']}>{name}</p>
+                    <p className={styles['trailer__item-description']}>{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

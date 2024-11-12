@@ -21,9 +21,6 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   trailingSlash: false,
-  sentry: {
-    hideSourceMaps: true,
-  },
   ...(ENV_STATE !== 'prod' ? { rewrites } : {}),
 };
 
