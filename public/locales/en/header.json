@@ -8,60 +8,126 @@
     "products": "Products",
     "cannabinoids": "Cannabinoids",
     "findSomething": "Find something for you",
-    "productsItems": [
-        {
-            "name": "Vape",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/vape",
-            "image": "/images/header/vape.png"
-        },
-        {
-            "name": "Flowers",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/flowers",
-            "image": "/images/header/flowers.png"
-        },
-        {
-            "name": "Cartridge",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/cartridge",
-            "image": "/images/header/cartridge.png"
-        },
-        {
-            "name": "Hash",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/hash",
-            "image": "/images/header/hash.png"
-        },
-        {
-            "name": "Edibles",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/edibles",
-            "image": "/images/header/edibles.png"
-        },
-        {
-            "name": "Certificates",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/certificates",
-            "image": "/images/header/certificates.png"
-        },
-        {
-            "name": "Pen with cartridge",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/pen-cartridge",
-            "image": "/images/header/pen-cartridge.png"
-        },
-        {
-            "name": "Oil",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/oil",
-            "image": "/images/header/oil.png"
-        },
-        {
-            "name": "New products",
-            "description": "Our new CBD drops will make your mood perfect.",
-            "link": "/products/new-products",
-            "image": "/images/header/new-products.png"
-        }
-    ]
+    "productsItems": {
+        "products": [
+            {
+                "name": "Vape",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/vape",
+                "image": "/images/header/vape.png"
+            },
+            {
+                "name": "Flowers",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/flowers",
+                "image": "/images/header/flowers.png"
+            },
+            {
+                "name": "Cartridge",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/cartridge",
+                "image": "/images/header/cartridge.png"
+            },
+            {
+                "name": "Hash",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/hash",
+                "image": "/images/header/hash.png"
+            },
+            {
+                "name": "Edibles",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/edibles",
+                "image": "/images/header/edibles.png"
+            },
+            {
+                "name": "Certificates",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/certificates",
+                "image": "/images/header/certificates.png"
+            },
+            {
+                "name": "Pen with cartridge",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/pen-cartridge",
+                "image": "/images/header/pen-cartridge.png"
+            },
+            {
+                "name": "Oil",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/oil",
+                "image": "/images/header/oil.png"
+            },
+            {
+                "name": "New products",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/new-products",
+                "image": "/images/header/new-products.png"
+            }
+        ],
+        "cannabinoids": [
+            {
+                "name": "Hash",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/hash",
+                "image": "/images/header/hash.png"
+            },
+            {
+                "name": "Edibles",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/edibles",
+                "image": "/images/header/edibles.png"
+            },
+            {
+                "name": "Certificates",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/certificates",
+                "image": "/images/header/certificates.png"
+            },
+            {
+                "name": "Pen with cartridge",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/pen-cartridge",
+                "image": "/images/header/pen-cartridge.png"
+            }
+        ],
+        "findSomething": [
+            {
+                "name": "Pen with cartridge",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/pen-cartridge",
+                "image": "/images/header/pen-cartridge.png"
+            },
+            {
+                "name": "Oil",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/oil",
+                "image": "/images/header/oil.png"
+            },
+            {
+                "name": "New products",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/new-products",
+                "image": "/images/header/new-products.png"
+            },
+            {
+                "name": "Vape",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/vape",
+                "image": "/images/header/vape.png"
+            },
+            {
+                "name": "Flowers",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/flowers",
+                "image": "/images/header/flowers.png"
+            },
+            {
+                "name": "Cartridge",
+                "description": "Our new CBD drops will make your mood perfect.",
+                "link": "/products/cartridge",
+                "image": "/images/header/cartridge.png"
+            }
+        ]
+    }
 }

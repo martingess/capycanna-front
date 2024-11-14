@@ -12,10 +12,10 @@
     "perDay": "per day",
     "popular": "Most popular",
     "secure": "Pay safe & secure",
-    "secureDescription": "Discount has been automatically applied to your intro offer (first subscription). Please note, your subscription will renew at the full price of <b>$79.99</b> after the initial term. To manage your subscription, visit your personal account in the Risemee app."
+    "secureDescription": "Discount has been automatically applied to your intro offer (first subscription). Please note, your subscription will renew at the full price of <b>$79.99</b> after the initial term. To manage your subscription, visit your personal account in the Capycanna app."
   },
   "get": {
-    "title": "What you get with Risemee",
+    "title": "What you get with Capycanna",
     "items": [
       "1000+ non-fiction book summaries",
       "5000+ life-changing insights",
@@ -33,11 +33,11 @@
     "title": "We are ready to answer your questions",
     "items": [
       {
-        "question": "Why do I need the Risemee?",
-        "answer": "<p>On the Risemee app, you will find 15-minute summaries of the world’s best nonfiction books. We’ve remastered all titles into short reads with key insights and tips. It will help you read more, learn something new every day, and decide what books you are most interested in reading.</p>"
+        "question": "Why do I need the Capycanna?",
+        "answer": "<p>On the Capycanna app, you will find 15-minute summaries of the world’s best nonfiction books. We’ve remastered all titles into short reads with key insights and tips. It will help you read more, learn something new every day, and decide what books you are most interested in reading.</p>"
       },
       {
-        "question": "How do I get access to the Risemee app?",
+        "question": "How do I get access to the Capycanna app?",
         "answer": "<p>After you fill in your email address, a mail with a temporary password and download links to App Store and Google Play will be in your inbox. Just install the app, and you will be able to access your account.</p>"
       },
       {
@@ -47,7 +47,7 @@
     ]
   },
   "reviews": {
-    "title": "People love the Risemee",
+    "title": "People love the Capycanna",
     "description": "Become a member of our global community of <span>40 million people</span>",
     "items": [
       {
@@ -60,13 +60,13 @@
         "img": "/images/checkout/review-2.png",
         "name": "Emilia Riddle",
         "time": "6 months with app",
-        "review": "<p>Risemee app is one of the best investments I’ve ever made into myself outside of spiritual stuff. Summarized books that you can read or listen to!</p>"
+        "review": "<p>Capycanna app is one of the best investments I’ve ever made into myself outside of spiritual stuff. Summarized books that you can read or listen to!</p>"
       },
       {
         "img": "/images/checkout/review-3.png",
         "name": "Jasmine Ross",
         "time": "9 months with app",
-        "review": "<p>In case you often find a book you just started — the Risemee app is for you. It’s an audiobook reader that summarized all the key lessons in that great book you’ve been aspiring to read, but you didn’t finish.</p>"
+        "review": "<p>In case you often find a book you just started — the Capycanna app is for you. It’s an audiobook reader that summarized all the key lessons in that great book you’ve been aspiring to read, but you didn’t finish.</p>"
       }
     ]
   },

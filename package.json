@@ -1,5 +1,5 @@
 {
-  "name": "risemee",
+  "name": "capycanna",
   "version": "1.0.3",
   "private": true,
   "browserslist": [
@@ -11,6 +11,7 @@
     "dev": "next dev",
     "devHttps": "next dev --experimental-https",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "prettier": "prettier --check"
   },
@@ -30,6 +31,7 @@
     "framer-motion": "^11.3.24",
     "next": "14.2.4",
     "next-intl": "^3.23.5",
+    "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",

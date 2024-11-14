@@ -15,7 +15,9 @@ const Header = () => {
   const t = useTranslations('header');
   const tCommon = useTranslations('common');
   const [isScrolled, setIsScrolled] = useState(false);
-  const productsItems = Array.isArray(t.raw('productsItems')) ? t.raw('productsItems') : [];
+  const [openedMenu, setOpenedMenu] = useState(false);
+  const [typeMenu, setTypeMenu] = useState(null);
+  const productsItems = typeof t.raw('productsItems') === 'object' ? t.raw('productsItems') : {};
 
   const handleScroll = () => {
     if (window.scrollY > 30) {
@@ -31,10 +33,27 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleMenu = (menuType) => () => {
+    if (typeMenu === menuType) {
+      setOpenedMenu(false);
+      setTypeMenu(null);
+      return;
+    } else {
+      setOpenedMenu(true);
+      setTypeMenu(menuType);
+    }
+  };
+  const handleClickCloseMenu = () => {
+    setOpenedMenu(false);
+    setTypeMenu(null);
+  };
+
   return (
     <header
       className={cn(styles['header'], {
         [styles['sticky']]: isScrolled,
+        [styles['openedMenu']]: openedMenu,
       })}
     >
       <div className={styles['header__top']}>
@@ -84,17 +103,32 @@ const Header = () => {
             </Link>
           </div>
           <menu className={styles['menu']}>
-            <div className={styles['menu__item']}>
+            <div
+              className={cn(styles['menu__item'], {
+                [styles['active']]: typeMenu === 'products',
+              })}
+              onClick={handleMenu('products')}
+            >
               <IconPipette className={styles['menu__item-icon']} />
               <p className={styles['menu__item-text']}>{t('products')}</p>
               <IconArrowDown className={styles['menu__item-arrow']} />
             </div>
-            <div className={styles['menu__item']}>
+            <div
+              className={cn(styles['menu__item'], {
+                [styles['active']]: typeMenu === 'cannabinoids',
+              })}
+              onClick={handleMenu('cannabinoids')}
+            >
               <IconDrop className={styles['menu__item-icon']} />
               <p className={styles['menu__item-text']}>{t('cannabinoids')}</p>
               <IconArrowDown className={styles['menu__item-arrow']} />
             </div>
-            <div className={styles['menu__item']}>
+            <div
+              className={cn(styles['menu__item'], {
+                [styles['active']]: typeMenu === 'findSomething',
+              })}
+              onClick={handleMenu('findSomething')}
+            >
               <IconFlask className={styles['menu__item-icon']} />
               <p className={styles['menu__item-text']}>{t('findSomething')}</p>
               <IconArrowDown className={styles['menu__item-arrow']} />
@@ -107,27 +141,80 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={styles['trailer']}>
-        <div className={styles['trailer__categories']}>
-          <div className={styles['trailer__wrapper']}>
-            <div className={styles['trailer__items']}>
-              {productsItems.map(({ name, description, link, image }) => (
-                <div className={styles['trailer__item']} key={name}>
-                  <Link href={link} className={styles['trailer__item-link']} />
-                  <Image
-                    src={image}
-                    alt={name}
-                    width={100}
-                    height={100}
-                    className={styles['trailer__item-img']}
-                  />
-                  <div className={styles['trailer__item-content']}>
-                    <p className={styles['trailer__item-title']}>{name}</p>
-                    <p className={styles['trailer__item-description']}>{description}</p>
-                  </div>
+      <div className={styles['trailer']} onClick={handleClickCloseMenu}>
+        <div
+          className={cn(styles['trailer__categories'], {
+            [styles['active']]: typeMenu === 'products',
+          })}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className={styles['trailer__items']}>
+            {productsItems['products'].map(({ name, description, link, image }) => (
+              <div className={styles['trailer__item']} key={name}>
+                <Link href={link} className={styles['trailer__item-link']} />
+                <Image
+                  src={image}
+                  alt={name}
+                  width={100}
+                  height={100}
+                  className={styles['trailer__item-img']}
+                />
+                <div className={styles['trailer__item-content']}>
+                  <p className={styles['trailer__item-title']}>{name}</p>
+                  <p className={styles['trailer__item-description']}>{description}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          className={cn(styles['trailer__categories'], {
+            [styles['active']]: typeMenu === 'cannabinoids',
+          })}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className={styles['trailer__items']}>
+            {productsItems['cannabinoids'].map(({ name, description, link, image }) => (
+              <div className={styles['trailer__item']} key={name}>
+                <Link href={link} className={styles['trailer__item-link']} />
+                <Image
+                  src={image}
+                  alt={name}
+                  width={100}
+                  height={100}
+                  className={styles['trailer__item-img']}
+                />
+                <div className={styles['trailer__item-content']}>
+                  <p className={styles['trailer__item-title']}>{name}</p>
+                  <p className={styles['trailer__item-description']}>{description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          className={cn(styles['trailer__categories'], {
+            [styles['active']]: typeMenu === 'findSomething',
+          })}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className={styles['trailer__items']}>
+            {productsItems['findSomething'].map(({ name, description, link, image }) => (
+              <div className={styles['trailer__item']} key={name}>
+                <Link href={link} className={styles['trailer__item-link']} />
+                <Image
+                  src={image}
+                  alt={name}
+                  width={100}
+                  height={100}
+                  className={styles['trailer__item-img']}
+                />
+                <div className={styles['trailer__item-content']}>
+                  <p className={styles['trailer__item-title']}>{name}</p>
+                  <p className={styles['trailer__item-description']}>{description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

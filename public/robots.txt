@@ -1,12 +1,14 @@
-User-Agent: *
+# *
+User-agent: *
 Allow: /
-Disallow: /*?*
-Disallow: /get
-Disallow: /getm
 
+# Googlebot
+User-agent: Googlebot
+Allow: /
 
-User-agent: ia_archiver
-Disallow: /
+# Host
+Host: https://capycanna.com
 
-Host: risemee.com
-Sitemap: https://risemee.com/sitemap.xml
+# Sitemaps
+Sitemap: https://capycanna.com/sitemap.xml
+Sitemap: https://capycanna.com/sitemap-0.xml

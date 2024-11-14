@@ -1,6 +1,6 @@
 export const loadState = () => {
   try {
-    const serializedState = localStorage.getItem('risemeeState');
+    const serializedState = localStorage.getItem('capycannaState');
     if (serializedState === null) {
       return undefined;
     }
@@ -13,7 +13,7 @@ export const loadState = () => {
 export const saveState = (state) => {
   try {
     const serializedState = JSON.stringify(state);
-    localStorage.setItem('risemeeState', serializedState);
+    localStorage.setItem('capycannaState', serializedState);
   } catch (err) {
     return undefined;
   }
@@ -21,7 +21,7 @@ export const saveState = (state) => {
 
 export const loadStateSession = () => {
   try {
-    const serializedState = sessionStorage.getItem(`risemeeSession`);
+    const serializedState = sessionStorage.getItem(`capycannaSession`);
     if (serializedState === null) {
       return undefined;
     }
@@ -34,7 +34,7 @@ export const loadStateSession = () => {
 export const saveStateSession = (state) => {
   try {
     const serializedState = JSON.stringify(state);
-    sessionStorage.setItem(`risemeeSession`, serializedState);
+    sessionStorage.setItem(`capycannaSession`, serializedState);
   } catch (err) {
     return undefined;
   }
