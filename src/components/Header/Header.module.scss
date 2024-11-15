@@ -92,11 +92,17 @@
       display: flex;
       align-items: center;
       gap: 42px;
+      @media (max-width: 1111px) {
+        gap: 8px;
+      }
     }
     &-right {
       display: flex;
       align-items: center;
       gap: 13px;
+      @media (max-width: 1111px) {
+        gap: 8px;
+      }
     }
   }
 
@@ -122,6 +128,9 @@
       font-style: normal;
       font-weight: 700;
       line-height: 110%;
+      @media (max-width: 1320px) {
+        display: none;
+      }
     }
     &:hover {
       .header__logo-text {
@@ -185,6 +194,9 @@
   display: flex;
   align-items: center;
   gap: 36px;
+  @media (max-width: 1050px) {
+    gap: 16px;
+  }
   &__item {
     display: flex;
     align-items: center;
@@ -202,6 +214,10 @@
       font-weight: 400;
       line-height: 100%;
       transition: color 0.3s ease-out;
+      @media (max-width: 1050px) {
+        font-size: 16px;
+
+      }
     }
     &-arrow {
       margin-left: 8px;
@@ -270,6 +286,9 @@
     max-width: 1620px;
     margin: auto;
     padding: 40px 10px;
+    @media (max-width: 1280px) {
+      padding: 20px 10px;
+    }
   }
   &__item {
     display: flex;
@@ -277,6 +296,9 @@
     flex: 1 1 20%;
     max-width: 382px;
     position: relative;
+    @media (max-width: 1280px) {
+      flex: 1 1 33%;
+    }
     &-link {
       position: absolute;
       width: 100%;

@@ -18,7 +18,6 @@ const Header = () => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const [typeMenu, setTypeMenu] = useState(null);
   const productsItems = typeof t.raw('productsItems') === 'object' ? t.raw('productsItems') : {};
-
   const handleScroll = () => {
     if (window.scrollY > 30) {
       setIsScrolled(true);
@@ -33,6 +32,14 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (openedMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [openedMenu]);
 
   const handleMenu = (menuType) => () => {
     if (typeMenu === menuType) {
