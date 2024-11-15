@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@components/Header';
+import HeaderMob from '@components/HeaderMob';
 import Footer from '@components/Footer';
 import { Geologica } from 'next/font/google';
 import { usePreviousUrl } from '@hooks';
@@ -15,12 +16,25 @@ const geologica = Geologica({
 
 const Layout = ({ children }) => {
   usePreviousUrl();
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const updateIsMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 991px)').matches);
+    };
+
+    updateIsMobile();
+    window.addEventListener('resize', updateIsMobile);
+
+    return () => {
+      window.removeEventListener('resize', updateIsMobile);
+    };
+  }, []);
 
   useEffect(() => {}, []);
   return (
     <div className={cn(geologica.className, styles['layout'])}>
-      <Header />
-
+      {isMobile ? <HeaderMob /> : <Header />}
       {children}
       <Footer />
     </div>
