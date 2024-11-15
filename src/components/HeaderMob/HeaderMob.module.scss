@@ -1,0 +1,23 @@
+.header {
+  @media (min-width: 920px) {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 9px 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background: #fffff2;
+  &__wrapper {
+    max-width: 1620px;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

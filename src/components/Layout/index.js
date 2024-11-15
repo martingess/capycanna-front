@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     const updateIsMobile = () => {
-      setIsMobile(window.matchMedia('(max-width: 991px)').matches);
+      setIsMobile(window.matchMedia('(max-width: 920px)').matches);
     };
 
     updateIsMobile();

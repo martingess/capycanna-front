@@ -8,10 +8,12 @@ import { useTranslations } from 'next-intl';
 import LoginButton from '@components/LoginButton';
 import FavoritesButton from '@components/FavoritesButton';
 import CartButton from '@components/CartButton';
+import MenuButton from '@components/MenuButton';
+import ProductsButton from '@components/ProductsButton';
 import cn from 'classnames';
-import styles from './Header.module.scss';
+import styles from './HeaderMob.module.scss';
 
-const Header = () => {
+const HeaderMob = () => {
   const t = useTranslations('header');
   const tCommon = useTranslations('common');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,17 +59,26 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={cn(styles['header'], {
-        [styles['sticky']]: isScrolled,
-        [styles['openedMenu']]: openedMenu,
-      })}
-    >
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint sit ab similique. Maxime libero
-      laborum dolorum doloribus culpa, sint perspiciatis nesciunt, quos labore facere adipisci
-      accusantium deleniti. Saepe, eius odio.
-    </header>
+    <>
+      <header
+        className={cn(styles['header'], {
+          [styles['sticky']]: isScrolled,
+          [styles['openedMenu']]: openedMenu,
+        })}
+      >
+        <div className={styles['header__top']}></div>
+      </header>
+      <menu className={styles['menu']}>
+        <div className={styles['menu__wrapper']}>
+          <LoginButton />
+          <FavoritesButton />
+          <CartButton />
+          <ProductsButton />
+          <MenuButton />
+        </div>
+      </menu>
+    </>
   );
 };
 
-export default Header;
+export default HeaderMob;
