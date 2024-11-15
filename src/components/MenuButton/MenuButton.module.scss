@@ -17,6 +17,57 @@
       display: none;
     }
   }
+  &__icon {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #221b15;
+      transition:
+        width 0.3s ease-out,
+        background-color 0.3s ease-out;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #221b15;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: rotate(0);
+      transition:
+        transform 0.3s ease-out,
+        top 0.3s ease-out,
+        background-color 0.3s ease-out;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #221b15;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      transform: rotate(0);
+      transition:
+        transform 0.3s ease-out,
+        top 0.3s ease-out,
+        background-color 0.3s ease-out;
+    }
+  }
   &__button {
     margin-bottom: 2px;
     width: 30px;
@@ -28,6 +79,7 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    transition: background-color 0.3s ease-out;
     @media (min-width: 960px) {
       margin-bottom: 0;
       margin-left: 8px;
@@ -52,17 +104,26 @@
         height: 20px;
       }
     }
-    &.alarm {
-      &::before {
-        content: '';
-        position: absolute;
-        width: 17px;
-        height: 17px;
-        border-radius: 50%;
-        background-color: #c54f1d;
-        top: 0;
-        right: 0;
+  }
+  &.open {
+    .menu__icon {
+      span {
+        width: 0;
+        background-color: #fff;
       }
+      &::before {
+        transform: rotate(45deg);
+        background-color: #fff;
+        top: 6px;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 6px;
+        background-color: #fff;
+      }
+    }
+    .menu__button {
+      background-color: #c54f1d;
     }
   }
 }

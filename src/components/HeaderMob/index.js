@@ -43,15 +43,8 @@ const HeaderMob = () => {
     }
   }, [openedMenu]);
 
-  const handleMenu = (menuType) => () => {
-    if (typeMenu === menuType) {
-      setOpenedMenu(false);
-      setTypeMenu(null);
-      return;
-    } else {
-      setOpenedMenu(true);
-      setTypeMenu(menuType);
-    }
+  const handleMenu = (boll) => () => {
+    setOpenedMenu(!boll);
   };
   const handleClickCloseMenu = () => {
     setOpenedMenu(false);
@@ -74,7 +67,7 @@ const HeaderMob = () => {
           <FavoritesButton />
           <CartButton />
           <ProductsButton />
-          <MenuButton />
+          <MenuButton handleMenu={handleMenu(openedMenu)} open={openedMenu} />
         </div>
       </menu>
     </>
