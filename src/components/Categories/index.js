@@ -1,6 +1,7 @@
 import styles from './Categories.module.scss';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 import cn from 'classnames';
 
 const Categories = ({ translation }) => {
@@ -12,8 +13,9 @@ const Categories = ({ translation }) => {
         <h3 className={styles['categories__title']}>{t('categories.title')}</h3>
         <p className={styles['categories__description']}>{t('categories.description')}</p>
         <div className={styles['categories__items']}>
-          {list.map(({ title, imageBg, image, type }) => (
+          {list.map(({ title, imageBg, image, type, link }) => (
             <div className={cn(styles['categories__item'], styles[type])} key={title}>
+              <Link href={link} className={styles['categories__item-link']} />
               <h4 className={styles['categories__item-title']}>{title}</h4>
               <Image
                 width={382}
