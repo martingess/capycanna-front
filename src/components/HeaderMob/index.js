@@ -94,6 +94,14 @@ const HeaderMob = () => {
             </div>
           </div>
         </div>
+        <div className={styles['header__center']}>
+          <div className={styles['header__wrapper']}>
+            <Link href="/sale" className={styles['header__sale']}>
+              <IconPercent className={styles['header__sale-icon']} />
+              {tCommon('sale')}
+            </Link>
+          </div>
+        </div>
       </header>
       <div className={styles['menu']}>
         <div className={styles['menu__wrapper']}>
