@@ -2,6 +2,58 @@
   @media (min-width: 920px) {
     display: none;
   }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  &__wrapper {
+    max-width: 1620px;
+    margin: auto;
+    padding: 19px 10px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top {
+    border-bottom: 1px solid rgba(17, 17, 17, 0);
+    background: #fffff2;
+    width: 100%;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    &-img {
+      width: 37px;
+      height: auto;
+      margin-right: 5.5px;
+    }
+    &-text {
+      color: #f5a964;
+      transition: color 0.3s ease-out;
+      leading-trim: both;
+      text-edge: cap;
+      font-variant-numeric: lining-nums proportional-nums ordinal;
+      font-feature-settings:
+        'cpsp' on,
+        'rvrn' on,
+        'ss01' on;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+    }
+    &:hover {
+      .header__logo-text {
+        color: #c54f1d;
+      }
+    }
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 .menu {

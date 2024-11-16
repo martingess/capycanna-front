@@ -7,7 +7,7 @@ import { currencies } from '@data';
 import { capitalizeFirstLetter } from '@utils';
 import cn from 'classnames';
 
-const Currency = () => {
+const Currency = ({ open = false, handleOpen = () => {} }) => {
   const { code: currencyCode } = useSelector(selectCurrency);
   const dispatch = useDispatch();
   const [isClient, setIsClient] = useState(false);
@@ -24,7 +24,12 @@ const Currency = () => {
 
   return (
     <div className={styles['currency']}>
-      <div className={styles['currency__wrapper']}>
+      <div
+        className={cn(styles['currency__wrapper'], {
+          [styles['open']]: open,
+        })}
+        onClick={handleOpen}
+      >
         <div className={styles['currency__top']}>
           <IconCurrency className={styles['currency__icon']} />
           {isClient && (

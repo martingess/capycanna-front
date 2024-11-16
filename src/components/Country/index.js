@@ -6,7 +6,7 @@ import styles from './Country.module.scss';
 import { countries } from '@data';
 import cn from 'classnames';
 
-const Country = () => {
+const Country = ({ open = false, handleOpen = () => {} }) => {
   const { code: countryCode } = useSelector(selectCountry);
   const dispatch = useDispatch();
   const [isClient, setIsClient] = useState(false);
@@ -23,7 +23,12 @@ const Country = () => {
 
   return (
     <div className={styles['country']}>
-      <div className={styles['country__wrapper']}>
+      <div
+        className={cn(styles['country__wrapper'], {
+          [styles['open']]: open,
+        })}
+        onClick={handleOpen}
+      >
         <div className={styles['country__top']}>
           <IconCountry className={styles['country__icon']} />
           {isClient && <p className={styles['country__name']}>{countryCode}</p>}

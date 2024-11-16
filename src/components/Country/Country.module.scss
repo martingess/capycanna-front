@@ -3,15 +3,30 @@
   z-index: 2;
   &__wrapper {
     position: relative;
-    &:hover {
-      .country__list {
-        opacity: 1;
-        pointer-events: all;
-        visibility: visible;
-        top: calc(100% + 11px);
+    @media (min-width: 960px) {
+      &:hover {
+        .country__list {
+          opacity: 1;
+          pointer-events: all;
+          visibility: visible;
+          top: calc(100% + 11px);
+        }
+        .country__arrow {
+          color: #c54f1d;
+        }
       }
-      .country__arrow {
-        color: #c54f1d;
+    }
+    @media (max-width: 960px) {
+      &.open {
+        .country__list {
+          opacity: 1;
+          pointer-events: all;
+          visibility: visible;
+          top: calc(100% + 11px);
+        }
+        .country__arrow {
+          color: #c54f1d;
+        }
       }
     }
   }
