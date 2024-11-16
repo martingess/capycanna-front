@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { IconPercent, IconPipette, IconArrowDown, IconDrop, IconFlask } from '@UI';
+import { IconPercent, IconPipette, IconArrowDown, IconDrop, IconFlask, CollapseExpand } from '@UI';
 import Currency from '@components/Currency';
 import Country from '@components/Country';
 import { useTranslations } from 'next-intl';
@@ -12,6 +12,52 @@ import MenuButton from '@components/MenuButton';
 import ProductsButton from '@components/ProductsButton';
 import cn from 'classnames';
 import styles from './HeaderMob.module.scss';
+
+const Trailer = ({ items = [], nameType }) => {
+  const t = useTranslations('header');
+  const [opened, setOpened] = useState(false);
+  const handleOpen = () => {
+    setOpened(!opened);
+  };
+  return (
+    <div
+      className={cn(styles['trailer'], {
+        [styles['active']]: opened,
+      })}
+    >
+      <div className={styles['trailer__wrapper']}>
+        <div className={styles['trailer__top']} onClick={handleOpen}>
+          {nameType === 'products' && <IconPipette className={styles['trailer__top-icon']} />}
+          {nameType === 'cannabinoids' && <IconDrop className={styles['trailer__top-icon']} />}
+          {nameType === 'findSomething' && <IconFlask className={styles['trailer__top-icon']} />}
+
+          <p className={styles['trailer__top-text']}>{t(`${nameType}`)}</p>
+          <IconArrowDown className={styles['trailer__top-arrow']} />
+        </div>
+        <CollapseExpand isOpen={opened}>
+          <div className={styles['trailer__items']}>
+            {items.map(({ name, image, description, link }) => (
+              <div className={styles['trailer__item']} key={name}>
+                <Link href={link} className={styles['trailer__item-link']} />
+                <Image
+                  src={image}
+                  alt={name}
+                  width={100}
+                  height={100}
+                  className={styles['trailer__item-img']}
+                />
+                <div className={styles['trailer__item-content']}>
+                  <p className={styles['trailer__item-title']}>{name}</p>
+                  <p className={styles['trailer__item-description']}>{description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CollapseExpand>
+      </div>
+    </div>
+  );
+};
 
 const HeaderMob = () => {
   const t = useTranslations('header');
@@ -99,6 +145,31 @@ const HeaderMob = () => {
             <Link href="/sale" className={styles['header__sale']}>
               <IconPercent className={styles['header__sale-icon']} />
               {tCommon('sale')}
+            </Link>
+          </div>
+        </div>
+        <div className={styles['nav']}>
+          {Object.entries(productsItems).map(([key, value]) => (
+            <Trailer key={key} nameType={key} items={value} />
+          ))}
+          <div className={styles['nav__links']}>
+            <Link href="/b2b" className={styles['nav__link']}>
+              {t('b2b')}
+            </Link>
+            <Link href="/affiliate" className={styles['nav__link']}>
+              {t('affiliateProgram')}
+            </Link>
+            <Link href="/shipping-payment" className={styles['nav__link']}>
+              {t('shippingAndPayment')}
+            </Link>
+            <Link href="/bonus" className={styles['nav__link']}>
+              {t('bonusProgram')}
+            </Link>
+            <Link href="/blog" className={styles['nav__link']}>
+              {t('blog')}
+            </Link>
+            <Link href="/contact" className={styles['nav__link']}>
+              {t('contactUs')}
             </Link>
           </div>
         </div>

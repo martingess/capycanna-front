@@ -109,7 +109,7 @@ const Header = () => {
               {tCommon('sale')}
             </Link>
           </div>
-          <menu className={styles['menu']}>
+          <div className={styles['menu']}>
             <div
               className={cn(styles['menu__item'], {
                 [styles['active']]: typeMenu === 'products',
@@ -140,7 +140,7 @@ const Header = () => {
               <p className={styles['menu__item-text']}>{t('findSomething')}</p>
               <IconArrowDown className={styles['menu__item-arrow']} />
             </div>
-          </menu>
+          </div>
           <div className={styles['header__bottom-right']}>
             <LoginButton />
             <FavoritesButton />
