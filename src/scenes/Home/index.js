@@ -7,6 +7,7 @@ import Chips from '@components/Chips';
 import Features from '@components/Features';
 import Step from '@components/Step';
 import TopSlider from '@components/TopSlider';
+import 'swiper/scss';
 
 const HomePage = () => {
   const t = useTranslations('home');

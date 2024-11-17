@@ -1,9 +1,19 @@
 {
     "metaTitle": "Transform Your Life And Achieve Your Goals",
     "metaDescription": "Transform Your Life And Achieve Your Goals",
-    "topSection": {
-        "title": "Transform Your Life And Achieve Your Goals",
-        "description": "Please take a quick 3-minute quiz. It will help us understand your patterns and triggers to shape your personal development plan."
+    "topSlider": {
+        "list": [
+            {
+                "title": "<h2><span>Novelties</span> for your pleasure</h2>",
+                "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+                "img": "/images/home/slider1.png"
+            },
+            {
+                "title": "<h2><span>Novelties</span> for your pleasure</h2>",
+                "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+                "img": "/images/home/slider1.png"
+            }
+        ]
     },
     "features": {
         "list": [

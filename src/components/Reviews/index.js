@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 import { IconStar } from '@UI';
 import styles from './Reviews.module.scss';
 import Image from 'next/image';
-import 'swiper/scss';
 import cn from 'classnames';
 
 export default function Reviews({ translation }) {
