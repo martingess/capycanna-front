@@ -22,6 +22,21 @@
 }
 .products {
   &__slide {
+    &-content {
+      @media (min-width: 960px) {
+        width: 100%;
+        max-width: 600px;
+      }
+      @media (min-width: 1050px) {
+        max-width: 700px;
+      }
+      @media (min-width: 1220px) {
+        position: relative;
+        z-index: 3;
+        max-width: 890px;
+        padding-top: 33px;
+      }
+    }
     &-wrap {
       width: 100vw;
       max-width: 1620px;
@@ -33,9 +48,24 @@
       @media (min-width: 960px) {
         flex-direction: row;
       }
+      @media (min-width: 1220px) {
+        // min-height: 829px;
+        min-height: 629px;
+        padding-top: 69px;
+        padding-bottom: 110px;
+      }
+      @media (min-width: 1360px) {
+        position: relative;
+      }
+      @media (min-width: 1500px) {
+        min-height: 729px;
+      }
     }
     &-title {
       margin-bottom: 12px;
+      @media (min-width: 1220px) {
+        margin-bottom: 40px;
+      }
       h1,
       h2,
       h3,
@@ -50,6 +80,15 @@
         span {
           color: #8cb869;
         }
+        @media (min-width: 1050px) {
+          font-size: 70px;
+        }
+        @media (min-width: 1220px) {
+          font-size: 100px;
+        }
+        @media (min-width: 1500px) {
+          font-size: 110px;
+        }
       }
     }
     &-text {
@@ -58,17 +97,38 @@
       font-style: normal;
       font-weight: 400;
       line-height: 130%;
+      width: 100%;
+      max-width: 381px;
     }
     &-img {
       margin-top: 30px;
-      @media (min-width: 960px) {
-        margin-top: 0;
-        align-self: flex-end;
-      }
       img {
         width: 100%;
         height: auto;
         max-width: 500px;
+      }
+      @media (min-width: 960px) {
+        margin-top: 0;
+        align-self: flex-end;
+      }
+      @media (min-width: 1220px) {
+        position: absolute;
+        right: 0;
+        top: 69px;
+        z-index: 1;
+      }
+      @media (min-width: 1360px) {
+        right: -40px;
+        img {
+          height: 500px;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+      @media (min-width: 1500px) {
+        img {
+          height: 550px;
+        }
       }
     }
   }
@@ -84,8 +144,9 @@
   transform: translateX(-50%);
   bottom: 40px;
   gap: 8px;
-  @media (min-width: 960px) {
-    display: none;
+  @media (min-width: 1500px) {
+    bottom: 100px;
+	gap: 10px;
   }
 
   .pagination-bullet {
