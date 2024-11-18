@@ -49,7 +49,6 @@
         flex-direction: row;
       }
       @media (min-width: 1220px) {
-        // min-height: 829px;
         min-height: 629px;
         padding-top: 69px;
         padding-bottom: 110px;
@@ -59,6 +58,9 @@
       }
       @media (min-width: 1500px) {
         min-height: 729px;
+      }
+      @media (min-width: 1730px) {
+        min-height: 835px;
       }
     }
     &-title {
@@ -89,6 +91,9 @@
         @media (min-width: 1500px) {
           font-size: 110px;
         }
+        @media (min-width: 1730px) {
+          font-size: 129px;
+        }
       }
     }
     &-text {
@@ -99,6 +104,9 @@
       line-height: 130%;
       width: 100%;
       max-width: 381px;
+      @media (min-width: 1500px) {
+        font-size: 18px;
+      }
     }
     &-img {
       margin-top: 30px;
@@ -130,6 +138,12 @@
           height: 550px;
         }
       }
+      @media (min-width: 1730px) {
+        right: -98px;
+        img {
+          height: 659px;
+        }
+      }
     }
   }
 }
@@ -146,7 +160,7 @@
   gap: 8px;
   @media (min-width: 1500px) {
     bottom: 100px;
-	gap: 10px;
+    gap: 10px;
   }
 
   .pagination-bullet {
@@ -160,6 +174,72 @@
 
     &.active {
       background-color: #a74e30;
+    }
+  }
+}
+.buy {
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  top: 44%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  right: 30px;
+  &:active {
+    .buy__image {
+      transform: rotate(90deg);
+      color: #f5bf64;
+    }
+  }
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+  @media (min-width: 960px) {
+    right: auto;
+    left: 35%;
+    top: auto;
+    transform: translateX(-50%);
+    bottom: 150px;
+    &:hover {
+      .buy__image {
+        transform: rotate(90deg);
+        color: #f5a964;
+      }
+    }
+  }
+  &__image {
+    width: 128px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    color: #c54f1d;
+    transform: rotate(0deg);
+    transition:
+      transform 0.3s ease-out,
+      color 0.3s ease-out;
+    @media (min-width: 960px) {
+      width: 195px;
+    }
+  }
+  &__frame {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    z-index: 3;
+    @media (min-width: 960px) {
+      width: 125px;
+      height: 125px;
+      top: 35px;
+      left: 35px;
     }
   }
 }

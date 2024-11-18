@@ -2,7 +2,25 @@ import Image from 'next/image';
 import styles from './TopSlider.module.scss';
 import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
+import { IconBuy } from '@UI';
 import { useState, useRef } from 'react';
+
+const BuyButton = () => {
+  return (
+    <div className={styles['buy']}>
+      <IconBuy className={styles['buy__image']} />
+      <Image
+        className={styles['buy__frame']}
+        width={125}
+        height={125}
+        src="/images/home/buy-frame.svg"
+        alt={'but-frame'}
+      />
+      <Link href={'/'} className={styles['buy__link']} />
+    </div>
+  );
+};
 
 const TopSlider = ({ translation }) => {
   const t = useTranslations(translation || 'home');
@@ -55,6 +73,7 @@ const TopSlider = ({ translation }) => {
             />
           ))}
         </div>
+        <BuyButton />
       </div>
       <Image
         className={styles['slider__bg']}
