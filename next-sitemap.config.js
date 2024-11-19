@@ -4,17 +4,14 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
-  sitemapSize: 5000,
-  exclude: ['/payment-status'],
+  sitemapSize: 10000,
+  generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
       { userAgent: 'Googlebot', allow: '/' },
     ],
-    additionalSitemaps: [
-      `https://capycanna.com/sitemap.xml`,
-      `https://capycanna.com/sitemap-0.xml`,
-    ],
+    additionalSitemaps: [`https://capycanna.com/sitemap.xml`],
   },
   additionalPaths: async () => [],
 
