@@ -9,7 +9,7 @@ const persistedStateSession = loadStateSession();
 const store = configureStore({
   reducer: rootReducer,
   preloadedState: { ...persistedState, ...persistedStateSession },
-  devTools: configs?.ENV_STATE !== 'prod',
+  devTools: !!configs?.LOCAL,
 });
 
 store.subscribe(() => {
