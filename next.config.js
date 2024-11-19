@@ -1,13 +1,5 @@
 const configs = require('./config.json');
 const { redirectsArray } = require('./src/redirects/index.js');
-const { ENV_STATE, BACKEND_API } = configs;
-
-const rewrites = async () => [
-  {
-    source: '/back/:path*',
-    destination: `${BACKEND_API}/back/:path*`,
-  },
-];
 
 const nextConfig = {
   async redirects() {
@@ -21,7 +13,6 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   trailingSlash: false,
-  ...(ENV_STATE !== 'prod' ? { rewrites } : {}),
 };
 
 module.exports = nextConfig;
