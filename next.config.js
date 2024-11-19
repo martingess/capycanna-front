@@ -8,7 +8,7 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   i18n: {
-    locales: ['en'],
+    locales: ['en', 'cz', 'de', 'fr'],
     defaultLocale: 'en',
   },
   trailingSlash: false,

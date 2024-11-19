@@ -6,10 +6,6 @@ const initialState = {
     code: 'EUR',
     symbol: '€',
   },
-  country: {
-    code: 'CZ',
-    name: 'Česko',
-  },
   email: null,
   device: null,
 };
@@ -21,9 +17,7 @@ export const userSlice = createSlice({
     setCurrency: (state, action) => {
       state.currency = action.payload;
     },
-    setCountry: (state, action) => {
-      state.country = action.payload;
-    },
+
     setEmail: (state, action) => {
       state.email = trimEmail(action.payload);
     },
@@ -33,10 +27,9 @@ export const userSlice = createSlice({
   },
 });
 
-export const { setCurrency, setCountry, setEmail, setDevice } = userSlice.actions;
+export const { setCurrency, setEmail, setDevice } = userSlice.actions;
 
 export const selectCurrency = (state) => state.user.currency;
-export const selectCountry = (state) => state.user.country;
 export const selectEmail = (state) => state.user.email;
 export const selectDevice = (state) => state.user.device;
 

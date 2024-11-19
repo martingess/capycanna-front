@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { IconPercent, IconPipette, IconArrowDown, IconDrop, IconFlask } from '@UI';
 import Currency from '@components/Currency';
-import Country from '@components/Country';
+import Language from '@/components/Language';
 import { useTranslations } from 'next-intl';
 import LoginButton from '@components/LoginButton';
 import FavoritesButton from '@components/FavoritesButton';
@@ -87,7 +87,7 @@ const Header = () => {
           </div>
           <div className={styles['header__data']}>
             <Currency />
-            <Country />
+            <Language />
           </div>
         </div>
       </div>

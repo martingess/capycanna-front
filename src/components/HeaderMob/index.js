@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { IconPercent, IconPipette, IconArrowDown, IconDrop, IconFlask, CollapseExpand } from '@UI';
 import Currency from '@components/Currency';
-import Country from '@components/Country';
+import Language from '@/components/Language';
 import { useTranslations } from 'next-intl';
 import LoginButton from '@components/LoginButton';
 import FavoritesButton from '@components/FavoritesButton';
@@ -133,7 +133,7 @@ const HeaderMob = () => {
                 open={openedCurrency}
                 handleOpen={handleOpenCurrency(openedCurrency, openedCountry)}
               />
-              <Country
+              <Language
                 open={openedCountry}
                 handleOpen={handleOpenCountry(openedCountry, openedCurrency)}
               />
