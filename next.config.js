@@ -1,4 +1,3 @@
-const configs = require('./config.json');
 const { redirectsArray } = require('./src/redirects/index.js');
 
 const nextConfig = {
