@@ -7,6 +7,7 @@ import Chips from '@components/Chips';
 import Features from '@components/Features';
 import Step from '@components/Step';
 import TopSlider from '@components/TopSlider';
+import ProductsSlider from '@components/ProductsSlider';
 import 'swiper/scss';
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
       <TopSlider translation={'home'} />
       <Features translation={'home'} />
       <Categories translation={'home'} />
+      <ProductsSlider translation={'home'} products={[]} />
       <Chips translation={'home'} />
       <Step translation={'home'} />
       <Reviews translation={'home'} />
