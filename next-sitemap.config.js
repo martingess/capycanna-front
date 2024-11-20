@@ -6,12 +6,16 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 10000,
   generateIndexSitemap: false,
+  // robotsTxtOptions: {
+  //   policies: [
+  //     { userAgent: '*', allow: '/' },
+  //     { userAgent: 'Googlebot', allow: '/' },
+  //   ],
+  //   additionalSitemaps: [`https://capycanna.com/sitemap.xml`],
+  // },
+
   robotsTxtOptions: {
-    policies: [
-      { userAgent: '*', allow: '/' },
-      { userAgent: 'Googlebot', allow: '/' },
-    ],
-    additionalSitemaps: [`https://capycanna.com/sitemap.xml`],
+    policies: [{ userAgent: '*', disallow: '/' }],
   },
   additionalPaths: async () => [],
 
