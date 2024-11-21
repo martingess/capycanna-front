@@ -7,8 +7,14 @@ const ProductCard = ({ product }) => {
   return (
     <div className={styles['card']}>
       <div className={styles['card__wrapper']}>
-        <div className={styles['card__image']}>
-          <Image src={product.image} alt={product.title} width={207} height={207} />
+        <div className={styles['card__top']}>
+          <Image
+            src="/images/products/product.png"
+            alt="product"
+            width={207}
+            height={207}
+            className={styles['card__image']}
+          />
           <div className={styles['card__label']}>
             <p className={styles['card__label-off']}>-30% off</p>
             <p className={styles['card__label-popular']}>Most popular</p>
@@ -29,8 +35,10 @@ const ProductCard = ({ product }) => {
           <IconHard className={styles['card__favorite']} />
         </div>
         <div className={styles['card__content']}>
-          <h3 className={styles['card__title']}>{product.title}</h3>
-          <p className={styles['card__description']}>{product.description}</p>
+          <h3 className={styles['card__title']}>Popcorn Buds x H4+</h3>
+          <div className={styles['card__description']}>
+            <p> the perfect symbiosis of natural relaxation and well-being</p>
+          </div>
         </div>
         <div className={styles['card__bottom']}>
           <div className={styles['card__prices']}>
