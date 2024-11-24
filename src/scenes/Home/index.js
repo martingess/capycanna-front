@@ -22,8 +22,14 @@ const HomePage = () => {
       <TopSlider translation={'home'} />
       <Features translation={'home'} />
       <Categories translation={'home'} />
-      <ProductsSlider translation={'home'} products={[]} />
+      <ProductsSlider translation={'home'} products={[1, 2, 4, 5, 6, 7]} place="stars" />
       <Chips translation={'home'} />
+      <ProductsSlider
+        translation={'home'}
+        products={[1, 2, 4, 5, 6, 7, 8, 9]}
+        place="discounted"
+        noBg={true}
+      />
       <Step translation={'home'} />
       <Reviews translation={'home'} />
       <FaqSection translation={'home'} />

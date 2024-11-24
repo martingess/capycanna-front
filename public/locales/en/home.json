@@ -169,10 +169,18 @@
         ]
     },
     "stars": {
-        "title": "New stars"
+        "title": "New stars",
+        "more": {
+            "text": "View all products",
+            "link": "/stars"
+        }
     },
     "discounted": {
-        "title": "Discounted products"
+        "title": "Discounted products",
+        "more": {
+            "text": "View all products",
+            "link": "/stars"
+        }
     },
     "faq": {
         "list": [
