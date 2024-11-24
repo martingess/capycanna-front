@@ -66,7 +66,7 @@ const Header = () => {
       <div className={styles['header__top']}>
         <div className={styles['header__top-wrapper']}>
           <div className={styles['header__top-links']}>
-            <Link href="/b2b" className={styles['header__top-link']}>
+            <Link href="/b2b-wholesale" className={styles['header__top-link']}>
               {t('b2b')}
             </Link>
             <Link href="/affiliate" className={styles['header__top-link']}>
