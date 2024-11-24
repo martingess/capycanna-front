@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { IconArrowDown } from '@UI';
+import styles from './Breadcrumbs.module.scss';
 
 const Breadcrumbs = () => {
   const router = useRouter();
-  const { pathname } = router;
+  const { pathname = '' } = router;
 
   const pathArray = pathname.split('/').filter((segment) => segment);
   const breadcrumbs = pathArray.map((segment, index) => {
@@ -12,18 +14,18 @@ const Breadcrumbs = () => {
   });
 
   return (
-    <nav aria-label="breadcrumbs">
-      <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-        <li>
+    <nav aria-label="breadcrumbs" className={styles['breadcrumbs']}>
+      <ul className={styles['breadcrumbs__items']}>
+        <li className={styles['breadcrumbs__item']}>
           <Link href="/">Home</Link>
-          {breadcrumbs.length > 0 && ' / '}
+          {breadcrumbs.length > 0 && <IconArrowDown className={styles['breadcrumbs__icon']} />}
         </li>
         {breadcrumbs.map((crumb, index) => (
-          <li key={crumb.href}>
+          <li key={crumb.href} className={styles['breadcrumbs__item']}>
             {index !== breadcrumbs.length - 1 ? (
               <>
                 <Link href={crumb.href}>{crumb.label}</Link>
-                {' / '}
+                <IconArrowDown className={styles['breadcrumbs__icon']} />
               </>
             ) : (
               <span>{crumb.label}</span>
