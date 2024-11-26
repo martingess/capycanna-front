@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Breadcrumbs from '@components/Breadcrumbs';
 import Head from 'next/head';
 
 const Policy = ({ pageName }) => {
@@ -11,6 +12,7 @@ const Policy = ({ pageName }) => {
         <meta name="robots" content="noindex" />
       </Head>
       <section className={'policy-section'}>
+        <Breadcrumbs />
         <div className={'policy-section__wrapper'}>
           <h1
             className={'policy-section__title'}

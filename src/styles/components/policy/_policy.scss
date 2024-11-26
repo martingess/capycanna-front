@@ -1,11 +1,9 @@
 .policy-section {
-  padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
   overflow: hidden;
 
   @include for-desktop-up {
-    padding-top: 70px;
     padding-bottom: 70px;
   }
 
@@ -27,8 +25,8 @@
     margin-bottom: 34px;
 
     @include for-desktop-up {
-      font-size: 35px;
-      line-height: 40px;
+      font-size: 40px;
+      line-height: 45px;
     }
   }
 
