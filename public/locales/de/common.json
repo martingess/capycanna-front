@@ -4,5 +4,14 @@
     "favorites": "Favorites",
     "cart": "Cart",
     "products": "Products",
-    "menu": "Menu"
+    "menu": "Menu",
+    "breadcrumbs": {
+        "b2b": "b2b wholesale",
+        "contact": "Contact us",
+        "cookie-policy": "Cookie policy",
+        "terms-and-conditions": "Terms and conditions",
+        "privacy-policy": "Privacy policy",
+        "subscription-terms": "Subscription terms",
+        "refund-policy": "Refund policy"
+    }
 }
