@@ -6,6 +6,7 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 10000,
   generateIndexSitemap: false,
+  exclude: ['/404', '/500'],
   // robotsTxtOptions: {
   //   policies: [
   //     { userAgent: '*', allow: '/' },
