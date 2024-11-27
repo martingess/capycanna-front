@@ -4,5 +4,8 @@
     "favorites": "Favorites",
     "cart": "Cart",
     "products": "Products",
-    "menu": "Menu"
+    "menu": "Menu",
+    "breadcrumbs": {
+        "b2b": "b2b-wholesale"
+    }
 }

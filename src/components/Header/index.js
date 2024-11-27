@@ -9,6 +9,7 @@ import LoginButton from '@components/LoginButton';
 import FavoritesButton from '@components/FavoritesButton';
 import CartButton from '@components/CartButton';
 import cn from 'classnames';
+import { useRouter } from 'next/router';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -17,6 +18,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openedMenu, setOpenedMenu] = useState(false);
   const [typeMenu, setTypeMenu] = useState(null);
+  const { pathname } = useRouter();
   const productsItems = typeof t.raw('productsItems') === 'object' ? t.raw('productsItems') : {};
   const handleScroll = () => {
     if (window.scrollY > 30) {
@@ -66,22 +68,52 @@ const Header = () => {
       <div className={styles['header__top']}>
         <div className={styles['header__top-wrapper']}>
           <div className={styles['header__top-links']}>
-            <Link href="/b2b-wholesale" className={styles['header__top-link']}>
+            <Link
+              href="/b2b"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/b2b',
+              })}
+            >
               {t('b2b')}
             </Link>
-            <Link href="/affiliate" className={styles['header__top-link']}>
+            <Link
+              href="/affiliate"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/affiliate',
+              })}
+            >
               {t('affiliateProgram')}
             </Link>
-            <Link href="/shipping-payment" className={styles['header__top-link']}>
+            <Link
+              href="/shipping-payment"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/shipping-payment',
+              })}
+            >
               {t('shippingAndPayment')}
             </Link>
-            <Link href="/bonus" className={styles['header__top-link']}>
+            <Link
+              href="/bonus"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/bonus',
+              })}
+            >
               {t('bonusProgram')}
             </Link>
-            <Link href="/blog" className={styles['header__top-link']}>
+            <Link
+              href="/blog"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/blog',
+              })}
+            >
               {t('blog')}
             </Link>
-            <Link href="/contact" className={styles['header__top-link']}>
+            <Link
+              href="/contact"
+              className={cn(styles['header__top-link'], {
+                [styles['active']]: pathname === '/contact',
+              })}
+            >
               {t('contactUs')}
             </Link>
           </div>

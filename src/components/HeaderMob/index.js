@@ -153,7 +153,7 @@ const HeaderMob = () => {
             <Trailer key={key} nameType={key} items={value} />
           ))}
           <div className={styles['nav__links']}>
-            <Link href="/b2b-wholesale" className={styles['nav__link']}>
+            <Link href="/b2b" className={styles['nav__link']}>
               {t('b2b')}
             </Link>
             <Link href="/affiliate" className={styles['nav__link']}>

@@ -2,15 +2,16 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { IconArrowDown } from '@UI';
 import styles from './Breadcrumbs.module.scss';
+import { useTranslations } from 'next-intl';
 
 const Breadcrumbs = () => {
   const router = useRouter();
   const { pathname = '' } = router;
-
+  const tCommon = useTranslations('common');
   const pathArray = pathname.split('/').filter((segment) => segment);
   const breadcrumbs = pathArray.map((segment, index) => {
     const path = '/' + pathArray.slice(0, index + 1).join('/');
-    return { label: segment.replace(/-/g, ' '), href: path };
+    return { label: segment, href: path };
   });
 
   return (
@@ -28,7 +29,7 @@ const Breadcrumbs = () => {
                 <IconArrowDown className={styles['breadcrumbs__icon']} />
               </>
             ) : (
-              <span>{crumb.label}</span>
+              <span>{tCommon(`breadcrumbs.${crumb.label}`)}</span>
             )}
           </li>
         ))}
