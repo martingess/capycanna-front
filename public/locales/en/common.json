@@ -6,6 +6,8 @@
     "products": "Products",
     "menu": "Menu",
     "breadcrumbs": {
-        "b2b": "b2b-wholesale"
+        "b2b": "b2b wholesale",
+        "contact": "Contact us",
+        "cookie-policy": "Cookie policy"
     }
 }
