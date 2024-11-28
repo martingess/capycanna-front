@@ -5,12 +5,13 @@ import { useTranslations } from 'next-intl';
 import { IconInstagram, IconWhatsapp, IconTelegram, IconPhone, IconMail } from '@UI';
 import { TextField, InputAdornment, IconButton } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { useRouter } from 'next/router';
 // import { useEffect } from 'react';
 // import { withStyledToast } from '@utils';
 
 const Footer = () => {
   const t = useTranslations('footer');
-
+  const { pathname } = useRouter();
   // useEffect(() => {
   //   withStyledToast('success', 'Успешно!', 'Операция прошла успешно.');
   // }, []);
@@ -207,32 +208,62 @@ const Footer = () => {
         </div>
         <div className={styles['policy']}>
           <div className={styles['policy__item']}>
-            <Link href={'/terms-and-conditions'} className={styles['policy__link']}>
+            <Link
+              href={'/terms-and-conditions'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/terms-and-conditions',
+              })}
+            >
               {t('termsAndConditions')}
             </Link>
           </div>
           <div className={styles['policy__item']}>
-            <Link href={'/privacy-policy'} className={styles['policy__link']}>
+            <Link
+              href={'/privacy-policy'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/privacy-policy',
+              })}
+            >
               {t('privacyPolicy')}
             </Link>
           </div>
           <div className={styles['policy__item']}>
-            <Link href={'/refund-policy'} className={styles['policy__link']}>
-              {t('refundPolicy')}
+            <Link
+              href={'/return-policy'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/return-policy',
+              })}
+            >
+              {t('returnPolicy')}
             </Link>
           </div>
           <div className={styles['policy__item']}>
-            <Link href={'/cookie-policy'} className={styles['policy__link']}>
+            <Link
+              href={'/cookie-policy'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/cookie-policy',
+              })}
+            >
               {t('cookiePolicy')}
             </Link>
           </div>
           <div className={styles['policy__item']}>
-            <Link href={'/about-us'} className={styles['policy__link']}>
+            <Link
+              href={'/about-us'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/about-us',
+              })}
+            >
               {t('aboutUs')}
             </Link>
           </div>
           <div className={styles['policy__item']}>
-            <Link href={'/analysis'} className={styles['policy__link']}>
+            <Link
+              href={'/analysis'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/analysis',
+              })}
+            >
               {t('analysis')}
             </Link>
           </div>
