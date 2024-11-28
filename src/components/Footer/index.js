@@ -207,11 +207,21 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles['policy']}>
+        <div className={styles['policy__item']}>
+            <Link
+              href={'/disclaimer'}
+              className={cn(styles['policy__link'], {
+                [styles['active']]: pathname === '/disclaimer',
+              })}
+            >
+              {t('disclaimer')}
+            </Link>
+          </div>
           <div className={styles['policy__item']}>
             <Link
-              href={'/terms-and-conditions'}
+              href={'/terms-conditions'}
               className={cn(styles['policy__link'], {
-                [styles['active']]: pathname === '/terms-and-conditions',
+                [styles['active']]: pathname === '/terms-conditions',
               })}
             >
               {t('termsAndConditions')}

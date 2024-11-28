@@ -9,9 +9,10 @@
         "b2b": "b2b wholesale",
         "contact": "Contact us",
         "cookie-policy": "Politika používání souborů cookie",
-        "terms-and-conditions": "Obchodní podmínky",
+        "terms-conditions": "Obchodní podmínky",
         "privacy-policy": "Zásady ochrany osobních údajů",
         "subscription-terms": "Subscription terms",
-        "return-policy": "Reklamační řád"
+        "return-policy": "Reklamační řád",
+        "disclaimer": "Upozornění"
     }
 }

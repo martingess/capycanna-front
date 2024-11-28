@@ -9,9 +9,10 @@
         "b2b": "b2b wholesale",
         "contact": "Contact us",
         "cookie-policy": "Politique d'utilisation des cookies",
-        "terms-and-conditions": "Conditions générales",
+        "terms-conditions": "Conditions générales",
         "privacy-policy": "Politique de Confidentialité",
         "subscription-terms": "Subscription terms",
-        "return-policy": "Politique de Retour"
+        "return-policy": "Politique de Retour",
+        "disclaimer": "Avertissement"
     }
 }
