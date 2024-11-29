@@ -14,6 +14,7 @@ const Contact = () => {
       <section className={styles['contact']}>
         <div className={styles['contact__wrapper']}>
           <Breadcrumbs />
+          <div className={styles['items']}></div>
         </div>
       </section>
     </>
