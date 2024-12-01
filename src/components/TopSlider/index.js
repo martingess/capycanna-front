@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './TopSlider.module.scss';
 import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import Link from 'next/link';
 import { IconBuy } from '@UI';
 import { useState, useRef } from 'react';
@@ -41,6 +42,11 @@ const TopSlider = ({ translation }) => {
           spaceBetween={0}
           ref={swiperRef}
           slidesPerView={1}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           className={styles['swiper']}
         >

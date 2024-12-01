@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
   useEffect(() => {}, []);
   return (
     <div className={cn(geologica.className, styles['layout'])}>
-      {isMobile ? <HeaderMob /> : <Header />}
+      {isMobile ? <HeaderMob isMobile={isMobile} /> : <Header isMobile={isMobile} />}
       {children}
       <Footer />
     </div>
