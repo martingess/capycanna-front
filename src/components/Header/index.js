@@ -39,7 +39,7 @@ const Header = () => {
     if (openedMenu) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.removeAttribute('style');
     }
   }, [openedMenu]);
 

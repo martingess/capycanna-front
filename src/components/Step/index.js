@@ -22,6 +22,13 @@ const Step = ({ translation }) => {
           className={styles['step__image']}
         />
       </div>
+      <Image
+        src={'/images/products/bg.png'}
+        width={1918}
+        height={938}
+        alt="products-bg"
+        className={styles['step__bg']}
+      />
     </div>
   );
 };
