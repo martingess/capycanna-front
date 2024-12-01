@@ -148,6 +148,7 @@ const Contact = () => {
                   return (
                     <Form className={styles['contact__form']}>
                       <div className={styles['contact__form-input']}>
+                        <p className={styles['contact__form-label']}>{t('form.name.label')}</p>
                         <Field
                           name="name"
                           as={InputText}
@@ -164,6 +165,7 @@ const Contact = () => {
                         ) : null}
                       </div>
                       <div className={styles['contact__form-input']}>
+                        <p className={styles['contact__form-label']}>{t('form.email.label')}</p>
                         <Field
                           name="email"
                           as={InputText}
@@ -180,6 +182,8 @@ const Contact = () => {
                         ) : null}
                       </div>
                       <div className={styles['contact__form-input']}>
+                        <p className={styles['contact__form-label']}>{t('form.message.label')}</p>
+
                         <Field
                           name="message"
                           as={InputText}
@@ -195,14 +199,16 @@ const Contact = () => {
                           </p>
                         ) : null}
                       </div>
-
-                      <ButtonCO
-                        className={styles['contact-us__button']}
-                        type={'submit'}
-                        disabled={isLoad}
-                      >
-                        {t('form.submit')}
-                      </ButtonCO>
+                      <div className={styles['contact__form-bottom']}>
+                        <ButtonCO
+                          className={styles['contact__button']}
+                          type={'submit'}
+                          disabled={isLoad}
+                        >
+                          {t('form.submit')}
+                        </ButtonCO>
+                        <p className={styles['contact__form-details']}>{t('form.details')}</p>
+                      </div>
                     </Form>
                   );
                 }}

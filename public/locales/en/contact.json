@@ -19,7 +19,7 @@
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Enter your message",
+			"placeholder": "Comment",
 			"required": "Message is required"
 		},
 		"submit": "Send",
