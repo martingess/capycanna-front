@@ -147,9 +147,6 @@
 }
 
 .menu {
-  @media (min-width: 920px) {
-    display: none;
-  }
   position: fixed;
   bottom: 0;
   left: 0;

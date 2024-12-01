@@ -182,10 +182,10 @@
   display: inline-block;
   position: absolute;
   z-index: 3;
-  top: 44%;
+  bottom: 4%;
   cursor: pointer;
   transform: translateY(-50%);
-  right: 30px;
+  left: 30px;
   &:active {
     .buy__image {
       transform: rotate(90deg);
