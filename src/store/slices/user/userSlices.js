@@ -8,6 +8,7 @@ const initialState = {
   },
   email: null,
   device: null,
+  cookieInfo: true,
 };
 
 export const userSlice = createSlice({
@@ -17,7 +18,9 @@ export const userSlice = createSlice({
     setCurrency: (state, action) => {
       state.currency = action.payload;
     },
-
+    setCookieInfo: (state, action) => {
+      state.cookieInfo = action.payload;
+    },
     setEmail: (state, action) => {
       state.email = trimEmail(action.payload);
     },
@@ -32,5 +35,6 @@ export const { setCurrency, setEmail, setDevice } = userSlice.actions;
 export const selectCurrency = (state) => state.user.currency;
 export const selectEmail = (state) => state.user.email;
 export const selectDevice = (state) => state.user.device;
+export const selectCookieInfo = (state) => state.user.cookieInfo;
 
 export default userSlice.reducer;

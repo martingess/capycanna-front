@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from '@components/Header';
 import HeaderMob from '@components/HeaderMob';
 import Footer from '@components/Footer';
+import CookieInfo from '@components/CookieInfo';
 import { Geologica } from 'next/font/google';
 import { usePreviousUrl } from '@hooks';
 import cn from 'classnames';
@@ -37,6 +38,7 @@ const Layout = ({ children }) => {
       {isMobile ? <HeaderMob isMobile={isMobile} /> : <Header isMobile={isMobile} />}
       {children}
       <Footer />
+      <CookieInfo />
     </div>
   );
 };
