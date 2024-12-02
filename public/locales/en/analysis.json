@@ -1,0 +1,43 @@
+{
+	"metaTitle": "Title",
+	"metaDescription": "Description",
+	"title": "Analysis",
+	"items": [
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		},
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		},
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		},
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		},
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		},
+		{
+			"title": "Name of the pdf file",
+			"text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
+			"linkText": "Save it",
+			"link": "/Priklad.pdf"
+		}
+	]
+}

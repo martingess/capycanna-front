@@ -6,7 +6,6 @@ import * as Yup from 'yup';
 import { useState } from 'react';
 import cn from 'classnames';
 import { InputText } from 'primereact/inputtext';
-import { InputTextarea } from 'primereact/inputtextarea';
 import {
   IconInstagram,
   IconWhatsapp,
