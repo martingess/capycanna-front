@@ -15,5 +15,10 @@
         "return-policy": "Return policy",
         "disclaimer": "Disclaimer",
         "analysis": "Analysis"
+    },
+    "yearsOld": {
+        "title": "Are you over 18 years old?",
+        "yes": "Yes",
+        "no": "No"
     }
 }

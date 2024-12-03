@@ -15,5 +15,10 @@
         "return-policy": "Rückgaberecht",
         "disclaimer": "Haftungsausschluss",
         "analysis": "Analyse"
+    },
+    "yearsOld": {
+        "title": "Are you over 18 years old?",
+        "yes": "Yes",
+        "no": "No"
     }
 }

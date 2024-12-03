@@ -9,6 +9,7 @@ const initialState = {
   email: null,
   device: null,
   cookieInfo: true,
+  overYears: false,
 };
 
 export const userSlice = createSlice({
@@ -21,6 +22,9 @@ export const userSlice = createSlice({
     setCookieInfo: (state, action) => {
       state.cookieInfo = action.payload;
     },
+    setOverYears: (state, action) => {
+      state.overYears = action.payload;
+    },
     setEmail: (state, action) => {
       state.email = trimEmail(action.payload);
     },
@@ -30,11 +34,12 @@ export const userSlice = createSlice({
   },
 });
 
-export const { setCurrency, setEmail, setDevice, setCookieInfo } = userSlice.actions;
+export const { setCurrency, setEmail, setDevice, setCookieInfo, setOverYears } = userSlice.actions;
 
 export const selectCurrency = (state) => state.user.currency;
 export const selectEmail = (state) => state.user.email;
 export const selectDevice = (state) => state.user.device;
 export const selectCookieInfo = (state) => state.user.cookieInfo;
+export const selectOverYears = (state) => state.user.overYears;
 
 export default userSlice.reducer;

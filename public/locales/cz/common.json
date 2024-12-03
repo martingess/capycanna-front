@@ -15,5 +15,10 @@
         "return-policy": "Reklamační řád",
         "disclaimer": "Upozornění",
         "analysis": "Analýza"
+    },
+    "yearsOld": {
+        "title": "Are you over 18 years old?",
+        "yes": "Yes",
+        "no": "No"
     }
 }
