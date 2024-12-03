@@ -30,7 +30,7 @@ export const userSlice = createSlice({
   },
 });
 
-export const { setCurrency, setEmail, setDevice } = userSlice.actions;
+export const { setCurrency, setEmail, setDevice, setCookieInfo } = userSlice.actions;
 
 export const selectCurrency = (state) => state.user.currency;
 export const selectEmail = (state) => state.user.email;

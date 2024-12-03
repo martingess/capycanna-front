@@ -65,7 +65,8 @@
   background: #c54f1d;
   transition:
     background 0.3s ease-in-out,
-    color 0.3s ease-in-out;
+    color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
   height: 60px;
   user-select: none;
 
@@ -91,6 +92,16 @@
   }
   &_icon {
     margin-right: 12px;
+  }
+  &_yellow {
+    border: 1px solid #c54f1d;
+    background: #f5a964;
+    @media (min-width: 768px) {
+      &:hover {
+        border: 1px solid #7b2804;
+        background: #7b2804;
+      }
+    }
   }
 
   &.isDisabled {

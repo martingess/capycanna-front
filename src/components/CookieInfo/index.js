@@ -15,28 +15,28 @@ const CookieInfo = () => {
   const [showCookie, setShowCookie] = useState(false);
 
   useEffect(() => {
-    if (isCookieInfo) {
-      setShowCookie(isCookieInfo);
-    }
+    setShowCookie(isCookieInfo);
   }, [isCookieInfo]);
 
   const handleCookieInfo = () => dispatch(setCookieInfo(false));
+  const handleSettings = () => dispatch(setCookieInfo(false));
 
   return (
     <div
       className={cn(styles['cookie'], {
-        [styles['is-active']]: showCookie,
+        [styles['active']]: showCookie,
       })}
     >
-      <div className={cn('wrapper', styles['cookie__wrap'])}>
-        <p className={styles['cookie__text']}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, doloribus. Dignissimos ut
-          fugit quas doloremque dolorum adipisci optio consectetur animi excepturi porro! Cupiditate
-          suscipit perferendis consequuntur a dolorem architecto nihil?
-        </p>
-        <ButtonCO theme="orange" className={styles['cookie__button']} onClick={handleCookieInfo}>
-          {t('ok')}
-        </ButtonCO>
+      <div className={cn('wrapper', styles['cookie__wrapper'])}>
+        <p className={styles['cookie__text']}>{t('cookies.text')}</p>
+        <div className={styles['cookie__buttons']}>
+          <ButtonCO theme="orange" className={styles['cookie__button']} onClick={handleCookieInfo}>
+            {t('cookies.accept')}
+          </ButtonCO>
+          <ButtonCO theme="yellow" className={styles['cookie__button']} onClick={handleSettings}>
+            {t('cookies.settings')}
+          </ButtonCO>
+        </div>
       </div>
     </div>
   );

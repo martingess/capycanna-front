@@ -7,4 +7,62 @@
   right: 0;
   z-index: 999998;
   background-color: #8cb869;
+  display: none;
+  &.active {
+    display: block;
+  }
+  &__wrapper {
+    width: 100%;
+    max-width: 1620px;
+    margin: auto;
+    padding: 20px 10px;
+    @media (min-width: 960px) {
+      padding: 35px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 20px;
+    text-align: center;
+    @media (min-width: 960px) {
+      font-size: 16px;
+      margin-bottom: 0;
+      text-align: left;
+      width: 100%;
+      max-width: 1027px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    @media (min-width: 960px) {
+      margin-left: 40px;
+      gap: 20px;
+      flex-direction: row;
+    }
+  }
+  &__button {
+    max-width: 220px;
+    min-width: 220px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    @media (min-width: 960px) {
+      font-size: 14px;
+      height: 50px;
+    }
+  }
 }
