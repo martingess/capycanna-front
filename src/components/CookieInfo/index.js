@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useTranslations } from 'next-intl';
 import { setCookieInfo, selectCookieInfo } from '@store/user/userSlices';
 import { ButtonCO } from '@UI';
+import Link from 'next/link';
 
 import cn from 'classnames';
 import styles from './CookieInfo.module.scss';
@@ -28,7 +29,15 @@ const CookieInfo = () => {
       })}
     >
       <div className={cn('wrapper', styles['cookie__wrapper'])}>
-        <p className={styles['cookie__text']}>{t('cookies.text')}</p>
+        <p className={styles['cookie__text']}>
+          {t.rich('cookies.text', {
+            link: (chunks) => (
+              <Link href="/cookie-policy" prefetch={false}>
+                {chunks}
+              </Link>
+            ),
+          })}
+        </p>
         <div className={styles['cookie__buttons']}>
           <ButtonCO theme="orange" className={styles['cookie__button']} onClick={handleCookieInfo}>
             {t('cookies.accept')}

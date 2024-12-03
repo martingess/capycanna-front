@@ -40,8 +40,8 @@
         "title": "<p><span>Sign up for emails</span> and get a nice discount 10%</p>"
     },
     "cookies": {
-        "text": "We use cookies to ensure that our website functions properly, to personalize advertisements and other materials, to enable social media features, and to analyze network traffic. We also share information about your use of our website with our social media, advertising and analytics partners.",
-        "accept": "I accept",
-        "settings": "Cookie settings"
+        "text": "Wir benötigen Ihre Zustimmung zur Verwendung einzelner Cookies, damit wir Ihnen unter anderem Informationen zu Ihren Interessen anzeigen können. Weitere Informationen finden Sie <link>hier</link>.",
+        "accept": "Ich stimme zu",
+        "settings": "Cookie-Einstellungen"
     }
 }

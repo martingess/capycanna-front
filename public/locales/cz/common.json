@@ -17,8 +17,8 @@
         "analysis": "Analýza"
     },
     "yearsOld": {
-        "title": "Are you over 18 years old?",
-        "yes": "Yes",
-        "no": "No"
+        "title": "Je vám 18 let nebo více?",
+        "yes": "Ano",
+        "no": "Ne"
     }
 }

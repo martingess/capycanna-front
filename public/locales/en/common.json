@@ -17,7 +17,7 @@
         "analysis": "Analysis"
     },
     "yearsOld": {
-        "title": "Are you over 18 years old?",
+        "title": "Are you 18 or older?",
         "yes": "Yes",
         "no": "No"
     }

@@ -38,6 +38,13 @@
       width: 100%;
       max-width: 1027px;
     }
+    a {
+      text-decoration: underline;
+      color: #c54f1d;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   &__buttons {
     display: flex;

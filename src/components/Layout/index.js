@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   const dispatch = useDispatch();
   const overYears = useSelector(selectOverYears);
   const [isMobile, setIsMobile] = useState(true);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     const updateIsMobile = () => {
