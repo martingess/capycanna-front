@@ -1,28 +1,28 @@
 {
-	"metaTitle": "Title",
-	"metaDescription": "Description",
-	"title": "Contact us",
-	"titleLeft": "Contact us",
-	"over": "Over 10,000 people have already made purchases from us. We can help you get more information",
-	"titleRight": "Clarify the details",
+	"metaTitle": "Contactez-nous",
+	"metaDescription": "Contactez-nous",
+	"title": "Contactez-nous",
+	"titleLeft": "Informations de contact",
+	"over": "Si vous avez des questions, n'hésitez pas à nous écrire — nous serons heureux de vous aider et répondrons dans les plus brefs délais !",
+	"titleRight": "Posez une question",
 	"form": {
 		"email": {
-			"label": "Email",
+			"label": "E-mail",
 			"placeholder": "email@gmail.com",
-			"required": "Email is required",
-			"invalid": "Invalid email"
+			"required": "L’email est requis",
+			"invalid": "Email invalide"
 		},
 		"name": {
-			"label": "Name",
-			"placeholder": "Name",
-			"required": "Name is required"
+			"label": "Nom",
+			"placeholder": "Nom",
+			"required": "Le nom est requis"
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Comment",
-			"required": "Message is required"
+			"placeholder": "Commentaire",
+			"required": "Le message est requis"
 		},
-		"submit": "Send",
-		"details": "* by clicking \"get bonus, I agree to the terms of the privacy policy"
+		"submit": "Envoyer le message",
+		"details": "* En envoyant un message, vous acceptez les conditions de protection des données personnelles"
 	}
 }
