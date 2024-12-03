@@ -1,4 +1,32 @@
 {
-	"metaTitle": "Title",
-	"metaDescription": "Description"
+	"metaTitle": "O nás",
+	"metaDescription": "O nás",
+	"title": "O nás",
+	"text": {
+		"top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"O nás\" /> <p>Vítejte v CapyCanna – internetovém obchodě s legálními konopnými produkty, který je určen pro ty, kteří si cení kvality, spolehlivosti a individuálního přístupu. Naším posláním je zajistit, aby byl nákup konopných produktů pohodlný, bezpečný a příjemný pro každého zákazníka.</p><p>V nabídce CapyCanna najdete vše, co potřebujete: vaporizéry, jednorázové cartridge, květy, hašiš, oleje, edibles, crumble, jointy a příslušenství. Nabízíme pouze certifikované produkty, které mají laboratorní potvrzení o legálnosti.</p><p>Vážíme si vašeho času a pohodlí. Maloobchodní zákazníci mohou snadno objednávat na našem webu nebo se poradit prostřednictvím e-mailu. Velkoobchodním klientům nabízíme individuální přístup – kontaktujte nás telefonicky nebo e-mailem pro domluvu podmínek.</p><p>CapyCanna odměňuje věrnost: za každý nákup získáte body, které lze vyměnit za slevy. Novým zákazníkům navíc jako poděkování za důvěru přibalíme samolepkový balíček. U objednávek nad 100 eur nabízíme dopravu zdarma.</p><p>Usilujeme o to, aby každý nákup zanechal pozitivní dojem. Objednávky vytvořené do 12:00 expedujeme ve stejný den. Mějte však na paměti, že doručení zajišťují externí přepravci a doba dodání závisí na cílové zemi.</p><p>CapyCanna – váš spolehlivý partner ve světě legálního konopí.</p>"
+	},
+	"features": {
+		"list": [
+			{
+				"title": "Balíček samolepek k první objednávce",
+				"image": "/images/home/features/sticker.png",
+				"imageBg": "/images/home/features/sticker-bg.png"
+			},
+			{
+				"title": "Sbírejte úspěchy – získejte slevy",
+				"image": "/images/home/features/bonus.png",
+				"imageBg": "/images/home/features/bonus-bg.png"
+			},
+			{
+				"title": "Doprava zdarma od 100 €",
+				"image": "/images/home/features/delivery.png",
+				"imageBg": "/images/home/features/delivery-bg.png"
+			},
+			{
+				"title": "Objednejte do 12:00 – odesíláme dnes",
+				"image": "/images/home/features/ordered.png",
+				"imageBg": "/images/home/features/ordered-bg.png"
+			}
+		]
+	}
 }
