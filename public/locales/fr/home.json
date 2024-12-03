@@ -97,47 +97,89 @@
         "image": "/images/home/step.png"
     },
     "reviews": {
-        "title": "Reviews",
-        "description": "Our customers love our products and are willing to share feedback about them. Thank you for every review!",
+        "title": "Avis ",
+        "description": "Votre avis est important – lisez ce que les autres disent de nos produits.",
         "list": [
             {
-                "name": "Marfa Muratova",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "name": "Lucie Nováková",
+                "review": "<p>Très contente de mon achat.</p><p>J'ai commandé un starter pack pour offrir à un ami et il était absolument ravi. C’est la manière idéale pour essayer un peu de tout et découvrir ce qu'on aime.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "name": "Jan Kovařík",
+                "review": "<p>Produit de bonne qualité, bien emballé.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Brooklyn Simmons",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat </p>",
+                "name": "Andreas Müller",
+                "review": "<p>Aujourd'hui, j'ai passé ma première commande, j'ai acheté du hash et des fleurs... la qualité est top. En plus, j'ai reçu un cadeau sous forme d'autocollants. Très joli bonus)))</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Courtney Henry",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra.</p>",
+                "name": "Chloé Lefevre",
+                "review": "<p>Super goût</p><p>Bons prix</p><p>Support sympa</p><p>100% recommandable</p><p>Non, je ne travaille pas pour eux lol</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "name": "Pierre Dupont",
+                "review": "<p>J'ai décidé d'essayer des vapes CBD pour le sommeil. Ça a très bien marché, ça me détend bien et je m'endors beaucoup plus vite maintenant. Donc ça fonctionne vraiment. Je le recommande pour ceux qui ont des problèmes de sommeil.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "name": "Nina Schmidt",
+                "review": "<p>J'ai vraiment aimé le service!!! Le support est génial, ils m'ont aidé à résoudre mon problème avec la commande. Tout était très amical et professionnel 💚</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Marek Dvořák",
+                "review": "<p>Ce n'est pas la première fois que je commande, et je suis toujours satisfait ! J'aime particulièrement qu'ils m'aient offert un cadeau pour ma première commande — un pack d'autocollants. C’est sympa, même pour moi. C’est vraiment agréable de voir qu'ils ne négligent pas ces petits détails. 10/10</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Lena Fischer",
+                "review": "<p>C'est vraiment génial qu'on puisse gagner des achievements dans la boutique pour certaines actions et ensuite les convertir en réduction.</p><p>Super idée !</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Martin Horák",
+                "review": "<p>C'est ma deuxième commande de l'huile. La qualité est toujours au top. Je suis vraiment content que les produits soient testés, ce qui me permet d’être sûr de recevoir exactement ce que j'ai commandé. J'ai particulièrement aimé l'effet relaxant que je ressens après avoir utilisé les produits. Cela aide vraiment après une journée difficile. Super magasin avec un bon choix !</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Camille Durand",
+                "review": "<p>J’adore la vape, c’est exactement ce que je cherchais.</p><p>Douce, savoureuse, et juste parfaite. Je recommande vivement.</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Lukas Weber",
+                "review": "<p>J’utilise la vape CBD après mes entraînements. Cela aide à soulager les tensions et à détendre les muscles. Surtout après un entraînement intensif. Bien sûr, ce n’est pas un substitut à des soins appropriés, mais en tant que complément pour la détente et la récupération — c’est juste parfait.</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Clara Becker",
+                "review": "<p>Personnellement, ça m’aide avec le stress. Quand je me sens anxieux ou que je n’arrive pas à m’endormir, je peux fumer du hash ou utiliser la vape. Le CBN aide aussi beaucoup pour le sommeil.</p><p>Je recommande d’essayer.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"

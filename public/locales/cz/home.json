@@ -97,47 +97,89 @@
         "image": "/images/home/step.png"
     },
     "reviews": {
-        "title": "Reviews",
-        "description": "Our customers love our products and are willing to share feedback about them. Thank you for every review!",
+        "title": "Recenze",
+        "description": "Váš názor je důležitý – přečtěte si, co o našich produktech říkají ostatní.",
         "list": [
             {
-                "name": "Marfa Muratova",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "name": "Lucie Nováková",
+                "review": "<p>Velmi spokojená s nákupem.</p><p>Objednala jsem starter pack jako dárek pro přítele a ten byl naprosto nadšený. Je to ideální způsob, jak vyzkoušet vše trochu a najít, co se líbí.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "name": "Jan Kovařík",
+                "review": "<p>Kvalitní produkt, hezky zabalený.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Brooklyn Simmons",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat </p>",
+                "name": "Andreas Müller",
+                "review": "<p>Dnes jsem udělal svou první objednávku, koupil hash a květiny... kvalita je skvělá. Také jsem dostal dárek ve formě samolepek. Velmi příjemný bonus)))</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Courtney Henry",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra.</p>",
+                "name": "Chloé Lefevre",
+                "review": "<p>Skvělá chuť</p><p>Dobré ceny</p><p>Příjemná podpora</p><p>100% doporučuji</p><p>Ne, nejsem s nimi spojený lol</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed.</p>",
+                "name": "Pierre Dupont",
+                "review": "<p>Rozhodl jsem se vyzkoušet CBD vapy na spánek. Pomohlo to skvěle, opravdu uvolňuje, a teď usínám mnohem rychleji. Takže to opravdu funguje. Doporučuji pro lidi s problémy se spánkem.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
             },
             {
-                "name": "Theresa Webb",
-                "review": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At senectus ac ut commodo eleifend tristique lacus congue viverra. Id sagittis, diam diam cras est in ullamcorper. In cursus nam volutpat sed blandit mus sit sed. Nisl, massa mi morbi proin lorem id dis. Lectus diam dolor odio odio lacus viverra ornare auctor sapien.Euismod et ultrices non facilisis aenean. N cursus nam volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed volutpat sed blandit mus sit sed.volutpat sed blandit mus sit sed</p>",
+                "name": "Nina Schmidt",
+                "review": "<p>Opravdu se mi líbila služba!!! Podpora je úžasná, pomohli mi vyřešit objednávku, když jsem měl otázku. Všechno bylo velmi přátelské a k věci 💚</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Marek Dvořák",
+                "review": "<p>Není to poprvé, co objednávám, a vždy jsem spokojený! Obzvlášť se mi líbí, že mi dali dárek za první objednávku — sticker pack. Je to super, klidně i pro sebe. Opravdu příjemné, že obchod nezapomíná na takové detaily. 10/10</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Lena Fischer",
+                "review": "<p>Je opravdu skvělé , že v obchodě můžete získávat achievementy za určité akce , a pak je přeměnit na slevu.</p><p>Skvělý nápad !</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Martin Horák",
+                "review": "<p>Tohle je už moje druhá objednávka oleje. Kvalita je opět na výborné úrovni. Opravdu mě těší, že produkty procházejí testováním, takže si můžu být jistá, že dostanu přesně to, co jsem objednala. Obzvlášť jsem si užila relaxační účinek, který po použití produktů cítím. Opravdu pomáhá po těžkém dni. Skvělý obchod s dobrým výběrem!</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Camille Durand",
+                "review": "<p>Miluju vaper, je to přesně to, co jsem hledala.</p><p>Hladké, chutné a prostě dokonalé. rozhodně doporučuji.</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Lukas Weber",
+                "review": "<p>Používám CBD vaper po trénincích. Pomáhá uvolnit napětí a relaxovat svaly. Zejména po intenzivním cvičení. Samozřejmě to není náhrada za řádnou péči, ale jako doplňkový prostředek pro relaxaci a regeneraci — je to prostě ideální.</p>",
+                "image": "/images/home/rev.png",
+                "stars": "5/5",
+                "date": "02.11.2023"
+            },
+            {
+                "name": "Clara Becker",
+                "review": "<p>Osobně mi to pomáhá se stresem. Když cítím úzkost nebo nemohu dlouho usnout, můžu si zapálit hash nebo použít vaper. CBN také pomáhá na spánek.</p><p>Doporučuji to vyzkoušet.</p>",
                 "image": "/images/home/rev.png",
                 "stars": "5/5",
                 "date": "02.11.2023"
