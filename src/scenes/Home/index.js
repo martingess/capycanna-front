@@ -20,7 +20,7 @@ const HomePage = () => {
         <meta name="description" content={t('metaDescription')} />
       </Head>
       <TopSlider translation={'home'} />
-      <Features translation={'home'} />
+      <Features translation={'common'} />
       <Categories translation={'home'} />
       <ProductsSlider translation={'home'} products={[1, 2, 4, 5, 6, 7]} place="stars" />
       <Chips translation={'home'} />

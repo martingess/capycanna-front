@@ -15,30 +15,6 @@
             }
         ]
     },
-    "features": {
-        "list": [
-            {
-                "title": "Sticker pack for the first order",
-                "image": "/images/home/features/sticker.png",
-                "imageBg": "/images/home/features/sticker-bg.png"
-            },
-            {
-                "title": "Bonus program",
-                "image": "/images/home/features/bonus.png",
-                "imageBg": "/images/home/features/bonus-bg.png"
-            },
-            {
-                "title": "Free delivery from 200 euros",
-                "image": "/images/home/features/delivery.png",
-                "imageBg": "/images/home/features/delivery-bg.png"
-            },
-            {
-                "title": "Same day shipment if ordered by 12:00 am",
-                "image": "/images/home/features/ordered.png",
-                "imageBg": "/images/home/features/ordered-bg.png"
-            }
-        ]
-    },
     "categories": {
         "title": "Categories",
         "description": "We can offer only the finest products for you",
