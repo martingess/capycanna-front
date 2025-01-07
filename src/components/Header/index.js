@@ -174,7 +174,7 @@ const Header = () => {
             </div>
           </div>
           <div className={styles['header__bottom-right']}>
-            <LoginButton />
+            <LoginButton isLoggedIn={false} /> {/* TODO: with login logic */}
             <FavoritesButton />
             <CartButton />
           </div>

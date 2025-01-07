@@ -71,7 +71,6 @@ export default function Reviews({ translation }) {
                 className={styles['reviews__content']}
                 dangerouslySetInnerHTML={{ __html: review.review }}
               />
-              <p className={styles['reviews__date']}>{review.date}</p>
             </div>
           </div>
         ))}
@@ -110,7 +109,6 @@ export default function Reviews({ translation }) {
                 className={styles['reviews__content']}
                 dangerouslySetInnerHTML={{ __html: review.review }}
               />
-              <p className={styles['reviews__date']}>{review.date}</p>
             </div>
           </div>
         ))}
@@ -175,7 +173,6 @@ export default function Reviews({ translation }) {
                         className={styles['reviews__content']}
                         dangerouslySetInnerHTML={{ __html: review.review }}
                       />
-                      <p className={styles['reviews__date']}>{review.date}</p>
                     </div>
                   </SwiperSlide>
                 ))}

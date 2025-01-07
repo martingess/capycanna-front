@@ -1,22 +1,22 @@
 .link {
-	font-size: 13px;
-	line-height: 18px;
-	color: #00c2ff;
-	transition: color .225s ease;
+  font-size: 13px;
+  line-height: 18px;
+  color: #00c2ff;
+  transition: color 0.225s ease;
 
-	@include for-desktop-up {
-		font-size: 16px;
-		line-height: 24px;
-	}
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-	@include hover-supported {
-		text-decoration: underline;
-		text-decoration-skip-ink: none;
-	}
+  @include hover-supported {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
 
-	&:active {
-		color: #00a3ff;
-	}
+  &:active {
+    color: #00a3ff;
+  }
 
-	@include focus-visible;
+  @include focus-visible;
 }

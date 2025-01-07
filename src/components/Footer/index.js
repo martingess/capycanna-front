@@ -207,7 +207,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles['policy']}>
-        <div className={styles['policy__item']}>
+          <div className={styles['policy__item']}>
             <Link
               href={'/disclaimer'}
               className={cn(styles['policy__link'], {

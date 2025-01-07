@@ -1,220 +1,220 @@
 {
-    "metaTitle": "Title",
-    "metaDescription": "Description",
-    "topSlider": {
-        "list": [
-            {
-                "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-                "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
-                "img": "/images/home/slider1.png"
-            },
-            {
-                "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-                "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
-                "img": "/images/home/slider1.png"
-            }
-        ]
-    },
-    "categories": {
-        "title": "Categories",
-        "description": "We can offer only the finest products for you",
-        "list": [
-            {
-                "title": "Everage",
-                "imageBg": "/images/categories/everage.png",
-                "image": "/images/categories/everage-preview.png",
-                "link": "/everage",
-                "type": "everage"
-            },
-            {
-                "title": "Light",
-                "imageBg": "/images/categories/light.png",
-                "image": "/images/categories/light-preview.png",
-                "link": "/light",
-                "type": "light"
-            },
-            {
-                "title": "Strong",
-                "imageBg": "/images/categories/strong.png",
-                "image": "/images/categories/strong-preview.png",
-                "link": "/strong",
-                "type": "strong"
-            },
-            {
-                "title": "Starter pack",
-                "imageBg": "/images/categories/starter.png",
-                "image": "/images/categories/starter-preview.png",
-                "link": "/starter",
-                "type": "starter"
-            },
-            {
-                "title": "For health",
-                "imageBg": "/images/categories/health.png",
-                "image": "/images/categories/health-preview.png",
-                "link": "/health",
-                "type": "health"
-            },
-            {
-                "title": "For sleeping",
-                "imageBg": "/images/categories/sleeping.png",
-                "image": "/images/categories/sleeping-preview.png",
-                "link": "/sleeping",
-                "type": "sleeping"
-            },
-            {
-                "title": "Pain",
-                "imageBg": "/images/categories/pain.png",
-                "image": "/images/categories/pain-preview.png",
-                "link": "/pain",
-                "type": "pain"
-            }
-        ]
-    },
-    "chips": {
-        "title": "Our chips",
-        "list": [
-            {
-                "title": "Bonus program",
-                "text": "<p>Our rewards program is a class act for our customers. For every purchase, you get a capybara and you get bonuses, for which you can buy something else!</p>",
-                "image": "/images/home/chips1.jpg",
-                "imageMobile": "/images/home/chips1-mob.jpg",
-                "link": "/bonus-program",
-                "linkText": "Read More"
-            },
-            {
-                "title": "Awesome sticker pack as a gift",
-                "text": "<p>We give an awesome branded capybaras sticker pack when you place your first order so that you have fond memories of us!</p>",
-                "image": "/images/home/chips2.jpg",
-                "imageMobile": "/images/home/chips2-mob.jpg",
-                "link": "/bonus-program",
-                "linkText": "Read More"
-            }
-        ]
-    },
-    "step": {
-        "title": "Step into the future",
-        "text": "<p>Our company cares about your health and well-being by offering only the highest quality products to support your physical and emotional well-being. We specialize in natural supplements to help you achieve harmony with yourself and the world around you. Whether you need a relaxing tea or a revitalizing oil, we have everything you need to support your health.</p><p>Our experience in the health and wellbeing industry exceeds 2 years, and in that time we have improved and refined our range, making it even more effective and safer for our customers. We only work with trusted suppliers to ensure that every product that reaches you meets the highest quality standards. Our goal is to help you feel better and live a full life without unnecessary health concerns.</p>",
-        "image": "/images/home/step.png"
-    },
-    "reviews": {
-        "title": "Avis ",
-        "description": "Votre avis est important – lisez ce que les autres disent de nos produits.",
-        "list": [
-            {
-                "name": "Lucie Nováková",
-                "review": "<p>Très contente de mon achat.</p><p>J'ai commandé un starter pack pour offrir à un ami et il était absolument ravi. C’est la manière idéale pour essayer un peu de tout et découvrir ce qu'on aime.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Jan Kovařík",
-                "review": "<p>Produit de bonne qualité, bien emballé.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Andreas Müller",
-                "review": "<p>Aujourd'hui, j'ai passé ma première commande, j'ai acheté du hash et des fleurs... la qualité est top. En plus, j'ai reçu un cadeau sous forme d'autocollants. Très joli bonus)))</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Chloé Lefevre",
-                "review": "<p>Super goût</p><p>Bons prix</p><p>Support sympa</p><p>100% recommandable</p><p>Non, je ne travaille pas pour eux lol</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Pierre Dupont",
-                "review": "<p>J'ai décidé d'essayer des vapes CBD pour le sommeil. Ça a très bien marché, ça me détend bien et je m'endors beaucoup plus vite maintenant. Donc ça fonctionne vraiment. Je le recommande pour ceux qui ont des problèmes de sommeil.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Nina Schmidt",
-                "review": "<p>J'ai vraiment aimé le service!!! Le support est génial, ils m'ont aidé à résoudre mon problème avec la commande. Tout était très amical et professionnel 💚</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Marek Dvořák",
-                "review": "<p>Ce n'est pas la première fois que je commande, et je suis toujours satisfait ! J'aime particulièrement qu'ils m'aient offert un cadeau pour ma première commande — un pack d'autocollants. C’est sympa, même pour moi. C’est vraiment agréable de voir qu'ils ne négligent pas ces petits détails. 10/10</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Lena Fischer",
-                "review": "<p>C'est vraiment génial qu'on puisse gagner des achievements dans la boutique pour certaines actions et ensuite les convertir en réduction.</p><p>Super idée !</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Martin Horák",
-                "review": "<p>C'est ma deuxième commande de l'huile. La qualité est toujours au top. Je suis vraiment content que les produits soient testés, ce qui me permet d’être sûr de recevoir exactement ce que j'ai commandé. J'ai particulièrement aimé l'effet relaxant que je ressens après avoir utilisé les produits. Cela aide vraiment après une journée difficile. Super magasin avec un bon choix !</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Camille Durand",
-                "review": "<p>J’adore la vape, c’est exactement ce que je cherchais.</p><p>Douce, savoureuse, et juste parfaite. Je recommande vivement.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Lukas Weber",
-                "review": "<p>J’utilise la vape CBD après mes entraînements. Cela aide à soulager les tensions et à détendre les muscles. Surtout après un entraînement intensif. Bien sûr, ce n’est pas un substitut à des soins appropriés, mais en tant que complément pour la détente et la récupération — c’est juste parfait.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            },
-            {
-                "name": "Clara Becker",
-                "review": "<p>Personnellement, ça m’aide avec le stress. Quand je me sens anxieux ou que je n’arrive pas à m’endormir, je peux fumer du hash ou utiliser la vape. Le CBN aide aussi beaucoup pour le sommeil.</p><p>Je recommande d’essayer.</p>",
-                "image": "/images/home/rev.png",
-                "stars": "5/5",
-                "date": "02.11.2023"
-            }
-        ]
-    },
-    "stars": {
-        "title": "New stars"
-    },
-    "discounted": {
-        "title": "Discounted products"
-    },
-    "faq": {
-        "list": [
-            {
-                "question": "Are there potential health risks if I use a vape pen?",
-                "answer": "<p>There are no health risks<\/p>"
-            },
-            {
-                "question": "Are there potential health risks if I use a vape pen?",
-                "answer": "<p>There are no health risks<\/p>"
-            },
-            {
-                "question": "Are there potential health risks if I use a vape pen?",
-                "answer": "<p>There are no health risks<\/p>"
-            },
-            {
-                "question": "Are there potential health risks if I use a vape pen?",
-                "answer": "<p>There are no health risks<\/p>"
-            },
-            {
-                "question": "Are there potential health risks if I use a vape pen?",
-                "answer": "<p>There are no health risks<\/p>"
-            }
-        ],
-        "title": "FAQ"
-    }
+  "metaTitle": "Title",
+  "metaDescription": "Description",
+  "topSlider": {
+    "list": [
+      {
+        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
+        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "img": "/images/home/slider1.png"
+      },
+      {
+        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
+        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "img": "/images/home/slider1.png"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Categories",
+    "description": "We can offer only the finest products for you",
+    "list": [
+      {
+        "title": "Everage",
+        "imageBg": "/images/categories/everage.png",
+        "image": "/images/categories/everage-preview.png",
+        "link": "/everage",
+        "type": "everage"
+      },
+      {
+        "title": "Light",
+        "imageBg": "/images/categories/light.png",
+        "image": "/images/categories/light-preview.png",
+        "link": "/light",
+        "type": "light"
+      },
+      {
+        "title": "Strong",
+        "imageBg": "/images/categories/strong.png",
+        "image": "/images/categories/strong-preview.png",
+        "link": "/strong",
+        "type": "strong"
+      },
+      {
+        "title": "Starter pack",
+        "imageBg": "/images/categories/starter.png",
+        "image": "/images/categories/starter-preview.png",
+        "link": "/starter",
+        "type": "starter"
+      },
+      {
+        "title": "For health",
+        "imageBg": "/images/categories/health.png",
+        "image": "/images/categories/health-preview.png",
+        "link": "/health",
+        "type": "health"
+      },
+      {
+        "title": "For sleeping",
+        "imageBg": "/images/categories/sleeping.png",
+        "image": "/images/categories/sleeping-preview.png",
+        "link": "/sleeping",
+        "type": "sleeping"
+      },
+      {
+        "title": "Pain",
+        "imageBg": "/images/categories/pain.png",
+        "image": "/images/categories/pain-preview.png",
+        "link": "/pain",
+        "type": "pain"
+      }
+    ]
+  },
+  "chips": {
+    "title": "Our chips",
+    "list": [
+      {
+        "title": "Bonus program",
+        "text": "<p>Our rewards program is a class act for our customers. For every purchase, you get a capybara and you get bonuses, for which you can buy something else!</p>",
+        "image": "/images/home/chips1.jpg",
+        "imageMobile": "/images/home/chips1-mob.jpg",
+        "link": "/bonus-program",
+        "linkText": "Read More"
+      },
+      {
+        "title": "Awesome sticker pack as a gift",
+        "text": "<p>We give an awesome branded capybaras sticker pack when you place your first order so that you have fond memories of us!</p>",
+        "image": "/images/home/chips2.jpg",
+        "imageMobile": "/images/home/chips2-mob.jpg",
+        "link": "/bonus-program",
+        "linkText": "Read More"
+      }
+    ]
+  },
+  "step": {
+    "title": "Step into the future",
+    "text": "<p>Our company cares about your health and well-being by offering only the highest quality products to support your physical and emotional well-being. We specialize in natural supplements to help you achieve harmony with yourself and the world around you. Whether you need a relaxing tea or a revitalizing oil, we have everything you need to support your health.</p><p>Our experience in the health and wellbeing industry exceeds 2 years, and in that time we have improved and refined our range, making it even more effective and safer for our customers. We only work with trusted suppliers to ensure that every product that reaches you meets the highest quality standards. Our goal is to help you feel better and live a full life without unnecessary health concerns.</p>",
+    "image": "/images/home/step.png"
+  },
+  "reviews": {
+    "title": "Avis ",
+    "description": "Votre avis est important – lisez ce que les autres disent de nos produits.",
+    "list": [
+      {
+        "name": "Lucie Nováková",
+        "review": "<p>Très contente de mon achat.</p><p>J'ai commandé un starter pack pour offrir à un ami et il était absolument ravi. C’est la manière idéale pour essayer un peu de tout et découvrir ce qu'on aime.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Jan Kovařík",
+        "review": "<p>Produit de bonne qualité, bien emballé.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Andreas Müller",
+        "review": "<p>Aujourd'hui, j'ai passé ma première commande, j'ai acheté du hash et des fleurs... la qualité est top. En plus, j'ai reçu un cadeau sous forme d'autocollants. Très joli bonus)))</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Chloé Lefevre",
+        "review": "<p>Super goût</p><p>Bons prix</p><p>Support sympa</p><p>100% recommandable</p><p>Non, je ne travaille pas pour eux lol</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Pierre Dupont",
+        "review": "<p>J'ai décidé d'essayer des vapes CBD pour le sommeil. Ça a très bien marché, ça me détend bien et je m'endors beaucoup plus vite maintenant. Donc ça fonctionne vraiment. Je le recommande pour ceux qui ont des problèmes de sommeil.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Nina Schmidt",
+        "review": "<p>J'ai vraiment aimé le service!!! Le support est génial, ils m'ont aidé à résoudre mon problème avec la commande. Tout était très amical et professionnel 💚</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Marek Dvořák",
+        "review": "<p>Ce n'est pas la première fois que je commande, et je suis toujours satisfait ! J'aime particulièrement qu'ils m'aient offert un cadeau pour ma première commande — un pack d'autocollants. C’est sympa, même pour moi. C’est vraiment agréable de voir qu'ils ne négligent pas ces petits détails. 10/10</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Lena Fischer",
+        "review": "<p>C'est vraiment génial qu'on puisse gagner des achievements dans la boutique pour certaines actions et ensuite les convertir en réduction.</p><p>Super idée !</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Martin Horák",
+        "review": "<p>C'est ma deuxième commande de l'huile. La qualité est toujours au top. Je suis vraiment content que les produits soient testés, ce qui me permet d’être sûr de recevoir exactement ce que j'ai commandé. J'ai particulièrement aimé l'effet relaxant que je ressens après avoir utilisé les produits. Cela aide vraiment après une journée difficile. Super magasin avec un bon choix !</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Camille Durand",
+        "review": "<p>J’adore la vape, c’est exactement ce que je cherchais.</p><p>Douce, savoureuse, et juste parfaite. Je recommande vivement.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Lukas Weber",
+        "review": "<p>J’utilise la vape CBD après mes entraînements. Cela aide à soulager les tensions et à détendre les muscles. Surtout après un entraînement intensif. Bien sûr, ce n’est pas un substitut à des soins appropriés, mais en tant que complément pour la détente et la récupération — c’est juste parfait.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      },
+      {
+        "name": "Clara Becker",
+        "review": "<p>Personnellement, ça m’aide avec le stress. Quand je me sens anxieux ou que je n’arrive pas à m’endormir, je peux fumer du hash ou utiliser la vape. Le CBN aide aussi beaucoup pour le sommeil.</p><p>Je recommande d’essayer.</p>",
+        "image": "/images/home/rev.png",
+        "stars": "5/5",
+        "date": "02.11.2023"
+      }
+    ]
+  },
+  "stars": {
+    "title": "New stars"
+  },
+  "discounted": {
+    "title": "Discounted products"
+  },
+  "faq": {
+    "list": [
+      {
+        "question": "Are there potential health risks if I use a vape pen?",
+        "answer": "<p>There are no health risks</p>"
+      },
+      {
+        "question": "Are there potential health risks if I use a vape pen?",
+        "answer": "<p>There are no health risks</p>"
+      },
+      {
+        "question": "Are there potential health risks if I use a vape pen?",
+        "answer": "<p>There are no health risks</p>"
+      },
+      {
+        "question": "Are there potential health risks if I use a vape pen?",
+        "answer": "<p>There are no health risks</p>"
+      },
+      {
+        "question": "Are there potential health risks if I use a vape pen?",
+        "answer": "<p>There are no health risks</p>"
+      }
+    ],
+    "title": "FAQ"
+  }
 }

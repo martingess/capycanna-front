@@ -176,8 +176,8 @@ const HeaderMob = () => {
       </header>
       <div className={styles['menu']}>
         <div className={styles['menu__wrapper']}>
-          <LoginButton />
-          <FavoritesButton />
+          <LoginButton isLoggedIn={false} />
+          <FavoritesButton /> {/* TODO: with login logic */}
           <CartButton />
           <ProductsButton />
           <MenuButton handleMenu={handleMenu(openedMenu)} open={openedMenu} />

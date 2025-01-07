@@ -1,49 +1,49 @@
 {
-    "sale": "Sleva",
-    "logIn": "Přihlásit se",
-    "favorites": "Favorites",
-    "cart": "Cart",
-    "products": "Products",
-    "menu": "Menu",
-    "breadcrumbs": {
-        "b2b": "b2b wholesale",
-        "contact": "Kontaktujte nás",
-        "cookie-policy": "Politika používání souborů cookie",
-        "terms-conditions": "Obchodní podmínky",
-        "privacy-policy": "Zásady ochrany osobních údajů",
-        "subscription-terms": "Subscription terms",
-        "return-policy": "Reklamační řád",
-        "disclaimer": "Upozornění",
-        "analysis": "Analýza",
-        "about-us": "O nás"
-    },
-    "features": {
-        "list": [
-            {
-                "title": "Sticker pack for the first order",
-                "image": "/images/home/features/sticker.png",
-                "imageBg": "/images/home/features/sticker-bg.png"
-            },
-            {
-                "title": "Bonus program",
-                "image": "/images/home/features/bonus.png",
-                "imageBg": "/images/home/features/bonus-bg.png"
-            },
-            {
-                "title": "Free delivery from 200 euros",
-                "image": "/images/home/features/delivery.png",
-                "imageBg": "/images/home/features/delivery-bg.png"
-            },
-            {
-                "title": "Same day shipment if ordered by 12:00 am",
-                "image": "/images/home/features/ordered.png",
-                "imageBg": "/images/home/features/ordered-bg.png"
-            }
-        ]
-    },
-    "yearsOld": {
-        "title": "Je vám 18 let nebo více?",
-        "yes": "Ano",
-        "no": "Ne"
-    }
+  "sale": "Sleva",
+  "logIn": "Přihlásit se",
+  "favorites": "Favorites",
+  "cart": "Cart",
+  "products": "Products",
+  "menu": "Menu",
+  "breadcrumbs": {
+    "b2b": "b2b wholesale",
+    "contact": "Kontaktujte nás",
+    "cookie-policy": "Politika používání souborů cookie",
+    "terms-conditions": "Obchodní podmínky",
+    "privacy-policy": "Zásady ochrany osobních údajů",
+    "subscription-terms": "Subscription terms",
+    "return-policy": "Reklamační řád",
+    "disclaimer": "Upozornění",
+    "analysis": "Analýza",
+    "about-us": "O nás"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Sticker pack for the first order",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Bonus program",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Free delivery from 200 euros",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Same day shipment if ordered by 12:00 am",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  },
+  "yearsOld": {
+    "title": "Je vám 18 let nebo více?",
+    "yes": "Ano",
+    "no": "Ne"
+  }
 }

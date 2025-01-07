@@ -1,28 +1,28 @@
 {
-	"metaTitle": "Contactez-nous",
-	"metaDescription": "Contactez-nous",
-	"title": "Contactez-nous",
-	"titleLeft": "Informations de contact",
-	"over": "Si vous avez des questions, n'hésitez pas à nous écrire — nous serons heureux de vous aider et répondrons dans les plus brefs délais !",
-	"titleRight": "Posez une question",
-	"form": {
-		"email": {
-			"label": "E-mail",
-			"placeholder": "email@gmail.com",
-			"required": "L’email est requis",
-			"invalid": "Email invalide"
-		},
-		"name": {
-			"label": "Nom",
-			"placeholder": "Nom",
-			"required": "Le nom est requis"
-		},
-		"message": {
-			"label": "Message",
-			"placeholder": "Commentaire",
-			"required": "Le message est requis"
-		},
-		"submit": "Envoyer le message",
-		"details": "* En envoyant un message, vous acceptez les conditions de protection des données personnelles"
-	}
+  "metaTitle": "Contactez-nous",
+  "metaDescription": "Contactez-nous",
+  "title": "Contactez-nous",
+  "titleLeft": "Informations de contact",
+  "over": "Si vous avez des questions, n'hésitez pas à nous écrire — nous serons heureux de vous aider et répondrons dans les plus brefs délais !",
+  "titleRight": "Posez une question",
+  "form": {
+    "email": {
+      "label": "E-mail",
+      "placeholder": "email@gmail.com",
+      "required": "L’email est requis",
+      "invalid": "Email invalide"
+    },
+    "name": {
+      "label": "Nom",
+      "placeholder": "Nom",
+      "required": "Le nom est requis"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Commentaire",
+      "required": "Le message est requis"
+    },
+    "submit": "Envoyer le message",
+    "details": "* En envoyant un message, vous acceptez les conditions de protection des données personnelles"
+  }
 }

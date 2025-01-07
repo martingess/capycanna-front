@@ -1,32 +1,32 @@
 {
-	"metaTitle": "À propos de nous",
-	"metaDescription": "À propos de nous",
-	"title": "À propos de nous",
-	"text": {
-		"top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"O nás\" /> <p>Bienvenue chez CapyCanna – votre boutique en ligne de produits de cannabis légaux, conçue pour ceux qui apprécient la qualité, la fiabilité et un service personnalisé. Notre mission est de rendre l’achat de produits à base de cannabis simple, sûr et agréable pour chaque client.</p><p>Chez CapyCanna, vous trouverez tout ce dont vous avez besoin : vapes, cartouches jetables, fleurs, haschisch, huiles, edibles, crumble, joints et accessoires. Nous proposons uniquement des produits certifiés, avec des analyses de laboratoire attestant leur légalité.</p><p>Nous respectons votre temps et votre confort. Les clients particuliers peuvent facilement passer commande sur notre site ou demander des conseils par email. Pour les clients professionnels, nous offrons un service sur mesure – contactez-nous par téléphone ou par e-mail pour discuter des conditions.</p><p>CapyCanna récompense la fidélité : chaque achat vous permet de cumuler des points échangeables contre des réductions. En signe de gratitude, les nouveaux clients reçoivent un pack de stickers avec leur première commande. De plus, nous offrons la livraison gratuite pour les commandes supérieures à 100 €.</p><p>Nous nous engageons à ce que chaque achat vous laisse une impression positive. Les commandes passées avant 12 h 00 sont expédiées le jour même. Notez que la livraison est effectuée par des transporteurs externes, et les délais peuvent varier selon le pays de destination.</p><p>CapyCanna – votre partenaire de confiance dans l’univers du cannabis légal.</p>"
-	},
-	"features": {
-		"list": [
-			{
-				"title": "Pack de stickers offert pour votre première commande",
-				"image": "/images/home/features/sticker.png",
-				"imageBg": "/images/home/features/sticker-bg.png"
-			},
-			{
-				"title": "Gagnez des succès – obtenez des réductions",
-				"image": "/images/home/features/bonus.png",
-				"imageBg": "/images/home/features/bonus-bg.png"
-			},
-			{
-				"title": "Livraison gratuite à partir de 100 €",
-				"image": "/images/home/features/delivery.png",
-				"imageBg": "/images/home/features/delivery-bg.png"
-			},
-			{
-				"title": "Commandez avant 12h – expédié aujourd'hui",
-				"image": "/images/home/features/ordered.png",
-				"imageBg": "/images/home/features/ordered-bg.png"
-			}
-		]
-	}
+  "metaTitle": "À propos de nous",
+  "metaDescription": "À propos de nous",
+  "title": "À propos de nous",
+  "text": {
+    "top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"O nás\" /> <p>Bienvenue chez CapyCanna – votre boutique en ligne de produits de cannabis légaux, conçue pour ceux qui apprécient la qualité, la fiabilité et un service personnalisé. Notre mission est de rendre l’achat de produits à base de cannabis simple, sûr et agréable pour chaque client.</p><p>Chez CapyCanna, vous trouverez tout ce dont vous avez besoin : vapes, cartouches jetables, fleurs, haschisch, huiles, edibles, crumble, joints et accessoires. Nous proposons uniquement des produits certifiés, avec des analyses de laboratoire attestant leur légalité.</p><p>Nous respectons votre temps et votre confort. Les clients particuliers peuvent facilement passer commande sur notre site ou demander des conseils par email. Pour les clients professionnels, nous offrons un service sur mesure – contactez-nous par téléphone ou par e-mail pour discuter des conditions.</p><p>CapyCanna récompense la fidélité : chaque achat vous permet de cumuler des points échangeables contre des réductions. En signe de gratitude, les nouveaux clients reçoivent un pack de stickers avec leur première commande. De plus, nous offrons la livraison gratuite pour les commandes supérieures à 100 €.</p><p>Nous nous engageons à ce que chaque achat vous laisse une impression positive. Les commandes passées avant 12 h 00 sont expédiées le jour même. Notez que la livraison est effectuée par des transporteurs externes, et les délais peuvent varier selon le pays de destination.</p><p>CapyCanna – votre partenaire de confiance dans l’univers du cannabis légal.</p>"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Pack de stickers offert pour votre première commande",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Gagnez des succès – obtenez des réductions",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Livraison gratuite à partir de 100 €",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Commandez avant 12h – expédié aujourd'hui",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  }
 }

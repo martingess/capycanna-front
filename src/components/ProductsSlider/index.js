@@ -4,18 +4,61 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef, useState } from 'react';
+import { SliderArrow } from '@components/UI/SliderArrow';
+import { useEffect } from 'react';
 
 import styles from './ProductsSlider.module.scss';
 const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = false }) => {
   const t = useTranslations(translation ?? 'home');
   const [activeIndex, setActiveIndex] = useState(0);
+  const [slidesPerView, setSlidesPerView] = useState(1.25);
   const swiperRef = useRef(null);
+
   const goToSlide = (index) => {
     setActiveIndex(index);
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideTo(index);
     }
   };
+
+  const handleNext = () => {
+    if (activeIndex === products.length - 1) {
+      swiperRef.current?.swiper.slideTo(0);
+    } else {
+      swiperRef.current?.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (activeIndex === 0) {
+      swiperRef.current?.swiper.slideTo(products.length - 1);
+    } else {
+      swiperRef.current?.swiper.slidePrev();
+    }
+  };
+
+  const getTotalPages = () => {
+    return Math.ceil(products.length / slidesPerView);
+  };
+
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      const width = window.innerWidth;
+      if (width >= 1100) setSlidesPerView(4);
+      else if (width >= 960) setSlidesPerView(3.6);
+      else if (width >= 780) setSlidesPerView(3.2);
+      else if (width >= 590) setSlidesPerView(2.2);
+      else if (width >= 450) setSlidesPerView(1.6);
+      else setSlidesPerView(1.25);
+    };
+
+    updateSlidesPerView();
+    window.addEventListener('resize', updateSlidesPerView);
+
+    return () => {
+      window.removeEventListener('resize', updateSlidesPerView);
+    };
+  }, []);
 
   return (
     <div className={styles['products']}>
@@ -25,26 +68,9 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
           <Swiper
             spaceBetween={14}
             ref={swiperRef}
-            slidesPerView={1.25}
+            slidesPerView={slidesPerView}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             className={styles['swiper']}
-            breakpoints={{
-              450: {
-                slidesPerView: 1.6,
-              },
-              590: {
-                slidesPerView: 2.2,
-              },
-              780: {
-                slidesPerView: 3.2,
-              },
-              960: {
-                slidesPerView: 3.6,
-              },
-              1100: {
-                slidesPerView: 4,
-              },
-            }}
           >
             {products.map((item) => (
               <SwiperSlide key={item} className={styles['products__slide']}>
@@ -52,14 +78,18 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className={styles['custom-pagination']}>
-            {products.map((_, index) => (
-              <button
-                key={index}
-                className={`${styles['pagination-bullet']} ${activeIndex === index ? styles['active'] : ''}`}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
+          <div className={styles['custom-pagination-wrapper']}>
+            <SliderArrow onClick={handlePrev} />
+            <div className={styles['custom-pagination']}>
+              {Array.from({ length: getTotalPages() }, (_, index) => (
+                <button
+                  key={index}
+                  className={`${styles['pagination-bullet']} ${activeIndex === index ? styles['active'] : ''}`}
+                  onClick={() => goToSlide(index)}
+                />
+              ))}
+            </div>
+            <SliderArrow onClick={handleNext} isRight />
           </div>
         </div>
         <Link href={t(`${place}.more.link`)} className={styles['products__link']}>

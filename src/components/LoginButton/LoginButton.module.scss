@@ -13,6 +13,7 @@
     font-weight: 600;
     line-height: 140%;
     text-transform: uppercase;
+    cursor: pointer;
     @media (min-width: 960px) {
       font-size: 14px;
       line-height: 160%;
@@ -29,6 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    cursor: pointer;
     @media (min-width: 960px) {
       margin-bottom: 0;
       margin-left: 8px;
