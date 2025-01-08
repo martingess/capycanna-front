@@ -7,14 +7,11 @@ const LoginButton = ({ alarm, isLoggedIn }) => {
   const tCommon = useTranslations('common');
   return (
     <div className={styles['login']}>
-      {isLoggedIn ? (
-        <div className={cn(styles['login__button'], { [styles['alarm']]: alarm })}>
-          <span className={styles['login__button-text']}></span>
-          <IconUser />
-        </div>
-      ) : (
-        <span className={styles['login__text']}>{tCommon('logIn')}</span>
-      )}
+      <span className={styles['login__text']}>{tCommon('logIn')}</span>
+      <div className={cn(styles['login__button'], { [styles['alarm']]: alarm })}>
+        {!isLoggedIn && <span className={styles['login__button-text']}></span>}
+        <IconUser />
+      </div>
     </div>
   );
 };

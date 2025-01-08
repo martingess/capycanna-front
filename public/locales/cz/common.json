@@ -20,22 +20,22 @@
   "features": {
     "list": [
       {
-        "title": "Sticker pack for the first order",
+        "title": "Samolepky k vaší první objednávce",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Bonus program",
+        "title": "Sbírejte achievementy – získejte slevy",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Free delivery from 200 euros",
+        "title": "Doprava zdarma od 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Same day shipment if ordered by 12:00 am",
+        "title": "Objednejte do 12:00 – odesíláme ještě dnes",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

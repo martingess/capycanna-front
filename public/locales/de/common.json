@@ -25,22 +25,22 @@
   "features": {
     "list": [
       {
-        "title": "Sticker pack for the first order",
+        "title": "Stickerpack zu Ihrer ersten Bestellung geschenkt",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Bonus program",
+        "title": "Erfolge sammeln – Rabatte sichern",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Free delivery from 200 euros",
+        "title": "Kostenloser Versand ab 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Same day shipment if ordered by 12:00 am",
+        "title": "Bestellung bis 12:00 Uhr – heute versandt",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

@@ -4,65 +4,65 @@
   "topSlider": {
     "list": [
       {
-        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "title": "<h2><span>CapyCanna</span> - váš pohodový a spolehlivý obchod s konopím</h2>",
+        "text": "<p>Nabízíme prémiové produkty z konopí, které podpoří vaši cestu ke zdraví a pohodě. Od CBD květů až po uklidňující oleje a vaporizéry – CapyCanna je tu, aby vám pomohla najít přesně to, co potřebujete.</p>",
         "img": "/images/home/slider1.png"
       },
       {
-        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "title": "<h2><span>CapyCanna</span> - váš pohodový a spolehlivý obchod s konopím</h2>",
+        "text": "<p>Nabízíme prémiové produkty z konopí, které podpoří vaši cestu ke zdraví a pohodě. Od CBD květů až po uklidňující oleje a vaporizéry – CapyCanna je tu, aby vám pomohla najít přesně to, co potřebujete.</p>",
         "img": "/images/home/slider1.png"
       }
     ]
   },
   "categories": {
-    "title": "Categories",
-    "description": "We can offer only the finest products for you",
+    "title": "Objevte populární kategorie",
+    "description": "Prohlédněte si naše produkty rozdělené do kategorií, aby bylo snadné najít to pravé.",
     "list": [
       {
-        "title": "Everage",
+        "title": "Starter pack",
         "imageBg": "/images/categories/everage.png",
         "image": "/images/categories/everage-preview.png",
         "link": "/everage",
         "type": "everage"
       },
       {
-        "title": "Light",
+        "title": "CBD Vape",
         "imageBg": "/images/categories/light.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
-        "title": "Strong",
+        "title": "CBD Květiny",
         "imageBg": "/images/categories/strong.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
-        "title": "Starter pack",
+        "title": "CBD Oleje",
         "imageBg": "/images/categories/starter.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
-        "title": "For health",
+        "title": "Edibles",
         "imageBg": "/images/categories/health.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
-        "title": "For sleeping",
+        "title": "Lepší spánek",
         "imageBg": "/images/categories/sleeping.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
-        "title": "Pain",
+        "title": "Úleva od bolesti",
         "imageBg": "/images/categories/pain.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
@@ -71,29 +71,30 @@
     ]
   },
   "chips": {
-    "title": "Our chips",
+    "title": "Unikátní výhody",
+    "description": "Získejte stylové samolepky, sbírejte bonusové body a odemykejte nová ocenění!",
     "list": [
       {
-        "title": "Bonus program",
-        "text": "<p>Our rewards program is a class act for our customers. For every purchase, you get a capybara and you get bonuses, for which you can buy something else!</p>",
+        "title": "Odemykejte achievementy – získejte slevy",
+        "text": "<p>Sbírejte bonusy plněním specifických úkolů na našem webu a odemykáním achievementů. Každý splněný achievement vám přinese bonusové body, které se automaticky přemění na slevy na budoucí objednávky.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1-mob.jpg",
         "link": "/bonus-program",
-        "linkText": "Read More"
+        "linkText": "Přečíst více"
       },
       {
-        "title": "Awesome sticker pack as a gift",
-        "text": "<p>We give an awesome branded capybaras sticker pack when you place your first order so that you have fond memories of us!</p>",
+        "title": "Dárek k první objednávce: samolepky zdarma",
+        "text": "<p>Získejte úžasný samolepkový balíček s motivem kapybar při první objednávce! Zábavný a nezapomenutelný způsob, jak oslavit váš vstup do rodiny CapyCanna.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
         "link": "/bonus-program",
-        "linkText": "Read More"
+        "linkText": "Přečíst více"
       }
     ]
   },
   "step": {
-    "title": "Step into the future",
-    "text": "<p>Our company cares about your health and well-being by offering only the highest quality products to support your physical and emotional well-being. We specialize in natural supplements to help you achieve harmony with yourself and the world around you. Whether you need a relaxing tea or a revitalizing oil, we have everything you need to support your health.</p><p>Our experience in the health and wellbeing industry exceeds 2 years, and in that time we have improved and refined our range, making it even more effective and safer for our customers. We only work with trusted suppliers to ensure that every product that reaches you meets the highest quality standards. Our goal is to help you feel better and live a full life without unnecessary health concerns.</p>",
+    "title": "CBD řešení pro vás",
+    "text": "<p>V dnešním uspěchaném světě je důležité najít chvíle relaxace! Proto nabízíme prémiové CBD produkty, které podpoří vaši cestu ke zdraví. Od CBD květů až po oleje a vaporizéry – CapyCanna je tu, aby vám pomohla. Zasloužíte si cítit se skvěle, a jsme hrdí, že můžeme být součástí vaší cesty k přirozené pohodě.</p><p>Naše nabídka zahrnuje pouze ty nejlepší CBD produkty – oleje, kapky, květy, vaporizéry, čaje a mnoho dalšího. Pomůžeme vám s cestou k odpočinkovému spánku nebo uvolňujícímu odpoledni. Je jen na vás, co si vyberete – s námi máte jistotu kvality.</p>",
     "image": "/images/home/step.png"
   },
   "reviews": {
@@ -103,118 +104,160 @@
       {
         "name": "Lucie Nováková",
         "review": "<p>Velmi spokojená s nákupem.</p><p>Objednala jsem starter pack jako dárek pro přítele a ten byl naprosto nadšený. Je to ideální způsob, jak vyzkoušet vše trochu a najít, co se líbí.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev1-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Jan Kovařík",
         "review": "<p>Kvalitní produkt, hezky zabalený.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev2-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Andreas Müller",
         "review": "<p>Dnes jsem udělal svou první objednávku, koupil hash a květiny... kvalita je skvělá. Také jsem dostal dárek ve formě samolepek. Velmi příjemný bonus)))</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev3-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Chloé Lefevre",
         "review": "<p>Skvělá chuť</p><p>Dobré ceny</p><p>Příjemná podpora</p><p>100% doporučuji</p><p>Ne, nejsem s nimi spojený lol</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev5-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Pierre Dupont",
         "review": "<p>Rozhodl jsem se vyzkoušet CBD vapy na spánek. Pomohlo to skvěle, opravdu uvolňuje, a teď usínám mnohem rychleji. Takže to opravdu funguje. Doporučuji pro lidi s problémy se spánkem.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev4-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Nina Schmidt",
         "review": "<p>Opravdu se mi líbila služba!!! Podpora je úžasná, pomohli mi vyřešit objednávku, když jsem měl otázku. Všechno bylo velmi přátelské a k věci 💚</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev6-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Marek Dvořák",
         "review": "<p>Není to poprvé, co objednávám, a vždy jsem spokojený! Obzvlášť se mi líbí, že mi dali dárek za první objednávku — sticker pack. Je to super, klidně i pro sebe. Opravdu příjemné, že obchod nezapomíná na takové detaily. 10/10</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev8-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Lena Fischer",
         "review": "<p>Je opravdu skvělé , že v obchodě můžete získávat achievementy za určité akce , a pak je přeměnit na slevu.</p><p>Skvělý nápad !</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev7-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Martin Horák",
         "review": "<p>Tohle je už moje druhá objednávka oleje. Kvalita je opět na výborné úrovni. Opravdu mě těší, že produkty procházejí testováním, takže si můžu být jistá, že dostanu přesně to, co jsem objednala. Obzvlášť jsem si užila relaxační účinek, který po použití produktů cítím. Opravdu pomáhá po těžkém dni. Skvělý obchod s dobrým výběrem!</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev11-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Camille Durand",
         "review": "<p>Miluju vaper, je to přesně to, co jsem hledala.</p><p>Hladké, chutné a prostě dokonalé. rozhodně doporučuji.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev9-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Lukas Weber",
         "review": "<p>Používám CBD vaper po trénincích. Pomáhá uvolnit napětí a relaxovat svaly. Zejména po intenzivním cvičení. Samozřejmě to není náhrada za řádnou péči, ale jako doplňkový prostředek pro relaxaci a regeneraci — je to prostě ideální.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev12-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Clara Becker",
         "review": "<p>Osobně mi to pomáhá se stresem. Když cítím úzkost nebo nemohu dlouho usnout, můžu si zapálit hash nebo použít vaper. CBN také pomáhá na spánek.</p><p>Doporučuji to vyzkoušet.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev10-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       }
     ]
   },
   "stars": {
-    "title": "New stars"
+    "title": "Nejoblíbenější výběry",
+    "description": "Podívejte se na naše nejlépe hodnocené produkty, které si zákazníci opakovaně objednávají.",
+    "more": {
+      "text": "Zobrazit všechny produkty",
+      "link": "/stars"
+    }
   },
   "discounted": {
-    "title": "Discounted products"
+    "title": "Speciální nabídky",
+    "description": "Nenechte si ujít úžasné nabídky na prémiové CBD produkty.",
+    "more": {
+      "text": "Zobrazit všechny produkty",
+      "link": "/stars"
+    }
   },
   "faq": {
+    "title": "FAQ – Často kladené otázky",
     "list": [
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Co je CBD?",
+        "answer": "<p>CBD neboli kanabidiol je složka z rostliny konopí (Cannabis sativa), která působí na endokanabinoidní systém (ECS) a pomáhá vyvážit tělo a zlepšit náladu i celkovou pohodu.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Ovlivňuje CBD naše pocity?",
+        "answer": "<p>I když výzkum pokračuje, mnoho lidí používá CBD pro lepší spánek, regulaci hormonů, posílení imunity, úlevu od bolesti a zánětů, zlepšení metabolismu a další benefity.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Jaké druhy CBD produktů jsou dostupné?",
+        "answer": "<p>Produkty CBD jsou k dispozici v různých formách, které uspokojí různé potřeby:</p><p>• Poživatelné produkty: Sušenky, čokolády s CBD.</p><p>• Oleje a tinktury: Kapky k přímé konzumaci nebo do jídla.</p><p>• Kapsle: Pohodlné dávkování na každý den.</p><p>• Topické produkty: Krémy a balzámy na péči o pleť.</p><p>• Vaporizéry: Rychlá inhalace CBD.</p><p>• CBD květy a hash: Přírodní formy pro osobní použití.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Jsou CBD produkty legální?",
+        "answer": "<p>CBD získané z průmyslového konopí s minimální hladinou THC je v EU legální. Pravidla se však liší podle států.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Jsou produkty HHC legální?",
+        "answer": "<p>Většina evropských zemí zakázala HHC. Místo toho doporučujeme legální alternativy, jako CBD nebo CBG.</p>"
+      },
+      {
+        "question": "Jaký je rozdíl mezi CBD a THC?",
+        "answer": "<p>CBD nemá psychoaktivní účinky a je oblíbené díky protizánětlivým a uklidňujícím vlastnostem. THC naopak působí na mysl a mění vnímání.</p>"
+      },
+      {
+        "question": "Jaký je rozdíl mezi CBD a CBG?",
+        "answer": "<p>CBG je méně rozšířené, dražší a působí přímo na mozek a trávící systém. CBD je častější a levnější, vhodné na úzkost a bolest.</p>"
+      },
+      {
+        "question": "Jak dlouho vydrží CBD květy?",
+        "answer": "<p>Při správném skladování více než rok. Uchovávejte je ve vzduchotěsných sklenicích na chladném a tmavém místě.</p>"
+      },
+      {
+        "question": "Kde si mohu koupit květy CBD?",
+        "answer": "<p>CBD květy lze pohodlně zakoupit v mnoha internetových obchodech, včetně toho našeho. Stačí si jen vybrat některé vysoce kvalitní květiny z našeho katalogu, zatímco my se soustředíme na dodávání špičkových produktů.</p>"
+      },
+      {
+        "question": "Mohou se CBD květy kouřit?",
+        "answer": "<p>V mnoha zemích je kouření CBD květů nezákonné, ale můžete je využít na výrobu tinktur, olejů nebo jiných produktů.</p>"
+      },
+      {
+        "question": "Jak CBD funguje?",
+        "answer": "<p>CBD interaguje s mnoha receptorovými systémy, jako jsou serotoninové a dopaminové dráhy, včetně ECS, ale neváže se přímo jako THC. Pozitivně ovlivňuje naše tělo a mozek bez omamných účinků v klíčových oblastech, jako je rovnováha nálad, bolest, imunitní reakce, kvalita spánku a mnoho dalších.</p>"
+      },
+      {
+        "question": "Jaký je správný způsob užívání CBD oleje?",
+        "answer": "<p>Doporučujeme jej užívat sublingválně pro rychlejší a lepší vstřebávání. Začněte zpočátku s malými dávkami 5 - 10 mg nebo 1 - 2 kapky a postupně je zvyšujte po 5 mg (to je 1 kapce) až do okamžiku, kdy vám to bude vyhovovat.</p>"
+      },
+      {
+        "question": "Je CBD nebezpečné?",
+        "answer": "CBD není nebezpečné, pokud kupujete kvalitní produkty. Vždy se poraďte s lékařem, pokud máte pochybnosti nebo užíváte jiné léky.</p>"
       }
-    ],
-    "title": "FAQ"
+    ]
   }
 }

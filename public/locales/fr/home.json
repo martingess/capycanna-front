@@ -4,20 +4,20 @@
   "topSlider": {
     "list": [
       {
-        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "title": "<h2><span>CapyCanna</span> est votre magasin de cannabis de confiance</h2>",
+        "text": "<p>Nous offrons des produits de cannabis de haute qualité pour soutenir votre voyage vers le bien-être. De la fleur de CBD aux huiles apaisantes et aux vapes, CapyCanna peut vous aider à obtenir exactement ce dont vous avez besoin.</p>",
         "img": "/images/home/slider1.png"
       },
       {
-        "title": "<h2><span>Novelties</span> for your pleasure</h2>",
-        "text": "<p>Our new CBD drops will make your mood perfect. And our discounts will make it even better. Hurry up to get in time!</p>",
+        "title": "<h2><span>CapyCanna</span> est votre magasin de cannabis de confiance</h2>",
+        "text": "<p>Nous offrons des produits de cannabis de haute qualité pour soutenir votre voyage vers le bien-être. De la fleur de CBD aux huiles apaisantes et aux vapes, CapyCanna peut vous aider à obtenir exactement ce dont vous avez besoin.</p>",
         "img": "/images/home/slider1.png"
       }
     ]
   },
   "categories": {
-    "title": "Categories",
-    "description": "We can offer only the finest products for you",
+    "title": "Parcourir les catégories populaires",
+    "description": "Découvrez nos produits en les filtrant par catégorie.",
     "list": [
       {
         "title": "Everage",
@@ -27,42 +27,42 @@
         "type": "everage"
       },
       {
-        "title": "Light",
+        "title": "Starter pack",
         "imageBg": "/images/categories/light.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
-        "title": "Strong",
+        "title": "CBD Vape",
         "imageBg": "/images/categories/strong.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
-        "title": "Starter pack",
+        "title": "Fleurs de CBD",
         "imageBg": "/images/categories/starter.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
-        "title": "For health",
+        "title": "Huile de CBD",
         "imageBg": "/images/categories/health.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
-        "title": "For sleeping",
+        "title": "Edibles",
         "imageBg": "/images/categories/sleeping.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
-        "title": "Pain",
+        "title": "Sommeil réparateur",
         "imageBg": "/images/categories/pain.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
@@ -71,150 +71,193 @@
     ]
   },
   "chips": {
-    "title": "Our chips",
+    "title": "Avantages personnalisés",
+    "description": "Obtenez des autocollants sympas, gagnez des points de récompense et débloquez de nouvelles fonctionnalités !",
     "list": [
       {
-        "title": "Bonus program",
-        "text": "<p>Our rewards program is a class act for our customers. For every purchase, you get a capybara and you get bonuses, for which you can buy something else!</p>",
+        "title": "Débloquez des succès – obtenez des réductions",
+        "text": "<p>Gagnez des bonus en accomplissant des actions spécifiques sur notre site et en débloquant des succès. Chaque succès vous rapporte des points bonus qui se transforment automatiquement en réductions pour vos commandes futures.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1-mob.jpg",
         "link": "/bonus-program",
-        "linkText": "Read More"
+        "linkText": "Lire plus"
       },
       {
-        "title": "Awesome sticker pack as a gift",
-        "text": "<p>We give an awesome branded capybaras sticker pack when you place your first order so that you have fond memories of us!</p>",
+        "title": "Pack de stickers offert avec votre première commande",
+        "text": "<p>Recevez un pack de stickers exclusifs Capybara avec votre première commande ! Une manière amusante et mémorable de rejoindre la famille CapyCanna.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
         "link": "/bonus-program",
-        "linkText": "Read More"
+        "linkText": "Lire plus"
       }
     ]
   },
   "step": {
-    "title": "Step into the future",
-    "text": "<p>Our company cares about your health and well-being by offering only the highest quality products to support your physical and emotional well-being. We specialize in natural supplements to help you achieve harmony with yourself and the world around you. Whether you need a relaxing tea or a revitalizing oil, we have everything you need to support your health.</p><p>Our experience in the health and wellbeing industry exceeds 2 years, and in that time we have improved and refined our range, making it even more effective and safer for our customers. We only work with trusted suppliers to ensure that every product that reaches you meets the highest quality standards. Our goal is to help you feel better and live a full life without unnecessary health concerns.</p>",
+    "title": "Des solutions Le cannabidiol pour vous",
+    "text": "<p>Nous savons à quel point il est important de trouver des moments de détente dans nos vies occupées et souvent débordées ! C'est pourquoi nous proposons des produits Le cannabidiol de qualité supérieure pour favoriser votre bien-être. Des fleurs de Le cannabidiol aux huiles apaisantes et aux vapes, CapyCanna peut vous aider à trouver exactement ce dont vous avez besoin. Vous méritez de vous sentir au mieux de votre forme, et nous sommes honorés de vous aider dans votre voyage vers le bien-être naturel.</p><p>CapyCanna ne propose que la meilleure sélection de produits Le cannabidiol que nous essayons toujours d'offrir à nos clients. L'huile de Le cannabidiol, les gouttes, les fleurs, les vaporisateurs, les thés et bien d'autres produits de notre catalogue vous attendent. Nous sommes heureux de vous guider sur le chemin d'un sommeil réparateur ou d'une journée relaxante. C'est à vous de choisir le produit qui vous convient, mais vous aurez toujours la certitude d'avoir mis votre confiance entre de bonnes mains.</p>",
     "image": "/images/home/step.png"
   },
   "reviews": {
-    "title": "Avis ",
-    "description": "Votre avis est important – lisez ce que les autres disent de nos produits.",
+    "title": "Témoignages",
+    "description": "Votre propre opinion est très importante - lisez ce que d'autres disent de nos produits.",
     "list": [
       {
         "name": "Lucie Nováková",
-        "review": "<p>Très contente de mon achat.</p><p>J'ai commandé un starter pack pour offrir à un ami et il était absolument ravi. C’est la manière idéale pour essayer un peu de tout et découvrir ce qu'on aime.</p>",
-        "image": "/images/home/rev.png",
+        "review": "<p>Très contente de mon achat J'ai commandé un starter pack pour offrir à un ami et il était absolument ravi. C’est la manière idéale pour essayer un peu de tout et découvrir ce qu'on aime.</p>",
+        "image": "/images/home/reviews/rev1-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Jan Kovařík",
         "review": "<p>Produit de bonne qualité, bien emballé.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev2-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Andreas Müller",
         "review": "<p>Aujourd'hui, j'ai passé ma première commande, j'ai acheté du hash et des fleurs... la qualité est top. En plus, j'ai reçu un cadeau sous forme d'autocollants. Très joli bonus)))</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev3-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Chloé Lefevre",
         "review": "<p>Super goût</p><p>Bons prix</p><p>Support sympa</p><p>100% recommandable</p><p>Non, je ne travaille pas pour eux lol</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev5-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Pierre Dupont",
         "review": "<p>J'ai décidé d'essayer des vapes CBD pour le sommeil. Ça a très bien marché, ça me détend bien et je m'endors beaucoup plus vite maintenant. Donc ça fonctionne vraiment. Je le recommande pour ceux qui ont des problèmes de sommeil.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev4-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Nina Schmidt",
         "review": "<p>J'ai vraiment aimé le service!!! Le support est génial, ils m'ont aidé à résoudre mon problème avec la commande. Tout était très amical et professionnel 💚</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev6-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Marek Dvořák",
         "review": "<p>Ce n'est pas la première fois que je commande, et je suis toujours satisfait ! J'aime particulièrement qu'ils m'aient offert un cadeau pour ma première commande — un pack d'autocollants. C’est sympa, même pour moi. C’est vraiment agréable de voir qu'ils ne négligent pas ces petits détails. 10/10</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev8-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Lena Fischer",
         "review": "<p>C'est vraiment génial qu'on puisse gagner des achievements dans la boutique pour certaines actions et ensuite les convertir en réduction.</p><p>Super idée !</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev7-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Martin Horák",
         "review": "<p>C'est ma deuxième commande de l'huile. La qualité est toujours au top. Je suis vraiment content que les produits soient testés, ce qui me permet d’être sûr de recevoir exactement ce que j'ai commandé. J'ai particulièrement aimé l'effet relaxant que je ressens après avoir utilisé les produits. Cela aide vraiment après une journée difficile. Super magasin avec un bon choix !</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev11-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Camille Durand",
         "review": "<p>J’adore la vape, c’est exactement ce que je cherchais.</p><p>Douce, savoureuse, et juste parfaite. Je recommande vivement.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev9-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Lukas Weber",
         "review": "<p>J’utilise la vape CBD après mes entraînements. Cela aide à soulager les tensions et à détendre les muscles. Surtout après un entraînement intensif. Bien sûr, ce n’est pas un substitut à des soins appropriés, mais en tant que complément pour la détente et la récupération — c’est juste parfait.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev12-m.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       },
       {
         "name": "Clara Becker",
         "review": "<p>Personnellement, ça m’aide avec le stress. Quand je me sens anxieux ou que je n’arrive pas à m’endormir, je peux fumer du hash ou utiliser la vape. Le CBN aide aussi beaucoup pour le sommeil.</p><p>Je recommande d’essayer.</p>",
-        "image": "/images/home/rev.png",
+        "image": "/images/home/reviews/rev10-w.jpg",
         "stars": "5/5",
         "date": "02.11.2023"
       }
     ]
   },
   "stars": {
-    "title": "New stars"
+    "title": "Nos produits les plus populaires",
+    "description": "Jetez un coup d'œil à nos produits les plus populaires, ceux qui font revenir les gens.",
+    "more": {
+      "text": "Voir tous les produits",
+      "link": "/stars"
+    }
   },
   "discounted": {
-    "title": "Discounted products"
+    "title": "Offres spéciales",
+    "description": "Ne manquez pas ces offres exceptionnelles sur des produits Le cannabidiol de premier ordre.",
+    "more": {
+      "text": "Voir tous les produits",
+      "link": "/stars"
+    }
   },
   "faq": {
+    "title": "Questions Fréquemment Posées",
     "list": [
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Qu'est-ce que le CBD ?",
+        "answer": "<p>Le cannabidiol , ou cannabidiol, est une partie de la plante dérivée du Cannabis sativa qui agit sur le système endocannabinoïde (ECS) pour aider à équilibrer le corps et à améliorer l'humeur et le bien-être en général.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Le cannabidiol affecte-t-il nos sensations?",
+        "answer": "<p>Alors que les recherches se poursuivent sur ses effets sur la santé physique et mentale, de nombreuses personnes dans le monde utilisent le CBD pour améliorer le sommeil, les hormones, l'apprentissage, la mémoire, les processus immunitaires, la douleur ou l'inflammation, le métabolisme et bien d'autres choses encore.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Quels sont les types de produits CBD?",
+        "answer": "<p>Les produits à base de CBD se présentent sous différentes formes pour répondre à différents besoins :</p><p>Boissons : friandises telles que biscuits et chocolats infusés au CBD pour le plaisir et les bienfaits potentiels;</p><p>Huiles et teintures : liquides polyvalents à prendre directement ou à ajouter à la nourriture et aux boissons pour un dosage personnalisé;</p><p>- Capsules : doses pratiques et prémesurées pour une utilisation quotidienne facile;</p><p>- Produits topiques : crèmes et baumes pour un soulagement ciblé, idéal pour les soins de la peau;</p><p>- Produits de vapotage : options d'inhalation à action rapide et accessoires essentiels;</p><p>- Fleurs et haschisch au CBD : moules bruts pour un usage personnel ou des cadeaux uniques;</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Les produits à base de CBD sont-ils légaux?",
+        "answer": "<p>Au sein du marché unique européen, le CBD dérivé du chanvre industriel avec une teneur minimale en THC est légal. Toutefois, les réglementations peuvent varier d'un État membre de l'UE à l'autre, et certains pays imposent des restrictions plus strictes.</p>"
       },
       {
-        "question": "Are there potential health risks if I use a vape pen?",
-        "answer": "<p>There are no health risks</p>"
+        "question": "Les produits contenant du THC sont-ils légaux?",
+        "answer": "<p>Alors que le THC est largement interdit dans les pays européens, les consommateurs peuvent explorer d'autres cannabinoïdes tels que le CBD ou le CBG, qui sont plus largement acceptés.</p>"
+      },
+      {
+        "question": "Quelle est la différence entre le CBD et le THC?",
+        "answer": "<p>La principale différence réside dans la manière dont ils affectent l'esprit. Le CBD n'est pas une substance psychoactive (il n'altère pas la pensée ou la conscience) et est très apprécié pour ses propriétés anti-inflammatoires, protectrices du cerveau et calmantes. Le THC, quant à lui, est connu pour ses effets psychotropes et apporte la joie typique associée au cannabis.</p>"
+      },
+      {
+        "question": "Quelle est la différence entre le CBD et le CBG?",
+        "answer": "<p>Au tout début de la culture, les plantes de cannabis produisent du CBG, qui est transformé en substances similaires au CBD. Le CBD est largement disponible, bon marché et souvent utilisé pour traiter l'anxiété ou la douleur. Le CBG est moins courant et plus cher. Il se connecte directement ͏͏͏͏ au « site cannabinoïde », aidant le cerveau et le système digestif. Les deux médicaments n'affectent pas la conscience et sont combinés en termes d'effets l'un avec l'autre.</p>"
+      },
+      {
+        "question": "Combien de temps peut-on conserver les fleurs de CBD?",
+        "answer": "<p>Les fleurs de CBD peuvent durer plus d'un an si elles sont conservées correctement. Utilisez des bocaux en verre hermétiques, conservez-les dans un endroit sombre et frais (5º à 19º) et maintenez l'humidité entre 55 et 62 % à l'aide d'un humidificateur afin d'éviter les moisissures et la sécheresse. Les réfrigérateurs ne conviennent pas à cet usage en raison des niveaux d'humidité plus élevés.</p>"
+      },
+      {
+        "question": "Peut-on fumer des fleurs de CBD?",
+        "answer": "<p>Bien qu'il soit illégal de fumer des fleurs de CBD dans de nombreux pays, y compris dans l'Union européenne, elles sont souvent utilisées comme souvenirs ou pour créer des produits maison tels que des teintures, des huiles et des produits de boulangerie.</p>"
+      },
+      {
+        "question": "Comment le CBD agit-il?",
+        "answer": "<p>Le CBD interagit avec de nombreux récepteurs tels que la sérotonine et la dopamine, y compris le système ECS, mais ne se lie pas directement à eux comme le fait le THC. Il a des effets positifs sur notre corps et notre cerveau sans provoquer d'effets intoxicants dans des domaines clés tels que l'équilibre de l'humeur, la douleur, les réponses immunitaires, la qualité du sommeil et bien plus encore.</p>"
+      },
+      {
+        "question": "Où puis-je acheter des fleurs de CBD ?",
+        "answer": "<p>Les fleurs de CBD peuvent être achetées dans de nombreuses boutiques en ligne, dont la nôtre. Il vous suffit de choisir des fleurs de haute qualité dans notre catalogue, et nous nous efforcerons de vous livrer des produits de haute qualité.</p>"
+      },
+      {
+        "question": "Quelle est la bonne façon de prendre l'huile de CBD ?",
+        "answer": "<p>Nous recommandons de l'utiliser par voie sublinguale pour une absorption plus rapide et plus efficace. Commencez par de petites doses (5-10 mg ou 1-2 gouttes) au début, puis augmentez progressivement de 5 mg (1 goutte) jusqu'à ce que cela vous convienne.</p>"
+      },
+      {
+        "question": "Le CBD est-il dangereux ?",
+        "answer": "Le CBD lui-même n'est pas dangereux ou nocif lorsqu'il est consommé de manière responsable. Veillez à n'acheter que des produits de haute qualité, car certains peuvent contenir des impuretés. Demandez toujours l'avis de votre médecin si vous avez des doutes ou si vous prenez d'autres médicaments.</p>"
       }
-    ],
-    "title": "FAQ"
+    ]
   }
 }

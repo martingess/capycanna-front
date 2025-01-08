@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import Link from 'next/link';
 import { IconBuy } from '@UI';
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
 
 const BuyButton = () => {
   return (
@@ -28,15 +28,47 @@ const TopSlider = ({ translation }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const sliderList = Array.isArray(t.raw('topSlider.list')) ? t.raw('topSlider.list') : [];
   const swiperRef = useRef(null);
+
+  const sliderDelay = 4000;
+  const sliderDelayOnInteraction = 8000;
+
+  const handleSliderClick = useCallback(() => {
+    const swiperInstance = swiperRef.current?.swiper;
+    if (swiperInstance) {
+      swiperInstance.autoplay.stop();
+      setTimeout(() => {
+        swiperInstance.autoplay.start();
+      }, sliderDelayOnInteraction);
+    }
+  }, []);
+
   const goToSlide = (index) => {
     setActiveIndex(index);
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index);
+    const swiperInstance = swiperRef.current?.swiper;
+    if (swiperInstance) {
+      swiperInstance.slideTo(index);
+      handleSliderClick();
+    }
+  };
+
+  const handleNext = () => {
+    if (activeIndex === sliderList.length - 1) {
+      swiperRef.current?.swiper.slideTo(0);
+    } else {
+      swiperRef.current?.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (activeIndex === 0) {
+      swiperRef.current?.swiper.slideTo(sliderList.length - 1);
+    } else {
+      swiperRef.current?.swiper.slidePrev();
     }
   };
 
   return (
-    <div className={styles['slider']}>
+    <div className={styles['slider']} onClick={handleSliderClick}>
       <div className={styles['slider__wrapper']}>
         <Swiper
           spaceBetween={0}
@@ -44,7 +76,7 @@ const TopSlider = ({ translation }) => {
           slidesPerView={1}
           modules={[Autoplay]}
           autoplay={{
-            delay: 3500,
+            delay: sliderDelay,
             disableOnInteraction: false,
           }}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -70,14 +102,28 @@ const TopSlider = ({ translation }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className={styles['custom-pagination']}>
-          {sliderList.map((_, index) => (
-            <button
-              key={index}
-              className={`${styles['pagination-bullet']} ${activeIndex === index ? styles['active'] : ''}`}
-              onClick={() => goToSlide(index)}
-            />
-          ))}
+        <div className={styles['custom-pagination-wrapper']}>
+          <button
+            onClick={handlePrev}
+            className={`${styles['arrow-wrapper']} ${styles['arrow__left']}`}
+          >
+            <Image src="/icons/slider-arrow.svg" alt="slider-arrow" width={40} height={40} />
+          </button>
+          <div className={styles['custom-pagination']}>
+            {sliderList.map((_, index) => (
+              <button
+                key={index}
+                className={`${styles['pagination-bullet']} ${activeIndex === index ? styles['active'] : ''}`}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
+          </div>
+          <button
+            onClick={handleNext}
+            className={`${styles['arrow-wrapper']} ${styles['arrow__right']}`}
+          >
+            <Image src="/icons/slider-arrow.svg" alt="slider-arrow" width={40} height={40} />
+          </button>
         </div>
         <BuyButton />
       </div>

@@ -11,6 +11,7 @@ const Chips = ({ translation }) => {
     <div className={styles['chips']}>
       <div className={styles['chips__wrapper']}>
         <h3 className={styles['chips__title']}>{t('chips.title')}</h3>
+        <p className={styles['chips__description']}>{t('chips.description')}</p>
         <div className={styles['chips__items']}>
           {list.map(({ title, text, link, linkText, image, imageMobile }) => (
             <div className={styles['chips__item']} key={title}>

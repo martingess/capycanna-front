@@ -64,6 +64,7 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
     <div className={styles['products']}>
       <div className={styles['products__wrapper']}>
         <h2 className={styles['products__title']}>{t(`${place}.title`)}</h2>
+        <p className={styles['products__description']}>{t(`${place}.description`)}</p>
         <div className={styles['products__items']}>
           <Swiper
             spaceBetween={14}
