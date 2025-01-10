@@ -1,49 +1,49 @@
 {
-    "sale": "Sale",
-    "logIn": "Log in",
-    "favorites": "Favorites",
-    "cart": "Cart",
-    "products": "Products",
-    "menu": "Menu",
-    "breadcrumbs": {
-        "b2b": "b2b wholesale",
-        "contact": "Contact us",
-        "cookie-policy": "Cookie policy",
-        "terms-conditions": "Terms and Conditions",
-        "privacy-policy": "Privacy policy",
-        "subscription-terms": "Subscription terms",
-        "return-policy": "Return policy",
-        "disclaimer": "Disclaimer",
-        "analysis": "Analysis",
-        "about-us": "About us"
-    },
-    "yearsOld": {
-        "title": "Are you 18 or older?",
-        "yes": "Yes",
-        "no": "No"
-    },
-    "features": {
-        "list": [
-            {
-                "title": "Sticker pack for the first order",
-                "image": "/images/home/features/sticker.png",
-                "imageBg": "/images/home/features/sticker-bg.png"
-            },
-            {
-                "title": "Bonus program",
-                "image": "/images/home/features/bonus.png",
-                "imageBg": "/images/home/features/bonus-bg.png"
-            },
-            {
-                "title": "Free delivery from 200 euros",
-                "image": "/images/home/features/delivery.png",
-                "imageBg": "/images/home/features/delivery-bg.png"
-            },
-            {
-                "title": "Same day shipment if ordered by 12:00 am",
-                "image": "/images/home/features/ordered.png",
-                "imageBg": "/images/home/features/ordered-bg.png"
-            }
-        ]
-    }
+  "sale": "Sale",
+  "logIn": "Log in",
+  "favorites": "Favorites",
+  "cart": "Cart",
+  "products": "Search",
+  "menu": "Menu",
+  "breadcrumbs": {
+    "b2b": "b2b wholesale",
+    "contact": "Contact us",
+    "cookie-policy": "Cookie policy",
+    "terms-conditions": "Terms and Conditions",
+    "privacy-policy": "Privacy policy",
+    "subscription-terms": "Subscription terms",
+    "return-policy": "Return policy",
+    "disclaimer": "Disclaimer",
+    "analysis": "Analysis",
+    "about-us": "About us"
+  },
+  "yearsOld": {
+    "title": "Are you 18 or older?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Sticker pack for your first order",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Earn achievements - get discounts",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Free shipping from 100€",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Order by 12:00 - shipped today",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  }
 }

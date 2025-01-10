@@ -1,28 +1,28 @@
 {
-	"metaTitle": "Kontaktujte nás",
-	"metaDescription": "Kontaktujte nás",
-	"title": "Kontaktujte nás",
-	"titleLeft": "Kontaktní informace",
-	"over": "Pokud máte jakékoli dotazy, neváhejte nám napsat — rádi vám pomůžeme a odpovíme co nejdříve!",
-	"titleRight": "Zeptejte se",
-	"form": {
-		"email": {
-			"label": "Email",
-			"placeholder": "email@gmail.com",
-			"required": "E-mail je povinný",
-			"invalid": "Neplatný e-mail"
-		},
-		"name": {
-			"label": "Jméno",
-			"placeholder": "Jméno",
-			"required": "Jméno je povinné"
-		},
-		"message": {
-			"label": "Zpráva",
-			"placeholder": "Komentář",
-			"required": " Zpráva je povinná"
-		},
-		"submit": "Odeslat zprávu",
-		"details": "* Odesláním zprávy souhlasíte s podmínkami ochrany osobních údajů"
-	}
+  "metaTitle": "Kontaktujte nás",
+  "metaDescription": "Kontaktujte nás",
+  "title": "Kontaktujte nás",
+  "titleLeft": "Kontaktní informace",
+  "over": "Pokud máte jakékoli dotazy, neváhejte nám napsat — rádi vám pomůžeme a odpovíme co nejdříve!",
+  "titleRight": "Zeptejte se",
+  "form": {
+    "email": {
+      "label": "Email",
+      "placeholder": "email@gmail.com",
+      "required": "E-mail je povinný",
+      "invalid": "Neplatný e-mail"
+    },
+    "name": {
+      "label": "Jméno",
+      "placeholder": "Jméno",
+      "required": "Jméno je povinné"
+    },
+    "message": {
+      "label": "Zpráva",
+      "placeholder": "Komentář",
+      "required": " Zpráva je povinná"
+    },
+    "submit": "Odeslat zprávu",
+    "details": "* Odesláním zprávy souhlasíte s podmínkami ochrany osobních údajů"
+  }
 }

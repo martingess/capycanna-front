@@ -1,28 +1,28 @@
 {
-	"metaTitle": "Kontaktieren Sie uns",
-	"metaDescription": "Kontaktieren Sie uns",
-	"title": "Kontaktieren Sie uns",
-	"titleLeft": "Kontaktinformationen",
-	"over": "Wenn Sie Fragen haben, schreiben Sie uns gerne — wir helfen Ihnen gerne weiter und antworten so schnell wie möglich!",
-	"titleRight": "Stellen Sie eine Frage",
-	"form": {
-		"email": {
-			"label": "E-Mail",
-			"placeholder": "email@gmail.com",
-			"required": "E-Mail ist erforderlich",
-			"invalid": "Ungültige E-Mail"
-		},
-		"name": {
-			"label": "Name",
-			"placeholder": "Name",
-			"required": "Name ist erforderlich"
-		},
-		"message": {
-			"label": "Nachricht",
-			"placeholder": "Kommentar",
-			"required": "Nachricht ist erforderlich"
-		},
-		"submit": "Nachricht senden",
-		"details": "* Mit dem Senden einer Nachricht stimmen Sie den Bedingungen des Datenschutzes zu"
-	}
+  "metaTitle": "Kontaktieren Sie uns",
+  "metaDescription": "Kontaktieren Sie uns",
+  "title": "Kontaktieren Sie uns",
+  "titleLeft": "Kontaktinformationen",
+  "over": "Wenn Sie Fragen haben, schreiben Sie uns gerne — wir helfen Ihnen gerne weiter und antworten so schnell wie möglich!",
+  "titleRight": "Stellen Sie eine Frage",
+  "form": {
+    "email": {
+      "label": "E-Mail",
+      "placeholder": "email@gmail.com",
+      "required": "E-Mail ist erforderlich",
+      "invalid": "Ungültige E-Mail"
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "Name",
+      "required": "Name ist erforderlich"
+    },
+    "message": {
+      "label": "Nachricht",
+      "placeholder": "Kommentar",
+      "required": "Nachricht ist erforderlich"
+    },
+    "submit": "Nachricht senden",
+    "details": "* Mit dem Senden einer Nachricht stimmen Sie den Bedingungen des Datenschutzes zu"
+  }
 }

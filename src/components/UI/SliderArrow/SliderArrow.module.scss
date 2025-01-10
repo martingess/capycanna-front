@@ -1,0 +1,47 @@
+.arrow-wrapper {
+  position: absolute;
+  min-width: 50px;
+  height: 50px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    min-width: 35px;
+    height: 35px;
+    bottom: -30px;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: 1280px) {
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  img {
+    width: 35px;
+    height: auto;
+  }
+
+  @media (min-width: 1280px) {
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.arrow__left {
+  left: 36%;
+
+  @media (min-width: 1280px) {
+    left: 8px;
+  }
+}
+
+.arrow__right {
+  transform: translateY(-50%) scale(-1, 1);
+  right: 36%;
+
+  @media (min-width: 1280px) {
+    right: 8px;
+  }
+}

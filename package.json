@@ -13,7 +13,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "prettier": "prettier --check"
+    "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,json,css,scss,md}'"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -47,8 +47,17 @@
   "devDependencies": {
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
-    "lint-staged": "^15.2.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "prettier": "^3.3.2",
     "sass": "^1.77.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
   }
 }

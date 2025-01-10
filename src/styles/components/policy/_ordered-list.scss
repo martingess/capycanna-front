@@ -1,168 +1,169 @@
 .ordered-list {
-	$_this: &;
+  $_this: &;
 
-	font-size: 13px;
-	line-height: 18px;
-	color: #4D61A2;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4d61a2;
 
-	@include for-desktop-up {
-		font-size: 16px;
-		line-height: 24px;
-	}
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-	&--lower-roman {
-		counter-reset: counter-lower-roman;
-		padding-left: 30px;
-		margin-top: 12px;
+  &--lower-roman {
+    counter-reset: counter-lower-roman;
+    padding-left: 30px;
+    margin-top: 12px;
 
-		@include for-desktop-up {
-			padding-left: 35px;
-		}
+    @include for-desktop-up {
+      padding-left: 35px;
+    }
 
-		#{$_this}__item {
-			counter-increment: counter-lower-roman;
-			position: relative;
+    #{$_this}__item {
+      counter-increment: counter-lower-roman;
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			&:before {
-				content: "(" counter(counter-lower-roman, lower-roman) ")";
-				position: absolute;
-				width: 25px;
-				text-align: right;
-				left: -30px;
-			}
-		}
-	}
+      &:before {
+        content: '(' counter(counter-lower-roman, lower-roman) ')';
+        position: absolute;
+        width: 25px;
+        text-align: right;
+        left: -30px;
+      }
+    }
+  }
 
-	&--lower-latin {
-		counter-reset: counter-lower-latin;
-		padding-left: 30px;
-		margin-top: 12px;
+  &--lower-latin {
+    counter-reset: counter-lower-latin;
+    padding-left: 30px;
+    margin-top: 12px;
 
-		@include for-desktop-up {
-			padding-left: 35px;
-		}
+    @include for-desktop-up {
+      padding-left: 35px;
+    }
 
-		#{$_this}__item {
-			counter-increment: counter-lower-latin;
-			position: relative;
+    #{$_this}__item {
+      counter-increment: counter-lower-latin;
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			&:before {
-				content: "(" counter(counter-lower-latin, lower-latin) ")";
-				position: absolute;
-				width: 25px;
-				text-align: right;
-				left: -30px;
-			}
-		}
-	}
+      &:before {
+        content: '(' counter(counter-lower-latin, lower-latin) ')';
+        position: absolute;
+        width: 25px;
+        text-align: right;
+        left: -30px;
+      }
+    }
+  }
 
-	&--decimal-bracket {
-		counter-reset: counter-decimal-bracket;
-		padding-left: 30px;
-		margin-top: 12px;
+  &--decimal-bracket {
+    counter-reset: counter-decimal-bracket;
+    padding-left: 30px;
+    margin-top: 12px;
 
-		@include for-desktop-up {
-			padding-left: 35px;
-		}
+    @include for-desktop-up {
+      padding-left: 35px;
+    }
 
-		#{$_this}__item {
-			counter-increment: counter-decimal-bracket;
-			position: relative;
+    #{$_this}__item {
+      counter-increment: counter-decimal-bracket;
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			&:before {
-				content: "(" counter(counter-decimal-bracket, decimal) ")";
-				position: absolute;
-				width: 25px;
-				text-align: right;
-				left: -30px;
-			}
-		}
-	}
+      &:before {
+        content: '(' counter(counter-decimal-bracket, decimal) ')';
+        position: absolute;
+        width: 25px;
+        text-align: right;
+        left: -30px;
+      }
+    }
+  }
 
-	&--decimal {
-		counter-reset: counter-decimal;
-		margin-top: 12px;
+  &--decimal {
+    counter-reset: counter-decimal;
+    margin-top: 12px;
 
-		#{$_this}__item {
-			counter-increment: counter-decimal;
-			position: relative;
+    #{$_this}__item {
+      counter-increment: counter-decimal;
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			.headline {
-				padding-top: 0;
-				margin-top: 0;
-				display: inline;
-			}
+      .headline {
+        padding-top: 0;
+        margin-top: 0;
+        display: inline;
+      }
 
-			&:before {
-				content: counter(counter-decimal, decimal) '. ';
-				position: absolute;
-				left: -12px;
+      &:before {
+        content: counter(counter-decimal, decimal) '. ';
+        position: absolute;
+        left: -12px;
 
-				@include for-desktop-up {
-					left: -15px;
-				}
-			}
-		}
-	}
+        @include for-desktop-up {
+          left: -15px;
+        }
+      }
+    }
+  }
 
-	&--decimal-outer {
-		counter-reset: counter-decimal-outer;
+  &--decimal-outer {
+    counter-reset: counter-decimal-outer;
 
-		#{$_this}__item {
-			counter-increment: counter-decimal-outer;
-			position: relative;
-			margin-top: 30px;
+    #{$_this}__item {
+      counter-increment: counter-decimal-outer;
+      position: relative;
+      margin-top: 30px;
 
-			.headline {
-				padding-top: 0;
-				margin-top: 0;
-				display: inline;
-			}
+      .headline {
+        padding-top: 0;
+        margin-top: 0;
+        display: inline;
+      }
 
-			&:before {
-				font-size: 20px;
-				line-height: 28px;
-				font-weight: 700;
-				color: #01175e;
-				content: counter(counter-decimal-outer, decimal) '. ';
+      &:before {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #01175e;
+        content: counter(counter-decimal-outer, decimal) '. ';
 
-				@include for-desktop-up {
-					font-size: 24px;
-				}
-			}
+        @include for-desktop-up {
+          font-size: 24px;
+        }
+      }
 
-			#{$_this}--decimal-inner {
-				counter-reset: counter-decimal-inner;
-				margin-top: 12px;
+      #{$_this}--decimal-inner {
+        counter-reset: counter-decimal-inner;
+        margin-top: 12px;
 
-				#{$_this}__item-inner {
-					counter-increment: counter-decimal-inner;
+        #{$_this}__item-inner {
+          counter-increment: counter-decimal-inner;
 
-					& + #{$_this}__item-inner {
-						margin-top: 12px;
-					}
+          & + #{$_this}__item-inner {
+            margin-top: 12px;
+          }
 
-					&:before {
-						content: counter(counter-decimal-outer, decimal) '.' counter(counter-decimal-inner, decimal) ' ';
-					}
-				}
-			}
-		}
-	}
+          &:before {
+            content: counter(counter-decimal-outer, decimal) '.'
+              counter(counter-decimal-inner, decimal) ' ';
+          }
+        }
+      }
+    }
+  }
 }

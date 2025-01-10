@@ -1,28 +1,28 @@
 {
-	"metaTitle": "Contact us",
-	"metaDescription": "Contact us",
-	"title": "Contact us",
-	"titleLeft": "Contact information",
-	"over": "If you have any questions, feel free to write to us — we're always happy to help and will reply as soon as possible!",
-	"titleRight": "Ask a question",
-	"form": {
-		"email": {
-			"label": "Email",
-			"placeholder": "email@gmail.com",
-			"required": "Email is required",
-			"invalid": "Invalid email"
-		},
-		"name": {
-			"label": "Name",
-			"placeholder": "Name",
-			"required": "Name is required"
-		},
-		"message": {
-			"label": "Message",
-			"placeholder": "Comment",
-			"required": "Message is required"
-		},
-		"submit": "Send message",
-		"details": "* By sending a message, you agree to the terms of personal data protection"
-	}
+  "metaTitle": "Contact us",
+  "metaDescription": "Contact us",
+  "title": "Contact us",
+  "titleLeft": "Contact information",
+  "over": "If you have any questions, feel free to write to us — we're always happy to help and will reply as soon as possible!",
+  "titleRight": "Ask a question",
+  "form": {
+    "email": {
+      "label": "Email",
+      "placeholder": "email@gmail.com",
+      "required": "Email is required",
+      "invalid": "Invalid email"
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "Name",
+      "required": "Name is required"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Comment",
+      "required": "Message is required"
+    },
+    "submit": "Send message",
+    "details": "* By sending a message, you agree to the terms of personal data protection"
+  }
 }

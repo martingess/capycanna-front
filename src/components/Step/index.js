@@ -23,7 +23,7 @@ const Step = ({ translation }) => {
         />
       </div>
       <Image
-        src={'/images/products/bg.png'}
+        src={'/images/products/bg-step.png'}
         width={1918}
         height={938}
         alt="products-bg"

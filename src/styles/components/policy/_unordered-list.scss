@@ -1,66 +1,66 @@
 .unordered-list {
-	$_this: &;
+  $_this: &;
 
-	font-size: 13px;
-	line-height: 18px;
-	color: #6b7295;
+  font-size: 13px;
+  line-height: 18px;
+  color: #6b7295;
 
-	@include for-desktop-up {
-		font-size: 16px;
-		line-height: 24px;
-	}
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-	&--hyphen {
-		padding-left: 25px;
-		margin-top: 12px;
+  &--hyphen {
+    padding-left: 25px;
+    margin-top: 12px;
 
-		@include for-desktop-up {
-			padding-left: 30px;
-		}
+    @include for-desktop-up {
+      padding-left: 30px;
+    }
 
-		#{$_this}__item {
-			position: relative;
+    #{$_this}__item {
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			&:before {
-				content: "-";
-				position: absolute;
-				margin-left: -15px;
-			}
-		}
-	}
+      &:before {
+        content: '-';
+        position: absolute;
+        margin-left: -15px;
+      }
+    }
+  }
 
-	&--dot {
-		padding-left: 25px;
-		margin-top: 12px;
+  &--dot {
+    padding-left: 25px;
+    margin-top: 12px;
 
-		@include for-desktop-up {
-			padding-left: 30px;
-		}
+    @include for-desktop-up {
+      padding-left: 30px;
+    }
 
-		#{$_this}__item {
-			position: relative;
+    #{$_this}__item {
+      position: relative;
 
-			& + #{$_this}__item {
-				margin-top: 12px;
-			}
+      & + #{$_this}__item {
+        margin-top: 12px;
+      }
 
-			&:before {
-				content: " ";
-				width: 4px;
-				height: 4px;
-				background-color: #00c2ff;
-				position: absolute;
-				top: 6px;
-				margin-left: -15px;
+      &:before {
+        content: ' ';
+        width: 4px;
+        height: 4px;
+        background-color: #00c2ff;
+        position: absolute;
+        top: 6px;
+        margin-left: -15px;
 
-				@include for-desktop-up {
-					top: 9px;
-				}
-			}
-		}
-	}
+        @include for-desktop-up {
+          top: 9px;
+        }
+      }
+    }
+  }
 }

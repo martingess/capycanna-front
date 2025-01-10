@@ -1,32 +1,32 @@
 {
-	"metaTitle": "About Us",
-	"metaDescription": "About Us",
-	"title": "About Us",
-	"text": {
-		"top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"about us\" /> <p>Welcome to CapyCanna – your go-to online store for legal cannabis products, designed for those who value quality, reliability, and personalized service. Our mission is to make purchasing cannabis products easy, safe, and enjoyable for every customer.</p><p>At CapyCanna, you’ll find everything you need: vapes, disposable cartridges, flowers, hash, oils, edibles, crumble, joints, and accessories. We offer only certified products, each backed by lab-tested proof of legality.</p><p>We value your time and convenience. Retail customers can easily place orders on our website or get advice via email. For wholesale clients, we provide a tailored approach – contact us by phone or email to discuss terms.</p><p>CapyCanna rewards loyalty: for every purchase, you earn points that can be converted into discounts. As a token of appreciation, new customers receive a sticker pack with their first order. Plus, we offer free shipping on orders over €100.</p><p>Our goal is to ensure every purchase leaves you with a positive experience. Orders placed before 12:00 are shipped the same day. Please note that delivery is handled by third-party companies, and shipping times may vary depending on the destination country.</p><p>CapyCanna – your trusted partner in the world of legal cannabis.</p>"
-	},
-	"features": {
-		"list": [
-			{
-				"title": "Sticker pack for your first order",
-				"image": "/images/home/features/sticker.png",
-				"imageBg": "/images/home/features/sticker-bg.png"
-			},
-			{
-				"title": "Earn Achievements - Get Discounts",
-				"image": "/images/home/features/bonus.png",
-				"imageBg": "/images/home/features/bonus-bg.png"
-			},
-			{
-				"title": "Free shipping from 100€",
-				"image": "/images/home/features/delivery.png",
-				"imageBg": "/images/home/features/delivery-bg.png"
-			},
-			{
-				"title": "Order by 12:00 - shipped today",
-				"image": "/images/home/features/ordered.png",
-				"imageBg": "/images/home/features/ordered-bg.png"
-			}
-		]
-	}
+  "metaTitle": "About Us",
+  "metaDescription": "About Us",
+  "title": "About Us",
+  "text": {
+    "top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"about us\" /> <p>Welcome to CapyCanna – your go-to online store for legal cannabis products, designed for those who value quality, reliability, and personalized service. Our mission is to make purchasing cannabis products easy, safe, and enjoyable for every customer.</p><p>At CapyCanna, you’ll find everything you need: vapes, disposable cartridges, flowers, hash, oils, edibles, crumble, joints, and accessories. We offer only certified products, each backed by lab-tested proof of legality.</p><p>We value your time and convenience. Retail customers can easily place orders on our website or get advice via email. For wholesale clients, we provide a tailored approach – contact us by phone or email to discuss terms.</p><p>CapyCanna rewards loyalty: for every purchase, you earn points that can be converted into discounts. As a token of appreciation, new customers receive a sticker pack with their first order. Plus, we offer free shipping on orders over €100.</p><p>Our goal is to ensure every purchase leaves you with a positive experience. Orders placed before 12:00 are shipped the same day. Please note that delivery is handled by third-party companies, and shipping times may vary depending on the destination country.</p><p>CapyCanna – your trusted partner in the world of legal cannabis.</p>"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Sticker pack for your first order",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Earn Achievements - Get Discounts",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Free shipping from 100€",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Order by 12:00 - shipped today",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  }
 }

@@ -150,6 +150,13 @@
 .swiper {
   width: 100%;
 }
+.custom-pagination-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 .custom-pagination {
   display: flex;
   justify-content: center;
@@ -177,6 +184,32 @@
       background-color: #a74e30;
     }
   }
+}
+.arrow-wrapper {
+  position: absolute;
+  min-width: 35px;
+  height: 35px;
+  bottom: 12px;
+  transform: translateY(-50%);
+  z-index: 3;
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  @media (min-width: 1500px) {
+    bottom: 70px;
+  }
+}
+
+.arrow__left {
+  left: 36%;
+}
+
+.arrow__right {
+  transform: translateY(-50%) scale(-1, 1);
+  right: 36%;
 }
 .buy {
   display: inline-block;

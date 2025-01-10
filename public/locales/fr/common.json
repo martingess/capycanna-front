@@ -1,49 +1,49 @@
 {
-    "sale": "Promotion",
-    "logIn": "Se connecter",
-    "favorites": "Favorites",
-    "cart": "Cart",
-    "products": "Products",
-    "menu": "Menu",
-    "breadcrumbs": {
-        "b2b": "b2b wholesale",
-        "contact": "Contactez-nous",
-        "cookie-policy": "Politique d'utilisation des cookies",
-        "terms-conditions": "Conditions générales",
-        "privacy-policy": "Politique de Confidentialité",
-        "subscription-terms": "Subscription terms",
-        "return-policy": "Politique de Retour",
-        "disclaimer": "Avertissement",
-        "analysis": "Analyse",
-        "about-us": "À propos de nous"
-    },
-    "yearsOld": {
-        "title": "Avez-vous 18 ans ou plus ?",
-        "yes": "Oui",
-        "no": "Non"
-    },
-    "features": {
-        "list": [
-            {
-                "title": "Sticker pack for the first order",
-                "image": "/images/home/features/sticker.png",
-                "imageBg": "/images/home/features/sticker-bg.png"
-            },
-            {
-                "title": "Bonus program",
-                "image": "/images/home/features/bonus.png",
-                "imageBg": "/images/home/features/bonus-bg.png"
-            },
-            {
-                "title": "Free delivery from 200 euros",
-                "image": "/images/home/features/delivery.png",
-                "imageBg": "/images/home/features/delivery-bg.png"
-            },
-            {
-                "title": "Same day shipment if ordered by 12:00 am",
-                "image": "/images/home/features/ordered.png",
-                "imageBg": "/images/home/features/ordered-bg.png"
-            }
-        ]
-    }
+  "sale": "Promotion",
+  "logIn": "Se connecter",
+  "favorites": "Favorites",
+  "cart": "Cart",
+  "products": "Products",
+  "menu": "Menu",
+  "breadcrumbs": {
+    "b2b": "b2b wholesale",
+    "contact": "Contactez-nous",
+    "cookie-policy": "Politique d'utilisation des cookies",
+    "terms-conditions": "Conditions générales",
+    "privacy-policy": "Politique de Confidentialité",
+    "subscription-terms": "Subscription terms",
+    "return-policy": "Politique de Retour",
+    "disclaimer": "Avertissement",
+    "analysis": "Analyse",
+    "about-us": "À propos de nous"
+  },
+  "yearsOld": {
+    "title": "Avez-vous 18 ans ou plus ?",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Pack de stickers offert avec votre première commande",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Gagnez des succès - obtenez des réductions",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Livraison gratuite dès 100 €",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Commandez avant 12h00 - expédié aujourd'hui",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  }
 }

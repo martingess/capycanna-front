@@ -1,32 +1,32 @@
 {
-	"metaTitle": "Über uns",
-	"metaDescription": "Über uns",
-	"title": "Über uns",
-	"text": {
-		"top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"O nás\" /> <p>Willkommen bei CapyCanna – Ihrem Onlineshop für legale Cannabis-Produkte, der für diejenigen geschaffen wurde, die Wert auf Qualität, Zuverlässigkeit und individuellen Service legen. Unsere Mission ist es, den Kauf von Cannabis-Produkten für jeden Kunden einfach, sicher und angenehm zu gestalten.</p><p>Im Sortiment von CapyCanna finden Sie alles, was Sie brauchen: Vapes, Einweg-Cartridges, Blüten, Haschisch, Öle, Edibles, Crumble, Joints und Zubehör. Wir bieten ausschließlich zertifizierte Produkte an, die durch Labortests auf ihre Legalität überprüft sind.</p><p>Wir schätzen Ihre Zeit und Ihren Komfort. Privatkunden können problemlos über unsere Webseite bestellen oder sich per E-Mail beraten lassen. Für Geschäftskunden bieten wir einen individuellen Service – kontaktieren Sie uns telefonisch oder per E-Mail, um die Konditionen zu besprechen.</p><p>CapyCanna belohnt Loyalität: Für jeden Einkauf erhalten Sie Punkte, die in Rabatte umgewandelt werden können. Neue Kunden erhalten als Dankeschön ein Stickerpaket. Ab einem Bestellwert von 100 Euro ist der Versand kostenlos.</p><p>Unser Ziel ist es, dass jeder Einkauf positive Emotionen hinterlässt. Bestellungen, die bis 12:00 Uhr eingehen, werden noch am selben Tag versendet. Bitte beachten Sie, dass der Versand von externen Dienstleistern durchgeführt wird und die Lieferzeiten je nach Zielland variieren können.</p><p>CapyCanna – Ihr zuverlässiger Partner in der Welt des legalen Cannabis.</p>"
-	},
-	"features": {
-		"list": [
-			{
-				"title": "Stickerpaket für deine erste Bestellung",
-				"image": "/images/home/features/sticker.png",
-				"imageBg": "/images/home/features/sticker-bg.png"
-			},
-			{
-				"title": "Erfolge sammeln – Rabatte sichern",
-				"image": "/images/home/features/bonus.png",
-				"imageBg": "/images/home/features/bonus-bg.png"
-			},
-			{
-				"title": "Kostenloser Versand ab 100 €",
-				"image": "/images/home/features/delivery.png",
-				"imageBg": "/images/home/features/delivery-bg.png"
-			},
-			{
-				"title": "Bestellung bis 12:00 – Versand noch heute",
-				"image": "/images/home/features/ordered.png",
-				"imageBg": "/images/home/features/ordered-bg.png"
-			}
-		]
-	}
+  "metaTitle": "Über uns",
+  "metaDescription": "Über uns",
+  "title": "Über uns",
+  "text": {
+    "top": "<img src=\"/images/aboutUs/aboutUs.jpg\" width=\"788\" height=\"405\" alt=\"O nás\" /> <p>Willkommen bei CapyCanna – Ihrem Onlineshop für legale Cannabis-Produkte, der für diejenigen geschaffen wurde, die Wert auf Qualität, Zuverlässigkeit und individuellen Service legen. Unsere Mission ist es, den Kauf von Cannabis-Produkten für jeden Kunden einfach, sicher und angenehm zu gestalten.</p><p>Im Sortiment von CapyCanna finden Sie alles, was Sie brauchen: Vapes, Einweg-Cartridges, Blüten, Haschisch, Öle, Edibles, Crumble, Joints und Zubehör. Wir bieten ausschließlich zertifizierte Produkte an, die durch Labortests auf ihre Legalität überprüft sind.</p><p>Wir schätzen Ihre Zeit und Ihren Komfort. Privatkunden können problemlos über unsere Webseite bestellen oder sich per E-Mail beraten lassen. Für Geschäftskunden bieten wir einen individuellen Service – kontaktieren Sie uns telefonisch oder per E-Mail, um die Konditionen zu besprechen.</p><p>CapyCanna belohnt Loyalität: Für jeden Einkauf erhalten Sie Punkte, die in Rabatte umgewandelt werden können. Neue Kunden erhalten als Dankeschön ein Stickerpaket. Ab einem Bestellwert von 100 Euro ist der Versand kostenlos.</p><p>Unser Ziel ist es, dass jeder Einkauf positive Emotionen hinterlässt. Bestellungen, die bis 12:00 Uhr eingehen, werden noch am selben Tag versendet. Bitte beachten Sie, dass der Versand von externen Dienstleistern durchgeführt wird und die Lieferzeiten je nach Zielland variieren können.</p><p>CapyCanna – Ihr zuverlässiger Partner in der Welt des legalen Cannabis.</p>"
+  },
+  "features": {
+    "list": [
+      {
+        "title": "Stickerpaket für deine erste Bestellung",
+        "image": "/images/home/features/sticker.png",
+        "imageBg": "/images/home/features/sticker-bg.png"
+      },
+      {
+        "title": "Erfolge sammeln – Rabatte sichern",
+        "image": "/images/home/features/bonus.png",
+        "imageBg": "/images/home/features/bonus-bg.png"
+      },
+      {
+        "title": "Kostenloser Versand ab 100 €",
+        "image": "/images/home/features/delivery.png",
+        "imageBg": "/images/home/features/delivery-bg.png"
+      },
+      {
+        "title": "Bestellung bis 12:00 – Versand noch heute",
+        "image": "/images/home/features/ordered.png",
+        "imageBg": "/images/home/features/ordered-bg.png"
+      }
+    ]
+  }
 }
