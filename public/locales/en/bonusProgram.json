@@ -1,0 +1,99 @@
+{
+  "metaTitle": "Bonus program",
+  "metaDescription": "Bonus program",
+  "title": "How bonus program works",
+  "description": "Earn bonuses by completing specific actions on our site and unlocking achievements. Each achievement you complete grants bonus points, which automatically convert into discounts for future orders.",
+  "blocks": {
+    "1": {
+      "title": "Locked achievement. Click to see what you can earn.",
+      "subText": "Acquaintance"
+    },
+    "2": {
+      "title": "The green outline shows your progress towards completing the achievement.",
+      "subText": "Acquaintance"
+    },
+    "3": {
+      "title": "When you unlock an achievement, the icon will turn green. Start collecting your bonuses!",
+      "subText": "Acquaintance"
+    },
+    "4": {
+      "title": "Once you've completed a round, many achievements can be earned multiple times!",
+      "subText": "Acquaintance"
+    }
+  },
+  "descriptionBlock": {
+    "title": "How to collect bonuses",
+    "imageText1": "10 bonus achievement",
+    "imageText2": "=",
+    "imageText3": "1 euro",
+    "main": {
+      "title": "To start earning bonuses, complete some easy tasks! For example, you can collect your first bonus just by registering on the site. ",
+      "text": "Once logged in, open the Bonuses and Achievements menu in your account. There, you'll see the 'Trailblazer' achievement ready for you. Click on it, collect your bonus, and voilà—your bonus points will automatically convert into a discount you can apply during checkout in your cart."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "question": "What are achievements, and how can I earn them?",
+        "answer": "<p>Achievements are rewards you earn by completing specific tasks, like registering on the site or making purchases. Each completed achievement gives bonus points, which automatically convert into discounts.</p>"
+      },
+      {
+        "question": "Where can I find my achievements and bonus points?",
+        "answer": "<p>Log into your account and go to the Bonuses and Achievements section in the menu. Here, you can view your current achievements and any new tasks available to earn more bonuses.</p>"
+      },
+      {
+        "question": "How do I claim my bonus points?",
+        "answer": "<p>Simply click on the achievement you've completed to collect your bonus points. They’ll automatically convert into a discount that you can apply during checkout in your cart.</p>"
+      },
+      {
+        "question": "How are bonus points converted into discounts?",
+        "answer": "<p>Every 10 bonus points you earn automatically convert into a €1 discount, which you can apply during checkout in your cart. The exact discount amount will also be visible in the Bonuses and Achievements section of your account.</p>"
+      },
+      {
+        "question": "Are there limits to how many bonus points I can earn?",
+        "answer": "<p>No, there’s no set limit! You can keep earning points by completing available tasks and new achievements as they’re added.</p>"
+      },
+      {
+        "question": "Do my bonus points expire?",
+        "answer": "<p>No, your bonus points stay with you permanently.</p>"
+      },
+      {
+        "question": "Can I earn bonuses for multiple tasks at once?",
+        "answer": "<p>Yes! You can complete multiple tasks and earn bonuses for each. For example, you might earn bonuses for both registering and making your first purchase on the same day.</p>"
+      },
+      {
+        "question": "Why don’t my bonus points appear after completing a task?",
+        "answer": "<p>To display bonus points, you need to collect them by clicking on the achievement you've unlocked.</p><p>Points should show up shortly after collecting. If there’s a delay, please check the Bonuses and Achievements menu or contact customer support for assistance.</p>"
+      },
+      {
+        "question": "How can I check how many bonus points I currently have?",
+        "answer": "<p>Go to the Bonuses and Achievements section in your account to see a detailed breakdown of your current points and all achievements you've completed.</p>"
+      },
+      {
+        "question": "What types of actions can I do to earn achievements?",
+        "answer": "<p>Actions vary but may include registering, making purchases, placing regular orders, and more. Check your Bonuses and Achievements section to view specific tasks.</p>"
+      },
+      {
+        "question": "How can I track my progress on an achievement?",
+        "answer": "<p>A green outline around the achievement icon shows your progress. When the icon turns fully green, you’ve completed it!</p>"
+      },
+      {
+        "question": "What happens if I forget to claim an unlocked achievement?",
+        "answer": "<p>Don’t worry! Unclaimed achievements remain in your account until you claim them, so you can collect your bonuses anytime.</p>"
+      },
+      {
+        "question": "How do I know if an achievement can be completed multiple times?",
+        "answer": "<p>The description of each achievement in the Bonuses and Achievements menu will indicate if it can be earned repeatedly.</p>"
+      },
+      {
+        "question": "Can I transfer my bonus points to another user?",
+        "answer": "<p>Bonus points are non-transferable and can only be used within the account where they were earned.</p>"
+      },
+      {
+        "question": "Can I save up bonus points for a bigger discount later?",
+        "answer": "<p>Bonus points automatically convert to discounts. However, you can keep collecting points to build up a larger discount for future use.</p>"
+      }
+    ]
+  }
+}

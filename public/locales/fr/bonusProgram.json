@@ -1,0 +1,99 @@
+{
+  "metaTitle": "Programme de bonus",
+  "metaDescription": "Programme de bonus",
+  "title": "Comment fonctionne le programme de bonus",
+  "description": "Gagnez des bonus en accomplissant des actions spécifiques sur notre site et en débloquant des accomplissements. Chaque accomplissement que vous complétez vous accorde des points bonus, qui se convertissent automatiquement en réductions pour vos prochaines commandes.",
+  "blocks": {
+    "1": {
+      "title": "Accomplissement verrouillé. Cliquez pour voir ce que vous pouvez gagner.",
+      "subText": "Acquaintance"
+    },
+    "2": {
+      "title": "Le contour vert indique votre progression vers l'accomplissement.",
+      "subText": "Acquaintance"
+    },
+    "3": {
+      "title": "Lorsque vous débloquez un accomplissement, l'icône devient verte. Commencez à collecter vos bonus !",
+      "subText": "Acquaintance"
+    },
+    "4": {
+      "title": "Une fois un cycle terminé, de nombreux accomplissements peuvent être gagnés plusieurs fois !",
+      "subText": "Acquaintance"
+    }
+  },
+  "descriptionBlock": {
+    "title": "Comment collecter des bonus",
+    "imageText1": "10 points bonus",
+    "imageText2": "=",
+    "imageText3": "1 euro",
+    "main": {
+      "title": "Pour commencer à gagner des bonus, accomplissez quelques tâches simples ! Par exemple, vous pouvez obtenir votre premier bonus simplement en vous inscrivant sur le site.",
+      "text": "Une fois connecté, ouvrez le menu 'Bonus et Accomplissements' dans votre compte. Vous y verrez l'accomplissement 'Pionnier' prêt pour vous. Cliquez dessus, collectez votre bonus, et voilà—vos points bonus se convertiront automatiquement en une réduction que vous pourrez appliquer lors du paiement dans votre panier."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "question": "Qu'est-ce que les accomplissements, et comment puis-je les gagner ?",
+        "answer": "<p>Les accomplissements sont des récompenses que vous obtenez en accomplissant des tâches spécifiques, comme vous inscrire sur le site ou effectuer des achats. Chaque accomplissement complété offre des points bonus, qui se convertissent automatiquement en réductions.</p>"
+      },
+      {
+        "question": "Où puis-je trouver mes accomplissements et mes points bonus ?",
+        "answer": "<p>Connectez-vous à votre compte et accédez à la section 'Bonus et Accomplissements' du menu. Vous pourrez y consulter vos accomplissements actuels et les nouvelles tâches disponibles pour gagner plus de bonus.</p>"
+      },
+      {
+        "question": "Comment puis-je réclamer mes points bonus ?",
+        "answer": "<p>Il vous suffit de cliquer sur l'accomplissement que vous avez complété pour collecter vos points bonus. Ils seront automatiquement convertis en réduction à appliquer lors du paiement dans votre panier.</p>"
+      },
+      {
+        "question": "Comment les points bonus se transforment-ils en réductions ?",
+        "answer": "<p>Chaque 10 points bonus gagnés se convertissent automatiquement en une réduction de 1 €, que vous pouvez appliquer lors du paiement dans votre panier. Le montant exact de la réduction sera également visible dans la section 'Bonus et Accomplissements' de votre compte.</p>"
+      },
+      {
+        "question": "Y a-t-il une limite au nombre de points bonus que je peux gagner ?",
+        "answer": "<p>Non, il n’y a pas de limite définie ! Vous pouvez continuer à gagner des points en accomplissant les tâches disponibles et les nouveaux accomplissements ajoutés.</p>"
+      },
+      {
+        "question": "Mes points bonus expirent-ils ?",
+        "answer": "<p>Non, vos points bonus restent valides en permanence.</p>"
+      },
+      {
+        "question": "Puis-je gagner des bonus pour plusieurs tâches en même temps ?",
+        "answer": "<p>Non, vos points bonus restent valides en permanence.</p><p>Body by se měly zobrazit krátce po získání. Pokud nastane zpoždění, zkontrolujte menu Bonusy a Úspěchy nebo kontaktujte zákaznickou podporu pro pomoc.</p>"
+      },
+      {
+        "question": "Pourquoi mes points bonus n’apparaissent-ils pas après avoir accompli une tâche ?",
+        "answer": "<p>Pour afficher les points bonus, vous devez les collecter en cliquant sur l'accomplissement que vous avez débloqué.</p><p>Les points devraient apparaître peu de temps après leur collecte. Si un délai persiste, veuillez vérifier le menu 'Bonus et Accomplissements' ou contacter le support client pour assistance.</p>"
+      },
+      {
+        "question": "Comment puis-je vérifier combien de points bonus je possède actuellement ?",
+        "answer": "<p>Accédez à la section 'Bonus et Accomplissements' de votre compte pour voir un aperçu détaillé de vos points actuels et de toutes les accomplissements que vous avez complétés.</p>"
+      },
+      {
+        "question": "Quels types d'actions puis-je accomplir pour gagner des accomplissements ?",
+        "answer": "<p>Les actions varient mais peuvent inclure l'inscription, les achats, les commandes régulières, et plus encore. Consultez votre section 'Bonus et Accomplissements' pour voir les tâches spécifiques.</p>"
+      },
+      {
+        "question": "Comment puis-je suivre ma progression dans un accomplissement ?",
+        "answer": "<p>Un contour vert autour de l'icône de l'accomplissement montre votre progression. Lorsque l'icône devient complètement verte, vous l'avez complété !</p>"
+      },
+      {
+        "question": "Que se passe-t-il si j’oublie de réclamer un accomplissement débloqué ?",
+        "answer": "<p>Pas d’inquiétude ! Les accomplissements non réclamés restent dans votre compte jusqu’à ce que vous les réclamiez, vous pouvez donc collecter vos bonus à tout moment.</p>"
+      },
+      {
+        "question": "Comment savoir si un accomplissement peut être complété plusieurs fois ?",
+        "answer": "<p>La description de chaque accomplissement dans le menu 'Bonus et Accomplissements' indiquera si elle peut être gagnée à plusieurs reprises.</p>"
+      },
+      {
+        "question": "Puis-je transférer mes points bonus à un autre utilisateur ?",
+        "answer": "<p>Les points bonus sont non transférables et ne peuvent être utilisés que sur le compte où ils ont été gagnés.</p>"
+      },
+      {
+        "question": "Puis-je accumuler des points bonus pour une réduction plus importante plus tard ?",
+        "answer": "<p>Les points bonus se convertissent automatiquement en réductions. Cependant, vous pouvez continuer à collecter des points pour obtenir une réduction plus importante lors d'une future commande.</p>"
+      }
+    ]
+  }
+}
