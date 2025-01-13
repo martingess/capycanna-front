@@ -1,0 +1,164 @@
+.bonus {
+  &__wrapper {
+    width: 100%;
+    max-width: 1620px;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  &__title {
+    color: #221b15;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 20px;
+
+    @media (min-width: 960px) {
+      font-size: 60px;
+    }
+  }
+
+  &__description {
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 16px;
+    text-align: center;
+
+    @media (min-width: 960px) {
+      font-size: 26px;
+    }
+  }
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    @media (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 960px) {
+      margin-bottom: 100px;
+    }
+
+    @media (min-width: 1110px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FFF9EF;
+  }
+
+  &__block-title {
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+
+    @media (min-width: 960px) {
+      font-size: 18px;
+    }
+  }
+
+  &__block-image-wrapper {
+    position: relative;
+    margin-top: auto;
+  }
+
+  &__block-image {
+    padding: 24px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  &__block-image-arrow {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__block-subText {
+    line-height: 160%;
+  }
+
+  &__description-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: 280px;
+    margin-top: 40px;
+
+    @media (min-width: 960px) {
+      margin-bottom: -40px;
+    }
+
+    @media (min-width: 1170px) {
+      grid-template-columns: 630px 1fr;
+    }
+  }
+
+  &__description-image {
+    position: relative;
+    background-image: url('/images/bonusProgram/desc-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 150px;
+
+    .texts-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      color: #fff;
+      font-weight: 600;
+      line-height: 140%;
+    }
+
+    @media (min-width: 600px) {
+      min-height: 230px;
+    }
+
+    @media (min-width: 960px) {
+      padding-top: 68px;
+
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__description-main {
+    align-self: center;
+  }
+
+  &__description-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 140%;
+
+    @media (min-width: 960px) {
+      font-size: 20px;
+    }
+  }
+}

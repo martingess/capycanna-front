@@ -1,0 +1,99 @@
+{
+  "metaTitle": "Bonusový program",
+  "metaDescription": "Bonusový program",
+  "title": "Jak funguje bonusový program",
+  "description": "Získejte bonusy dokončením specifických akcí na našem webu a odemknutím úspěchů. Každý dokončený úspěch vám přinese bonusové body, které se automaticky převedou na slevy na budoucí objednávky.",
+  "blocks": {
+    "1": {
+      "title": "Zamčený úspěch. Klikněte, abyste zjistili, co můžete získat.",
+      "subText": "Acquaintance"
+    },
+    "2": {
+      "title": "Zelený rámeček ukazuje váš pokrok při plnění úspěchu.",
+      "subText": "Acquaintance"
+    },
+    "3": {
+      "title": "Když odemknete úspěch, ikona se změní na zelenou. Začněte sbírat své bonusy!",
+      "subText": "Acquaintance"
+    },
+    "4": {
+      "title": "Jakmile dokončíte kolo, mnoho úspěchů lze získat vícekrát!",
+      "subText": "Acquaintance"
+    }
+  },
+  "descriptionBlock": {
+    "title": "Jak sbírat bonusy",
+    "imageText1": "10 bonusových bodů",
+    "imageText2": "=",
+    "imageText3": "1 euro",
+    "main": {
+      "title": "Chcete-li začít získávat bonusy, splňte několik jednoduchých úkolů! Například svůj první bonus můžete získat jednoduše registrací na webu.",
+      "text": "Po přihlášení otevřete v účtu menu Bonusy a Úspěchy. Zde uvidíte úspěch 'Trailblazer', který čeká na vás. Klikněte na něj, sbírejte svůj bonus a voilà—vaše bonusové body se automaticky převedou na slevu, kterou můžete použít při dokončení objednávky v košíku."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "question": "Co jsou úspěchy a jak je mohu získat?",
+        "answer": "<p>Úspěchy jsou odměny, které získáte dokončením konkrétních úkolů, jako je registrace na webu nebo nákupy. Každý dokončený úspěch vám přinese bonusové body, které se automaticky převedou na slevy.</p>"
+      },
+      {
+        "question": "Kde najdu své úspěchy a bonusové body?",
+        "answer": "<p>Přihlaste se do svého účtu a přejděte do sekce Bonusy a Úspěchy v menu. Zde můžete vidět své aktuální úspěchy a všechny nové úkoly, které vám umožní získat více bonusů.</p>"
+      },
+      {
+        "question": "Jak si nárokuji své bonusové body?",
+        "answer": "<p>Jednoduše klikněte na úspěch, který jste dokončili, a získejte své bonusové body. Ty se automaticky převedou na slevu, kterou můžete použít při dokončení objednávky v košíku.</p>"
+      },
+      {
+        "question": "Jak se bonusové body převádějí na slevy?",
+        "answer": "<p>Ne, žádný stanovený limit neexistuje! Můžete stále získávat body plněním dostupných úkolů a nových úspěchů, jak budou přidávány.</p>"
+      },
+      {
+        "question": "Existují limity pro počet bonusových bodů, které mohu získat?",
+        "answer": "<p>Ne, žádný stanovený limit neexistuje! Můžete stále získávat body plněním dostupných úkolů a nových úspěchů, jak budou přidávány.</p>"
+      },
+      {
+        "question": "Vyprší platnost mých bonusových bodů?",
+        "answer": "<p>Ne, vaše bonusové body zůstávají trvale.</p>"
+      },
+      {
+        "question": "Mohu získat bonusy za více úkolů najednou?",
+        "answer": "<p>Ano! Můžete dokončit více úkolů a získat bonusy za každý z nich. Například můžete získat bonusy jak za registraci, tak za první nákup ve stejný den.</p>"
+      },
+      {
+        "question": "Proč se moje bonusové body neobjeví po dokončení úkolu?",
+        "answer": "<p>Pro zobrazení bonusových bodů je potřeba je získat kliknutím na úspěch, který jste odemkli.</p><p>Body by se měly zobrazit krátce po získání. Pokud nastane zpoždění, zkontrolujte menu Bonusy a Úspěchy nebo kontaktujte zákaznickou podporu pro pomoc.</p>"
+      },
+      {
+        "question": "Jak zjistím, kolik bonusových bodů mám aktuálně?",
+        "answer": "<p>Přejděte do sekce Bonusy a Úspěchy ve svém účtu, kde uvidíte podrobný přehled aktuálních bodů a všech dokončených úspěchů.</p>"
+      },
+      {
+        "question": "Jaké typy akcí mohu vykonávat pro získání úspěchů?",
+        "answer": "<p>Akce se liší, ale mohou zahrnovat registraci, nákupy, pravidelné objednávky a další. Zkontrolujte sekci Bonusy a Úspěchy pro konkrétní úkoly.</p>"
+      },
+      {
+        "question": "Jak mohu sledovat svůj pokrok v úspěchu?",
+        "answer": "<p>Zelený rámeček kolem ikony úspěchu ukazuje váš pokrok. Jakmile ikona zcela zmodrá, máte to dokončeno!</p>"
+      },
+      {
+        "question": "Co se stane, pokud zapomenu nárokovat odemčený úspěch?",
+        "answer": "<p>Nebojte se! Nepřijaté úspěchy zůstávají ve vašem účtu, dokud je nevyzvednete, takže své bonusy můžete sbírat kdykoli.</p>"
+      },
+      {
+        "question": "Jak zjistím, zda lze úspěch dokončit vícekrát?",
+        "answer": "<p>Popis každého úspěchu v menu Bonusy a Úspěchy bude označovat, zda je možné ho získat opakovaně.</p>"
+      },
+      {
+        "question": "Mohu přenést své bonusové body na jiného uživatele?",
+        "answer": "<p>Bonusové body nejsou přenosné a mohou být použity pouze v účtu, ve kterém byly získány.</p>"
+      },
+      {
+        "question": "Mohu si nasbírat bonusové body na větší slevu později?",
+        "answer": "<p>Bonusové body se automaticky převádějí na slevy. Můžete si je ale stále sbírat, abyste si vybudovali větší slevu na pozdější použití.</p>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "metaTitle": "Bonusprogramm",
+  "metaDescription": "Bonusprogramm",
+  "title": "Wie funktioniert das Bonusprogramm",
+  "description": "Sammeln Sie Bonuspunkte, indem Sie bestimmte Aktionen auf unserer Website durchführen und Erfolge freischalten. Jeder abgeschlossene Erfolg bringt Bonuspunkte, die automatisch in Rabatte für zukünftige Bestellungen umgewandelt werden.",
+  "blocks": {
+    "1": {
+      "title": "Gesperrter Erfolg. Klicken Sie, um zu sehen, was Sie verdienen können.",
+      "subText": "Acquaintance"
+    },
+    "2": {
+      "title": "Der grüne Umriss zeigt Ihren Fortschritt beim Abschließen des Erfolgs.",
+      "subText": "Acquaintance"
+    },
+    "3": {
+      "title": "Wenn Sie einen Erfolg freischalten, wird das Symbol grün. Beginnen Sie, Ihre Bonuspunkte zu sammeln!",
+      "subText": "Acquaintance"
+    },
+    "4": {
+      "title": "Sobald Sie eine Runde abgeschlossen haben, können viele Erfolge mehrfach erzielt werden!",
+      "subText": "Acquaintance"
+    }
+  },
+  "descriptionBlock": {
+    "title": "Wie sammle ich Bonuspunkte",
+    "imageText1": "10 bonusových bodů",
+    "imageText2": "=",
+    "imageText3": "1 euro",
+    "main": {
+      "title": "Um Bonuspunkte zu sammeln, führen Sie einfache Aufgaben aus! Zum Beispiel können Sie Ihren ersten Bonus erhalten, indem Sie sich einfach auf der Website registrieren.",
+      "text": "Melden Sie sich an und öffnen Sie das Menü 'Bonuspunkte und Erfolge' in Ihrem Konto. Dort sehen Sie den Erfolg 'Wegbereiter', der für Sie bereitsteht. Klicken Sie darauf, sammeln Sie Ihren Bonus und voilà – Ihre Bonuspunkte werden automatisch in einen Rabatt umgewandelt, den Sie während des Checkouts in Ihrem Warenkorb anwenden können."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "question": "Was sind Erfolge und wie kann ich sie verdienen?",
+        "answer": "<p>Erfolge sind Belohnungen, die Sie durch das Erfüllen bestimmter Aufgaben wie das Registrieren auf der Website oder das Tätigen von Einkäufen verdienen. Jeder abgeschlossene Erfolg bringt Bonuspunkte, die automatisch in Rabatte umgewandelt werden.</p>"
+      },
+      {
+        "question": "Wo finde ich meine Erfolge und Bonuspunkte?",
+        "answer": "<p>Melden Sie sich bei Ihrem Konto an und gehen Sie zum Abschnitt 'Bonuspunkte und Erfolge' im Menü. Dort können Sie Ihre aktuellen Erfolge sowie neue verfügbare Aufgaben einsehen, um weitere Punkte zu sammeln.</p>"
+      },
+      {
+        "question": "Wie kann ich meine Bonuspunkte einlösen?",
+        "answer": "<p>Klicken Sie einfach auf den Erfolg, den Sie abgeschlossen haben, um Ihre Bonuspunkte zu sammeln. Diese werden automatisch in einen Rabatt umgewandelt, den Sie beim Checkout in Ihrem Warenkorb anwenden können.</p>"
+      },
+      {
+        "question": "Wie werden Bonuspunkte in Rabatte umgewandelt?",
+        "answer": "<p>Jede 10 gesammelten Bonuspunkte werden automatisch in einen Rabatt von 1 € umgewandelt, den Sie beim Checkout in Ihrem Warenkorb nutzen können. Der genaue Rabattbetrag wird ebenfalls im Bereich 'Bonuspunkte und Erfolge' in Ihrem Konto angezeigt.</p>"
+      },
+      {
+        "question": "Gibt es ein Limit für die Anzahl der Bonuspunkte, die ich sammeln kann?",
+        "answer": "<p>Nein, es gibt kein festgelegtes Limit! Sie können weiterhin Punkte sammeln, indem Sie die verfügbaren Aufgaben erfüllen und neue Erfolge freischalten.</p>"
+      },
+      {
+        "question": "Verfallen meine Bonuspunkte?",
+        "answer": "<p>Nein, Ihre Bonuspunkte bleiben dauerhaft gültig.</p>"
+      },
+      {
+        "question": "Kann ich für mehrere Aufgaben gleichzeitig Bonuspunkte erhalten?",
+        "answer": "<p>Ja! Sie können mehrere Aufgaben abschließen und für jede davon Bonuspunkte sammeln. Beispielsweise können Sie sowohl für die Registrierung als auch für Ihren ersten Einkauf am selben Tag Punkte erhalten.</p>"
+      },
+      {
+        "question": "Warum erscheinen meine Bonuspunkte nicht, nachdem ich eine Aufgabe abgeschlossen habe?",
+        "answer": "<p>Um Bonuspunkte anzuzeigen, müssen Sie diese sammeln, indem Sie auf den freigeschalteten Erfolg klicken.</p><p>Die Punkte sollten kurz nach dem Sammeln erscheinen. Wenn es eine Verzögerung gibt, überprüfen Sie das Menü 'Bonuspunkte und Erfolge' oder wenden Sie sich an den Kundenservice, um Hilfe zu erhalten.</p>"
+      },
+      {
+        "question": "Wie kann ich überprüfen, wie viele Bonuspunkte ich derzeit habe?",
+        "answer": "<p>Gehen Sie zum Bereich 'Bonuspunkte und Erfolge' in Ihrem Konto, um eine detaillierte Übersicht über Ihre aktuellen Punkte und alle abgeschlossenen Erfolge zu erhalten.</p>"
+      },
+      {
+        "question": "Welche Arten von Aktionen kann ich durchführen, um Erfolge zu erzielen?",
+        "answer": "<p>Die Aktionen variieren, können aber das Registrieren, Einkäufe, regelmäßige Bestellungen und mehr umfassen. Schauen Sie im Bereich 'Bonuspunkte und Erfolge' nach, um spezifische Aufgaben zu sehen.</p>"
+      },
+      {
+        "question": "Wie erfahre ich, ob ein Erfolg mehrfach abgeschlossen werden kann?",
+        "answer": "<p>Die Beschreibung jedes Erfolgs im Menü 'Bonuspunkte und Erfolge' gibt an, ob er mehrfach verdient werden kann.</p>"
+      },
+      {
+        "question": "Wie kann ich meinen Fortschritt bei einem Erfolg verfolgen?",
+        "answer": "<p>Ein grüner Umriss um das Erfolgssymbol zeigt Ihren Fortschritt. Sobald das Symbol vollständig grün ist, haben Sie den Erfolg abgeschlossen!</p>"
+      },
+      {
+        "question": "Was passiert, wenn ich vergesse, einen freigeschalteten Erfolg einzufordern?",
+        "answer": "<p>Kein Problem! Nicht eingelöste Erfolge bleiben in Ihrem Konto gespeichert, bis Sie sie einfordern. Sie können Ihre Bonuspunkte also jederzeit sammeln.</p>"
+      },
+      {
+        "question": "Kann ich meine Bonuspunkte an einen anderen Nutzer übertragen?",
+        "answer": "<p>Bonuspunkte sind nicht übertragbar und können nur im Konto verwendet werden, in dem sie verdient wurden.</p>"
+      },
+      {
+        "question": "Kann ich meine Bonuspunkte für einen größeren Rabatt später aufbewahren?",
+        "answer": "<p>Bonuspunkte werden automatisch in Rabatte umgewandelt. Sie können jedoch weiterhin Punkte sammeln, um einen größeren Rabatt für zukünftige Bestellungen zu erzielen.</p>"
+      }
+    ]
+  }
+}
