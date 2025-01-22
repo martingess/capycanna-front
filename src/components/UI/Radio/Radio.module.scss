@@ -1,0 +1,49 @@
+@import '@partialsStyles/mixins';
+
+.radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 14px;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: #221B15;
+    line-height: 110%;
+  }
+
+  &__check {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #000000;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__check-active {
+    &::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}

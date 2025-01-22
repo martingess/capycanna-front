@@ -1,0 +1,32 @@
+.inputs-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(34, 27, 21, 0.20);
+  background-color: #ffffff;
+  color: #000000;
+  width: 60px;
+  height: 34px;
+}
+
+.inputs-divider {
+  width: 18px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.confirm-button {
+  padding: 4px 12px;
+  width: 50px;
+  height: 34px;
+  border-radius: 4px;
+
+  span {
+    font-weight: 400;
+  }
+}

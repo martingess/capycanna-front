@@ -9,9 +9,12 @@ import Step from '@components/Step';
 import TopSlider from '@components/TopSlider';
 import ProductsSlider from '@components/ProductsSlider';
 import 'swiper/scss';
+import { mockProducts } from '../../data/mockProducts';
 
 const HomePage = () => {
   const t = useTranslations('home');
+
+  console.log('mockProducts', mockProducts);
 
   return (
     <>
@@ -22,11 +25,11 @@ const HomePage = () => {
       <TopSlider translation={'home'} />
       <Features translation={'common'} />
       <Categories translation={'home'} />
-      <ProductsSlider translation={'home'} products={[1, 2, 3, 4, 5]} place="stars" />
+      <ProductsSlider translation={'home'} products={mockProducts} place="stars" />
       <Chips translation={'home'} />
       <ProductsSlider
         translation={'home'}
-        products={[1, 2, 3, 4, 5]}
+        products={mockProducts}
         place="discounted"
         noBg={true}
       />

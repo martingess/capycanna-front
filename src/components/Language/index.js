@@ -1,7 +1,5 @@
 import { IconLanguage, IconArrowDown } from '@UI';
-import { useEffect, useState, useRef } from 'react';
-import { selectCountry, setCountry } from '@store/user/userSlices';
-import { useSelector, useDispatch } from 'react-redux';
+import { useEffect, useState } from 'react';
 import styles from './Language.module.scss';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -27,12 +25,10 @@ export const languages = {
 };
 
 const Language = ({ open = false, handleOpen = () => {} }) => {
-  const dispatch = useDispatch();
   const [isClient, setIsClient] = useState(false);
 
   const router = useRouter();
-  const langRef = useRef(null);
-  const { locale, pathname, asPath, query, route } = router;
+  const { locale, pathname, asPath, query } = router;
 
   const changeLanguage = (newLanguage) => async (event) => {
     event.preventDefault();

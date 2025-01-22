@@ -54,7 +54,9 @@ const BonusProgram = () => {
               </div>
             </div>
             <div className={styles['bonus__description-main']}>
-              <p className={styles['bonus__description']} style={{ textAlign: 'left' }}>{t('descriptionBlock.main.title')}</p>
+              <p className={styles['bonus__description']} style={{ textAlign: 'left' }}>
+                {t('descriptionBlock.main.title')}
+              </p>
               <p className={styles['bonus__description-text']}>{t('descriptionBlock.main.text')}</p>
             </div>
           </div>

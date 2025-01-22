@@ -38,7 +38,7 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
   };
 
   const getTotalPages = () => {
-    return Math.ceil(products.length / slidesPerView);
+    return Math.round(products.length / slidesPerView);
   };
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
           >
             {products.map((item) => (
               <SwiperSlide key={item} className={styles['products__slide']}>
-                <ProductCard product={{}} />
+                <ProductCard product={item} />
               </SwiperSlide>
             ))}
           </Swiper>

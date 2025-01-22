@@ -49,7 +49,7 @@
       {
         "name": "Pen with cartridge",
         "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
+        "link": "/products/pen-with-cartridge",
         "image": "/images/header/pen-cartridge.png"
       },
       {
@@ -57,12 +57,6 @@
         "description": "Our new CBD drops will make your mood perfect.",
         "link": "/products/oil",
         "image": "/images/header/oil.png"
-      },
-      {
-        "name": "New products",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/new-products",
-        "image": "/images/header/new-products.png"
       }
     ],
     "cannabinoids": [
@@ -87,7 +81,7 @@
       {
         "name": "Pen with cartridge",
         "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
+        "link": "/products/pen-with-cartridge",
         "image": "/images/header/pen-cartridge.png"
       }
     ],
@@ -95,7 +89,7 @@
       {
         "name": "Pen with cartridge",
         "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
+        "link": "/products/pen-with-cartridge",
         "image": "/images/header/pen-cartridge.png"
       },
       {

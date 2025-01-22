@@ -1,0 +1,50 @@
+@import '@partialsStyles/mixins';
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 14px;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: #221B15;
+    line-height: 110%;
+  }
+
+  &__check {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(34, 27, 21, 0.20);
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: '';
+      width: 6px;
+      height: 14px;
+      background-color: transparent;
+      border-bottom: 2.5px solid #000000;
+      border-right: 2.5px solid #000000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__check-active {
+    &::after {
+      transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+  }
+}

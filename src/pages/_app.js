@@ -14,6 +14,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme/theme';
 
+import { ApolloProvider } from '@apollo/client';
+import client from '../../apollo-client';
+
 const { DOMAIN_FRONT } = configs;
 
 const App = ({ Component, pageProps: { ...pageProps } }) => {
@@ -33,19 +36,24 @@ const App = ({ Component, pageProps: { ...pageProps } }) => {
       onError={onIntlError}
     >
       <Provider store={store}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Head>
-            <meta charSet="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-            <link rel="canonical" href={`${DOMAIN_FRONT}${localeUrl(locale)}${pathUrl}`} />
-            <link rel="alternate" hrefLang="x-default" href={`${DOMAIN_FRONT}${pathUrl}`} />
-          </Head>
-          <Layout>
-            <Toaster position="top-right" />
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
+        <ApolloProvider client={client}>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Head>
+              <meta charSet="utf-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1, maximum-scale=1"
+              />
+              <link rel="canonical" href={`${DOMAIN_FRONT}${localeUrl(locale)}${pathUrl}`} />
+              <link rel="alternate" hrefLang="x-default" href={`${DOMAIN_FRONT}${pathUrl}`} />
+            </Head>
+            <Layout>
+              <Toaster position="top-right" />
+              <Component {...pageProps} />
+            </Layout>
+          </ThemeProvider>
+        </ApolloProvider>
       </Provider>
     </NextIntlClientProvider>
   );

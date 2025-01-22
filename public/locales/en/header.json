@@ -7,126 +7,120 @@
   "contactUs": "Contact us",
   "products": "Products",
   "cannabinoids": "Cannabinoids",
-  "findSomething": "Find something for you",
+  "findSomething": "For your needs",
   "productsItems": {
     "products": [
       {
         "name": "Vape",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Smooth inhalation with rapid effects.",
         "link": "/products/vape",
         "image": "/images/header/vape.png"
       },
       {
         "name": "Flowers",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Premium buds for your relaxation.",
         "link": "/products/flowers",
         "image": "/images/header/flowers.png"
       },
       {
         "name": "Cartridge",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Convenient single-use refills for any mood.",
         "link": "/products/cartridge",
         "image": "/images/header/cartridge.png"
       },
       {
         "name": "Hash",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Traditional extract with modern purity.",
         "link": "/products/hash",
         "image": "/images/header/hash.png"
       },
       {
         "name": "Edibles",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Delicious treats with infused benefits.",
         "link": "/products/edibles",
         "image": "/images/header/edibles.png"
       },
       {
-        "name": "Certificates",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/certificates",
-        "image": "/images/header/certificates.png"
-      },
-      {
         "name": "Pen with cartridge",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
+        "description": "Compact design for vaping on-the-go.",
+        "link": "/products/pen-with-cartridge",
         "image": "/images/header/pen-cartridge.png"
       },
       {
         "name": "Oil",
-        "description": "Our new CBD drops will make your mood perfect.",
+        "description": "Versatile drops for targeted relief.",
         "link": "/products/oil",
         "image": "/images/header/oil.png"
-      },
-      {
-        "name": "New products",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/new-products",
-        "image": "/images/header/new-products.png"
       }
     ],
     "cannabinoids": [
       {
-        "name": "Hash",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/hash",
+        "name": "H4CBD",
+        "description": "Enhanced formula for better impact.",
+        "link": "/products/h4cbd",
         "image": "/images/header/hash.png"
       },
       {
-        "name": "Edibles",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/edibles",
+        "name": "CBD",
+        "description": "Natural balance for body and mind.",
+        "link": "/products/cbd",
         "image": "/images/header/edibles.png"
       },
       {
-        "name": "Certificates",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/certificates",
+        "name": "CBG",
+        "description": "Focus and clarity in every dose.",
+        "link": "/products/cbg",
         "image": "/images/header/certificates.png"
       },
       {
-        "name": "Pen with cartridge",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
+        "name": "CBN",
+        "description": "Your ally for deep, restful sleep.",
+        "link": "/products/cbn",
         "image": "/images/header/pen-cartridge.png"
       }
     ],
     "findSomething": [
       {
-        "name": "Pen with cartridge",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/pen-cartridge",
-        "image": "/images/header/pen-cartridge.png"
-      },
-      {
-        "name": "Oil",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/oil",
-        "image": "/images/header/oil.png"
-      },
-      {
-        "name": "New products",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/new-products",
-        "image": "/images/header/new-products.png"
-      },
-      {
-        "name": "Vape",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/vape",
+        "name": "Good sleep",
+        "description": "Gentle support for peaceful nights.",
+        "link": "/products/goodSleep",
         "image": "/images/header/vape.png"
       },
       {
-        "name": "Flowers",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/flowers",
+        "name": "Relax",
+        "description": "Calm your mind, unwind your body.",
+        "link": "/products/relax",
         "image": "/images/header/flowers.png"
       },
       {
-        "name": "Cartridge",
-        "description": "Our new CBD drops will make your mood perfect.",
-        "link": "/products/cartridge",
+        "name": "Pain relief",
+        "description": "Effective relief for daily discomfort.",
+        "link": "/products/painRelief",
         "image": "/images/header/cartridge.png"
+      },
+      {
+        "name": "Fighting stress",
+        "description": "Your shield against life's pressures.",
+        "link": "/products/fightingStress",
+        "image": "/images/header/hash.png"
+      },
+      {
+        "name": "Sport and regeneration",
+        "description": "Recharge faster, train smarter.",
+        "link": "/products/sportAndGeneration",
+        "image": "/images/header/edibles.png"
+      },
+      {
+        "name": "Immunity",
+        "description": "Boost your body’s natural defense.",
+        "link": "/products/immunity",
+        "image": "/images/header/pen-cartridge.png"
+      },
+      {
+        "name": "Starter pack",
+        "description": "Perfect for discovering your first favorite.",
+        "link": "/products/starterPack",
+        "image": "/images/header/oil.png"
       }
     ]
   }
