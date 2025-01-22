@@ -3,26 +3,26 @@ import Image from 'next/image';
 import { ButtonCO, IconHard } from '@UI';
 
 const ProductCard = ({ product }) => {
-  const { title, description, image } = product;
+  const { title, description, image, discount, isPopular, isNew, promotionEnd, price, oldPrice, stock } = product;
   return (
     <div className={styles['card']}>
       <div className={styles['card__wrapper']}>
         <div className={styles['card__top']}>
           <Image
-            src="/images/products/product.png"
+            src={image}
             alt="product"
             width={207}
             height={207}
             className={styles['card__image']}
           />
           <div className={styles['card__label']}>
-            <p className={styles['card__label-off']}>-30% off</p>
-            <p className={styles['card__label-popular']}>Most popular</p>
-            <p className={styles['card__label-new']}>New</p>
+            <p className={styles['card__label-off']}>{discount}</p>
+            {isPopular && <p className={styles['card__label-popular']}>Most popular</p>}
+            {isNew && <p className={styles['card__label-new']}>New</p>}
           </div>
           <div className={styles['card__promotion']}>
             <p className={styles['card__promotion-text']}>
-              end of the promotion: <span>05:00</span>
+              end of the promotion: <span>{promotionEnd}</span>
             </p>
             <Image
               src="/images/promotion.png"
@@ -35,19 +35,19 @@ const ProductCard = ({ product }) => {
           <IconHard className={styles['card__favorite']} />
         </div>
         <div className={styles['card__content']}>
-          <h3 className={styles['card__title']}>Popcorn Buds x H4+</h3>
+          <h3 className={styles['card__title']}>{title}</h3>
           <div className={styles['card__description']}>
-            <p> the perfect symbiosis of natural relaxation and well-being</p>
+            <p>{description}</p>
           </div>
         </div>
         <div className={styles['card__bottom']}>
           <div className={styles['card__prices']}>
             <p className={styles['card__price']}>
-              5,95 € <span>(with VAT)</span>
+              {price} <span>(with VAT)</span>
             </p>
-            <p className={styles['card__old-price']}>8,50 €</p>
+            <p className={styles['card__old-price']}>{oldPrice}</p>
           </div>
-          <p className={styles['card__stock']}>In stock</p>
+          <p className={styles['card__stock']}>{stock}</p>
         </div>
         <ButtonCO className={styles['card__button']}>In the cart</ButtonCO>
       </div>

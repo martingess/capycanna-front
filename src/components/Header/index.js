@@ -52,6 +52,7 @@ const Header = () => {
       setOpenedMenu(true);
       setTypeMenu(menuType);
     }
+    // setOpenedMenu(false);
   };
   const handleClickCloseMenu = () => {
     setOpenedMenu(false);
@@ -185,10 +186,10 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'products',
           })}
-          onClick={(e) => e.stopPropagation()}
+          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
-            {productsItems['products'].map(({ name, description, link, image }) => (
+            {productsItems['products']?.map(({ name, description, link, image }) => (
               <div className={styles['trailer__item']} key={name}>
                 <Link href={link} className={styles['trailer__item-link']} />
                 <Image
@@ -210,10 +211,10 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'cannabinoids',
           })}
-          onClick={(e) => e.stopPropagation()}
+          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
-            {productsItems['cannabinoids'].map(({ name, description, link, image }) => (
+            {productsItems['cannabinoids']?.map(({ name, description, link, image }) => (
               <div className={styles['trailer__item']} key={name}>
                 <Link href={link} className={styles['trailer__item-link']} />
                 <Image
@@ -235,10 +236,10 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'findSomething',
           })}
-          onClick={(e) => e.stopPropagation()}
+          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
-            {productsItems['findSomething'].map(({ name, description, link, image }) => (
+            {productsItems['findSomething']?.map(({ name, description, link, image }) => (
               <div className={styles['trailer__item']} key={name}>
                 <Link href={link} className={styles['trailer__item-link']} />
                 <Image

@@ -8,7 +8,13 @@ const Breadcrumbs = () => {
   const router = useRouter();
   const { pathname = '' } = router;
   const tCommon = useTranslations('common');
-  const pathArray = pathname.split('/').filter((segment) => segment);
+
+  const dynamicRoutePattern = /^\[.*\]$/; // to filter out dynamic routes
+  const pathArray = pathname
+    .split('/')
+    .filter((segment) => segment && !dynamicRoutePattern.test(segment));
+  // const pathArray = pathname.split('/').filter((segment) => segment);
+
   const breadcrumbs = pathArray.map((segment, index) => {
     const path = '/' + pathArray.slice(0, index + 1).join('/');
     return { label: segment, href: path };

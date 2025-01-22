@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+
+  &__arrow {
+    cursor: pointer;
+
+    &-next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__page {
+    font-size: 16px;
+    line-height: 140%;
+    color: #221B15;
+    font-weight: 600;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .active {
+    background-color: #C54F1D;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #f5a964;
+      transition: background-color 0.3s;
+    }
+  }
+}

@@ -1,56 +1,65 @@
-.language {
+.sorting {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+
   &__wrapper {
     position: relative;
+
     @media (min-width: 960px) {
       &:hover {
-        .language__list {
+        .sorting__list {
           opacity: 1;
           pointer-events: all;
           visibility: visible;
           top: calc(100% + 11px);
         }
-        .language__arrow {
+
+        .sorting__arrow {
           color: #c54f1d;
         }
       }
     }
+
     @media (max-width: 960px) {
       &.open {
-        .language__list {
+        .sorting__list {
           opacity: 1;
           pointer-events: all;
           visibility: visible;
           top: calc(100% + 11px);
         }
-        .language__arrow {
+
+        .sorting__arrow {
           color: #c54f1d;
         }
       }
     }
   }
+
   &__top {
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
   }
+
   &__icon {
     width: 24px;
     height: auto;
     color: #c54f1d;
     margin-right: 6px;
   }
+
   &__name {
     color: #221b15;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    text-transform: uppercase;
     cursor: pointer;
+    margin-left: 6px;
   }
+
   &__arrow {
     margin-left: 8px;
     width: 14px;
@@ -58,6 +67,7 @@
     color: #221b15;
     transition: color 0.3s ease-out;
   }
+
   &__list {
     position: absolute;
     border-radius: 8px;
@@ -65,8 +75,8 @@
     background: #fff;
     top: 100%;
     left: 50%;
-    min-width: 100px;
-      width: 100%;
+    min-width: 160px;
+    width: 100%;
     transform: translateX(-50%);
     padding: 14px 10px 14px;
     display: flex;
@@ -76,6 +86,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+
     &::before {
       content: '';
       position: absolute;
@@ -84,10 +95,10 @@
       height: 31px;
     }
   }
+
   &__item {
     margin-bottom: 9px;
     cursor: pointer;
-    text-transform: uppercase;
     color: #221b15;
     font-size: 14px;
     line-height: 1.1;
@@ -96,9 +107,11 @@
     &.active {
       color: #c54f1d;
     }
+
     &:hover {
       color: #c54f1d;
     }
+
     &:last-child {
       margin-bottom: 0;
     }

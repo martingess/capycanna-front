@@ -8,7 +8,7 @@ export const getBonusBlocksData = (t) => [
     arrowConfig: {
       top: '10%',
       left: '-24%',
-    }
+    },
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const getBonusBlocksData = (t) => [
     arrowConfig: {
       top: '10%',
       right: '-7%',
-    }
+    },
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const getBonusBlocksData = (t) => [
     arrowConfig: {
       top: '20%',
       left: '-14%',
-    }
+    },
   },
   {
     id: 4,
@@ -41,6 +41,6 @@ export const getBonusBlocksData = (t) => [
     arrowConfig: {
       top: '12%',
       right: '-22%',
-    }
+    },
   },
 ];
