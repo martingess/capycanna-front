@@ -5,3 +5,5 @@ export * from './Navbar';
 export * from './SliderArrow';
 export * from './Radio';
 export * from './CheckBox';
+export * from './TabItem';
+export * from './ProductCount';

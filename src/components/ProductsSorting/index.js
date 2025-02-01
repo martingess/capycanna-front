@@ -5,7 +5,6 @@ import cn from 'classnames';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-
 const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
   const t = useTranslations('products');
 
@@ -25,7 +24,7 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
     {
       key: 'onSale',
       value: t('sorting.onSale'),
-    }
+    },
   ];
   const [currentSorting, setCurrentSorting] = useState(sortings[0]);
   const [isListOpen, setIsListOpen] = useState(false);
@@ -37,7 +36,7 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
   const changeSorting = (sorting) => {
     setCurrentSorting(sorting);
     onSort(sorting.key);
-    toggleList()
+    toggleList();
   };
 
   return (
@@ -47,10 +46,7 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
           [styles['open']]: isListOpen,
         })}
       >
-        <div 
-          className={styles['sorting__top']}
-          onClick={toggleList}
-        >
+        <div className={styles['sorting__top']} onClick={toggleList}>
           <Image
             src={'/images/products/cheapest-sorting.svg'}
             width={24}

@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Product | ",
+  "metaDescription": "Product",
+  "title": "Product",
+  "inStock": "In stock",
+  "outOfStock": "Out of stock",
+  "new": "NEW",
+  "mostPopular": "MOST POPULAR",
+  "onSale": "ON SALE",
+  "promotionEnd": " end of the promotion:",
+  "code": "Code:",
+  "price": "Price:",
+  "weight": "Weight:",
+  "flavor:": "Flavor:",
+  "withVat": "(with VAT)",
+  "volume": "Volume:",
+  "hhc": "CBD сontent:",
+  "variety": "Quantity:",
+  "shippingInfo": "Orders placed before 12:00 ship out the same day.",
+  "freeShipping1": "Free shipping on orders over ",
+  "freeShipping2": "200€.",
+  "inCart": "Add to Cart",
+  "specsTabs": {
+    "header": {
+      "characteristics": "Specifications",
+      "description": "Description",
+      "reviews": "Reviews"
+    },
+    "buttons": {
+      "viewAll": "View all",
+      "hide": "Hide",
+      "addReview": "Leave a review"
+    },
+    "reviews": {
+      "title": "Leave a review about this product and get a bonus Achievement",
+      "modal": {
+        "title": "Write a review",
+        "rating": "Rate this item:",
+        "name": "Your name",
+        "namePlaceholder": "Katerina",
+        "text": "Write your review",
+        "textPlaceholder": "Comment",
+        "addPhotos": "Upload a photo",
+        "addPhotosText": "Click the button and add files. Add up to 10 images in .jpg, .gif, .png formats with file sizes up to 5 MB",
+        "send": "Submit review"
+      }
+    }
+  },
+  "productsSlider": {
+    "title": "You may also like"
+  }
+}

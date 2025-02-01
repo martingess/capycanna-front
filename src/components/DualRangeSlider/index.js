@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import Slider from '@mui/material/Slider';
 import { ButtonCO } from '@UI';
 import styles from './DualRangeSlider.module.scss';
@@ -22,20 +22,20 @@ const DualRangeSlider = ({ min, max, initialMin, initialMax, onChange }) => {
 
   const handleApplyValues = () => {
     handleSliderChange(null, [minInputValue, maxInputValue]);
-  }
+  };
 
   return (
     <>
-      <div className={styles["inputs-wrapper"]}>
-        <input 
-          className={styles["input"]}
+      <div className={styles['inputs-wrapper']}>
+        <input
+          className={styles['input']}
           type="text"
           value={minInputValue}
           onChange={(e) => setMinInputValue(e.target.value)}
         />
-        <div className={styles["inputs-divider"]}></div>
-        <input 
-          className={styles["input"]}
+        <div className={styles['inputs-divider']}></div>
+        <input
+          className={styles['input']}
           type="text"
           value={maxInputValue}
           onChange={(e) => setMaxInputValue(e.target.value)}
@@ -43,7 +43,7 @@ const DualRangeSlider = ({ min, max, initialMin, initialMax, onChange }) => {
         <ButtonCO theme="orange" className={styles['confirm-button']} onClick={handleApplyValues}>
           {t('filters.ok')}
         </ButtonCO>
-      </div> 
+      </div>
       <Slider
         value={[value[0], value[1]]}
         onChange={handleSliderChange}

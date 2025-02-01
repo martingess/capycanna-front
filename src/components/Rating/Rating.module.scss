@@ -1,0 +1,15 @@
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: #eae0bc;
+  transition: color 0.1s;
+}
+
+.star.filled {
+  color: #f5a964;
+}

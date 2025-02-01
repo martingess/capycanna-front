@@ -1,0 +1,17 @@
+.tab {
+  padding: 6px 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #221b15;
+  border-radius: 8px;
+  background: rgba(246, 246, 246, 0.7);
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &__active {
+    border: 1px solid #8cb869;
+    color: #8cb869;
+    background: #ffffff;
+  }
+}

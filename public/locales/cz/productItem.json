@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Product | ",
+  "metaDescription": "Product",
+  "title": "Product",
+  "inStock": "Skladem",
+  "outOfStock": "Není skladem",
+  "new": "NOVINKA",
+  "mostPopular": "NEJOBLÍBENĚJŠÍ",
+  "onSale": "VE SLEVĚ",
+  "promotionEnd": " end of the promotion:",
+  "code": "Code:",
+  "price": "Cena:",
+  "weight": "Hmotnost:",
+  "flavor:": "Chuť:",
+  "withVat": "(with VAT)",
+  "volume": "Objem:",
+  "hhc": "Obsah CBD:",
+  "variety": "Množství:",
+  "shippingInfo": "Objednávky provedené do 12:00 odesíláme ještě tentýž den.",
+  "freeShipping1": "Doprava zdarma při objednávkách nad ",
+  "freeShipping2": "200€.",
+  "inCart": "Přidat do košíku",
+  "specsTabs": {
+    "header": {
+      "characteristics": "Specifikace",
+      "description": "Popis",
+      "reviews": "Recenze"
+    },
+    "buttons": {
+      "viewAll": "Zobrazit všechny",
+      "hide": "Hide",
+      "addReview": "Napsat recenzi"
+    },
+    "reviews": {
+      "title": "Napište recenzi a získejte bonus Achievement!",
+      "modal": {
+        "title": "Napsat hodnocení",
+        "rating": "Hodnotit tento produkt:",
+        "name": "Vaše jméno",
+        "namePlaceholder": "Katerina",
+        "text": "Napište svou recenzi",
+        "textPlaceholder": "Recenzi",
+        "addPhotos": "Nahrát fotku",
+        "addPhotosText": "Click the button and add files. Add up to 10 images in .jpg, .gif, .png formats with file sizes up to 5 MB",
+        "send": "Odeslat recenzi"
+      }
+    }
+  },
+  "productsSlider": {
+    "title": "Může se vám také líbit"
+  }
+}

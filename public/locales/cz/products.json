@@ -9,369 +9,405 @@
     "byYourNeedsTitle": "By Your Needs",
     "ok": "OK",
     "byProducts": [
-      { 
-        "key": "vape", 
-        "label": "Vape", 
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "thcp", "label": "THCP" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "h4cbd", "label": "H4CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }, 
-        {
-          "title": "ML",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "1ml", "label": "1ml" },
-            { "key": "2ml", "label": "2ml" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+      {
+        "key": "vape",
+        "label": "Vape",
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "thcp", "label": "THCP" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "h4cbd", "label": "H4CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          },
+          {
+            "title": "ML",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "1ml", "label": "1ml" },
+              { "key": "2ml", "label": "2ml" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
-      { 
+      {
         "key": "flowers",
         "label": "Flowers",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "thcp", "label": "THCP" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "cbg", "label": "CBG" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "thcp", "label": "THCP" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "cbg", "label": "CBG" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
-      { 
+      {
         "key": "cartridge",
         "label": "Cartridge",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "thcp", "label": "THCP" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "h4cbd", "label": "H4CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        },
-        {
-          "title": "ML",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "1ml", "label": "1ml" },
-            { "key": "2ml", "label": "2ml" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "thcp", "label": "THCP" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "h4cbd", "label": "H4CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          },
+          {
+            "title": "ML",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "1ml", "label": "1ml" },
+              { "key": "2ml", "label": "2ml" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
-      { 
+      {
         "key": "hash",
         "label": "Hash",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "thcp", "label": "THCP" },
-            { "key": "cbd", "label": "CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "thcp", "label": "THCP" },
+              { "key": "cbd", "label": "CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
-      { 
+      {
         "key": "edibles",
         "label": "Edibles",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "cbd", "label": "CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "cbd", "label": "CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "pen-with-cartridge",
         "label": "Pen With Cartridge",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "thcp", "label": "THCP" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "h4cbd", "label": "H4CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "thcp", "label": "THCP" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "h4cbd", "label": "H4CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "oil",
         "label": "Oil",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "cbn", "label": "CBN" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "cbn", "label": "CBN" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       }
     ],
     "byCannabinoids": [
       {
         "key": "h4cbd",
         "label": "H4CBD",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Vape",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "1ml", "label": "1ml" },
-            { "key": "2ml", "label": "2ml" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Vape",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "1ml", "label": "1ml" },
+              { "key": "2ml", "label": "2ml" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "cbd",
         "label": "CBD",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Vape",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "1ml", "label": "1ml" },
-            { "key": "2ml", "label": "2ml" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Vape",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "1ml", "label": "1ml" },
+              { "key": "2ml", "label": "2ml" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "cbg",
         "label": "CBG",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       },
       {
         "key": "cbn",
         "label": "CBN",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       }
     ],
     "byYourNeeds": [
       {
         "key": "goodSleep",
         "label": "Good Sleep",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "cbn", "label": "CBN" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }, 
-        {
-          "title": "Products",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "vape", "label": "Vape" },
-            { "key": "flower", "label": "Flower" },
-            { "key": "cartridge", "label": "Cartridge" },
-            { "key": "edibles", "label": "Edibles" },
-            { "key": "pen-with-cartridge", "label": "Pen with Cartridge" },
-            { "key": "oil", "label": "Oil" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "cbn", "label": "CBN" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          },
+          {
+            "title": "Products",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "vape", "label": "Vape" },
+              { "key": "flower", "label": "Flower" },
+              { "key": "cartridge", "label": "Cartridge" },
+              { "key": "edibles", "label": "Edibles" },
+              { "key": "pen-with-cartridge", "label": "Pen with Cartridge" },
+              { "key": "oil", "label": "Oil" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "relax",
         "label": "Relax",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }, 
-        {
-          "title": "Cannabinoids",
-          "type": "checkbox",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "cbd", "label": "CBD" },
-            { "key": "cbn", "label": "CBN" },
-            { "key": "c4cbd", "label": "C4CBD" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }, 
-        {
-          "title": "Products",
-          "type": "radio",
-          "params": [
-            { "key": "all", "label": "All" },
-            { "key": "vape", "label": "Vape" },
-            { "key": "flower", "label": "Flower" },
-            { "key": "cartridge", "label": "Cartridge" },
-            { "key": "edibles", "label": "Edibles" },
-            { "key": "pen-with-cartridge", "label": "Pen with Cartridge" },
-            { "key": "oil", "label": "Oil" }
-          ],
-          "initialValue": { "key": "all", "label": "All" }
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          },
+          {
+            "title": "Cannabinoids",
+            "type": "checkbox",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "cbd", "label": "CBD" },
+              { "key": "cbn", "label": "CBN" },
+              { "key": "c4cbd", "label": "C4CBD" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          },
+          {
+            "title": "Products",
+            "type": "radio",
+            "params": [
+              { "key": "all", "label": "All" },
+              { "key": "vape", "label": "Vape" },
+              { "key": "flower", "label": "Flower" },
+              { "key": "cartridge", "label": "Cartridge" },
+              { "key": "edibles", "label": "Edibles" },
+              { "key": "pen-with-cartridge", "label": "Pen with Cartridge" },
+              { "key": "oil", "label": "Oil" }
+            ],
+            "initialValue": { "key": "all", "label": "All" }
+          }
+        ]
       },
       {
         "key": "painRelief",
         "label": "Pain Relief",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       },
       {
         "key": "fightingStress",
         "label": "Fighting Stress",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       },
       {
         "key": "sportAndGeneration",
         "label": "Sport And Generation",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       },
       {
         "key": "immunity",
         "label": "Immunity",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       },
       {
         "key": "starterPack",
         "label": "Starter Pack",
-        "filtering": [{
-          "title": "Price",
-          "type": "range",
-          "min": 0,
-          "max": 100,
-          "initialValue": null
-        }]
+        "filtering": [
+          {
+            "title": "Price",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "initialValue": null
+          }
+        ]
       }
     ],
     "buttons": {
