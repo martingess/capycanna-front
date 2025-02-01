@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Product | ",
+  "metaDescription": "Product",
+  "title": "Product",
+  "inStock": "Auf Lager",
+  "outOfStock": "Nicht auf Lager",
+  "new": "NEU",
+  "mostPopular": "AM BELIEBTESTEN",
+  "onSale": "IM ANGEBOT",
+  "promotionEnd": " end of the promotion:",
+  "code": "Code:",
+  "price": "Preis:",
+  "weight": "Gewicht:",
+  "flavor:": "Geschmack:",
+  "withVat": "(with VAT)",
+  "volume": "Volumen:",
+  "hhc": "CBD-Gehalt:",
+  "variety": "Menge:",
+  "shippingInfo": "Bestellungen, die vor 12:00 Uhr aufgegeben werden, werden noch am selben Tag versandt.",
+  "freeShipping1": "Kostenloser Versand für Bestellungen über",
+  "freeShipping2": "200€.",
+  "inCart": "In den Warenkorb legen",
+  "specsTabs": {
+    "header": {
+      "characteristics": "Spezifikationen",
+      "description": "Beschreibung",
+      "reviews": "Bewertungen"
+    },
+    "buttons": {
+      "viewAll": "Alle ansehen",
+      "hide": "Hide",
+      "addReview": "Leave a review"
+    },
+    "reviews": {
+      "title": "Hinterlassen Sie eine Bewertung und erhalten Sie ein Bonus-Erfolg!",
+      "modal": {
+        "title": "Eine Bewertung schreiben",
+        "rating": "Dieses Produkt bewerten",
+        "name": "Ihr Name",
+        "namePlaceholder": "Katerina",
+        "text": "Schreiben Sie Ihre Bewertung",
+        "textPlaceholder": "Bewertung",
+        "addPhotos": "Ein Foto hochladen",
+        "addPhotosText": "Klicken Sie auf die Schaltfläche, um Dateien hinzuzufügen. Sie können bis zu 10 Bilder im Format .jpg, .gif oder .png hochladen, mit einer maximalen Dateigröße von 5 MB.",
+        "send": "Bewertung absenden"
+      }
+    }
+  },
+  "productsSlider": {
+    "title": "Das könnte Ihnen auch gefallen"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Product | ",
+  "metaDescription": "Product",
+  "title": "Product",
+  "inStock": "En stock",
+  "outOfStock": "En rupture de stock",
+  "new": "NOUVEAU",
+  "mostPopular": "LE PLUS POPULAIRE",
+  "onSale": "EN PROMOTION",
+  "promotionEnd": " end of the promotion:",
+  "code": "Code:",
+  "price": "Prix :",
+  "weight": "Poids :",
+  "flavor:": "Saveur :",
+  "withVat": "(with VAT)",
+  "volume": "Volume :",
+  "hhc": "Teneur en CBD :",
+  "variety": "Quantité :",
+  "shippingInfo": "Les commandes passées avant 12h00 sont expédiées le jour même.",
+  "freeShipping1": "Livraison gratuite pour les commandes supérieures à ",
+  "freeShipping2": "200€.",
+  "inCart": "Ajouter au panier",
+  "specsTabs": {
+    "header": {
+      "characteristics": "Caractéristiques",
+      "description": "Description",
+      "reviews": "Avis"
+    },
+    "buttons": {
+      "viewAll": "Voir tout",
+      "hide": "Hide",
+      "addReview": "Leave a review"
+    },
+    "reviews": {
+      "title": "Laissez un avis et obtenez un succès bonus !",
+      "modal": {
+        "title": "Laissez un avis",
+        "rating": "Évaluez cet article:",
+        "name": "Votre nom",
+        "namePlaceholder": "Katerina",
+        "text": "Écrivez votre avis",
+        "textPlaceholder": "Avis",
+        "addPhotos": "Téléchargez une photo",
+        "addPhotosText": "Cliquez sur le bouton pour ajouter des fichiers. Vous pouvez télécharger jusqu'à 10 images au format .jpg, .gif ou .png, avec une taille maximale de 5 Mo.",
+        "send": "Soumettre l'avis"
+      }
+    }
+  },
+  "productsSlider": {
+    "title": "YVous pourriez aimer aussi"
+  }
+}

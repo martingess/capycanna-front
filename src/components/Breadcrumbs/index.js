@@ -4,21 +4,26 @@ import { IconArrowDown } from '@UI';
 import styles from './Breadcrumbs.module.scss';
 import { useTranslations } from 'next-intl';
 
-const Breadcrumbs = () => {
+const Breadcrumbs = ({ productTitle }) => {
   const router = useRouter();
   const { pathname = '' } = router;
   const tCommon = useTranslations('common');
 
-  const dynamicRoutePattern = /^\[.*\]$/; // to filter out dynamic routes
+  const dynamicRoutePattern = /^\[.*\]$/;
   const pathArray = pathname
     .split('/')
     .filter((segment) => segment && !dynamicRoutePattern.test(segment));
-  // const pathArray = pathname.split('/').filter((segment) => segment);
 
   const breadcrumbs = pathArray.map((segment, index) => {
     const path = '/' + pathArray.slice(0, index + 1).join('/');
     return { label: segment, href: path };
   });
+
+  console.log('!!', breadcrumbs, pathname, productTitle);
+
+  if (productTitle) {
+    breadcrumbs.push({ label: productTitle, href: pathname });
+  }
 
   return (
     <nav aria-label="breadcrumbs" className={styles['breadcrumbs']}>
@@ -35,7 +40,7 @@ const Breadcrumbs = () => {
                 <IconArrowDown className={styles['breadcrumbs__icon']} />
               </>
             ) : (
-              <span>{tCommon(`breadcrumbs.${crumb.label}`)}</span>
+              <span>{productTitle ? crumb.label : tCommon(`breadcrumbs.${crumb.label}`)}</span>
             )}
           </li>
         ))}

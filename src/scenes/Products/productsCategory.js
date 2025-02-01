@@ -35,9 +35,15 @@ const ProductsCategory = ({ category }) => {
 
   // const { loading, error, data } = useQuery(GET_PRODUCTS);
 
-  const byProductsArray = Array.isArray(t.raw('filters.byProducts')) ? t.raw('filters.byProducts') : [];
-  const byCannabinoidsArray = Array.isArray(t.raw('filters.byCannabinoids')) ? t.raw('filters.byCannabinoids') : [];
-  const byYourNeedsArray = Array.isArray(t.raw('filters.byYourNeeds')) ? t.raw('filters.byYourNeeds') : [];
+  const byProductsArray = Array.isArray(t.raw('filters.byProducts'))
+    ? t.raw('filters.byProducts')
+    : [];
+  const byCannabinoidsArray = Array.isArray(t.raw('filters.byCannabinoids'))
+    ? t.raw('filters.byCannabinoids')
+    : [];
+  const byYourNeedsArray = Array.isArray(t.raw('filters.byYourNeeds'))
+    ? t.raw('filters.byYourNeeds')
+    : [];
   const allProducts = [...byProductsArray, ...byCannabinoidsArray, ...byYourNeedsArray];
 
   const selectedCategoryObject = allProducts.find((filter) => filter.key === category);
@@ -46,7 +52,9 @@ const ProductsCategory = ({ category }) => {
   const [isByCannabinoidsOpened, setIsByCannabinoidsOpened] = useState(false);
   const [isByYourNeedsOpened, setIsByYourNeedsOpened] = useState(false);
 
-  const [selectedCategoryItem, setSelectedCategoryItem] = useState(selectedCategoryObject || allProducts[0]);
+  const [selectedCategoryItem, setSelectedCategoryItem] = useState(
+    selectedCategoryObject || allProducts[0],
+  );
 
   const [currentSorting, setCurrentSorting] = useState('ascendingPrice');
 
@@ -65,13 +73,13 @@ const ProductsCategory = ({ category }) => {
   };
 
   const handleApplyFilter = (item) => {
-    setIsMobileFilterOpened(false)
+    setIsMobileFilterOpened(false);
     router.push(`/products/${item.key}`);
   };
 
   const handleCancelFilter = () => {
     console.log('Cancel Filter');
-    setIsMobileFilterOpened(false)
+    setIsMobileFilterOpened(false);
   };
 
   // Custom filtering logic
@@ -82,13 +90,14 @@ const ProductsCategory = ({ category }) => {
   const [filtersState, setFiltersState] = useState(() => {
     const initialState = {};
     selectedCategoryObject?.filtering.forEach((filter) => {
-      if (filter.type === "range") {
+      if (filter.type === 'range') {
         initialState[filter.title] = { min: filter.min, max: filter.max };
-      } else if (filter.type === "checkbox") {
-        initialState[filter.title] = filter.initialValue?.key === "all" 
-          ? filter.params.map((param) => param.key) 
-          : [filter.initialValue.key];
-      } else if (filter.type === "radio") {
+      } else if (filter.type === 'checkbox') {
+        initialState[filter.title] =
+          filter.initialValue?.key === 'all'
+            ? filter.params.map((param) => param.key)
+            : [filter.initialValue.key];
+      } else if (filter.type === 'radio') {
         initialState[filter.title] = filter.initialValue?.key || null;
       }
     });
@@ -106,8 +115,8 @@ const ProductsCategory = ({ category }) => {
     setFiltersState((prev) => {
       const currentSelections = prev[title] || [];
       const isSelected = currentSelections.includes(key);
-  
-      if (key === "all") {
+
+      if (key === 'all') {
         return {
           ...prev,
           [title]: isSelected
@@ -124,16 +133,12 @@ const ProductsCategory = ({ category }) => {
         const allOptions = selectedCategoryObject.filtering
           .find((filter) => filter.title === title)
           .params.map((param) => param.key);
-  
-        const isAllSelected = allOptions.every((option) =>
-          updatedSelections.includes(option)
-        );
-  
+
+        const isAllSelected = allOptions.every((option) => updatedSelections.includes(option));
+
         return {
           ...prev,
-          [title]: isAllSelected
-            ? allOptions
-            : updatedSelections,
+          [title]: isAllSelected ? allOptions : updatedSelections,
         };
       }
     });
@@ -189,19 +194,19 @@ const ProductsCategory = ({ category }) => {
         <Breadcrumbs />
         <div className={styles['products__title-wrapper']}>
           <h1 className={styles['products__title']}>{t('title')}</h1>
-            <div className={styles['list-header']}>
-              <div className={styles['applied-filters']}>
-                <span className={styles['filter-item']}>
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
-                </span>
-              </div>
-              <div className={styles['settings']}>
-                <div className={styles['settings__sorting']}>
-                  <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
-                </div>
-                <div className={styles['settings__layout']}></div>
-              </div>
+          <div className={styles['list-header']}>
+            <div className={styles['applied-filters']}>
+              <span className={styles['filter-item']}>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </span>
             </div>
+            <div className={styles['settings']}>
+              <div className={styles['settings__sorting']}>
+                <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
+              </div>
+              <div className={styles['settings__layout']}></div>
+            </div>
+          </div>
         </div>
         <div className={styles['products__wrapper']}>
           <div className={styles['filters']}>
@@ -209,7 +214,7 @@ const ProductsCategory = ({ category }) => {
               <div className={styles['filter-header__sorting']}>
                 <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
               </div>
-              <span 
+              <span
                 className={styles['filter-header__title']}
                 onClick={() => setIsMobileFilterOpened(!isMobileFilterOpened)}
               >
@@ -225,7 +230,9 @@ const ProductsCategory = ({ category }) => {
               </span>
             </div>
             <div className={styles['filters__wrapper']}>
-              <div className={`${styles['filters__main']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}>
+              <div
+                className={`${styles['filters__main']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
+              >
                 {/* <div className={styles['filter-header']}>
                   <div className={styles['filter-header__sorting']}>
                     <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
@@ -241,99 +248,122 @@ const ProductsCategory = ({ category }) => {
                   </span>
                 </div> */}
                 <div className={styles['block-item']}>
-                  <div 
-                    className={styles['dropdown']} 
+                  <div
+                    className={styles['dropdown']}
                     onClick={() => setIsByProductsOpened(!isByProductsOpened)}
                   >
-                    <span className={styles['dropdown__title']}>{t('filters.byProductsTitle')}</span>
+                    <span className={styles['dropdown__title']}>
+                      {t('filters.byProductsTitle')}
+                    </span>
                     <Image
-                      style={{transform: isByProductsOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
+                      style={{
+                        transform: isByProductsOpened ? 'rotate(0deg)' : 'rotate(180deg)',
+                        transition: 'transform 0.2s',
+                      }}
                       src={'/images/products/filter-arrow.svg'}
                       width={14}
                       height={14}
                       alt="filter-icon"
                     />
                   </div>
-                  {isByProductsOpened && byProductsArray.map((item) => {
-                    return (
-                      <Radio 
+                  {isByProductsOpened &&
+                    byProductsArray.map((item) => {
+                      return (
+                        <Radio
+                          key={item.key}
+                          id={item.key}
+                          label={item.label}
+                          name={'product-filter'}
+                          value={item.key}
+                          isChecked={selectedCategoryItem.key === item.key}
+                          handleSelection={() => handleSelection(item)}
+                        />
+                      );
+                    })}
+                </div>
+                <div className={styles['block-item']}>
+                  <div
+                    className={styles['dropdown']}
+                    onClick={() => setIsByCannabinoidsOpened(!isByCannabinoidsOpened)}
+                  >
+                    <span className={styles['dropdown__title']}>
+                      {t('filters.byCannabinoidsTitle')}
+                    </span>
+                    <Image
+                      style={{
+                        transform: isByCannabinoidsOpened ? 'rotate(0deg)' : 'rotate(180deg)',
+                        transition: 'transform 0.2s',
+                      }}
+                      src={'/images/products/filter-arrow.svg'}
+                      width={14}
+                      height={14}
+                      alt="filter-icon"
+                    />
+                  </div>
+                  {isByCannabinoidsOpened &&
+                    byCannabinoidsArray.map((item) => (
+                      <Radio
                         key={item.key}
                         id={item.key}
-                        label={item.label} 
-                        name={'product-filter'} 
+                        label={item.label}
+                        name={'product-filter'}
                         value={item.key}
                         isChecked={selectedCategoryItem.key === item.key}
                         handleSelection={() => handleSelection(item)}
                       />
-                    )}
-                  )}
+                    ))}
                 </div>
                 <div className={styles['block-item']}>
-                  <div 
-                    className={styles['dropdown']} 
-                    onClick={() => setIsByCannabinoidsOpened(!isByCannabinoidsOpened)}
-                  >
-                    <span className={styles['dropdown__title']}>{t('filters.byCannabinoidsTitle')}</span>
-                    <Image
-                      style={{transform: isByCannabinoidsOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
-                      src={'/images/products/filter-arrow.svg'}
-                      width={14}
-                      height={14}
-                      alt="filter-icon"
-                    />
-                  </div>
-                  {isByCannabinoidsOpened && byCannabinoidsArray.map((item) => (
-                    <Radio 
-                      key={item.key}
-                      id={item.key}
-                      label={item.label} 
-                      name={'product-filter'} 
-                      value={item.key}
-                      isChecked={selectedCategoryItem.key === item.key}
-                      handleSelection={() => handleSelection(item)}
-                    />
-                  ))}
-                </div>
-                <div className={styles['block-item']}>
-                  <div 
-                    className={styles['dropdown']} 
+                  <div
+                    className={styles['dropdown']}
                     onClick={() => setIsByYourNeedsOpened(!isByYourNeedsOpened)}
                   >
-                    <span className={styles['dropdown__title']}>{t('filters.byYourNeedsTitle')}</span>
+                    <span className={styles['dropdown__title']}>
+                      {t('filters.byYourNeedsTitle')}
+                    </span>
                     <Image
-                      style={{transform: isByYourNeedsOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
+                      style={{
+                        transform: isByYourNeedsOpened ? 'rotate(0deg)' : 'rotate(180deg)',
+                        transition: 'transform 0.2s',
+                      }}
                       src={'/images/products/filter-arrow.svg'}
                       width={14}
                       height={14}
                       alt="filter-icon"
                     />
                   </div>
-                  {isByYourNeedsOpened && byYourNeedsArray.map((item) => (
-                    <Radio 
-                      key={item.key}
-                      id={item.key}
-                      label={item.label} 
-                      name={'product-filter'} 
-                      value={item.key}
-                      isChecked={selectedCategoryItem.key === item.key}
-                      handleSelection={() => handleSelection(item)}
-                    />
-                  ))}
+                  {isByYourNeedsOpened &&
+                    byYourNeedsArray.map((item) => (
+                      <Radio
+                        key={item.key}
+                        id={item.key}
+                        label={item.label}
+                        name={'product-filter'}
+                        value={item.key}
+                        isChecked={selectedCategoryItem.key === item.key}
+                        handleSelection={() => handleSelection(item)}
+                      />
+                    ))}
                 </div>
               </div>
-              <div className={`${styles['filters__custom']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}>
+              <div
+                className={`${styles['filters__custom']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
+              >
                 <div>
                   {selectedCategoryObject?.filtering?.map((filter, idx) => (
                     <div key={idx}>
-                      {filter.type === "range" && (
+                      {filter.type === 'range' && (
                         <div className={styles['block-item']}>
-                          <div 
-                            className={styles['dropdown']} 
+                          <div
+                            className={styles['dropdown']}
                             onClick={() => setIsRangeFilterOpened(!isRangeFilterOpened)}
                           >
                             <span className={styles['dropdown__title']}>{filter.title}</span>
                             <Image
-                              style={{transform: isRangeFilterOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
+                              style={{
+                                transform: isRangeFilterOpened ? 'rotate(0deg)' : 'rotate(180deg)',
+                                transition: 'transform 0.2s',
+                              }}
                               src={'/images/products/filter-arrow.svg'}
                               width={14}
                               height={14}
@@ -353,70 +383,84 @@ const ProductsCategory = ({ category }) => {
                           )}
                         </div>
                       )}
-                      {filter.type === "checkbox" && (
+                      {filter.type === 'checkbox' && (
                         <div className={styles['block-item']}>
-                          <div 
-                            className={styles['dropdown']} 
+                          <div
+                            className={styles['dropdown']}
                             onClick={() => setIsCheckBoxFilterOpened(!isCheckBoxFilterOpened)}
                           >
                             <span className={styles['dropdown__title']}>{filter.title}</span>
                             <Image
-                              style={{transform: isCheckBoxFilterOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
+                              style={{
+                                transform: isCheckBoxFilterOpened
+                                  ? 'rotate(0deg)'
+                                  : 'rotate(180deg)',
+                                transition: 'transform 0.2s',
+                              }}
                               src={'/images/products/filter-arrow.svg'}
                               width={14}
                               height={14}
                               alt="filter-icon"
                             />
                           </div>
-                          {isCheckBoxFilterOpened && filter.params.map((param) => (
-                            <CheckBox 
-                              key={param.key}
-                              id={`${filter.title}-${param.key}`}
-                              label={param.label} 
-                              name={filter.title} 
-                              value={param.key}
-                              isChecked={(filtersState[filter.title] || []).includes(param.key)}
-                              handleSelection={() => handleCheckboxChange(param.key, filter.title)}
-                            />
-                          ))}
+                          {isCheckBoxFilterOpened &&
+                            filter.params.map((param) => (
+                              <CheckBox
+                                key={param.key}
+                                id={`${filter.title}-${param.key}`}
+                                label={param.label}
+                                name={filter.title}
+                                value={param.key}
+                                isChecked={(filtersState[filter.title] || []).includes(param.key)}
+                                handleSelection={() =>
+                                  handleCheckboxChange(param.key, filter.title)
+                                }
+                              />
+                            ))}
                         </div>
                       )}
-                      {filter.type === "radio" && (
+                      {filter.type === 'radio' && (
                         <div className={styles['block-item']}>
-                          <div 
-                            className={styles['dropdown']} 
+                          <div
+                            className={styles['dropdown']}
                             onClick={() => setIsRadioFilterOpened(!isRadioFilterOpened)}
                           >
                             <span className={styles['dropdown__title']}>{filter.title}</span>
                             <Image
-                              style={{transform: isRadioFilterOpened ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s'}}
+                              style={{
+                                transform: isRadioFilterOpened ? 'rotate(0deg)' : 'rotate(180deg)',
+                                transition: 'transform 0.2s',
+                              }}
                               src={'/images/products/filter-arrow.svg'}
                               width={14}
                               height={14}
                               alt="filter-icon"
                             />
                           </div>
-                          {isRadioFilterOpened && filter.params.map((param) => (
-                            <Radio 
-                              key={param.key}
-                              id={param.key}
-                              label={param.label} 
-                              name={filter.title} 
-                              value={param.key}
-                              isChecked={filtersState[filter.title] === param.key}
-                              handleSelection={() => handleRadioChange(param.key, filter.title)}
-                            />
-                          ))}
+                          {isRadioFilterOpened &&
+                            filter.params.map((param) => (
+                              <Radio
+                                key={param.key}
+                                id={param.key}
+                                label={param.label}
+                                name={filter.title}
+                                value={param.key}
+                                isChecked={filtersState[filter.title] === param.key}
+                                handleSelection={() => handleRadioChange(param.key, filter.title)}
+                              />
+                            ))}
                         </div>
                       )}
                     </div>
                   ))}
                 </div>
               </div>
-              <div className={`${styles['filters__buttons']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}>
-                <ButtonCO 
-                  theme="orange" 
-                  className={styles['apply__button']} 
+              <div
+                className={`${styles['filters__buttons']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
+              >
+                <ButtonCO
+                  theme="orange"
+                  className={styles['apply__button']}
                   onClick={() => handleApplyFilter(selectedCategoryItem)}
                 >
                   {t('filters.buttons.applyFilter')}
@@ -446,7 +490,11 @@ const ProductsCategory = ({ category }) => {
                 <span>{t('pagination.showMore')}</span>
               </button>
             )}
-            <Pagination totalPages={totalPages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Pagination
+              totalPages={totalPages}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
           </div>
         </div>
         <div className={styles['text-block-wrapper']}>

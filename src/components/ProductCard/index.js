@@ -3,7 +3,18 @@ import Image from 'next/image';
 import { ButtonCO, IconHard } from '@UI';
 
 const ProductCard = ({ product }) => {
-  const { title, description, image, discount, isPopular, isNew, promotionEnd, price, oldPrice, stock } = product;
+  const {
+    title,
+    description,
+    image,
+    discount,
+    isPopular,
+    isNew,
+    promotionEnd,
+    price,
+    oldPrice,
+    stock,
+  } = product;
   return (
     <div className={styles['card']}>
       <div className={styles['card__wrapper']}>

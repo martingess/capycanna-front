@@ -6,10 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef, useState } from 'react';
 import { SliderArrow } from '@components/UI/SliderArrow';
 import { useEffect } from 'react';
-
 import styles from './ProductsSlider.module.scss';
-const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = false }) => {
-  const t = useTranslations(translation ?? 'home');
+
+const ProductsSlider = ({
+  products = [1, 2, 3, 4],
+  place,
+  translation: t,
+  noBg = false,
+  noSubTitle = false,
+  noMoreBtn = false,
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(1.25);
   const swiperRef = useRef(null);
@@ -64,7 +70,9 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
     <div className={styles['products']}>
       <div className={styles['products__wrapper']}>
         <h2 className={styles['products__title']}>{t(`${place}.title`)}</h2>
-        <p className={styles['products__description']}>{t(`${place}.description`)}</p>
+        {!noSubTitle && (
+          <p className={styles['products__description']}>{t(`${place}.description`)}</p>
+        )}
         <div className={styles['products__items']}>
           <Swiper
             spaceBetween={14}
@@ -93,9 +101,11 @@ const ProductsSlider = ({ products = [1, 2, 3, 4], place, translation, noBg = fa
             <SliderArrow onClick={handleNext} isRight />
           </div>
         </div>
-        <Link href={t(`${place}.more.link`)} className={styles['products__link']}>
-          {t(`${place}.more.text`)}
-        </Link>
+        {!noMoreBtn && (
+          <Link href={t(`${place}.more.link`)} className={styles['products__link']}>
+            {t(`${place}.more.text`)}
+          </Link>
+        )}
       </div>
       {noBg ? null : (
         <Image

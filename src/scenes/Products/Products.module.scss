@@ -41,7 +41,7 @@
       .filter-item {
         font-size: 18px;
         line-height: 110%;
-        color: #221B15;
+        color: #221b15;
         display: none;
 
         @media (min-width: 1160px) {
@@ -106,7 +106,7 @@
       &__custom {
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0px 4px 10px 0px rgba(34, 27, 21, 0.10);
+        box-shadow: 0px 4px 10px 0px rgba(34, 27, 21, 0.1);
         padding: 14px 0 0 0;
         margin-bottom: 24px;
 
@@ -123,7 +123,7 @@
       }
 
       .filter-header {
-        background: #FFFFF2;
+        background: #fffff2;
         height: 50px;
         margin: 0 -19px 0 -9px;
         display: flex;
@@ -205,7 +205,6 @@
         min-height: 380px;
         margin: 30px 0;
 
-
         @media (min-width: 800px) {
           grid-template-columns: repeat(3, 1fr);
           margin: 0 0 30px 0;
@@ -222,7 +221,7 @@
           font-weight: 600;
           line-height: 160%;
           text-transform: uppercase;
-          color: #C54F1D;
+          color: #c54f1d;
         }
       }
     }
@@ -236,12 +235,12 @@
     padding: 0 14px;
 
     &::-webkit-scrollbar-thumb {
-      background: #8CB869;
+      background: #8cb869;
     }
 
     h3 {
       font-size: 26px;
-      color: #221B15;
+      color: #221b15;
       font-weight: 600;
       line-height: 140%;
       margin-top: 30px;
@@ -249,7 +248,7 @@
 
     p {
       font-size: 16px;
-      color: #221B15;
+      color: #221b15;
       font-weight: 400;
       line-height: 180%;
     }

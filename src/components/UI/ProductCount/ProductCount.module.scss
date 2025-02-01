@@ -1,0 +1,28 @@
+.product-count {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #8cb869;
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+
+  button {
+    padding: 16px;
+    background: rgba(246, 246, 246, 0.7);
+    font-size: 18px;
+  }
+
+  .btn-left {
+    border-right: 1px solid #8cb869;
+  }
+
+  .btn-right {
+    border-left: 1px solid #8cb869;
+  }
+
+  p {
+    text-align: center;
+  }
+}
