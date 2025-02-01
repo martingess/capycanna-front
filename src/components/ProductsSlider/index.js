@@ -1,12 +1,12 @@
 import ProductCard from '@components/ProductCard';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef, useState } from 'react';
 import { SliderArrow } from '@components/UI/SliderArrow';
 import { useEffect } from 'react';
 import styles from './ProductsSlider.module.scss';
+import 'swiper/scss';
 
 const ProductsSlider = ({
   products = [1, 2, 3, 4],

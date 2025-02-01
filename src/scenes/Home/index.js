@@ -8,7 +8,6 @@ import Features from '@components/Features';
 import Step from '@components/Step';
 import TopSlider from '@components/TopSlider';
 import ProductsSlider from '@components/ProductsSlider';
-import 'swiper/scss';
 import { mockProducts } from '../../data/mockProducts';
 
 const HomePage = () => {
@@ -27,7 +26,7 @@ const HomePage = () => {
       <Categories translation={'home'} />
       <ProductsSlider translation={t} products={mockProducts} place="stars" />
       <Chips translation={'home'} />
-      <ProductsSlider translation={t} products={mockProducts} place="discounted" noBg={true} />
+      <ProductsSlider translation={t} products={mockProducts} place="discounted" noBg />
       <Step translation={'home'} />
       <Reviews translation={'home'} />
       <FaqSection translation={'home'} />
