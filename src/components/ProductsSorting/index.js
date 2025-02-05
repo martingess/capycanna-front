@@ -5,7 +5,12 @@ import cn from 'classnames';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
+const ProductsSorting = ({
+  onSort = () => {},
+  isListOpen,
+  setIsListOpen,
+  setIsMobileFilterOpened,
+}) => {
   const t = useTranslations('products');
 
   const sortings = [
@@ -27,10 +32,10 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
     },
   ];
   const [currentSorting, setCurrentSorting] = useState(sortings[0]);
-  const [isListOpen, setIsListOpen] = useState(false);
 
   const toggleList = () => {
     setIsListOpen((prev) => !prev);
+    setIsMobileFilterOpened(false);
   };
 
   const changeSorting = (sorting) => {
@@ -45,8 +50,9 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
         className={cn(styles['sorting__wrapper'], {
           [styles['open']]: isListOpen,
         })}
+        onClick={toggleList}
       >
-        <div className={styles['sorting__top']} onClick={toggleList}>
+        <div className={styles['sorting__top']}>
           <Image
             src={'/images/products/cheapest-sorting.svg'}
             width={24}
@@ -55,13 +61,6 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
           />
           <p className={styles['sorting__name']}>{currentSorting.value}</p>
           <IconArrowDown className={styles['sorting__arrow']} />
-          {/* <Image
-            style={{transform: 'rotate(180deg)'}}
-            src={'/images/products/filter-arrow.svg'}
-            width={14}
-            height={14}
-            alt="filter-icon"
-          /> */}
         </div>
         <div className={styles['sorting__list']}>
           {sortings.map((item) => {
@@ -74,7 +73,7 @@ const ProductsSorting = ({ onSort = () => {}, currentSortingKey }) => {
                 })}
                 onClick={() => changeSorting(item)}
               >
-                {item.value}
+                {item.value}s
               </div>
             );
           })}

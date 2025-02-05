@@ -4,6 +4,7 @@
   "title": "Products",
   "filters": {
     "title": "Filter",
+    "title2": "Kategorie wählen",
     "byProductsTitle": "By Products",
     "byCannabinoidsTitle": "By Cannabinoids",
     "byYourNeedsTitle": "By Your Needs",
