@@ -77,19 +77,9 @@ const ProductItem = ({ product }) => {
     return (
       <div style={inlineStyles} className={styles['info-main']}>
         <div className={styles['warnings']}>
-          <Image
-            src="/images/productItem/no-smoke.svg"
-            alt="warning"
-            width={24}
-            height={24}
-          />
+          <Image src="/images/productItem/no-smoke.svg" alt="warning" width={24} height={24} />
           <Image src="/images/productItem/18+.svg" alt="warning" width={24} height={24} />
-          <Image
-            src="/images/productItem/no-kids.svg"
-            alt="warning"
-            width={24}
-            height={24}
-          />
+          <Image src="/images/productItem/no-kids.svg" alt="warning" width={24} height={24} />
         </div>
         <div className={styles['rating']}>
           {starsRate.map((star) => (
@@ -110,7 +100,7 @@ const ProductItem = ({ product }) => {
           {t('code')} {product?.id}
         </div>
       </div>
-    )
+    );
   };
 
   return (
@@ -125,9 +115,7 @@ const ProductItem = ({ product }) => {
       <section className={styles['product']}>
         <Breadcrumbs productTitle={product?.title} />
         <div className={styles['product__content']}>
-          <div className={styles['info-main-wrapper-mob']}>
-            {mainInfo()}
-          </div>
+          <div className={styles['info-main-wrapper-mob']}>{mainInfo()}</div>
           <div className={styles['product__image']}>
             <Image src={product?.image} width={550} height={500} alt="filter-icon" />
             <div className={styles['card__label']}>
@@ -152,10 +140,10 @@ const ProductItem = ({ product }) => {
           </div>
           <div className={styles['product__info']}>
             <div className={styles['top-info']}>
-              <div className={styles['info-main-wrapper-desk']}>
-                {mainInfo()}
+              <div className={styles['info-main-wrapper-desk']}>{mainInfo()}</div>
+              <div className={styles['info-stock']}>
+                {product?.stock ? t('inStock') : t('outOfStock')}
               </div>
-              <div className={styles['info-stock']}>{product?.stock ? t('inStock') : t('outOfStock')}</div>
             </div>
             <h1 className={styles['product__title']}>{product?.title}</h1>
             <div className={styles['product__price']}>

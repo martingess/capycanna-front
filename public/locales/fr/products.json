@@ -3,7 +3,8 @@
   "metaDescription": "Products",
   "title": "Products",
   "filters": {
-    "title": "Filter",
+    "title": "Filtre",
+    "title2": "Choisissez une catégorie",
     "byProductsTitle": "By Products",
     "byCannabinoidsTitle": "By Cannabinoids",
     "byYourNeedsTitle": "By Your Needs",

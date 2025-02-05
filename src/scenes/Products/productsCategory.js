@@ -59,9 +59,10 @@ const ProductsCategory = ({ category }) => {
   const [currentSorting, setCurrentSorting] = useState('ascendingPrice');
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const itemsPerPage = 9;
 
   const [isMobileFilterOpened, setIsMobileFilterOpened] = useState(false);
+  const [isSortingOpen, setIsSortingOpen] = useState(false);
 
   // Filtering logic
   useEffect(() => {
@@ -69,7 +70,11 @@ const ProductsCategory = ({ category }) => {
   }, [selectedCategoryObject]);
 
   const handleSelection = (item) => {
+    if (isMobileFilterOpened) {
+      setIsMobileFilterOpened(false);
+    }
     setSelectedCategoryItem(item);
+    router.push(`/products/${item.key}`);
   };
 
   const handleApplyFilter = (item) => {
@@ -83,9 +88,9 @@ const ProductsCategory = ({ category }) => {
   };
 
   // Custom filtering logic
-  const [isRangeFilterOpened, setIsRangeFilterOpened] = useState(false);
-  const [isCheckBoxFilterOpened, setIsCheckBoxFilterOpened] = useState(false);
-  const [isRadioFilterOpened, setIsRadioFilterOpened] = useState(false);
+  const [isRangeFilterOpened, setIsRangeFilterOpened] = useState(true);
+  const [isCheckBoxFilterOpened, setIsCheckBoxFilterOpened] = useState(true);
+  const [isRadioFilterOpened, setIsRadioFilterOpened] = useState(true);
 
   const [filtersState, setFiltersState] = useState(() => {
     const initialState = {};
@@ -151,8 +156,6 @@ const ProductsCategory = ({ category }) => {
     }));
   };
 
-  console.log('filtersState', filtersState);
-
   // Sorting logic
   const sortedProducts = [...products].sort((a, b) => {
     switch (currentSorting) {
@@ -181,8 +184,12 @@ const ProductsCategory = ({ category }) => {
   const paginatedProducts = sortedProducts.slice(startIndex, endIndex);
 
   const handleLoadMore = () => {
-    setItemsPerPage((prev) => prev + 9);
+    if (currentPage < totalPages) {
+      setCurrentPage((prev) => prev + 1);
+    }
   };
+
+  const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
 
   return (
     <div>
@@ -191,18 +198,19 @@ const ProductsCategory = ({ category }) => {
         <meta name="description" content={t('metaDescription')} />
       </Head>
       <section className={styles['products']}>
-        <Breadcrumbs />
+        <Breadcrumbs productTitle={categoryName} />
         <div className={styles['products__title-wrapper']}>
-          <h1 className={styles['products__title']}>{t('title')}</h1>
+          <h1 className={styles['products__title']}>{categoryName}</h1>
           <div className={styles['list-header']}>
-            <div className={styles['applied-filters']}>
-              <span className={styles['filter-item']}>
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </span>
-            </div>
+            <div className={styles['applied-filters']}></div>
             <div className={styles['settings']}>
               <div className={styles['settings__sorting']}>
-                <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
+                <ProductsSorting
+                  onSort={handleSortChange}
+                  isListOpen={isSortingOpen}
+                  setIsListOpen={setIsSortingOpen}
+                  setIsMobileFilterOpened={setIsMobileFilterOpened}
+                />
               </div>
               <div className={styles['settings__layout']}></div>
             </div>
@@ -210,13 +218,21 @@ const ProductsCategory = ({ category }) => {
         </div>
         <div className={styles['products__wrapper']}>
           <div className={styles['filters']}>
-            <div className={styles['filter-header']}>
+            <div className={styles['filter-header__mobile']}>
               <div className={styles['filter-header__sorting']}>
-                <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
+                <ProductsSorting
+                  onSort={handleSortChange}
+                  isListOpen={isSortingOpen}
+                  setIsListOpen={setIsSortingOpen}
+                  setIsMobileFilterOpened={setIsMobileFilterOpened}
+                />
               </div>
               <span
                 className={styles['filter-header__title']}
-                onClick={() => setIsMobileFilterOpened(!isMobileFilterOpened)}
+                onClick={() => {
+                  setIsMobileFilterOpened(!isMobileFilterOpened);
+                  setIsSortingOpen(false);
+                }}
               >
                 {t('filters.title')}
               </span>
@@ -233,20 +249,33 @@ const ProductsCategory = ({ category }) => {
               <div
                 className={`${styles['filters__main']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
               >
-                {/* <div className={styles['filter-header']}>
+                <div className={styles['filter-header']}>
                   <div className={styles['filter-header__sorting']}>
-                    <ProductsSorting currentSortingKey={currentSorting} onSort={handleSortChange} />
+                    <ProductsSorting
+                      onSort={handleSortChange}
+                      isListOpen={isSortingOpen}
+                      setIsListOpen={setIsSortingOpen}
+                      setIsMobileFilterOpened={setIsMobileFilterOpened}
+                    />
                   </div>
-                  <span className={styles['filter-header__title']}>{t('filters.title')}</span>
+                  <span
+                    className={styles['filter-header__title']}
+                    onClick={() => {
+                      setIsMobileFilterOpened(!isMobileFilterOpened);
+                      setIsSortingOpen(false);
+                    }}
+                  >
+                    {t('filters.title2')}
+                  </span>
                   <span className={styles['filter-header__icon']}>
                     <Image
-                      src={'/images/products/filter-icon.svg'}
+                      src={'/images/products/categories-filter.svg'}
                       width={24}
                       height={24}
-                      alt="filter-icon"
+                      alt="categories-filter-icon"
                     />
                   </span>
-                </div> */}
+                </div>
                 <div className={styles['block-item']}>
                   <div
                     className={styles['dropdown']}
@@ -349,6 +378,33 @@ const ProductsCategory = ({ category }) => {
               <div
                 className={`${styles['filters__custom']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
               >
+                <div className={styles['filter-header']}>
+                  <div className={styles['filter-header__sorting']}>
+                    <ProductsSorting
+                      onSort={handleSortChange}
+                      isListOpen={isSortingOpen}
+                      setIsListOpen={setIsSortingOpen}
+                      setIsMobileFilterOpened={setIsMobileFilterOpened}
+                    />
+                  </div>
+                  <span
+                    className={styles['filter-header__title']}
+                    onClick={() => {
+                      setIsMobileFilterOpened(!isMobileFilterOpened);
+                      setIsSortingOpen(false);
+                    }}
+                  >
+                    {t('filters.title')}
+                  </span>
+                  <span className={styles['filter-header__icon']}>
+                    <Image
+                      src={'/images/products/filter-icon.svg'}
+                      width={24}
+                      height={24}
+                      alt="filter-icon"
+                    />
+                  </span>
+                </div>
                 <div>
                   {selectedCategoryObject?.filtering?.map((filter, idx) => (
                     <div key={idx}>

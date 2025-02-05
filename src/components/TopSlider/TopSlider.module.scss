@@ -82,8 +82,11 @@
         span {
           color: #8cb869;
         }
-        @media (min-width: 1050px) {
+        @media (min-width: 768px) {
           font-size: 70px;
+        }
+        @media (min-width: 1050px) {
+          font-size: 90px;
         }
         @media (min-width: 1220px) {
           font-size: 100px;
