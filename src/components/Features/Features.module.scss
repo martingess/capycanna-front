@@ -84,13 +84,14 @@
       width: 100%;
       max-width: 140px;
       text-align: center;
+
       @media (min-width: 1200px) {
-        max-width: 327px;
-        font-size: 22px;
+        max-width: 260px;
+        font-size: 18px;
         min-height: 72px;
       }
       @media (min-width: 1440px) {
-        font-size: 26px;
+        font-size: 20px;
         margin-top: 18px;
       }
     }

@@ -8,7 +8,7 @@
   "mostPopular": "MOST POPULAR",
   "onSale": "ON SALE",
   "promotionEnd": " end of the promotion:",
-  "code": "Code:",
+  "code": "Code",
   "price": "Price:",
   "weight": "Weight:",
   "flavor:": "Flavor:",
@@ -18,7 +18,7 @@
   "variety": "Quantity:",
   "shippingInfo": "Orders placed before 12:00 ship out the same day.",
   "freeShipping1": "Free shipping on orders over ",
-  "freeShipping2": "200€.",
+  "freeShipping2": "100€.",
   "inCart": "Add to Cart",
   "specsTabs": {
     "header": {

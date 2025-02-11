@@ -83,7 +83,7 @@ const ProductsSlider = ({
           >
             {products.map((item) => (
               <SwiperSlide key={item} className={styles['products__slide']}>
-                <ProductCard product={item} />
+                <ProductCard product={item} t={t} />
               </SwiperSlide>
             ))}
           </Swiper>

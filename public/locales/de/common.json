@@ -1,10 +1,11 @@
 {
   "sale": "Rabatt",
   "logIn": "Anmelden",
-  "favorites": "Favorites",
-  "cart": "Cart",
-  "products": "Products",
-  "menu": "Menu",
+  "account": "Konto",
+  "favorites": "Favoriten",
+  "cart": "Warenkorb",
+  "products": "Suche",
+  "menu": "Menü",
   "breadcrumbs": {
     "b2b": "b2b wholesale",
     "contact": "Kontaktieren Sie uns",
@@ -26,22 +27,26 @@
   "features": {
     "list": [
       {
-        "title": "Stickerpack zu Ihrer ersten Bestellung geschenkt",
+        "title": "Stickerpack zur ersten",
+        "title2": "Bestellung",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Erfolge sammeln – Rabatte sichern",
+        "title": "Erfolge sammeln –",
+        "title2": "Rabatte sichern",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Kostenloser Versand ab 100 €",
+        "title": "Kostenloser",
+        "title2": "Versand ab 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Bestellung bis 12:00 Uhr – heute versandt",
+        "title": "Bestellung bis 12:00 Uhr -",
+        "title2": "heute versandt",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

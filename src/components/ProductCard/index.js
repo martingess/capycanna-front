@@ -1,8 +1,11 @@
 import styles from './ProductCard.module.scss';
 import Image from 'next/image';
 import { ButtonCO, IconHard } from '@UI';
+import { useTranslations } from 'next-intl';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, t }) => {
+  // const t = useTranslations('productItem');
+
   const {
     title,
     description,
@@ -15,6 +18,7 @@ const ProductCard = ({ product }) => {
     oldPrice,
     stock,
   } = product;
+
   return (
     <div className={styles['card']}>
       <div className={styles['card__wrapper']}>
@@ -54,13 +58,13 @@ const ProductCard = ({ product }) => {
         <div className={styles['card__bottom']}>
           <div className={styles['card__prices']}>
             <p className={styles['card__price']}>
-              {price} <span>(with VAT)</span>
+              {price} <span>{t('withVat')}</span>
             </p>
             <p className={styles['card__old-price']}>{oldPrice}</p>
           </div>
           <p className={styles['card__stock']}>{stock}</p>
         </div>
-        <ButtonCO className={styles['card__button']}>In the cart</ButtonCO>
+        <ButtonCO className={styles['card__button']}>{t('inCart')}</ButtonCO>
       </div>
     </div>
   );

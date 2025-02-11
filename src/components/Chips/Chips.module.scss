@@ -60,6 +60,7 @@
     margin-bottom: 14px;
     display: flex;
     flex-direction: column;
+    background-color: #fff9ef;
     @media (min-width: 960px) {
       border-radius: 8px;
       min-height: 270px;
@@ -78,6 +79,7 @@
     }
 
     &:nth-child(even) {
+      background-color: #f1ffef;
       .chips__item-btn {
         align-self: flex-end;
       }
@@ -87,6 +89,19 @@
       .chips__item-text {
         align-self: flex-end;
         text-align: right;
+        max-width: 230px;
+        min-height: 120px;
+      }
+
+      .chips__item-mob {
+        left: -12px;
+        right: auto;
+      }
+
+      @media (min-width: 500px) {
+        .chips__item-mob {
+          left: 0;
+        }
       }
 
       @media (min-width: 960px) {
@@ -99,6 +114,7 @@
         .chips__item-text {
           align-self: flex-start;
           text-align: left;
+          min-height: unset;
         }
       }
     }
@@ -117,12 +133,13 @@
     }
     &-mob {
       position: absolute;
-      width: 100%;
+      width: auto;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       z-index: 1;
       top: 0;
-      left: 0;
+      right: 0;
+      left: auto;
       @media (min-width: 960px) {
         display: none;
       }

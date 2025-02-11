@@ -186,7 +186,6 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'products',
           })}
-          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
             {productsItems['products']?.map(({ name, description, link, image }) => (
@@ -211,7 +210,6 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'cannabinoids',
           })}
-          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
             {productsItems['cannabinoids']?.map(({ name, description, link, image }) => (
@@ -236,7 +234,6 @@ const Header = () => {
           className={cn(styles['trailer__categories'], {
             [styles['active']]: typeMenu === 'findSomething',
           })}
-          // onClick={(e) => e.stopPropagation()} to close menu on click
         >
           <div className={styles['trailer__items']}>
             {productsItems['findSomething']?.map(({ name, description, link, image }) => (

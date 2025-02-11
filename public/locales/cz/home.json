@@ -4,12 +4,12 @@
   "topSlider": {
     "list": [
       {
-        "title": "<h2><span>CapyCanna</span> - váš pohodový a spolehlivý obchod s konopím</h2>",
+        "title": "<h2><span>CapyCanna</span> - Konopí pro každou potřebu</h2>",
         "text": "<p>Nabízíme prémiové produkty z konopí, které podpoří vaši cestu ke zdraví a pohodě. Od CBD květů až po uklidňující oleje a vaporizéry – CapyCanna je tu, aby vám pomohla najít přesně to, co potřebujete.</p>",
         "img": "/images/home/slider1.png"
       },
       {
-        "title": "<h2><span>CapyCanna</span> - váš pohodový a spolehlivý obchod s konopím</h2>",
+        "title": "<h2><span>CapyCanna</span> - Konopí pro každou potřebu</h2>",
         "text": "<p>Nabízíme prémiové produkty z konopí, které podpoří vaši cestu ke zdraví a pohodě. Od CBD květů až po uklidňující oleje a vaporizéry – CapyCanna je tu, aby vám pomohla najít přesně to, co potřebujete.</p>",
         "img": "/images/home/slider1.png"
       }
@@ -21,49 +21,49 @@
     "list": [
       {
         "title": "Starter pack",
-        "imageBg": "/images/categories/everage.png",
+        "imageBg": "/images/categories/everage-bg.png",
         "image": "/images/categories/everage-preview.png",
         "link": "/everage",
         "type": "everage"
       },
       {
         "title": "CBD Vape",
-        "imageBg": "/images/categories/light.png",
+        "imageBg": "/images/categories/light-bg.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
         "title": "CBD Květiny",
-        "imageBg": "/images/categories/strong.png",
+        "imageBg": "/images/categories/strong-bg.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
         "title": "CBD Oleje",
-        "imageBg": "/images/categories/starter.png",
+        "imageBg": "/images/categories/starter-bg.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
         "title": "Edibles",
-        "imageBg": "/images/categories/health.png",
+        "imageBg": "/images/categories/health-bg.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
         "title": "Lepší spánek",
-        "imageBg": "/images/categories/sleeping.png",
+        "imageBg": "/images/categories/sleeping-bg.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
         "title": "Úleva od bolesti",
-        "imageBg": "/images/categories/pain.png",
+        "imageBg": "/images/categories/pain-bg.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
         "type": "pain"
@@ -72,11 +72,11 @@
   },
   "chips": {
     "title": "Unikátní výhody",
-    "description": "Získejte stylové samolepky, sbírejte bonusové body a odemykejte nová ocenění!",
+    "description": "Získejte stylové samolepky, sbírejte bonusové body a odemykejte úspěchy!",
     "list": [
       {
-        "title": "Odemykejte achievementy – získejte slevy",
-        "text": "<p>Sbírejte bonusy plněním specifických úkolů na našem webu a odemykáním achievementů. Každý splněný achievement vám přinese bonusové body, které se automaticky přemění na slevy na budoucí objednávky.</p>",
+        "title": "Odemykejte úspěchy – získejte slevy",
+        "text": "<p>Sbírejte bonusy plněním specifických úkolů na našem webu a odemykáním úspěchů. Každý splněný úspěch vám přinese bonusové body, které se automaticky přemění na slevy na budoucí objednávky.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1-mob.jpg",
         "link": "/bonus-program",
@@ -259,5 +259,7 @@
         "answer": "CBD není nebezpečné, pokud kupujete kvalitní produkty. Vždy se poraďte s lékařem, pokud máte pochybnosti nebo užíváte jiné léky.</p>"
       }
     ]
-  }
+  },
+  "withVat": "(včetně DPH)",
+  "inCart": "Přidat do košíku"
 }

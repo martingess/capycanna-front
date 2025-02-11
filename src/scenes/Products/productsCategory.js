@@ -531,7 +531,7 @@ const ProductsCategory = ({ category }) => {
             <div className={styles['list']}>
               {paginatedProducts.map((product) => (
                 <Link key={product.id} href={`/products/${category}/${product.id}`}>
-                  <ProductCard product={product} />
+                  <ProductCard product={product} t={t} />
                 </Link>
               ))}
             </div>

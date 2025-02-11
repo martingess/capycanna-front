@@ -8,22 +8,26 @@
   "features": {
     "list": [
       {
-        "title": "Sticker pack for your first order",
+        "title": "Sticker pack for",
+        "title2": "your first order",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Earn Achievements - Get Discounts",
+        "title": "Earn achievements -",
+        "title2": "get discounts",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Free shipping from 100€",
+        "title": "Free shipping from",
+        "title2": "100€",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Order by 12:00 - shipped today",
+        "title": "Order by 12:00 -",
+        "title2": "shipped today",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

@@ -4,12 +4,12 @@
   "topSlider": {
     "list": [
       {
-        "title": "<h2><span>CapyCanna</span> est votre magasin de cannabis de confiance</h2>",
+        "title": "<h2><span>CapyCanna</span> Cannabis pour chaque besoin</h2>",
         "text": "<p>Nous offrons des produits de cannabis de haute qualité pour soutenir votre voyage vers le bien-être. De la fleur de CBD aux huiles apaisantes et aux vapes, CapyCanna peut vous aider à obtenir exactement ce dont vous avez besoin.</p>",
         "img": "/images/home/slider1.png"
       },
       {
-        "title": "<h2><span>CapyCanna</span> est votre magasin de cannabis de confiance</h2>",
+        "title": "<h2><span>CapyCanna</span> Cannabis pour chaque besoin</h2>",
         "text": "<p>Nous offrons des produits de cannabis de haute qualité pour soutenir votre voyage vers le bien-être. De la fleur de CBD aux huiles apaisantes et aux vapes, CapyCanna peut vous aider à obtenir exactement ce dont vous avez besoin.</p>",
         "img": "/images/home/slider1.png"
       }
@@ -21,49 +21,49 @@
     "list": [
       {
         "title": "Everage",
-        "imageBg": "/images/categories/everage.png",
+        "imageBg": "/images/categories/everage-bg.png",
         "image": "/images/categories/everage-preview.png",
         "link": "/everage",
         "type": "everage"
       },
       {
         "title": "Starter pack",
-        "imageBg": "/images/categories/light.png",
+        "imageBg": "/images/categories/light-bg.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
         "title": "CBD Vape",
-        "imageBg": "/images/categories/strong.png",
+        "imageBg": "/images/categories/strong-bg.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
         "title": "Fleurs de CBD",
-        "imageBg": "/images/categories/starter.png",
+        "imageBg": "/images/categories/starter-bg.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
         "title": "Huile de CBD",
-        "imageBg": "/images/categories/health.png",
+        "imageBg": "/images/categories/health-bg.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
         "title": "Edibles",
-        "imageBg": "/images/categories/sleeping.png",
+        "imageBg": "/images/categories/sleeping-bg.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
         "title": "Sommeil réparateur",
-        "imageBg": "/images/categories/pain.png",
+        "imageBg": "/images/categories/pain-bg.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
         "type": "pain"
@@ -75,8 +75,8 @@
     "description": "Obtenez des autocollants sympas, gagnez des points de récompense et débloquez de nouvelles fonctionnalités !",
     "list": [
       {
-        "title": "Débloquez des succès – obtenez des réductions",
-        "text": "<p>Gagnez des bonus en accomplissant des actions spécifiques sur notre site et en débloquant des succès. Chaque succès vous rapporte des points bonus qui se transforment automatiquement en réductions pour vos commandes futures.</p>",
+        "title": "Débloquez des accomplissements – obtenez des réductions",
+        "text": "<p>Gagnez des bonus en accomplissant des actions spécifiques sur notre site et en débloquant des accomplissements. Chaque accomplissement vous rapporte des points bonus qui se transforment automatiquement en réductions pour vos commandes futures.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1-mob.jpg",
         "link": "/bonus-program",
@@ -259,5 +259,7 @@
         "answer": "Le CBD lui-même n'est pas dangereux ou nocif lorsqu'il est consommé de manière responsable. Veillez à n'acheter que des produits de haute qualité, car certains peuvent contenir des impuretés. Demandez toujours l'avis de votre médecin si vous avez des doutes ou si vous prenez d'autres médicaments.</p>"
       }
     ]
-  }
+  },
+  "withVat": "(TVA incluse)",
+  "inCart": "Ajouter au panier"
 }
