@@ -8,22 +8,26 @@
   "features": {
     "list": [
       {
-        "title": "Pack de stickers offert pour votre première commande",
+        "title": "Stickers offerts à la",
+        "title2": "1ère commande",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Gagnez des succès – obtenez des réductions",
+        "title": "Gagnez des accomplissements -",
+        "title2": "obtenez des réductions",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Livraison gratuite à partir de 100 €",
+        "title": "Livraison gratuite",
+        "title2": "dès 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Commandez avant 12h – expédié aujourd'hui",
+        "title": "Bestellen bis 12h -",
+        "title2": "heute versendet",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

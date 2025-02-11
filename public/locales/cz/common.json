@@ -1,9 +1,10 @@
 {
   "sale": "Sleva",
-  "logIn": "Přihlásit se",
-  "favorites": "Favorites",
-  "cart": "Cart",
-  "products": "Products",
+  "logIn": "Přihlášení",
+  "account": "Účet",
+  "favorites": "Oblíbené",
+  "cart": "Košík",
+  "products": "Hledat",
   "menu": "Menu",
   "breadcrumbs": {
     "b2b": "b2b wholesale",
@@ -21,22 +22,26 @@
   "features": {
     "list": [
       {
-        "title": "Samolepky k vaší první objednávce",
+        "title": "Samolepky k vaší",
+        "title2": "první objednávce",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Sbírejte achievementy – získejte slevy",
+        "title": "Sbírejte úspěchy –",
+        "title2": "získejte slevy",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Doprava zdarma od 100 €",
+        "title": "Doprava zdarma",
+        "title2": "od 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Objednejte do 12:00 – odesíláme ještě dnes",
+        "title": "Objednejte do 12:00 –",
+        "title2": "odesíláme dnes",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

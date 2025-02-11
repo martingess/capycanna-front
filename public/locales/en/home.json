@@ -4,12 +4,12 @@
   "topSlider": {
     "list": [
       {
-        "title": "<h2><span>CapyCanna</span> Your Trusted Cannabis Shop</h2>",
+        "title": "<h2><span>CapyCanna </span> Your Trusted Cannabis Shop</h2>",
         "text": "<p>We offer premium cannabis products to support your wellness journey. From CBD flowers to calming oils and vapes, CapyCanna is here to help you find what you need.</p>",
         "img": "/images/home/slider1.png"
       },
       {
-        "title": "<h2><span>CapyCanna</span>Your Trusted Cannabis Shop</h2>",
+        "title": "<h2><span>CapyCanna </span> Your Trusted Cannabis Shop</h2>",
         "text": "<p>We offer premium cannabis products to support your wellness journey. From CBD flowers to calming oils and vapes, CapyCanna is here to help you find what you need.</p>",
         "img": "/images/home/slider1.png"
       }
@@ -21,49 +21,49 @@
     "list": [
       {
         "title": "Starter pack",
-        "imageBg": "/images/categories/everage.png",
+        "imageBg": "/images/categories/everage-bg.png",
         "image": "/images/categories/everage-preview.png",
         "link": "/everage",
         "type": "everage"
       },
       {
         "title": "CBD Vape",
-        "imageBg": "/images/categories/light.png",
+        "imageBg": "/images/categories/light-bg.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
         "title": "CBD Flowers",
-        "imageBg": "/images/categories/strong.png",
+        "imageBg": "/images/categories/strong-bg.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
         "title": "CBD Oil",
-        "imageBg": "/images/categories/starter.png",
+        "imageBg": "/images/categories/starter-bg.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
         "title": "Edibles",
-        "imageBg": "/images/categories/health.png",
+        "imageBg": "/images/categories/health-bg.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
         "title": "Good sleep",
-        "imageBg": "/images/categories/sleeping.png",
+        "imageBg": "/images/categories/sleeping-bg.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
         "title": "Pain relief",
-        "imageBg": "/images/categories/pain.png",
+        "imageBg": "/images/categories/pain-bg.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
         "type": "pain"
@@ -78,7 +78,7 @@
         "title": "Unlock achievements – earn discounts",
         "text": "<p>Earn bonuses by completing specific actions on our site and unlocking achievements. Each achievement you complete grants bonus points, which automatically convert into discounts for future orders.</p>",
         "image": "/images/home/chips1.jpg",
-        "imageMobile": "/images/home/chips1-mob.jpg",
+        "imageMobile": "/images/home/chips1-mob.png",
         "link": "/bonus-program",
         "linkText": "Read More"
       },
@@ -259,5 +259,7 @@
         "answer": "CBD itself is not dangerous or harmful when responsibility is taken. It’s good to be sure you buy only high-quality products, as some may contain contaminants. Always ask your doctor for advice if you are unsure or taking other medications.</p>"
       }
     ]
-  }
+  },
+  "withVat": "(with VAT)",
+  "inCart": "Add to Cart"
 }

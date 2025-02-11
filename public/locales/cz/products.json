@@ -2,6 +2,8 @@
   "metaTitle": "Produkty",
   "metaDescription": "Produkty",
   "title": "Produkty",
+  "withVat": "(včetně DPH)",
+  "inCart": "Přidat do košíku",
   "filters": {
     "title": "Filtr",
     "title2": "Vyberte kategorii",

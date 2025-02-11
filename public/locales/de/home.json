@@ -21,49 +21,49 @@
     "list": [
       {
         "title": "Starterpaket",
-        "imageBg": "/images/categories/everage.png",
+        "imageBg": "/images/categories/everage-bg.png",
         "image": "/images/categories/everage-preview.png",
         "link": "/everage",
         "type": "everage"
       },
       {
         "title": "CBD Vape",
-        "imageBg": "/images/categories/light.png",
+        "imageBg": "/images/categories/light-bg.png",
         "image": "/images/categories/light-preview.png",
         "link": "/light",
         "type": "light"
       },
       {
         "title": "CBD-Blüten",
-        "imageBg": "/images/categories/strong.png",
+        "imageBg": "/images/categories/strong-bg.png",
         "image": "/images/categories/strong-preview.png",
         "link": "/strong",
         "type": "strong"
       },
       {
         "title": "CBD-Öl",
-        "imageBg": "/images/categories/starter.png",
+        "imageBg": "/images/categories/starter-bg.png",
         "image": "/images/categories/starter-preview.png",
         "link": "/starter",
         "type": "starter"
       },
       {
         "title": "Edibles",
-        "imageBg": "/images/categories/health.png",
+        "imageBg": "/images/categories/health-bg.png",
         "image": "/images/categories/health-preview.png",
         "link": "/health",
         "type": "health"
       },
       {
         "title": "Besser schlafen",
-        "imageBg": "/images/categories/sleeping.png",
+        "imageBg": "/images/categories/sleeping-bg.png",
         "image": "/images/categories/sleeping-preview.png",
         "link": "/sleeping",
         "type": "sleeping"
       },
       {
         "title": "Schmerzlinderung",
-        "imageBg": "/images/categories/pain.png",
+        "imageBg": "/images/categories/pain-bg.png",
         "image": "/images/categories/pain-preview.png",
         "link": "/pain",
         "type": "pain"
@@ -259,5 +259,7 @@
         "answer": "CBD ist sicher, wenn es verantwortungsbewusst verwendet wird. Achten Sie auf hochwertige Produkte, da einige Verunreinigungen enthalten können. Konsultieren Sie bei Unsicherheiten oder der Einnahme anderer Medikamente immer Ihren Arzt.</p>"
       }
     ]
-  }
+  },
+  "withVat": "(inkl. MwSt.)",
+  "inCart": "In den Warenkorb legen"
 }

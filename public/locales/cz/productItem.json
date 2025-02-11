@@ -8,17 +8,17 @@
   "mostPopular": "NEJOBLÍBENĚJŠÍ",
   "onSale": "VE SLEVĚ",
   "promotionEnd": " end of the promotion:",
-  "code": "Code:",
+  "code": "Kód",
   "price": "Cena:",
   "weight": "Hmotnost:",
   "flavor:": "Chuť:",
-  "withVat": "(with VAT)",
+  "withVat": "(včetně DPH)",
   "volume": "Objem:",
   "hhc": "Obsah CBD:",
   "variety": "Množství:",
   "shippingInfo": "Objednávky provedené do 12:00 odesíláme ještě tentýž den.",
   "freeShipping1": "Doprava zdarma při objednávkách nad ",
-  "freeShipping2": "200€.",
+  "freeShipping2": "100€.",
   "inCart": "Přidat do košíku",
   "specsTabs": {
     "header": {
@@ -28,7 +28,7 @@
     },
     "buttons": {
       "viewAll": "Zobrazit všechny",
-      "hide": "Hide",
+      "hide": "Skrýt",
       "addReview": "Napsat recenzi"
     },
     "reviews": {

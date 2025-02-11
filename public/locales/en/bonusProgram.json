@@ -6,19 +6,19 @@
   "blocks": {
     "1": {
       "title": "Locked achievement. Click to see what you can earn.",
-      "subText": "Acquaintance"
+      "subText": "Example"
     },
     "2": {
       "title": "The green outline shows your progress towards completing the achievement.",
-      "subText": "Acquaintance"
+      "subText": "Example"
     },
     "3": {
       "title": "When you unlock an achievement, the icon will turn green. Start collecting your bonuses!",
-      "subText": "Acquaintance"
+      "subText": "Example"
     },
     "4": {
       "title": "Once you've completed a round, many achievements can be earned multiple times!",
-      "subText": "Acquaintance"
+      "subText": "Example"
     }
   },
   "descriptionBlock": {

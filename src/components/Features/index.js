@@ -9,7 +9,7 @@ const Features = ({ translation }) => {
     <div className={styles['features']}>
       <div className={styles['features__wrapper']}>
         <div className={styles['features__items']}>
-          {list.map(({ title, image, imageBg }) => (
+          {list.map(({ title, title2, image, imageBg }) => (
             <div className={styles['features__item']} key={title}>
               <Image
                 width={100}
@@ -25,7 +25,10 @@ const Features = ({ translation }) => {
                 src={imageBg}
                 className={styles['features__item-bg']}
               />
-              <p className={styles['features__item-title']}>{title}</p>
+              <div className={styles['features__item-title']}>
+                <p>{title}</p>
+                <p>{title2}</p>
+              </div>
             </div>
           ))}
         </div>

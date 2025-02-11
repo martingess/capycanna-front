@@ -13,12 +13,13 @@ import ProductsButton from '@components/ProductsButton';
 import cn from 'classnames';
 import styles from './HeaderMob.module.scss';
 
-const Trailer = ({ items = [], nameType }) => {
+const Trailer = ({ items = [], nameType, handleMenu }) => {
   const t = useTranslations('header');
   const [opened, setOpened] = useState(false);
   const handleOpen = () => {
     setOpened(!opened);
   };
+
   return (
     <div
       className={cn(styles['trailer'], {
@@ -37,7 +38,7 @@ const Trailer = ({ items = [], nameType }) => {
         <CollapseExpand isOpen={opened}>
           <div className={styles['trailer__items']}>
             {items.map(({ name, image, description, link }) => (
-              <div className={styles['trailer__item']} key={name}>
+              <div onClick={handleMenu} className={styles['trailer__item']} key={name}>
                 <Link href={link} className={styles['trailer__item-link']} />
                 <Image
                   src={image}
@@ -76,6 +77,8 @@ const HeaderMob = () => {
     }
   };
 
+  console.log('openedMenu', openedMenu);
+
   const handleOpenCurrency = (openedCurrency, openedCountry) => () => {
     setOpenedCurrency(!openedCurrency);
     if (openedCountry) {
@@ -111,10 +114,11 @@ const HeaderMob = () => {
   return (
     <>
       <header
-        className={cn(styles['header'], {
-          [styles['sticky']]: isScrolled,
-          [styles['openedMenu']]: openedMenu,
-        })}
+        // className={cn(styles['header'], {
+        //   [styles['sticky']]: isScrolled,
+        //   [styles['openedMenu']]: openedMenu,
+        // })}
+        className={styles['header']}
       >
         <div className={styles['header__top']}>
           <div className={styles['header__wrapper']}>
@@ -140,44 +144,51 @@ const HeaderMob = () => {
             </div>
           </div>
         </div>
-        <div className={styles['header__center']}>
-          <div className={styles['header__wrapper']}>
-            <Link href="/sale" className={styles['header__sale']}>
-              <IconPercent className={styles['header__sale-icon']} />
-              {tCommon('sale')}
-            </Link>
+        <div
+          className={cn(styles['menu-wrapper'], {
+            [styles['sticky']]: isScrolled,
+            [styles['openedMenu']]: openedMenu,
+          })}
+        >
+          <div className={styles['header__center']}>
+            <div className={styles['header__wrapper']}>
+              <Link href="/sale" className={styles['header__sale']}>
+                <IconPercent className={styles['header__sale-icon']} />
+                {tCommon('sale')}
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className={styles['nav']}>
-          {Object.entries(productsItems).map(([key, value]) => (
-            <Trailer key={key} nameType={key} items={value} />
-          ))}
-          <div className={styles['nav__links']}>
-            <Link href="/b2b" className={styles['nav__link']}>
-              {t('b2b')}
-            </Link>
-            <Link href="/affiliate" className={styles['nav__link']}>
-              {t('affiliateProgram')}
-            </Link>
-            <Link href="/shipping-payment" className={styles['nav__link']}>
-              {t('shippingAndPayment')}
-            </Link>
-            <Link href="/bonus" className={styles['nav__link']}>
-              {t('bonusProgram')}
-            </Link>
-            <Link href="/blog" className={styles['nav__link']}>
-              {t('blog')}
-            </Link>
-            <Link href="/contact" className={styles['nav__link']}>
-              {t('contactUs')}
-            </Link>
+          <div className={styles['nav']}>
+            {Object.entries(productsItems).map(([key, value]) => (
+              <Trailer key={key} nameType={key} items={value} handleMenu={handleMenu(openedMenu)} />
+            ))}
+            <div className={styles['nav__links']}>
+              <Link href="/b2b" className={styles['nav__link']}>
+                {t('b2b')}
+              </Link>
+              <Link href="/affiliate" className={styles['nav__link']}>
+                {t('affiliateProgram')}
+              </Link>
+              <Link href="/shipping-payment" className={styles['nav__link']}>
+                {t('shippingAndPayment')}
+              </Link>
+              <Link href="/bonus" className={styles['nav__link']}>
+                {t('bonusProgram')}
+              </Link>
+              <Link href="/blog" className={styles['nav__link']}>
+                {t('blog')}
+              </Link>
+              <Link href="/contact" className={styles['nav__link']}>
+                {t('contactUs')}
+              </Link>
+            </div>
           </div>
         </div>
       </header>
       <div className={styles['menu']}>
         <div className={styles['menu__wrapper']}>
-          <LoginButton isLoggedIn={false} />
-          <FavoritesButton /> {/* TODO: with login logic */}
+          <LoginButton isLoggedIn={false} /> {/* TODO: with login logic */}
+          <FavoritesButton />
           <CartButton />
           <ProductsButton />
           <MenuButton handleMenu={handleMenu(openedMenu)} open={openedMenu} />

@@ -2,6 +2,8 @@
   "metaTitle": "Products",
   "metaDescription": "Products",
   "title": "Products",
+  "withVat": "(with VAT)",
+  "inCart": "Add to Cart",
   "filters": {
     "title": "Filter",
     "title2": "Choose category",

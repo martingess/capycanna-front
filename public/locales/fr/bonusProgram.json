@@ -6,19 +6,19 @@
   "blocks": {
     "1": {
       "title": "Accomplissement verrouillé. Cliquez pour voir ce que vous pouvez gagner.",
-      "subText": "Acquaintance"
+      "subText": "Exemple"
     },
     "2": {
       "title": "Le contour vert indique votre progression vers l'accomplissement.",
-      "subText": "Acquaintance"
+      "subText": "Exemple"
     },
     "3": {
       "title": "Lorsque vous débloquez un accomplissement, l'icône devient verte. Commencez à collecter vos bonus !",
-      "subText": "Acquaintance"
+      "subText": "Exemple"
     },
     "4": {
       "title": "Une fois un cycle terminé, de nombreux accomplissements peuvent être gagnés plusieurs fois !",
-      "subText": "Acquaintance"
+      "subText": "Exemple"
     }
   },
   "descriptionBlock": {

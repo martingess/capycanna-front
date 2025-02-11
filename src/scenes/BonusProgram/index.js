@@ -20,7 +20,7 @@ const BonusProgram = () => {
         <div className={styles['bonus__wrapper']}>
           <Breadcrumbs />
           <h1 className={styles['bonus__title']}>{t('title')}</h1>
-          <p className={styles['bonus__description']}>{t('title')}</p>
+          <p className={styles['bonus__description']}>{t('description')}</p>
           <div className={styles['bonus__blocks']}>
             {getBonusBlocksData(t).map((block) => (
               <div key={block.id} className={styles['bonus__block']}>

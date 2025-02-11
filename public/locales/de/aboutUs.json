@@ -8,22 +8,26 @@
   "features": {
     "list": [
       {
-        "title": "Stickerpaket für deine erste Bestellung",
+        "title": "Stickerpack zur 1.",
+        "title2": "Bestellung",
         "image": "/images/home/features/sticker.png",
         "imageBg": "/images/home/features/sticker-bg.png"
       },
       {
-        "title": "Erfolge sammeln – Rabatte sichern",
+        "title": "Erfolge sammeln –",
+        "title2": "Rabatte sichern",
         "image": "/images/home/features/bonus.png",
         "imageBg": "/images/home/features/bonus-bg.png"
       },
       {
-        "title": "Kostenloser Versand ab 100 €",
+        "title": "Kostenloser",
+        "title2": "Versand ab 100 €",
         "image": "/images/home/features/delivery.png",
         "imageBg": "/images/home/features/delivery-bg.png"
       },
       {
-        "title": "Bestellung bis 12:00 – Versand noch heute",
+        "title": "Bestellung bis 12:00 Uhr –",
+        "title2": "heute versandt",
         "image": "/images/home/features/ordered.png",
         "imageBg": "/images/home/features/ordered-bg.png"
       }

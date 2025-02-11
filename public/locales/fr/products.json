@@ -2,6 +2,8 @@
   "metaTitle": "Products",
   "metaDescription": "Products",
   "title": "Products",
+  "withVat": "(TVA incluse)",
+  "inCart": "Ajouter au panier",
   "filters": {
     "title": "Filtre",
     "title2": "Choisissez une catégorie",

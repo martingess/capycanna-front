@@ -12,7 +12,7 @@ export const mockProducts = [
   {
     id: 1,
     title: 'Popcorn Buds x H4+',
-    description: 'The perfect symbiosis of natural relaxation and well-being',
+    description: 'The perfect symbiosis of natural relaxation',
     image: '/images/products/product.png',
     discount: '-30% off',
     isPopular: true,
@@ -180,7 +180,7 @@ export const mockProducts = [
   {
     id: 13,
     title: 'Popcorn Buds x H4+',
-    description: 'The perfect symbiosis of natural relaxation and well-being',
+    description: 'The perfect symbiosis of natural relaxation',
     image: '/images/products/product.png',
     discount: '-30% off',
     isPopular: true,

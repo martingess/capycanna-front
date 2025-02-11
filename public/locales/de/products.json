@@ -2,6 +2,8 @@
   "metaTitle": "Products",
   "metaDescription": "Products",
   "title": "Products",
+  "withVat": "(inkl. MwSt.)",
+  "inCart": "In den Warenkorb legen",
   "filters": {
     "title": "Filter",
     "title2": "Kategorie wählen",
