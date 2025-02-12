@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  web:
+    container_name: prod_web
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    environment:
+      - NODE_ENV=production
+    # In production, traffic comes through Nginx, so direct port forwarding is not necessary.
+  
+  nginx:
+    container_name: prod_nginx
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Production configuration file (with HTTPS, certificates and HTTP->HTTPS redirection)
+      - ./nginx.production.conf:/etc/nginx/nginx.conf:ro
+      # Mount certificates from host (they should be available at /etc/letsencrypt)
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - web 

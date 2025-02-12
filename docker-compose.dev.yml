@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  web:
+    container_name: dev_web
+    build:
+      context: .
+      dockerfile: Dockerfile.dev 
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    # Run Next.js development command which includes hot reload and other features
+    command: npm run dev 

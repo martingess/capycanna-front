@@ -41,3 +41,11 @@ yarn-error.log*
 .sentryclirc
 
 certificates
+
+# Exclude the main docker-compose.yml, keeping only specific environment-prefixed files
+docker-compose.yml
+.env
+.env.local
+.env.*.local
+.git
+.gitignore
