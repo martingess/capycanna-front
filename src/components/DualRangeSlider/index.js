@@ -13,6 +13,8 @@ const DualRangeSlider = ({ min, max, initialMin, initialMax, onChange }) => {
 
   const handleSliderChange = (_, newValue) => {
     setValue(newValue);
+    setMinInputValue(newValue[0]);
+    setMaxInputValue(newValue[1]);
     onChange({ min: newValue[0], max: newValue[1] });
   };
 

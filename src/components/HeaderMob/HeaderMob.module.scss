@@ -33,7 +33,7 @@
       opacity: 1;
       visibility: visible;
       pointer-events: all;
-      top: 70px;
+      top: 68px;
     }
   }
   &__top {
@@ -41,6 +41,10 @@
     background: #fffff2;
     width: 100%;
     position: relative;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     &::before {
       content: '';
       position: absolute;

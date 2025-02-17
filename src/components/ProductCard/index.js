@@ -24,7 +24,7 @@ const ProductCard = ({ product, t }) => {
       <div className={styles['card__wrapper']}>
         <div className={styles['card__top']}>
           <Image
-            src={image}
+            src={typeof product?.image === 'object' ? image[0] : image}
             alt="product"
             width={207}
             height={207}

@@ -183,6 +183,7 @@
     }
   }
   &__description {
+    min-height: 42px;
     margin-top: 7px;
     color: #221b15;
     font-size: 12px;
@@ -218,12 +219,8 @@
   }
   &__prices {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    @media (min-width: 1420px) {
-      flex-direction: row;
-      align-items: center;
-    }
+    align-items: center;
+    gap: 6px;
   }
   &__price {
     color: #221b15;
@@ -236,7 +233,6 @@
       font-size: 20px;
     }
     span {
-      margin-left: 3px;
       color: #221b15;
       font-size: 10px;
       font-style: normal;

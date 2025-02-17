@@ -121,29 +121,28 @@ const ProductsCategory = ({ category }) => {
       const currentSelections = prev[title] || [];
       const isSelected = currentSelections.includes(key);
 
-      if (key === 'all') {
+      const allOptions = selectedCategoryObject.filtering
+        .find((filter) => filter.title === title)
+        .params.map((param) => param.key);
+
+      const allKey = 'all';
+
+      if (key === allKey) {
         return {
           ...prev,
-          [title]: isSelected
-            ? []
-            : selectedCategoryObject.filtering
-                .find((filter) => filter.title === title)
-                .params.map((param) => param.key),
+          [title]: isSelected ? [] : allOptions,
         };
       } else {
         const updatedSelections = isSelected
           ? currentSelections.filter((item) => item !== key)
           : [...currentSelections, key];
 
-        const allOptions = selectedCategoryObject.filtering
-          .find((filter) => filter.title === title)
-          .params.map((param) => param.key);
-
-        const isAllSelected = allOptions.every((option) => updatedSelections.includes(option));
+        const nonAllOptions = allOptions.filter((option) => option !== allKey);
+        const isAllSelected = nonAllOptions.every((option) => updatedSelections.includes(option));
 
         return {
           ...prev,
-          [title]: isAllSelected ? allOptions : updatedSelections,
+          [title]: isAllSelected ? allOptions : updatedSelections.filter((item) => item !== allKey),
         };
       }
     });

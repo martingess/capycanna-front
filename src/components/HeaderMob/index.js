@@ -113,14 +113,11 @@ const HeaderMob = () => {
 
   return (
     <>
-      <header
-        // className={cn(styles['header'], {
-        //   [styles['sticky']]: isScrolled,
-        //   [styles['openedMenu']]: openedMenu,
-        // })}
-        className={styles['header']}
-      >
-        <div className={styles['header__top']}>
+      <header className={styles['header']}>
+        <div
+          className={styles['header__top']}
+          style={{ position: openedMenu ? 'fixed' : 'relative' }}
+        >
           <div className={styles['header__wrapper']}>
             <Link href="/" className={styles['header__logo']}>
               <Image
