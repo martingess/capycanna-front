@@ -3,11 +3,14 @@ import Head from 'next/head';
 import styles from './ProductItem.module.scss';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { TabItem, ButtonCO, ProductCount, IconHard } from '@UI';
 import ProductsSlider from '@components/ProductsSlider';
 import { mockProducts } from '../../data/mockProducts';
 import ProductSpecsTabs from '@components/ProductSpecsTabs';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { SliderArrow } from '@components/UI/SliderArrow';
+import ProductImagesModal from '../../components/Modals/ProductImages';
 
 export const starsRate = [
   {
@@ -103,6 +106,62 @@ const ProductItem = ({ product }) => {
     );
   };
 
+  // image slider logic
+  const isImagesSlider = typeof product?.image === 'object';
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null);
+
+  const goToSlide = (index) => {
+    setActiveIndex(index);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
+    }
+  };
+
+  const handleNext = () => {
+    if (activeIndex === product?.image?.length - 1) {
+      swiperRef.current?.swiper.slideTo(0);
+    } else {
+      swiperRef.current?.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (activeIndex === 0) {
+      swiperRef.current?.swiper.slideTo(product?.image?.length - 1);
+    } else {
+      swiperRef.current?.swiper.slidePrev();
+    }
+  };
+
+  const ImageLabels = (product) => {
+    return (
+      <>
+        <div className={styles['card__label']}>
+          <p className={styles['card__label-off']}>{product?.discount}</p>
+          {product?.isPopular && (
+            <p className={styles['card__label-popular']}>{t('mostPopular')}</p>
+          )}
+          {product?.isNew && <p className={styles['card__label-new']}>{t('new')}</p>}
+        </div>
+        <div className={styles['card__promotion']}>
+          <p className={styles['card__promotion-text']}>
+            {t('promotionEnd')} <span>{product?.promotionEnd}</span>
+          </p>
+          <Image
+            src="/images/promotion.png"
+            alt="promotion"
+            width={207}
+            height={207}
+            className={styles['card__promotion-bg']}
+          />
+        </div>
+      </>
+    );
+  };
+
   return (
     <>
       <Head>
@@ -116,27 +175,63 @@ const ProductItem = ({ product }) => {
         <Breadcrumbs productTitle={product?.title} />
         <div className={styles['product__content']}>
           <div className={styles['info-main-wrapper-mob']}>{mainInfo()}</div>
-          <div className={styles['product__image']}>
-            <Image src={product?.image} width={550} height={500} alt="filter-icon" />
-            <div className={styles['card__label']}>
-              <p className={styles['card__label-off']}>{product?.discount}</p>
-              {product?.isPopular && (
-                <p className={styles['card__label-popular']}>{t('mostPopular')}</p>
+          <div className={styles['product__image-wrapper']}>
+            <div className={styles['product__image']}>
+              {isImagesSlider ? (
+                <>
+                  <Swiper
+                    spaceBetween={14}
+                    ref={swiperRef}
+                    slidesPerView={1}
+                    onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                    className={styles['swiper']}
+                    onClick={() => setIsModalOpen(!isModalOpen)}
+                  >
+                    {product?.image?.map((imageItem, index) => (
+                      <SwiperSlide key={index} className={styles['products__slide']}>
+                        <Image src={imageItem} width={550} height={500} alt="product-image" />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                  <div className={styles['custom-pagination-wrapper']}>
+                    <SliderArrow onClick={handlePrev} style={{ left: '8px', top: '45%' }} />
+                    <div className={styles['custom-pagination']}>
+                      {Array.from({ length: product?.image?.length }, (_, index) => (
+                        <button
+                          key={index}
+                          className={`${styles['pagination-bullet']} ${activeIndex === index ? styles['active'] : ''}`}
+                          onClick={() => goToSlide(index)}
+                        />
+                      ))}
+                    </div>
+                    <SliderArrow
+                      onClick={handleNext}
+                      style={{ right: '8px', top: '45%' }}
+                      isRight
+                    />
+                  </div>
+                </>
+              ) : (
+                <Image src={product?.image} width={550} height={500} alt="product-image" />
               )}
-              {product?.isNew && <p className={styles['card__label-new']}>{t('new')}</p>}
+              {ImageLabels(product)}
             </div>
-            <div className={styles['card__promotion']}>
-              <p className={styles['card__promotion-text']}>
-                {t('promotionEnd')} <span>{product?.promotionEnd}</span>
-              </p>
-              <Image
-                src="/images/promotion.png"
-                alt="promotion"
-                width={207}
-                height={207}
-                className={styles['card__promotion-bg']}
-              />
-            </div>
+            {isImagesSlider && (
+              <div className={styles['product__image-list']}>
+                {product?.image?.map((imageItem, index) => (
+                  <Image
+                    onClick={() => goToSlide(index)}
+                    style={{ border: activeIndex === index ? '1px solid #8CB869' : 'none' }}
+                    key={index}
+                    className={styles['image-list__item']}
+                    src={imageItem}
+                    width={100}
+                    height={86}
+                    alt="product-image"
+                  />
+                ))}
+              </div>
+            )}
           </div>
           <div className={styles['product__info']}>
             <div className={styles['top-info']}>
@@ -225,6 +320,11 @@ const ProductItem = ({ product }) => {
           noMoreBtn
         />
       </section>
+      <ProductImagesModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        images={product?.image}
+      />
     </>
   );
 };

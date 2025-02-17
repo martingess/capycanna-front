@@ -17,7 +17,7 @@
   "hhc": "CBD-Gehalt:",
   "variety": "Menge:",
   "shippingInfo": "Bestellungen, die vor 12:00 Uhr aufgegeben werden, werden noch am selben Tag versandt.",
-  "freeShipping1": "Kostenloser Versand für Bestellungen über",
+  "freeShipping1": "Kostenloser Versand für Bestellungen über ",
   "freeShipping2": "100€.",
   "inCart": "In den Warenkorb legen",
   "specsTabs": {
@@ -29,7 +29,7 @@
     "buttons": {
       "viewAll": "Alle ansehen",
       "hide": "Ausblenden",
-      "addReview": "Leave a review"
+      "addReview": "Eine Bewertung abgeben"
     },
     "reviews": {
       "title": "Hinterlassen Sie eine Bewertung und erhalten Sie ein Bonus-Erfolg!",
