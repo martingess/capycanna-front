@@ -4,6 +4,7 @@ import styles from './ProductSpecsTabs.module.scss';
 import Image from 'next/image';
 import { starsRate } from '../../scenes/ProductPage';
 import AddReviewModal from '../Modals/AddReview';
+import MainTabs from '../MainTabs';
 
 const charsMockData = [
   {
@@ -95,38 +96,18 @@ const ProductSpecsTabs = ({ t }) => {
   const isTabActive = (tab) => activeTab === tab;
   return (
     <div className={styles['tabs__wrapper']}>
-      <div className={styles['tabs__header']}>
-        <button
-          className={
-            isTabActive('characteristics')
-              ? `${styles['tabs__header-item']} ${styles['active']}`
-              : styles['tabs__header-item']
-          }
-          onClick={() => setActiveTab('characteristics')}
-        >
-          {t('specsTabs.header.characteristics')}
-        </button>
-        <button
-          className={
-            isTabActive('description')
-              ? `${styles['tabs__header-item']} ${styles['active']}`
-              : styles['tabs__header-item']
-          }
-          onClick={() => setActiveTab('description')}
-        >
-          {t('specsTabs.header.description')}
-        </button>
-        <button
-          className={
-            isTabActive('reviews')
-              ? `${styles['tabs__header-item']} ${styles['active']}`
-              : styles['tabs__header-item']
-          }
-          onClick={() => setActiveTab('reviews')}
-        >
-          {t('specsTabs.header.reviews')} ({mockedCommentsData?.length})
-        </button>
-      </div>
+      <MainTabs
+        t={t}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        tab1={<p>{t('specsTabs.header.characteristics')}</p>}
+        tab2={<p>{t('specsTabs.header.description')}</p>}
+        tab3={
+          <p>
+            {t('specsTabs.header.reviews')} ({mockedCommentsData?.length})
+          </p>
+        }
+      />
       {isTabActive('characteristics') && (
         <>
           <div

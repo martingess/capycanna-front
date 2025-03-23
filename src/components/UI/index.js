@@ -7,3 +7,6 @@ export * from './Radio';
 export * from './CheckBox';
 export * from './TabItem';
 export * from './ProductCount';
+export * from './Slider';
+export * from './Select';
+export * from './PhonePrefixSelect';

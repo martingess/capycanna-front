@@ -1,0 +1,61 @@
+.selectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.selectDisplay {
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 27, 21, 0.2);
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:active {
+    border-color: #c54f1d;
+  }
+}
+
+.arrow {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.optionsList {
+  position: absolute;
+  padding: 6px 4px;
+  top: 110%;
+  left: 0;
+  right: 0;
+  max-height: 180px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 27, 21, 0.25);
+  background: #ffffff;
+  z-index: 10;
+}
+
+.optionItem {
+  padding: 2px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #f1f1f1;
+  }
+
+  &.selected {
+    background: #e6e6e6;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}

@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Shopping Cart",
+  "metaDescription": "Shopping Cart",
+  "tabs": {
+    "shoppingCart": "Shopping cart",
+    "payment": "Payment and delivery",
+    "personalInfo": "Personal info"
+  },
+  "shoppingCart": {
+    "barText": "Kostenloser Versand, wenn Sie nur noch 150 € zu Ihrem Warenkorb hinzufügen.",
+    "item": {
+      "variety": "Flower Variety",
+      "hhc": "HHC in"
+    },
+    "emptyBasket": {
+      "title": "Sie haben keine Artikel in Ihrem Warenkorb.",
+      "subtitle": "Um Produkte auszuwählen, gehen Sie zum Katalog.",
+      "button": "Zum Katalog gehen"
+    },
+    "sidebar": {
+      "title": "Order amount",
+      "subtotal": "Bestellübersicht",
+      "priceVat": "Preis ohne MwSt.",
+      "delivery": "Versand",
+      "deliveryValue": "According to the tariffs of the carrier",
+      "total": "Gesamtpreis",
+      "discount": "Rabatt für Erfolge",
+      "discountDesc": "Wenden Sie den Errungenschaftsrabatt an",
+      "promocode": "Gutscheincode",
+      "promocodeDesc": "Geben Sie hier Ihren Gutscheincode ein",
+      "gift": "Geschenkgutschein",
+      "giftDesc": "Geben Sie hier den Code Ihres Geschenkgutscheins ein",
+      "certificate": "Certificate",
+      "continue": "Weiter",
+      "back": "Back",
+      "discountBar": {
+        "bonuses": "bonuses",
+        "discount": "-10 €"
+      }
+    }
+  },
+  "personalInfo": {
+    "title1": "Ihre Daten",
+    "login": {
+      "haveAccount": "Wenn Sie bereits ein Konto haben",
+      "login": "melden Sie sich an"
+    },
+    "name": "Vorname",
+    "surname": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "title2": "Adresse",
+    "companyDetails": "Firmendetails angeben",
+    "companyName": "Firmenname",
+    "cin": "Unternehmens-ID",
+    "vatNumber": "Mehrwertsteuernummer",
+    "fullName": "Full name",
+    "country": "Land",
+    "city": "Stadt",
+    "street": "Straße",
+    "house": "Hausnummer",
+    "apartment": "Wohnungsnummer",
+    "zip": "PLZ",
+    "anotherAddress": "An eine andere Adresse liefern",
+    "wantRegister": "Ich möchte mich registrieren"
+  },
+  "payment": {
+    "deliveryTitle": "Wählen Sie eine Liefermethode",
+    "paymentTitle": "Wählen Sie eine Zahlungsmethode",
+    "paymentMethods": {
+      "receipt": "Payment upon receipt of goods",
+      "google": "Google Pay",
+      "apple": "Apple Pay"
+    },
+    "deliveryMethods": {
+      "postOffice": "Pickup from the Post Office",
+      "courier": "Courier to your address",
+      "meest": "Pickup from Meest"
+    }
+  }
+}

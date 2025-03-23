@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Shopping Cart",
+  "metaDescription": "Shopping Cart",
+  "tabs": {
+    "shoppingCart": "Shopping cart",
+    "payment": "Payment and delivery",
+    "personalInfo": "Personal info"
+  },
+  "shoppingCart": {
+    "barText": "Získejte dopravu zdarma přidáním pouze 150 € do svého košíku.",
+    "item": {
+      "variety": "Flower Variety",
+      "hhc": "HHC in"
+    },
+    "emptyBasket": {
+      "title": "Ve vašem nákupním košíku nejsou žádné položky",
+      "subtitle": "Pro výběr produktů přejděte do katalogu",
+      "button": "Přejít do katalogu"
+    },
+    "sidebar": {
+      "title": "Souhrn objednávky",
+      "subtotal": "Souhrn objednávky",
+      "priceVat": "Cena bez DPH",
+      "delivery": "Doprava",
+      "deliveryValue": "According to the tariffs of the carrier",
+      "total": "Celková cena",
+      "discount": "Sleva za úspěchy",
+      "discountDesc": "Použijte slevu za úspěchy",
+      "promocode": "Promo kód",
+      "promocodeDesc": "Zadejte svůj promo kód zde",
+      "gift": "Dárkový certifikát",
+      "giftDesc": "Zadejte kód svého certifikátu zde",
+      "certificate": "Certificate",
+      "continue": "Pokračovat",
+      "back": "Back",
+      "discountBar": {
+        "bonuses": "bonuses",
+        "discount": "-10 €"
+      }
+    }
+  },
+  "personalInfo": {
+    "title1": "Vaše údaje",
+    "login": {
+      "haveAccount": "Pokud již máte účet",
+      "login": "Přihlaste se"
+    },
+    "name": "Jméno",
+    "surname": "Příjmení",
+    "email": "Email",
+    "phone": "Telefon",
+    "title2": "Adresa",
+    "companyDetails": "Specifikujte údaje o společnosti",
+    "companyName": "Název společnosti",
+    "cin": "IČO",
+    "vatNumber": "DIČ",
+    "fullName": "Full name",
+    "country": "Země",
+    "city": "Město",
+    "street": "Ulice",
+    "house": "Číslo domu",
+    "apartment": "Číslo bytu",
+    "zip": "PSČ",
+    "anotherAddress": "Odeslat na jinou adresu",
+    "wantRegister": "Chci se zaregistrovat"
+  },
+  "payment": {
+    "deliveryTitle": "Vyberte způsob doručení",
+    "paymentTitle": "Vyberte způsob platby",
+    "paymentMethods": {
+      "receipt": "Payment upon receipt of goods",
+      "google": "Google Pay",
+      "apple": "Apple Pay"
+    },
+    "deliveryMethods": {
+      "postOffice": "Pickup from the Post Office",
+      "courier": "Courier to your address",
+      "meest": "Pickup from Meest"
+    }
+  }
+}
