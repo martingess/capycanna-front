@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Shopping Cart",
+  "metaDescription": "Shopping Cart",
+  "tabs": {
+    "shoppingCart": "Shopping cart",
+    "payment": "Payment and delivery",
+    "personalInfo": "Personal info"
+  },
+  "shoppingCart": {
+    "barText": "Get free shipping by adding just 150 € to your cart.",
+    "item": {
+      "variety": "Flower Variety",
+      "hhc": "HHC in"
+    },
+    "emptyBasket": {
+      "title": "You have no items in your shopping cart",
+      "subtitle": "To select products go to the catalog",
+      "button": "Go to сatalog"
+    },
+    "sidebar": {
+      "title": "Order amount",
+      "subtotal": "Order summary",
+      "priceVat": "Price excl. VAT",
+      "delivery": "Delivery",
+      "deliveryValue": "According to the tariffs of the carrier",
+      "total": "Total price",
+      "discount": "Achievement Discount",
+      "discountDesc": "Apply the achievements discount",
+      "promocode": "Promo code",
+      "promocodeDesc": "Enter your promo code here",
+      "gift": "Gift certificate",
+      "giftDesc": "Enter your certificate code here",
+      "certificate": "Certificate",
+      "continue": "Continue",
+      "back": "Back",
+      "discountBar": {
+        "bonuses": "bonuses",
+        "discount": "-10 €"
+      }
+    }
+  },
+  "personalInfo": {
+    "title1": "Your data",
+    "login": {
+      "haveAccount": "If you already have an account",
+      "login": "log in"
+    },
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "phone": "Phone",
+    "title2": "Address",
+    "companyDetails": "Specify company details",
+    "companyName": "Company name",
+    "cin": "CIN",
+    "vatNumber": "VAT number",
+    "fullName": "Full name",
+    "country": "Country",
+    "city": "City",
+    "street": "Street",
+    "house": "House number",
+    "apartment": "Apartment number",
+    "zip": "ZIP",
+    "anotherAddress": "Ship to another address",
+    "wantRegister": "I want a register"
+  },
+  "payment": {
+    "deliveryTitle": "Choose a delivery method",
+    "paymentTitle": "Choose a payment method",
+    "paymentMethods": {
+      "receipt": "Payment upon receipt of goods",
+      "google": "Google Pay",
+      "apple": "Apple Pay"
+    },
+    "deliveryMethods": {
+      "postOffice": "Pickup from the Post Office",
+      "courier": "Courier to your address",
+      "meest": "Pickup from Meest"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.sidebar-wrapper {
+  background-color: #fff9ef;
+  border-radius: 8px;
+  margin: 28px 0;
+  padding: 30px 16px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 30px 22px;
+  }
+
+  .sidebar-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      line-height: 160%;
+    }
+  }
+
+  .amount-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 12px;
+    text-align: right;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    &__total {
+      font-size: 18px;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .block-item {
+    margin-bottom: 14px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
+  .next-btn {
+    padding: 14px 28px;
+    height: unset;
+    margin-top: 22px;
+    text-transform: uppercase;
+
+    span {
+      font-size: 12px;
+
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .back-btn {
+    display: block;
+    margin: 14px auto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #c54f1d;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

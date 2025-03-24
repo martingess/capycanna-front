@@ -58,9 +58,9 @@ const ProductCard = ({ product, t }) => {
         <div className={styles['card__bottom']}>
           <div className={styles['card__prices']}>
             <p className={styles['card__price']}>
-              {price} <span>{t('withVat')}</span>
+              {price}€ <span>{t('withVat')}</span>
             </p>
-            <p className={styles['card__old-price']}>{oldPrice}</p>
+            <p className={styles['card__old-price']}>{oldPrice}€</p>
           </div>
           <p className={styles['card__stock']}>{stock}</p>
         </div>

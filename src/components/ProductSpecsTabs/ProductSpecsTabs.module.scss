@@ -6,29 +6,6 @@
     margin-top: 100px;
   }
 
-  .tabs__header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 1px solid rgba(34, 27, 21, 0.2);
-    height: 50px;
-
-    &-item {
-      border-radius: 8px 8px 0px 0px;
-      background: #ffffff;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 110%;
-
-      &.active {
-        background: #f9c99c;
-      }
-
-      @media (min-width: 960px) {
-        font-size: 26px;
-      }
-    }
-  }
-
   .characteristics__body {
     margin-top: 30px;
     height: 190px;

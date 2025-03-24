@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Shopping Cart",
+  "metaDescription": "Shopping Cart",
+  "tabs": {
+    "shoppingCart": "Shopping cart",
+    "payment": "Payment and delivery",
+    "personalInfo": "Personal info"
+  },
+  "shoppingCart": {
+    "barText": "Gobtenez la livraison gratuite en ajoutant seulement 150 € à votre panier.",
+    "item": {
+      "variety": "Flower Variety",
+      "hhc": "HHC in"
+    },
+    "emptyBasket": {
+      "title": "Vous n’avez aucun article dans votre panier.",
+      "subtitle": "Pour sélectionner des produits, rendez-vous au catalogue.",
+      "button": "Aller au catalogue"
+    },
+    "sidebar": {
+      "title": "Order amount",
+      "subtotal": "Résumé de la commande",
+      "priceVat": "Prix hors TVA",
+      "delivery": "Livraison",
+      "deliveryValue": "According to the tariffs of the carrier",
+      "total": "Prix total",
+      "discount": "Réduction d’accomplissements",
+      "discountDesc": "Appliquez la réduction des réalisations",
+      "promocode": "Code promo",
+      "promocodeDesc": "Entrez votre code promo ici",
+      "gift": "Chèque cadeau",
+      "giftDesc": "Entrez le code de votre chèque cadeau ici",
+      "certificate": "Certificate",
+      "continue": "Continuer",
+      "back": "Back",
+      "discountBar": {
+        "bonuses": "bonuses",
+        "discount": "-10 €"
+      }
+    }
+  },
+  "personalInfo": {
+    "title1": "Vos informations",
+    "login": {
+      "haveAccount": "Si vous avez déjà un compte",
+      "login": "connectez-vous"
+    },
+    "name": "Nom",
+    "surname": "Prénom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "title2": "Adresse",
+    "companyDetails": "Préciser les informations de l’entreprise",
+    "companyName": "Nom de l’entreprise",
+    "cin": "Numéro d'entreprise",
+    "vatNumber": "Numéro de TVA",
+    "fullName": "Full name",
+    "country": "Pays",
+    "city": "Ville",
+    "street": "Rue",
+    "house": "Numéro de maison",
+    "apartment": "Numéro d’appartement",
+    "zip": "Code postal",
+    "anotherAddress": "Livrer à une autre adresse",
+    "wantRegister": "Je veux m’inscrire"
+  },
+  "payment": {
+    "deliveryTitle": "Vyberte způsob doručení",
+    "paymentTitle": "Vyberte způsob platby",
+    "paymentMethods": {
+      "receipt": "Payment upon receipt of goods",
+      "google": "Google Pay",
+      "apple": "Apple Pay"
+    },
+    "deliveryMethods": {
+      "postOffice": "Pickup from the Post Office",
+      "courier": "Courier to your address",
+      "meest": "Pickup from Meest"
+    }
+  }
+}

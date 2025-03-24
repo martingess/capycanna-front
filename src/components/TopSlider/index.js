@@ -18,7 +18,7 @@ const BuyButton = () => {
         src="/images/home/buy-frame.svg"
         alt={'but-frame'}
       />
-      <Link href={'/'} className={styles['buy__link']} />
+      <Link href={'/products'} className={styles['buy__link']} />
     </div>
   );
 };
