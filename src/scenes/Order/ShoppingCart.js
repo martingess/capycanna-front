@@ -84,7 +84,7 @@ const EnterCode = ({ label, title, value, setValue, placeholder }) => {
 const ShoppingCart = ({ setActiveTab, totalBasketPrice, basketItems, setBasketItems }) => {
   const router = useRouter();
   const t = useTranslations('order');
-  const maxCapacity = 150;
+  const maxCapacity = 100;
 
   const [isDiscountOpened, setIsDiscountOpened] = useState(false);
   const [isPromocodeOpened, setIsPromocodeOpened] = useState(false);
@@ -98,6 +98,10 @@ const ShoppingCart = ({ setActiveTab, totalBasketPrice, basketItems, setBasketIt
 
   const getBasketFill = (totalBasketPrice) => {
     return (totalBasketPrice / maxCapacity) * 100;
+  };
+
+  const getRemainingSum = (totalBasketPrice) => {
+    return maxCapacity - totalBasketPrice;
   };
 
   const removeItemFromBasket = (id) => {
@@ -147,7 +151,11 @@ const ShoppingCart = ({ setActiveTab, totalBasketPrice, basketItems, setBasketIt
             className={styles['fill-bar']}
             style={{ width: `${getBasketFill(totalBasketPrice)}%` }}
           ></div>
-          <p className={styles['fill-text']}>{t('shoppingCart.barText')}</p>
+          <p className={styles['fill-text']}>
+            {t('shoppingCart.barText1')} {getRemainingSum(totalBasketPrice)}
+            {'€ '}
+            {t('shoppingCart.barText2')}
+          </p>
         </div>
         {!!basketItems?.length ? (
           basketItems.map((item) => (
@@ -334,7 +342,17 @@ const ShoppingCart = ({ setActiveTab, totalBasketPrice, basketItems, setBasketIt
             </div>
           )}
         </div>
-
+        {!!basketItems?.length && (
+          <ButtonCO
+            theme="orange"
+            className={styles['next-btn']}
+            onClick={() => setActiveTab('payment')}
+          >
+            {t('shoppingCart.sidebar.continue')}
+          </ButtonCO>
+        )}
+      </div>
+      <div className={styles['next-btn-mobile']}>
         {!!basketItems?.length && (
           <ButtonCO
             theme="orange"

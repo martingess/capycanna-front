@@ -7,7 +7,8 @@
     "personalInfo": "Personal info"
   },
   "shoppingCart": {
-    "barText": "Získejte dopravu zdarma přidáním pouze 150 € do svého košíku.",
+    "barText1": "Získejte dopravu zdarma přidáním pouze",
+    "barText2": "do svého košíku.",
     "item": {
       "variety": "Flower Variety",
       "hhc": "HHC in"

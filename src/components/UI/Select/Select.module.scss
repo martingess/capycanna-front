@@ -4,6 +4,7 @@
 }
 
 .selectDisplay {
+  position: relative;
   padding: 14px 20px;
   border-radius: 8px;
   border: 1px solid rgba(34, 27, 21, 0.2);
@@ -15,11 +16,17 @@
   transition: border-color 0.3s;
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: #c54f1d;
   }
 }
 
+.search {
+  border: none !important;
+  padding: 0 !important;
+  height: unset !important;
+}
 .arrow {
   font-size: 0.8rem;
   color: #666;

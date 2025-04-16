@@ -28,7 +28,15 @@
             "type": "checkbox",
             "params": [
               { "key": "all", "label": "All" },
-              { "key": "thcp", "label": "THCP" },
+              {
+                "key": "thcp",
+                "label": "THCP",
+                "subcategories": [
+                  { "key": "1ml", "label": "1 ml", "checked": true },
+                  { "key": "2ml", "label": "2 ml", "checked": true },
+                  { "key": "3ml", "label": "3 ml", "checked": true }
+                ]
+              },
               { "key": "cbd", "label": "CBD" },
               { "key": "h4cbd", "label": "H4CBD" }
             ],

@@ -1,12 +1,11 @@
 import { useTranslations } from 'next-intl';
 import styles from './Order.module.scss';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import OrderBill from '../../components/OrderBill';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { yourDatavalidationSchema } from './utils';
-import { CheckBox, Select, PhonePrefixSelect } from '@UI';
+import { dataValidationSchema } from './utils';
+import { CheckBox, Select, PhonePrefixSelect, ButtonCO } from '@UI';
 import { countries, cities, phonePrefixes } from './utils';
 
 const Payment = ({ setActiveTab, totalBasketPrice }) => {
@@ -21,7 +20,7 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
     control,
     setValue,
   } = useForm({
-    resolver: yupResolver(yourDatavalidationSchema),
+    resolver: yupResolver(dataValidationSchema),
   });
   const selectedCountry = watch('country');
 
@@ -56,7 +55,12 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
             defaultValue=""
             rules={{ required: 'Country is required' }}
             render={({ field }) => (
-              <Select {...field} options={countries} placeholder={t('personalInfo.country')} />
+              <Select
+                {...field}
+                options={countries}
+                placeholder={t('personalInfo.country')}
+                searchable
+              />
             )}
           />
           {errors.country && <p className={styles.error}>{errors.country.message}</p>}
@@ -73,6 +77,7 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
                 {...field}
                 options={cities[selectedCountry]}
                 placeholder={t('personalInfo.city')}
+                searchable
               />
             )}
           />
@@ -80,21 +85,28 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
         </div>
         <div className={styles['inputGroup']}>
           <label>{t('personalInfo.street')}*</label>
-          <input type="text" placeholder={'Katerina'} {...register(street)} />
+          <input type="text" placeholder={t('personalInfo.street')} {...register(street)} />
           {errors.street && <p className={styles.error}>{errors.street.message}</p>}
         </div>
         <div className={styles['inputGroup']}>
           <label>{t('personalInfo.house')}*</label>
-          <input type="text" placeholder={'555'} {...register(houseNumber)} />
+          <input type="text" placeholder={t('personalInfo.house')} {...register(houseNumber)} />
           {errors.houseNumber && <p className={styles.error}>{errors.houseNumber.message}</p>}
         </div>
         <div className={styles['inputGroup']}>
           <label>{t('personalInfo.apartment')}</label>
-          <input type="text" placeholder={'34'} {...register(apartmentNumber)} />
+          <input
+            type="text"
+            placeholder={t('personalInfo.apartment')}
+            {...register(apartmentNumber)}
+          />
+          {errors.apartmentNumber && (
+            <p className={styles.error}>{errors.apartmentNumber.message}</p>
+          )}
         </div>
         <div className={styles['inputGroup']}>
           <label>{t('personalInfo.zip')}*</label>
-          <input type="text" placeholder={'123123'} {...register(zipCode)} />
+          <input type="text" placeholder={t('personalInfo.zip')} {...register(zipCode)} />
           {errors.zipCode && <p className={styles.error}>{errors.zipCode.message}</p>}
         </div>
       </div>
@@ -118,19 +130,19 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
           <div className={styles['formGrid']}>
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.name')}*</label>
-              <input type="text" placeholder={'Katerina'} {...register('name')} />
+              <input type="text" placeholder={t('personalInfo.name')} {...register('name')} />
               {errors.name && <p className={styles.error}>{errors.name.message}</p>}
             </div>
 
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.surname')}*</label>
-              <input type="text" placeholder={'Amonova'} {...register('surname')} />
+              <input type="text" placeholder={t('personalInfo.surname')} {...register('surname')} />
               {errors.surname && <p className={styles.error}>{errors.surname.message}</p>}
             </div>
 
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.email')}*</label>
-              <input type="email" placeholder={'email@gmail.com'} {...register('email')} />
+              <input type="email" placeholder={t('personalInfo.email')} {...register('email')} />
               {errors.email && <p className={styles.error}>{errors.email.message}</p>}
             </div>
 
@@ -176,17 +188,25 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
           <div className={styles['company-details-wrapper']}>
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.companyName')}</label>
-              <input type="text" placeholder={'Amazon'} {...register('companyName')} />
+              <input
+                type="text"
+                placeholder={t('personalInfo.companyName')}
+                {...register('companyName')}
+              />
             </div>
 
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.cin')}</label>
-              <input type="text" placeholder={'1111'} {...register('cin')} />
+              <input type="text" placeholder={t('personalInfo.cin')} {...register('cin')} />
             </div>
 
             <div className={styles['inputGroup']}>
               <label>{t('personalInfo.vatNumber')}</label>
-              <input type="text" placeholder={'EU123456789'} {...register('vatNumber')} />
+              <input
+                type="text"
+                placeholder={t('personalInfo.vatNumber')}
+                {...register('vatNumber')}
+              />
             </div>
           </div>
         )}
@@ -231,6 +251,11 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
           onNextBtnClick={onNextBtnClick}
           onPrevBtnClick={() => setActiveTab('shoppingCart')}
         />
+      </div>
+      <div className={styles['next-btn-mobile']}>
+        <ButtonCO theme="orange" className={styles['next-btn']} onClick={onNextBtnClick}>
+          {t('shoppingCart.sidebar.continue')}
+        </ButtonCO>
       </div>
     </section>
   );

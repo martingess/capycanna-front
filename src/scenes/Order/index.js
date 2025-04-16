@@ -12,6 +12,9 @@ const Order = () => {
   const t = useTranslations('order');
   const [activeTab, setActiveTab] = useState('shoppingCart');
 
+  const [isPaymentUnlocked, setIsPaymentUnlocked] = useState(false);
+  const [isPersonalInfoUnlocked, setIsPersonalInfoUnlocked] = useState(false);
+
   const [basketItems, setBasketItems] = useState([
     { ...mockProducts[0], count: 1 },
     { ...mockProducts[1], count: 1 },
@@ -24,6 +27,16 @@ const Order = () => {
     );
   }, [basketItems]);
 
+  const handleContinueToPayment = () => {
+    setIsPaymentUnlocked(true);
+    setActiveTab('payment');
+  };
+
+  const handleContinueToPersonalInfo = () => {
+    setIsPersonalInfoUnlocked(true);
+    setActiveTab('personalInfo');
+  };
+
   return (
     <>
       <Head>
@@ -35,6 +48,9 @@ const Order = () => {
           t={t}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+          tab1Slug={'shoppingCart'}
+          tab2Slug={'payment'}
+          tab3Slug={'personalInfo'}
           tab1={
             <p className={styles['tab-title']}>
               <span className={styles['tab-number']}>1</span> {t('tabs.shoppingCart')}
@@ -42,28 +58,50 @@ const Order = () => {
           }
           tab2={
             <p className={styles['tab-title']}>
-              <span className={styles['tab-number']}>2</span> {t('tabs.personalInfo')}
+              <span
+                className={
+                  isPaymentUnlocked
+                    ? `${styles['tab-number']}`
+                    : `${styles['tab-number']} ${styles['tab-number--locked']}`
+                }
+              >
+                2
+              </span>{' '}
+              {t('tabs.personalInfo')}
             </p>
           }
           tab3={
             <p className={styles['tab-title']}>
-              <span className={styles['tab-number']}>3</span> {t('tabs.payment')}
+              <span
+                className={
+                  isPersonalInfoUnlocked
+                    ? `${styles['tab-number']}`
+                    : `${styles['tab-number']} ${styles['tab-number--locked']}`
+                }
+              >
+                3
+              </span>{' '}
+              {t('tabs.payment')}
             </p>
           }
-          tab1Slug={'shoppingCart'}
-          tab2Slug={'payment'}
-          tab3Slug={'personalInfo'}
+          lockedTabs={{
+            payment: !isPaymentUnlocked,
+            personalInfo: !isPersonalInfoUnlocked,
+          }}
         />
         {activeTab === 'shoppingCart' && (
           <ShoppingCart
-            setActiveTab={setActiveTab}
+            setActiveTab={handleContinueToPayment}
             totalBasketPrice={totalBasketPrice}
             basketItems={basketItems}
             setBasketItems={setBasketItems}
           />
         )}
         {activeTab === 'payment' && (
-          <Payment setActiveTab={setActiveTab} totalBasketPrice={totalBasketPrice} />
+          <Payment
+            setActiveTab={handleContinueToPersonalInfo}
+            totalBasketPrice={totalBasketPrice}
+          />
         )}
         {activeTab === 'personalInfo' && (
           <PersonalInfo setActiveTab={setActiveTab} totalBasketPrice={totalBasketPrice} />

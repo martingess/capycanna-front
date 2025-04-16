@@ -5,13 +5,14 @@ import { mockProducts } from '../../data/mockProducts';
 import Head from 'next/head';
 import Breadcrumbs from '@components/Breadcrumbs';
 import styles from './Products.module.scss';
-import { ButtonCO, Radio, CheckBox } from '@UI';
+import { ButtonCO, Radio } from '@UI';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import ProductsSorting from '@components/ProductsSorting';
 import ProductCard from '@components/ProductCard';
 import Pagination from '@components/Pagination';
 import DualRangeSlider from '@components/DualRangeSlider';
+import CheckboxFilter from './Filters/checkboxFilter';
 // import { gql, useQuery } from '@apollo/client';
 
 // const GET_PRODUCTS = gql`
@@ -83,7 +84,6 @@ const ProductsCategory = ({ category }) => {
   };
 
   const handleCancelFilter = () => {
-    console.log('Cancel Filter');
     setIsMobileFilterOpened(false);
   };
 
@@ -374,6 +374,7 @@ const ProductsCategory = ({ category }) => {
                     ))}
                 </div>
               </div>
+              {/* filters__custom */}
               <div
                 className={`${styles['filters__custom']} ${!isMobileFilterOpened && styles['filters__mobile-closed']}`}
               >
@@ -439,40 +440,14 @@ const ProductsCategory = ({ category }) => {
                         </div>
                       )}
                       {filter.type === 'checkbox' && (
-                        <div className={styles['block-item']}>
-                          <div
-                            className={styles['dropdown']}
-                            onClick={() => setIsCheckBoxFilterOpened(!isCheckBoxFilterOpened)}
-                          >
-                            <span className={styles['dropdown__title']}>{filter.title}</span>
-                            <Image
-                              style={{
-                                transform: isCheckBoxFilterOpened
-                                  ? 'rotate(0deg)'
-                                  : 'rotate(180deg)',
-                                transition: 'transform 0.2s',
-                              }}
-                              src={'/images/products/filter-arrow.svg'}
-                              width={14}
-                              height={14}
-                              alt="filter-icon"
-                            />
-                          </div>
-                          {isCheckBoxFilterOpened &&
-                            filter.params.map((param) => (
-                              <CheckBox
-                                key={param.key}
-                                id={`${filter.title}-${param.key}`}
-                                label={param.label}
-                                name={filter.title}
-                                value={param.key}
-                                isChecked={(filtersState[filter.title] || []).includes(param.key)}
-                                handleSelection={() =>
-                                  handleCheckboxChange(param.key, filter.title)
-                                }
-                              />
-                            ))}
-                        </div>
+                        <CheckboxFilter
+                          className={styles['block-item']}
+                          filter={filter}
+                          isCheckBoxFilterOpened={isCheckBoxFilterOpened}
+                          setIsCheckBoxFilterOpened={setIsCheckBoxFilterOpened}
+                          filtersState={filtersState}
+                          handleCheckboxChange={handleCheckboxChange}
+                        />
                       )}
                       {filter.type === 'radio' && (
                         <div className={styles['block-item']}>
