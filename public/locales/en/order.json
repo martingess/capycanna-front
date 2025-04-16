@@ -7,7 +7,8 @@
     "personalInfo": "Personal info"
   },
   "shoppingCart": {
-    "barText": "Get free shipping by adding just 150 € to your cart.",
+    "barText1": "Get free shipping by adding just",
+    "barText2": "to your cart.",
     "item": {
       "variety": "Flower Variety",
       "hhc": "HHC in"

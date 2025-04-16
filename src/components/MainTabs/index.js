@@ -1,10 +1,6 @@
-import { useState, useRef } from 'react';
 import styles from './MainTabs.module.scss';
-import { ButtonCO } from '@UI';
-import Image from 'next/image';
 
 const MainTabs = ({
-  t,
   activeTab,
   setActiveTab,
   tab1,
@@ -13,8 +9,16 @@ const MainTabs = ({
   tab1Slug,
   tab2Slug,
   tab3Slug,
+  lockedTabs = {},
 }) => {
   const isTabActive = (tab) => activeTab === tab;
+
+  const handleTabClick = (slug) => {
+    const isLocked = lockedTabs?.[slug];
+    if (!isLocked) {
+      setActiveTab(slug);
+    }
+  };
 
   return (
     <div className={styles['tabs']}>
@@ -24,7 +28,7 @@ const MainTabs = ({
             ? `${styles['tabs__item']} ${styles['active']}`
             : styles['tabs__item']
         }
-        onClick={() => setActiveTab(tab1Slug || 'characteristics')}
+        onClick={() => handleTabClick(tab1Slug || 'characteristics')}
       >
         {tab1}
       </button>
@@ -34,7 +38,8 @@ const MainTabs = ({
             ? `${styles['tabs__item']} ${styles['active']}`
             : styles['tabs__item']
         }
-        onClick={() => setActiveTab(tab2Slug || 'description')}
+        onClick={() => handleTabClick(tab2Slug || 'description')}
+        disabled={lockedTabs?.[tab2Slug]}
       >
         {tab2}
       </button>
@@ -44,7 +49,8 @@ const MainTabs = ({
             ? `${styles['tabs__item']} ${styles['active']}`
             : styles['tabs__item']
         }
-        onClick={() => setActiveTab(tab3Slug || 'reviews')}
+        onClick={() => handleTabClick(tab3Slug || 'reviews')}
+        disabled={lockedTabs?.[tab3Slug]}
       >
         {tab3}
       </button>

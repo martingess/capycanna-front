@@ -85,7 +85,6 @@
     }
 
     .filters {
-      position: relative;
       position: sticky;
       background-color: #ffffff;
       z-index: 9;
@@ -232,6 +231,7 @@
         }
 
         .cancel__button {
+          cursor: pointer;
           text-transform: uppercase;
           font-weight: 600;
           line-height: 160%;

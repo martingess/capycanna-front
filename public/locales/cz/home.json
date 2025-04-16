@@ -78,7 +78,7 @@
         "title": "Odemykejte úspěchy – získejte slevy",
         "text": "<p>Sbírejte bonusy plněním specifických úkolů na našem webu a odemykáním úspěchů. Každý splněný úspěch vám přinese bonusové body, které se automaticky přemění na slevy na budoucí objednávky.</p>",
         "image": "/images/home/chips1.jpg",
-        "imageMobile": "/images/home/chips1-mob.jpg",
+        "imageMobile": "/images/home/chips1.jpg",
         "link": "/bonus-program",
         "linkText": "Přečíst více"
       },

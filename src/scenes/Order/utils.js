@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-export const yourDatavalidationSchema = yup.object().shape({
+export const dataValidationSchema = yup.object().shape({
   name: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
   surname: yup
     .string()
@@ -11,7 +11,7 @@ export const yourDatavalidationSchema = yup.object().shape({
   phone: yup
     .string()
     .required('Phone number is required')
-    .matches(/^\+?\d{10,15}$/, 'Invalid phone number format (e.g. +1234567890)'),
+    .matches(/^\+?\d{12,17}$/, 'Invalid phone number format (e.g. +123456789012)'),
   companyName: yup.string().nullable(),
   cin: yup.string().nullable(),
   vatNumber: yup.string().nullable(),
@@ -21,9 +21,15 @@ export const yourDatavalidationSchema = yup.object().shape({
     .string()
     .required('Street is required')
     .min(2, 'Street must be at least 2 characters'),
-  houseNumber: yup.string().required('House number is required'),
-  apartmentNumber: yup.string().nullable(),
-  zipCode: yup.string().required('ZIP code is required'),
+  houseNumber: yup
+    .number()
+    .typeError('House number must be a number')
+    .required('House number is required'),
+  apartmentNumber: yup.number().typeError('Apartment number must be a number').nullable(),
+  zipCode: yup
+    .string()
+    .required('ZIP code is required')
+    .matches(/^\d+$/, 'ZIP code must contain only numbers'),
   fullName: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
   extraCountry: yup.string().nullable().required('Country is required'),
   extraCity: yup.string().required('City is required').min(2, 'City must be at least 2 characters'),

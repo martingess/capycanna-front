@@ -4,7 +4,7 @@ import { useState } from 'react';
 import OrderBill from '../../components/OrderBill';
 import { useRouter } from 'next/router';
 import { getPaymentMethods, getDeliveryMethods } from './utils';
-import { Radio } from '@UI';
+import { Radio, ButtonCO } from '@UI';
 
 const PersonalInfo = ({ setActiveTab, totalBasketPrice }) => {
   const t = useTranslations('order');
@@ -83,6 +83,11 @@ const PersonalInfo = ({ setActiveTab, totalBasketPrice }) => {
           onPrevBtnClick={() => setActiveTab('payment')}
           onNextBtnClick={goToHome}
         />
+      </div>
+      <div className={styles['next-btn-mobile']}>
+        <ButtonCO theme="orange" className={styles['next-btn']} onClick={goToHome}>
+          {t('shoppingCart.sidebar.continue')}
+        </ButtonCO>
       </div>
     </section>
   );
