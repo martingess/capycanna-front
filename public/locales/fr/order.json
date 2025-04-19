@@ -55,6 +55,7 @@
     "companyName": "Nom de l’entreprise",
     "cin": "Numéro d'entreprise",
     "vatNumber": "Numéro de TVA",
+    "vatNumberPlaceholder": "EU123456789",
     "fullName": "Full name",
     "country": "Pays",
     "city": "Ville",
@@ -63,7 +64,19 @@
     "apartment": "Numéro d’appartement",
     "zip": "Code postal",
     "anotherAddress": "Livrer à une autre adresse",
-    "wantRegister": "Je veux m’inscrire"
+    "wantRegister": "Je veux m’inscrire",
+    "validationErrors": {
+      "name": "Le prénom est requis",
+      "surname": "Le nom de famille est requis",
+      "email": "L’adresse e-mail est requise",
+      "phone": "Le numéro de téléphone est requis",
+      "country": "Le pays est requis",
+      "city": "La ville est requise",
+      "street": "La rue est requise",
+      "house": "Le numéro de maison doit être un nombre",
+      "apartment": "Le numéro d’appartement doit être un nombre",
+      "zip": "Le code postal est requis"
+    }
   },
   "payment": {
     "deliveryTitle": "Vyberte způsob doručení",
