@@ -1,45 +1,99 @@
 import * as yup from 'yup';
 
-export const dataValidationSchema = yup.object().shape({
-  name: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
+export const getValidationSchema = (t) => yup.object().shape({
+  name: yup.string().required(t('personalInfo.validationErrors.name')).min(2, 'Name must be at least 2 characters'),
   surname: yup
     .string()
-    .required('Surname is required')
+    .required(t('personalInfo.validationErrors.surname'))
     .min(2, 'Surname must be at least 2 characters'),
-  email: yup.string().required('Email is required').email('Invalid email format'),
-  phonePrefix: yup.string().required().nullable(),
+  email: yup.string().required(t('personalInfo.validationErrors.email')).email('Invalid email format'),
+  phonePrefix: yup.mixed().notRequired().nullable(),
   phone: yup
     .string()
-    .required('Phone number is required')
-    .matches(/^\+?\d{12,17}$/, 'Invalid phone number format (e.g. +123456789012)'),
+    .required(t('personalInfo.validationErrors.phone'))
+    .matches(/^\d{9,14}$/, 'Invalid phone number format (e.g. +123456789012)'),
   companyName: yup.string().nullable(),
   cin: yup.string().nullable(),
   vatNumber: yup.string().nullable(),
-  country: yup.string().nullable().required('Country is required'),
-  city: yup.string().required('City is required').min(2, 'City must be at least 2 characters'),
+  country: yup.string().nullable().required(t('personalInfo.validationErrors.country')),
+  city: yup.string().required(t('personalInfo.validationErrors.city')).min(2, 'City must be at least 2 characters'),
   street: yup
     .string()
-    .required('Street is required')
+    .required(t('personalInfo.validationErrors.street'))
     .min(2, 'Street must be at least 2 characters'),
   houseNumber: yup
     .number()
-    .typeError('House number must be a number')
-    .required('House number is required'),
-  apartmentNumber: yup.number().typeError('Apartment number must be a number').nullable(),
+    .typeError(t('personalInfo.validationErrors.house'))
+    .required(t('personalInfo.validationErrors.house')),
+  apartmentNumber: yup
+    .string()
+    .nullable()
+    .test('is-valid-apartment-number', t('personalInfo.validationErrors.apartment'), (value) => {
+      if (!value) return true;
+      return /^\d+$/.test(value);
+    }),
   zipCode: yup
     .string()
-    .required('ZIP code is required')
-    .matches(/^\d+$/, 'ZIP code must contain only numbers'),
-  fullName: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
-  extraCountry: yup.string().nullable().required('Country is required'),
-  extraCity: yup.string().required('City is required').min(2, 'City must be at least 2 characters'),
+    .required(t('personalInfo.validationErrors.zip'))
+    .matches(/^\d+$/, t('personalInfo.validationErrors.zip')),
+  // fullName: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
+  extraCountry: yup
+    .string()
+    .nullable()
+    .required('Country is required')
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) => schema.required('Country is required'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
+  extraCity: yup
+    .string()
+    .required('City is required')
+    .min(2, 'City must be at least 2 characters')
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) =>
+        schema.required('City is required').min(2, 'City must be at least 2 characters'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
   extraStreet: yup
     .string()
     .required('Street is required')
-    .min(2, 'Street must be at least 2 characters'),
-  extraHouseNumber: yup.string().required('House number is required'),
-  extraApartmentNumber: yup.string().nullable(),
-  extraZipCode: yup.string().required('ZIP code is required'),
+    .min(2, 'Street must be at least 2 characters')
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) =>
+        schema.required('Street is required').min(2, 'Street must be at least 2 characters'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
+  extraHouseNumber: yup
+    .string()
+    .required('House number is required')
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) => schema.required('House number is required'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
+  extraApartmentNumber: yup
+    .string()
+    .nullable()
+    .test('is-valid-apartment-number', 'Apartment number must contain only numbers', (value) => {
+      if (!value) return true;
+      return /^\d+$/.test(value);
+    })
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) => schema,
+      otherwise: (schema) => schema.notRequired(),
+    }),
+  extraZipCode: yup
+    .string()
+    .required('ZIP code is required')
+    .when('$toAnotherAddress', {
+      is: true,
+      then: (schema) => schema.required('ZIP code is required'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
 });
 
 export const countries = ['USA', 'Germany', 'France', 'UK', 'Spain'];

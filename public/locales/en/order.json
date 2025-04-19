@@ -55,6 +55,7 @@
     "companyName": "Company name",
     "cin": "CIN",
     "vatNumber": "VAT number",
+    "vatNumberPlaceholder": "EU123456789",
     "fullName": "Full name",
     "country": "Country",
     "city": "City",
@@ -63,7 +64,19 @@
     "apartment": "Apartment number",
     "zip": "ZIP",
     "anotherAddress": "Ship to another address",
-    "wantRegister": "I want a register"
+    "wantRegister": "I want a register",
+    "validationErrors": {
+      "name": "Name is required",
+      "surname": "Surname is required",
+      "email": "Email is required",
+      "phone": "Phone number is required",
+      "country": "Country is required",
+      "city": "City is required",
+      "street": "Street is required",
+      "house": "House number must be a number",
+      "apartment": "Apartment number must be a number",
+      "zip": "ZIP code is required"
+    }
   },
   "payment": {
     "deliveryTitle": "Choose a delivery method",

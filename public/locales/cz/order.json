@@ -55,6 +55,7 @@
     "companyName": "Název společnosti",
     "cin": "IČO",
     "vatNumber": "DIČ",
+    "vatNumberPlaceholder": "EU123456789",
     "fullName": "Full name",
     "country": "Země",
     "city": "Město",
@@ -63,7 +64,19 @@
     "apartment": "Číslo bytu",
     "zip": "PSČ",
     "anotherAddress": "Odeslat na jinou adresu",
-    "wantRegister": "Chci se zaregistrovat"
+    "wantRegister": "Chci se zaregistrovat",
+    "validationErrors": {
+      "name": "Jméno je povinné",
+      "surname": "Příjmení je povinné",
+      "email": "E-mail je povinný",
+      "phone": "Telefonní číslo je povinné",
+      "country": "Země je povinná",
+      "city": "Město je povinné",
+      "street": "Ulice je povinná",
+      "house": "Číslo domu musí být číslo",
+      "apartment": "Číslo bytu musí být číslo",
+      "zip": "PSČ je povinné"
+    }
   },
   "payment": {
     "deliveryTitle": "Vyberte způsob doručení",

@@ -4,12 +4,16 @@ import { useState, useEffect } from 'react';
 import OrderBill from '../../components/OrderBill';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { dataValidationSchema } from './utils';
 import { CheckBox, Select, PhonePrefixSelect, ButtonCO } from '@UI';
-import { countries, cities, phonePrefixes } from './utils';
+import { countries, cities, phonePrefixes, getValidationSchema } from './utils';
 
 const Payment = ({ setActiveTab, totalBasketPrice }) => {
   const t = useTranslations('order');
+
+  const [isCompanyDetailsOpened, setIsCompanyDetailsOpened] = useState(false);
+  const [toAnotherAddress, setToAnotherAddress] = useState(false);
+  const [wantRegister, setWantRegister] = useState(false);
+  // const [phonePrefix, setPhonePrefix] = useState(phonePrefixes[0]);
 
   const {
     register,
@@ -20,20 +24,15 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
     control,
     setValue,
   } = useForm({
-    resolver: yupResolver(dataValidationSchema),
+    resolver: yupResolver(getValidationSchema(t)),
+    context: { toAnotherAddress },
   });
   const selectedCountry = watch('country');
 
-  const [isCompanyDetailsOpened, setIsCompanyDetailsOpened] = useState(false);
-  const [toAnotherAddress, setToAnotherAddress] = useState(false);
-  const [wantRegister, setWantRegister] = useState(false);
-
-  const [phonePrefix, setPhonePrefix] = useState(phonePrefixes[0]);
-
   const onSubmit = (data) => {
     console.log('Form Data:', data);
+    setActiveTab();
     reset();
-    setActiveTab('personalInfo');
   };
 
   const onNextBtnClick = () => {
@@ -162,6 +161,7 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
                   render={({ field }) => (
                     <PhonePrefixSelect
                       {...field}
+                      value={phonePrefixes[0]}
                       options={phonePrefixes}
                       placeholder={phonePrefixes[0]}
                     />
@@ -204,7 +204,7 @@ const Payment = ({ setActiveTab, totalBasketPrice }) => {
               <label>{t('personalInfo.vatNumber')}</label>
               <input
                 type="text"
-                placeholder={t('personalInfo.vatNumber')}
+                placeholder={t('personalInfo.vatNumberPlaceholder')}
                 {...register('vatNumber')}
               />
             </div>
