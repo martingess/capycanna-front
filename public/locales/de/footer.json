@@ -43,5 +43,17 @@
     "text": "Wir benötigen Ihre Zustimmung zur Verwendung einzelner Cookies, damit wir Ihnen unter anderem Informationen zu Ihren Interessen anzeigen können. Weitere Informationen finden Sie <link>hier</link>.",
     "accept": "Ich stimme zu",
     "settings": "Cookie-Einstellungen"
+  },
+  "cookieSettingsModal": {
+    "mainTitle": "Cookie-Einstellungen",
+    "mainDescription": "Wir verwenden Cookies, um Ihnen ein angenehmes Surferlebnis zu bieten und die Funktionalität, Leistung und Benutzerfreundlichkeit unserer Website durch die Analyse des Datenverkehrs kontinuierlich zu verbessern.",
+    "title1": "Notwendig (immer aktiv, kann nicht deaktiviert werden)",
+    "description1": "Diese Cookies sind für den ordnungsgemäßen Betrieb der Website unerlässlich.",
+    "title2": "Für Analysezwecke",
+    "description2": "Sie helfen uns zu verstehen, wie Sie die Website nutzen, und ermöglichen es uns, sie basierend auf diesen Daten weiter zu optimieren.",
+    "title3": "Für Marketingzwecke (Profilierung)",
+    "description3": "Ermöglichen die Anzeige relevanter Inhalte und Werbeangebote, die für Sie von Interesse sein könnten.",
+    "enable": "Aktivieren",
+    "disable": "Deaktivieren"
   }
 }
