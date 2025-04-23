@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { setCookieInfo, selectCookieInfo } from '@store/user/userSlices';
 import { ButtonCO } from '@UI';
 import Link from 'next/link';
+import CookieSettingsModal from '../Modals/CookieSettings';
 
 import cn from 'classnames';
 import styles from './CookieInfo.module.scss';
@@ -14,13 +15,14 @@ const CookieInfo = () => {
   const isCookieInfo = useSelector(selectCookieInfo);
 
   const [showCookie, setShowCookie] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     setShowCookie(isCookieInfo);
   }, [isCookieInfo]);
 
   const handleCookieInfo = () => dispatch(setCookieInfo(false));
-  const handleSettings = () => dispatch(setCookieInfo(false));
+  const handleSettings = () => setIsModalOpen(true);
 
   return (
     <div
@@ -47,6 +49,7 @@ const CookieInfo = () => {
           </ButtonCO>
         </div>
       </div>
+      <CookieSettingsModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} t={t} />
     </div>
   );
 };

@@ -43,5 +43,17 @@
     "text": "Potřebujeme váš souhlas s používáním jednotlivých cookies, abychom vám mimo jiné mohli zobrazovat informace související s vašimi zájmy. Více informací najdete <link>zde</link>.",
     "accept": "Přijímám",
     "settings": "Nastavení cookies"
+  },
+  "cookieSettingsModal": {
+    "mainTitle": "Nastavení cookies",
+    "mainDescription": "Používáme cookies, abychom zajistili pohodlné prohlížení webu a zlepšovali jeho funkčnost, výkon a použitelnost na základě analýzy návštěvnosti.",
+    "title1": "Nezbytné (vždy aktivní, nelze vypnout)",
+    "description1": "Tyto cookies jsou nezbytné pro správné fungování webu.",
+    "title2": "Pro analytické účely",
+    "description2": "Pomáhají nám pochopit, jak web používáte, a neustále ho vylepšovat na základě těchto dat.",
+    "title3": "Pro marketingové účely (profilování)",
+    "description3": "Tyto cookies umožňují zobrazovat relevantní obsah a personalizované nabídky, které by vás mohly zajímat.",
+    "enable": "Zapnout",
+    "disable": "Vypnout"
   }
 }

@@ -43,5 +43,17 @@
     "text": "Nous avons besoin de votre consentement pour utiliser des cookies individuels afin de pouvoir, entre autres, vous montrer des informations liées à vos intérêts. En savoir plus <link>ici</link>.",
     "accept": "J'accepte",
     "settings": "Paramètres des cookies"
+  },
+  "cookieSettingsModal": {
+    "mainTitle": "Paramètres des cookies",
+    "mainDescription": "Nous utilisons des cookies pour garantir une navigation agréable sur notre site et améliorer ses fonctionnalités, ses performances et sa convivialité grâce à l'analyse du trafic.",
+    "title1": "Nécessaires (toujours activés, ne peuvent pas être désactivés)",
+    "description1": "Ces cookies sont indispensables au bon fonctionnement du site.",
+    "title2": "Pour l’analyse",
+    "description2": "Ils nous aident à comprendre comment vous utilisez le site et à l'améliorer en conséquence.",
+    "title3": "Pour le marketing (profilage)",
+    "description3": "Ils permettent d'afficher un contenu pertinent et des offres promotionnelles susceptibles de vous intéresser.",
+    "enable": "Activer",
+    "disable": "Désactiver"
   }
 }
