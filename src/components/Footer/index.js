@@ -96,7 +96,7 @@ const Footer = () => {
               <Link href={'/pain'} className={styles['footer__link']}>
                 {t('links.pain')}
               </Link>
-              <Link href={'/wholesale'} className={styles['footer__link']}>
+              <Link href={'/b2b'} className={styles['footer__link']}>
                 {t('links.wholesale')}
               </Link>
               <Link href={'/affiliate-program'} className={styles['footer__link']}>
@@ -107,13 +107,13 @@ const Footer = () => {
               </Link>
             </div>
             <div className={styles['footer__links-set']}>
-              <Link href={'/bonus-program'} className={styles['footer__link']}>
+              <Link href={'/bonus'} className={styles['footer__link']}>
                 {t('links.bonusProgram')}
               </Link>
               <Link href={'/blog'} className={styles['footer__link']}>
                 {t('links.blog')}
               </Link>
-              <Link href={'/contact-us'} className={styles['footer__link']}>
+              <Link href={'/contact'} className={styles['footer__link']}>
                 {t('links.contactUs')}
               </Link>
             </div>

@@ -79,7 +79,7 @@
         "text": "<p>Sammeln Sie Boni, indem Sie bestimmte Aktionen auf unserer Seite ausführen und Erfolge freischalten. Jeder Erfolg bringt Ihnen Bonuspunkte, die automatisch in Rabatte für zukünftige Bestellungen umgewandelt werden.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Mehr erfahren"
       },
       {
@@ -87,7 +87,7 @@
         "text": "<p>Erhalten Sie ein exklusives Capybara-Stickerpack zu Ihrer ersten Bestellung! Eine lustige und unvergessliche Möglichkeit, Teil der CapyCanna-Familie zu werden.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Mehr erfahren"
       }
     ]

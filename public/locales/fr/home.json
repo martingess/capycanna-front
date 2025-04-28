@@ -79,7 +79,7 @@
         "text": "<p>Gagnez des bonus en remplissant des actions et débloquez des accomplissements. Chaque accomplissement offre des points convertis en réductions.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Lire plus"
       },
       {
@@ -87,7 +87,7 @@
         "text": "<p>Recevez un pack de stickers exclusifs Capybara avec votre première commande ! Une manière amusante et mémorable de rejoindre la famille CapyCanna.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Lire plus"
       }
     ]

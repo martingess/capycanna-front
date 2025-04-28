@@ -79,7 +79,7 @@
         "text": "<p>Sbírejte bonusy plněním specifických úkolů na našem webu a odemykáním úspěchů. Každý splněný úspěch vám přinese bonusové body, které se automaticky přemění na slevy na budoucí objednávky.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Přečíst více"
       },
       {
@@ -87,7 +87,7 @@
         "text": "<p>Získejte úžasný samolepkový balíček s motivem kapybar při první objednávce! Zábavný a nezapomenutelný způsob, jak oslavit váš vstup do rodiny CapyCanna.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Přečíst více"
       }
     ]
