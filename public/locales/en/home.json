@@ -79,7 +79,7 @@
         "text": "<p>Earn bonuses by completing specific actions on our site and unlocking achievements. Each achievement you complete grants bonus points, which automatically convert into discounts for future orders.</p>",
         "image": "/images/home/chips1.jpg",
         "imageMobile": "/images/home/chips1.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Read More"
       },
       {
@@ -87,7 +87,7 @@
         "text": "<p>Get an awesome branded capybara sticker pack with your first order! A fun and memorable way to celebrate joining the CapyCanna family.</p>",
         "image": "/images/home/chips2.jpg",
         "imageMobile": "/images/home/chips2-mob.jpg",
-        "link": "/bonus-program",
+        "link": "/bonus",
         "linkText": "Read More"
       }
     ]
